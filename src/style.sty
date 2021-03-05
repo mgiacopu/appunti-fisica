@@ -1,0 +1,91 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, italian]{babel}
+
+\usepackage{microtype}
+\usepackage{newpxtext}
+
+\usepackage{
+	,graphicx
+	,wrapfig
+	,float
+}
+
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
+
+\usepackage{enumitem}
+
+\usepackage{
+	,amsmath
+	,amssymb
+	,amsfonts
+	,amsthm
+}
+
+\usepackage[mathscr]{euscript}
+\interfootnotelinepenalty=10000 %% Completely prevent breaking of footnotes
+
+\usepackage{standalone}
+\usepackage{import}
+
+\usepackage{
+	,tabularx
+	,booktabs
+	,multirow
+	,adjustbox
+}
+
+\usepackage{textcomp}
+\usepackage{scrextend}
+\setkomafont{labelinglabel}{\bfseries}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{geometry}
+
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{minted}
+
+\usepackage[normalem]{ulem}
+
+\usepackage{csquotes}
+
+\usepackage{forest}
+\newcommand{\equal}{=} % the = is a protected symbol in forest
+
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+\usepackage{ifthen}
+
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{definition}{Definizione}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{osservazione}[corollary]{Osservazione}
+\renewcommand\qedsymbol{QED}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+% calligraphic quick commands
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\A}{\mathcal{A}}
+\renewcommand{\L}{\mathcal{L}}
+\renewcommand{\P}{\mathcal{P}}
+
+% where b is big, s is small, m is minimum, h is half
+%TODO: define this only for simulazione-nfa-ex1
+\newcolumntype{b}{>{\hsize=.7\hsize}X}
+\newcolumntype{h}{>{\hsize=.6\hsize}X}
+\newcolumntype{s}{>{\hsize=.5\hsize}X}
+\newcolumntype{m}{>{\hsize=.25\hsize}X}
+
+\setlength\lightrulewidth{0.1pt}
+\providecommand\lightrule{%
+	\arrayrulecolor{black!30}%
+	\midrule[\lightrulewidth]%
+	\arrayrulecolor{black}}

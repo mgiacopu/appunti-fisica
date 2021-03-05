@@ -1,0 +1,63 @@
+\documentclass[
+	,a4paper
+	,12pt
+	,oneside
+	% ,draft
+]{book}
+
+\usepackage{style}
+% \usepackage{style_tree}
+% \usepackage{style_automata}
+
+\graphicspath{%
+	{./chapters/titlepage/images/}%
+	% {./chapters/preface/assets/images/}%
+	% {./chapters/01/assets/images/}%
+	% {./chapters/02/assets/images/}%
+	% {./chapters/03/assets/images/}%
+	% {./chapters/04/assets/images/}%
+	% {./chapters/05/assets/images/}%
+	% {./chapters/06/assets/images/}%
+	% {./chapters/07/assets/images/}%
+	% {./chapters/08/assets/images/}%
+	% {./chapters/09/assets/images/}%
+	% {./chapters/10/assets/images/}%
+	% {./chapters/11/assets/images/}%
+	% {./chapters/12/assets/images/}%
+	% {./chapters/appendix_A/assets/images/}%
+}
+
+\newboolean{isCompiledFromMain}
+\setboolean{isCompiledFromMain}{true}
+
+% arara: pdflatex: { shell: yes }
+% arara: latexmk: { clean: partial }
+\begin{document}
+\frontmatter
+	\newgeometry{ignorefoot, bottom = 1cm}
+	\import{./chapters/titlepage/}{titlepage}
+	\restoregeometry
+	\tableofcontents
+
+\mainmatter
+
+	% \import{./chapters/preface}{preface}
+	% \import{./chapters/01/}{chapter01}
+	% \import{./chapters/03/}{chapter03}
+	% \import{./chapters/04/}{chapter04}
+	% \import{./chapters/05/}{chapter05}
+	% \import{./chapters/02/}{chapter02}
+	% \import{./chapters/06/}{chapter06}
+	% \import{./chapters/07/}{chapter07}
+	% \import{./chapters/08/}{chapter08}
+	% \import{./chapters/09/}{chapter09}
+	% \import{./chapters/10/}{chapter10}
+	% \import{./chapters/11/}{chapter11}
+	% \import{./chapters/12/}{chapter12}
+	
+	% \appendix
+	% \import{./chapters/appendix_A/}{appendix_A}
+
+\backmatter
+
+\end{document}

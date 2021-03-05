@@ -23,6 +23,6 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: Oh oh oh! buon natale piccoli dinosauri
+          message: ${{ github.event.head_commit.message }}
           document: src/main.pdf
         if: ${{ success() }}

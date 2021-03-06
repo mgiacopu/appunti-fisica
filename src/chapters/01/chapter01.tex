@@ -1,0 +1,294 @@
+\documentclass[class=book, crop=false, oneside, 12pt]{standalone}
+\usepackage{standalone}
+\usepackage{../../style}
+% \graphicspath{{./assets/images/}}
+
+% arara: pdflatex: { synctex: yes, shell: yes }
+% arara: latexmk: { clean: partial }
+\begin{document}
+
+\section{Capitolo 1 - Cinematica del punto}
+
+\subsection{Introduzione}
+
+La meccanica riguarda lo studio del moto di un corpo: essa spiega la
+relazione che esiste tra le cause che generano il moto e le
+caratteristiche di questo e la esprime con leggi quantitative.
+
+Iniziamo lo studio del moto dal più semplice corpo, quello puntiforme,
+detto \emph{punto materiale} o spesso anche \emph{particella}: si tratta
+di un corpo privo di dimensioni ovvero che presenti dimensioni
+trascurabili rispetto a quelle dello spazio in cui può muoversi o degli
+altri corpi con cui può interagire.
+
+L' introduzione di tale concetto rende innanzitutto più semplice la
+trattazione di alcuni aspetti di certi problemi. Inoltre lo studio del
+sistema punto materiale permette di definire nel modo più facile alcune
+grandezze meccaniche fondamentali e di capirne il significato con
+immediatezza, in assenza delle complicazioni che deriverebbero dalla
+struttura estesa del corpo.
+
+Un corpo esteso solo eccezionalmente si muove come un punto materiale,
+spesso infatti può compiere contemporaneamente altri tipi di moto.
+
+L'analisi completa del moto comprende:
+
+\begin{itemize}
+\item
+  il collegamento del moto stesso alle interazioni del corpo con i corpi
+  circostanti
+\item
+  la descrizione geometrica dell'evoluzione temporale del fenomeno di
+  movimento.
+\end{itemize}
+
+Questa parte della meccanica, descrittiva del moto di un corpo,
+indipendentemente dalle cause che lo determinano, viene detta
+\emph{cinematica}, mentre il perché del moto viene studiato nella
+\emph{dinamica}.
+
+Il moto di un punto materiale è determinato se è nota la sua posizione
+in funzione del tempo in un determinato sistema di riferimento, ossia ad
+esempio le sue coordinate \(x(t), y(t),z(t)\) in un sistema di
+riferimento cartesiano. Può non essere l'unico modo, infatti ci sono
+altri sistemi di riferimento, ad esempio quelli con coordinate polari.
+
+La traiettoria è il luogo dei punti occupati successivamente dal punto
+in movimento e costituisce una curva continua nello spazio. Lo studio
+delle variazioni di posizione lungo la traiettoria nel tempo porterà a
+definire il concetto di \emph{velocità}, mentre lo studio delle
+variazioni della velocità con il tempo introdurrà la grandezza
+\emph{accelerazione}.
+
+Le \emph{grandezze fondamentali} in cinematica sono pertanto lo
+\emph{spazio}, la \emph{velocità}, l'\emph{accelerazione} e il
+\emph{tempo}; quest' ultimo in sostanza rappresenta la variabile
+indipendente.
+
+La \emph{quiete} è un particolare tipo di moto in cui le coordinate
+restano costanti e quindi velocità e accelerazione sono nulle. Questo
+stato non è assoluto infatti è sempre relativo ad un sistema di
+riferimento dal quale si osserva il moto. Lo stesso punto materiale può
+apparire diverso in sistemi di riferimento differenti. Parleremo più
+avanti di \emph{moto relativo}, per descrivere le relazioni che esistono
+tra le descrizioni di uno stesso moto visto da due sistemi di
+riferimento in movimento l'uno rispetto all'altro.
+
+
+\subsection{Moto rettilineo}
+
+Il moto rettilineo si svolge lungo una retta sulla quale vengono fissati
+arbitrariamente un' origine e un verso; il moto è descrivibile tramite
+una sola coordinata \(x(t)\).
+
+Le misure ottenute possono essere rappresentate in un sistema con due
+assi cartesiani. Sull' asse delle ordinate riportiamo i valori di \(x\)
+e su quello delle ascisse i corrispondenti valori del tempo: la figura
+si chiama \emph{diagramma orario}. È necessario ovviamente introdurre
+delle unità di riferimento nei due assi, ad esempio la lunghezza
+corrispondente ad un intervallo di tempo di un secondo nelle ascisse e
+quella relativa ad uno spostamento di un metro nelle ordinate (SI).
+
+È importante ricordare che in una misura fisica reale ciascun dato è
+affetto da errori e pertanto i punti che rappresentano le varie misure
+non si dispongono esattamente su una retta, una parabola o su altri tipi
+di curve. L'espressione \(x(t)\) è ottenibile solo tramite opportuni
+metodi di ottimizzazione analitica.
+
+(Esempi)
+
+\subsection{Velocità nel moto rettilineo}
+
+Introduciamo ora il concetto di velocità media e velocità istantanea nel
+moto rettilineo. Se al\\
+tempo \(t = t_1\) il punto si trova nella posizione \(x = x_1\) e al
+tempo \(t = t_2\) nella posizione \(x = x_2\) ,
+\(\Delta x = x_2 - x_1\) rappresenta lo spazio percorso nell'intervallo
+di tempo \(\Delta t = t_2 - t_1\).
+
+Possiamo caratterizzare la velocità dello spostamento tramite la
+velocità media.
+
+\(v_m = \frac {\Delta x} {\Delta t} = \frac {x_2 - x_1} {t_2 - t_1}\)
+
+Questa grandezza fornisce un informazione complessiva ma che ci dà poche
+informazioni su come sta avvenendo il moto.
+
+Per individuare \(x(t)\) e le sue variazioni aumentiamo il numero di
+misure suddividendo lo spazio \(\Delta x\) in numerosi piccoli
+intervalli \((\Delta x)_1,...,(\Delta x)_n\), percorsi in numerosi
+intervalli di tempo \(\Delta t\) \((\Delta t)_1,...,(\Delta t)_n\). Da
+questi piccoli intervalli posso ottenere tutte le corrispondenti
+velocità medie \(v_1,...,v_n\). Di solito queste velocità non sono
+uguali tra loro (nel caso lo fossero si parla di Moto Rettilineo
+Uniforme o M.R.U) e di solito nemmeno uguali a \(v_m\).
+
+Il processo di suddivisione in spazi sempre più piccoli può essere
+continuato fino ad avere intervalli infinitesimi. Posso definire la
+velocità istantanea, ad un istante \(t\) , del punto in movimento come
+il rapporto \(v = dx/dt\) , calcolato in quel determinato istante.
+Questa operazione corrisponde all'operazione matematica del calcolo del
+limite per \(\Delta t \rightarrow 0\) del rapporto incrementale
+\(\Delta x / \Delta t\).
+
+Pertanto la velocità di un punto nel moto rettilineo è data dalla
+derivata dello spazio rispetto al tempo: \(v = \frac {dx} {dt}\); la
+velocità istantanea, cioè, rappresenta la rapidità di variazione
+temporale della posizione nell' istante \(t\) considerato.
+
+Il segno della velocità fa riferimento al verso del moto sull'asse
+\(x\): se \(v >0\) la coordinata cresce, mentre se \(v < 0\) il moto
+avviene nel verso opposto. A sua volta la velocità può essere funzione
+del tempo \(v(t)\).
+
+In conclusione, se è nota, perché calcolata o misurata, la funzione
+\(x(t)\) ovvero, come si dice, se è nota la legge oraria, si può
+ottenere la velocità istantanea con l'operazione di derivazione
+
+Per risolvere il problema inverso, trovare \(x(t)\) sapendo \(v(t)\), mi
+basta svolgere l'operazione contraria: l'integrazione. Ottengo che
+\(\Delta x = \int_{x_0}^{x} dx = \int_{t_0}^{t} v(t) dt\). In
+conclusione ho che \(x(t) = x_0 + \int_{t_0}^t v(t) dt\) dove \(x_0\)
+rappresenta la posizione iniziale del punto all'istante \(t_0\).
+
+\(\Delta x\) rappresenta lo spostamento complessivo quindi se il punto
+ritorna nella posizione iniziale potrebbe annullarsi.
+
+A partire dalla velocità media: \(v_m = \frac {x-x_0} {t-t_0}\),
+ricaviamo la relazione tra velocità media e velocità istantanea:
+\(v_m = \frac {1} {t-t_0} \int_{t_0}^t v(t) dt\).
+
+Nel caso particolare di \(v = costante\) ottengo che:
+\(x(t) = x_0 + vt\). Infatti, nel moto rettilineo uniforme, lo spazio è
+una funzione lineare del tempo.
+
+\subsection{Accelerazione nel moto rettilineo}
+
+Se la velocità cambia in un intervallo di tempo definiamo la grandezza
+\emph{accelerazione media} come \(a_m = \Delta v / \Delta t\).
+Similmente a come siamo passati da velocità media a velocità istantanea
+definiamo l'\emph{accelerazione istantanea}:
+\(a = \frac {dv} {dt} = \frac {d^2 x}{dt^2}\)
+
+Se \(a=0\) la velocità è costante, se \(a>0\) sto accelerando mentre se
+\(a<0\) sto decelerando. Però è sempre il segno algebrico della velocità
+a dirmi il verso del moto, non quello dell'accelerazione.
+
+A partire da \(a(t)\) posso ricavare \(v(t)\) sempre tramite
+integrazione:\\
+\(dv = a(t) dt\)\\
+\(\Delta v = \int_{v_0}^{v}dv = \int_{t_0}^t a(t) dt\)\\
+\(v(t) = v_0 + \int_{t_0}^{t} a(t) dt\)
+
+Anche qui \(v_0\) rappresenta la velocità iniziale all'istante di tempo
+\(t_0\). Anche qui \(\Delta v\) rappresenta la variazione complessiva
+della velocità.
+
+Se l'accelerazione è costante si parla di moto rettilineo uniformemente
+accelerato, dove la dipendenza della velocità dal tempo è lineare:
+\(v(t) = v_0 + a(t-t_0)\) (ovviamente se \(t_0 = 0\) ottengo
+\(v(t) = v_0 + at\)).
+
+Da questa formula posso ricavare \(x(t)\) con:\\
+\(x(t) = x_0 + \int_{t_0}^{t} [v_0 + a(t-t_0)] dt = x_0 + \int_{t_0}^{t}v_0 dt+ \int_{t_0}^t a (t-t_0) dt\)
+
+Ottengo: \(x(t) = x_0 + v_0(t-t_0) + \frac{1}{2} a(t-t_0)^2\)
+
+Con \(t_0  = 0\): \(x(t) = x_0 + v_0 t + \frac {1} {2} a t^2\)
+
+In conclusione se ho \(x(t)\) derivando posso ottenere \(v(t)\) e
+\(a(t)\) a condizione che siano note le condizioni iniziali (velocità e
+posizione nel punto \(t_0\)).
+
+Se sono a conoscenza di \(a(x)\) (accelerazione rispetto la posizione)
+posso ricavare il valore della velocità in ogni posizione \(x\),
+\(v(x)\). Infatti se ad un certo istante \(t\) il punto occupa una
+determinata posizione \(x\), con un valore \(v\) della velocità e \(a\)
+dell'accelerazione, queste si possono pensare come funzioni della
+posizione oltre che del tempo e si può scrivere
+\(v(t) = v[x(t)], a(t)=a[x (t)]\). Utilizzando la derivazione a catena
+ed integrando ottengo l'equazione di Torricelli, questo risultato può
+essere ricavato analogamente sotto l'ipotesi di accelerazione costante
+mediante sostituzione nelle equazioni:
+\(s = s_0 + v_0\Delta t + \frac {1}{2} a(\Delta t)^2\) e
+\(v = v_0 + a\Delta t\).
+
+Nel moto uniformemente accelerato (\(a\) = costante) si ha:
+\(v^2 = v_0^2 +2a (x-x_0)\).
+
+
+\subsection{\texorpdfstring{Moto verticale di un corpo
+}{Moto verticale di un corpo }}
+
+Trascurando l'attrito con l'aria (dato che utilizzando i punti materiali
+trascuriamo le dimensioni), un corpo lasciato libero di cadere in
+vicinanza della superficie terrestre si muove verso il basso con una
+accelerazione costante che vale in modulo \(g = 9.8 \ ms^{-2}\), il
+verso dipende dal sistema di riferimento. Si tratta quindi di un Moto
+Rettilineo Uniformemente Accelerato (MRUA).
+
+In questo caso posso effettuare tre casi di studio per analizzare il
+fenomeno: punto materiale lasciato cadere, punto materiale lanciato
+verso il suolo e punto materiale lanciato verso l'alto, li vediamo
+separatamente.
+
+\subsubsection{Punto lasciato cadere}
+
+Se lascio cadere un corpo (in un sistema di riferimento con asse \(x\)
+che punta in alto), esso sarà sottoposto ad una accelerazione di
+\(a = -g = -9.8 ms^{-2}\), partirà da un altezza iniziale
+\(h = x_0 = 0\) con velocità nulla (\(v_0 = 0\)) al tempo iniziale
+\(t = t_0  = 0\).
+
+Ci troviamo nel MRUA so che \(v(t) = -gt\) e dalla legge oraria ottengo
+\(x = h + \frac {1} {2} (-g)t^2\).
+
+Il punto deve arrivare al suolo (\(x=0\)), il tempo impiegato si trova
+con \(t_c = \sqrt {\frac {2h} {g}}\).
+
+Dato che la velocità continua ad aumentare potrebbe interessarci
+\(v(x)\), la velocità in funzione della posizione. Grazie all'equazione
+di Torricelli ottengo che il punto arriva al suolo con velocità
+\(v_c = \sqrt {2gh}\)
+
+\subsubsection{Punto lanciato verso il basso}
+
+A differenza del caso precedente, qui ho una velocità iniziale (\(v_0\))
+non nulla che va considerata. Quindi \(v(t) = -v_0 -gt\) e la legge
+oraria è \(x = h - v_0t - \frac {1} {2 } gt^2\).
+
+Trovo \(t(x)\) per trovare il tempo di caduta:
+\(t(x) = \frac {-v_0 + \sqrt {v_0^2 + 2g (h-x)}} {g}\). Ponendo \(x=0\)
+ottengo \(t_c = \frac {-v_0 + \sqrt {v_0^2 + 2g h}} {g}\).
+
+La velocità al suolo (sempre dall'equazione di Torricelli)
+\(v_c = \sqrt {v_0^2 + 2gh}\).
+
+\subsubsection{Punto lanciato verso l'alto}
+
+Il punto parte dal suolo \(x_0 = 0\) in \(t_0 = 0\) con velocità
+\(v_ 0 =v_2 > 0\). Mentre il punto sale la sua velocità inizierà a
+decrescere. Il punto si fermerà nell'istante \(t_M = \frac {v_2} g\) e
+nella posizione \(x_M = x(t_M) = \frac {v_2^2} {2g}\).
+
+Quando \(v = 0\) il punto si fermerà e a questo punto ci troveremo nel
+primo caso (punto lasciato cadere). Il tempo di caduta dal punto \(x_M\)
+è:
+\(t_c = \sqrt \frac {2h}{g} = \sqrt \frac {2 x_M}{g} = \sqrt \frac {v_2^2}{g^2} = \frac {v_2} {g} = t_m\).
+La durata complessiva del moto è \(2t_M\). Ora posso ricavare \(t(x)\)
+dalla legge oraria e \(v(x)\) dall'equazione di Torricelli:
+
+\begin{itemize}
+\item
+  Ricavo
+  \(t(x) = \frac {v_2 \pm {\sqrt{v_2^2 -gx}}}{g} = t_M \pm \sqrt {t_M^2 - \frac {2x}{g}}\).
+\item
+  Ricavo \(v(x) = \pm \sqrt {v_2^2 -2gx}\).
+\end{itemize}
+
+Il doppio segno sta ad indicare che il punto passa due volte per la
+stessa posizione (all'inizio e alla fine del moto).
+
+\subsection{Moto Armonico}
+
+\end{document}

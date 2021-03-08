@@ -290,5 +290,79 @@ Il doppio segno sta ad indicare che il punto passa due volte per la
 stessa posizione (all'inizio e alla fine del moto).
 
 \subsection{Moto Armonico}
+\paragraph{}
+Il moto armonico semplice lungo un asse rettilineo è un moto vario la cui legge oraria è definita dalla relazione:
+\begin{equation}
+  x(t) = A \sin (\omega t + \phi)
+\end{equation}
+dove \(A,\omega, \phi \), sono grandezze costanti: \(A\) è detta ampiezza del moto, \(\omega t + \phi \) è la fase del moto dove
+\(\phi \) è detta fase iniziale e \(\omega \) pulsazione.
+
+Dato che la funzione seno assume valori da \(+1\) a \(-1\) dalla formula ottengo che il punto può apparire in un segmento lungo \(2A\) con centro nell'origine.
+All'inizio del moto (istante di tempo \(t = 0\)) il punto occupa la posizione \(x(0) = A \cdot \sin (\phi) \).
+
+Come la funzione seno, il moto risulta essere periodico, infatti esso descrive delle oscillazioni.
+Queste oscillazioni hanno ampiezza \(A\) e centro \(0\), sono tutte uguali tra loro e caratterizzate dalla durata, detta periodo \(T\) del moto armonico.
+\paragraph{Definizione}
+Il moto di un punto si dice periodico quando ad intervalli di tempo eguali il punto ripassa nella stessa posizione con la stessa velocità.
+
+Per determinare il periodo \(T\) considero due tempi \(t,t'\) con \(t'-t = T\).
+Ho che per definizione \(x(t) = x(t')\), quindi imponendo l'ugualianza e sostituendo ottengo \(T = \frac {2 \pi} {\omega}\) oppure \(\omega = \frac{2 \pi}{T}\).
+Quindi \(\omega\) e \(T\) sono inversamente proporzionali.
+Definisco frequenza \(v\) del moto il numero di oscillazioni al secondo:
+\(v = \frac{1}{T} = \frac{\omega}{2 \pi}\).
+
+Il periodo e quindi la frequenza, sono indipendenti dall'ampiezza del moto.
+Una volta fissato il valore della pulsazione abbiamo una classe di moti 
+che differiscono tra loro per i diversi valori dell' ampiezza e della fase iniziale, cioè, come vedremo, per le diverse condizioni iniziali.
+
+La velocità di un punto che si muove con moto armonico si ottiene derivando \(x(t)\):
+\begin{equation}
+  v(t) = \frac{dx}{dt} = \omega A \cos (\omega t + \phi)
+\end{equation}
+Con un ulteriore derivazione si ottine l'accelerazione del punto:
+\begin{equation}
+  a(t) = \frac{dv}{dt} = \frac{d^2 x}{dt^2} = -\omega^2 A \sin (\omega t + \phi) = -\omega^2 x
+\end{equation}
+
+Guardando i grafici delle tre funzioni osserviamo che: 
+la velocità assume il valore massimo nel centro di oscillazione: (assunto come origine 0) dove vale \(\omega A\) e i annulla agli estremi (\(x =A\) e \(x =-A\)) dove si inverte il senso del moto. 
+L'accelerazione si annulla nel centro di oscillazione e assume il valore massimo in modulo (\(\omega^2 A\) agli estremi, dove si inverte la velocità; inoltre essa è sempre proporzionale ed opposta allo spostamento dal centro di oscillazione. 
+
+Le tre funzioni mostrano lo stesso andamento temporale però risultano sfasate una rispetto all'altra.
+La velocità è sfasata di \(\pi / 2\) rispetto allo spostamento (è in quadratura di fase) mentre l'accelerazione è sfasata di \(\pi\) sempre rispetto allo spostamento (è in opposizione di fase).
+
+Le costanti \(A\) e \(\phi\) individuano le condizioni iniziali:
+\begin{equation}
+  x(0) = x_0 = A \sin \phi \ , \
+  v(0) = v_0 = \omega A \cos \phi
+\end{equation}
+invece le formula inverse sono:
+\begin{equation}
+  \tan \phi = \frac{\omega x_0}{v_0} \ , \ 
+  A^2 = x_0^2 + \frac {v_0^2}{\omega^2}
+\end{equation}
+Sostituendo la formula dell'accelerazione del moto armonico nell'equazione di Torricelli posso trovare \(v(x)\):
+\begin{equation}
+  v^2(x) = \phi^2 (A^2 - x^2) 
+\end{equation}
+
+Dalla legge oraria abbiamo ricavato che l' accelerazione è proporzionale allo spostamento, con segno negativo: \(a = - \omega^2 x\). Se invece si trova che in un certo moto l'accelerazione risulta proporzionale allo spostamento con costante di proporzionalità negativa si dimostra che quel moto è armonico semplice. 
+In altre parole, la condizione necessaria e sufficiente perché un moto sia armonico è data dall'equazione.
+\begin{equation}
+  \frac{d^2 x}{dt^2} + \omega^2 x = 0
+\end{equation}
+detta equazione differenziale del moto armonico. Le funzioni seno e coseno, e le loro combinazioni lineari, sono tutte e sole le funzioni che soddisfano alla condizione nel campo reale. 
+
+Le proprietà generali del moto armonico semplice restano eguali se invece della funzione seno utilizziamo la funzione coseno. 
+Le due funzioni differiscono solo per un termine di sfasamento: \(\frac{\pi}{2}\): \(\sin(\omega t + \phi) = \cos(\omega t + \zeta)\) con \(\zeta = \phi - \frac{\pi}{2}\)
+Essi rappresentano lo stesso moto solo che il primo è visto a partire dall'istante $t_0$ e il secondo dall'istante \(t_0 + \frac{T}{4}\).
+
+In questo caso di studio abbiamo visto solo i moti, ma ci possono essere altri fenomeni fisici dove c'è una grandezza \(f\) per cui vale un equazione con la struttura di (7):
+\begin{equation}
+  \frac {d^f} { dz^2} + k^2 f = 0
+\end{equation}
+in cui la soluzione è sempre \(f(z) = A \sin(kz + \phi)\) cioè \(f\) descrive un oscillazione rispetto alla variabile \(z\), il cui periodo dipende da \(k\).
+
 
 \end{document}

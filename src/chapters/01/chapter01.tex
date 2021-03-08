@@ -1,5 +1,6 @@
 \documentclass[class=book, crop=false, oneside, 12pt]{standalone}
 \usepackage{standalone}
+\usepackage{amsmath}
 \usepackage{../../style}
 % \graphicspath{{./assets/images/}}
 
@@ -47,24 +48,28 @@ indipendentemente dalle cause che lo determinano, viene detta
 \emph{cinematica}, mentre il perché del moto viene studiato nella
 \emph{dinamica}.
 
-Il moto di un punto materiale è determinato se è nota la sua posizione
+\paragraph{Il moto}
+Il \emph{moto} di un punto materiale è determinato se è nota la sua posizione
 in funzione del tempo in un determinato sistema di riferimento, ossia ad
 esempio le sue coordinate \(x(t), y(t),z(t)\) in un sistema di
 riferimento cartesiano. Può non essere l'unico modo, infatti ci sono
 altri sistemi di riferimento, ad esempio quelli con coordinate polari.
 
-La traiettoria è il luogo dei punti occupati successivamente dal punto
+\paragraph{La traiettoria}
+La \emph{traiettoria} è il luogo dei punti occupati successivamente dal punto
 in movimento e costituisce una curva continua nello spazio. Lo studio
 delle variazioni di posizione lungo la traiettoria nel tempo porterà a
 definire il concetto di \emph{velocità}, mentre lo studio delle
 variazioni della velocità con il tempo introdurrà la grandezza
 \emph{accelerazione}.
 
+\paragraph{Le grandezze fondamentali}
 Le \emph{grandezze fondamentali} in cinematica sono pertanto lo
 \emph{spazio}, la \emph{velocità}, l'\emph{accelerazione} e il
-\emph{tempo}; quest' ultimo in sostanza rappresenta la variabile
+\emph{tempo}; quest'ultimo, in sostanza, rappresenta la variabile
 indipendente.
 
+\paragraph{La quiete}
 La \emph{quiete} è un particolare tipo di moto in cui le coordinate
 restano costanti e quindi velocità e accelerazione sono nulle. Questo
 stato non è assoluto infatti è sempre relativo ad un sistema di
@@ -76,7 +81,6 @@ riferimento in movimento l'uno rispetto all'altro.
 
 
 \subsection{Moto rettilineo}
-
 Il moto rettilineo si svolge lungo una retta sulla quale vengono fissati
 arbitrariamente un' origine e un verso; il moto è descrivibile tramite
 una sola coordinata \(x(t)\).
@@ -98,10 +102,8 @@ metodi di ottimizzazione analitica.
 (Esempi)
 
 \subsection{Velocità nel moto rettilineo}
-
 Introduciamo ora il concetto di velocità media e velocità istantanea nel
-moto rettilineo. Se al\\
-tempo \(t = t_1\) il punto si trova nella posizione \(x = x_1\) e al
+moto rettilineo. Se al tempo \(t = t_1\) il punto si trova nella posizione \(x = x_1\) e al
 tempo \(t = t_2\) nella posizione \(x = x_2\) ,
 \(\Delta x = x_2 - x_1\) rappresenta lo spazio percorso nell'intervallo
 di tempo \(\Delta t = t_2 - t_1\).
@@ -109,7 +111,9 @@ di tempo \(\Delta t = t_2 - t_1\).
 Possiamo caratterizzare la velocità dello spostamento tramite la
 velocità media.
 
-\(v_m = \frac {\Delta x} {\Delta t} = \frac {x_2 - x_1} {t_2 - t_1}\)
+\begin{equation}
+v_m = \frac {\Delta x} {\Delta t} = \frac {x_2 - x_1} {t_2 - t_1}
+\end{equation}
 
 Questa grandezza fornisce un informazione complessiva ma che ci dà poche
 informazioni su come sta avvenendo il moto.
@@ -175,13 +179,19 @@ Se \(a=0\) la velocità è costante, se \(a>0\) sto accelerando mentre se
 a dirmi il verso del moto, non quello dell'accelerazione.
 
 A partire da \(a(t)\) posso ricavare \(v(t)\) sempre tramite
-integrazione:\\
-\(dv = a(t) dt\)\\
-\(\Delta v = \int_{v_0}^{v}dv = \int_{t_0}^t a(t) dt\)\\
-\(v(t) = v_0 + \int_{t_0}^{t} a(t) dt\)
+integrazione:
+
+\begin{equation}
+  \begin{aligned}
+    dv &= a(t) dt\\
+    \Delta v = \int_{v_0}^{v}dv &= \int_{t_0}^t a(t) dt\\
+    v(t) &= v_0 + \int_{t_0}^{t} a(t) dt
+  \end{aligned}
+\end{equation}
+
 
 Anche qui \(v_0\) rappresenta la velocità iniziale all'istante di tempo
-\(t_0\). Anche qui \(\Delta v\) rappresenta la variazione complessiva
+\(t_0\) e \(\Delta v\) rappresenta la variazione complessiva
 della velocità.
 
 Se l'accelerazione è costante si parla di moto rettilineo uniformemente
@@ -189,12 +199,20 @@ accelerato, dove la dipendenza della velocità dal tempo è lineare:
 \(v(t) = v_0 + a(t-t_0)\) (ovviamente se \(t_0 = 0\) ottengo
 \(v(t) = v_0 + at\)).
 
-Da questa formula posso ricavare \(x(t)\) con:\\
-\(x(t) = x_0 + \int_{t_0}^{t} [v_0 + a(t-t_0)] dt = x_0 + \int_{t_0}^{t}v_0 dt+ \int_{t_0}^t a (t-t_0) dt\)
+Da questa formula posso ricavare \(x(t)\) con:
 
-Ottengo: \(x(t) = x_0 + v_0(t-t_0) + \frac{1}{2} a(t-t_0)^2\)
+\begin{equation}
+  \begin{aligned}
+    x(t) &= x_0 + \int_{t_0}^{t} [v_0 + a(t-t_0)] dt\\
+         &= x_0 + \int_{t_0}^{t}v_0 dt+ \int_{t_0}^t a (t-t_0) dt\\
+         &= x_0 + v_0(t-t_0) + \frac{1}{2} a(t-t_0)^2\\
+  \end{aligned}
+\end{equation}
 
-Con \(t_0  = 0\): \(x(t) = x_0 + v_0 t + \frac {1} {2} a t^2\)
+Da cui poi:
+\begin{equation}
+  x(t) = x_0 + v_0 t + \frac {1} {2} a t^2 \qquad \text{con \(t_0=0\)}
+\end{equation}
 
 In conclusione se ho \(x(t)\) derivando posso ottenere \(v(t)\) e
 \(a(t)\) a condizione che siano note le condizioni iniziali (velocità e

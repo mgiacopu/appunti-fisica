@@ -449,4 +449,41 @@ Le due componenti dell'accelerazione si chiamano accelerazione tangenziale e acc
 In un moto curvilineo vario entrambe le componenti sono diverse da zero; se però il moto curvilineo è uniforme è nulla \(\overrightarrow{a}_T\); se invece il moto è rettilineo vario è nulla \(\overrightarrow{a}_N\) e solo nel moto rettilineo uniforme \(\overrightarrow{a}_N\) = \(\overrightarrow{a}_T\) = \(\overrightarrow{0}\).
 In altre parole con \(a_T \neq 0\) il moto è sempre vario, con \(a_N \neq 0\) è  sempre curvilineo. 
 
+\subsection{Moto circolare}
+
+Si chiama moto circolare un moto piano la cui traiettoria è rappresentata da una circonferenza. Considerando che la velocità varia continuamente direzione l'accelerazione centripeta è sempre diversa da zero.
+Nel moto circolare uniforme la velocità è costante in modulo e l'accelerazione tangente è nulla per cui \(\overrightarrow{a} = \overrightarrow{a}_N\);
+se invece il modulo della velocità cambia nel tempo il moto circolare non è uniforme e \(\overrightarrow{a}_T\) è diversa da zero (quindi c'è anche una forza tangenziale).
+
+Il moto circolare può essere descritto facendo riferimento allo spazio percorso sulla circonferenza \(s(t)\) oppure 
+utilizzando l'angolo \(\theta (t)\) sotteso dall'arco \(s(t)\), con \(\theta(t) = s(t)/R\).
+Se assimiamo come variabile l'angolo ci inseriamo in un sistema di coordinate polari con centro \(0\) in cui il moto avviene \(r(t) = R = costante\) e \(\theta(t)\) variabile.
+
+Siamo naturalmente interessati alle variazioni dell'angolo nel tempo e pertanto definiamo la \emph{velocità angolare} come la derivata dell'angolo rispetto al tempo:
+\begin{equation}
+  \omega = \frac{d \theta}{dt} = \frac{1}{R} \frac {ds} {dt} = \frac{v}{R}
+\end{equation}
+
+Il moto circolare più semplice è quello uniforme (costanza modulo della velocità): \(v\) e \(\omega\) sono costanti e le leggi orarie sono:
+\begin{equation}
+  s(t) = s_0 + vt
+\end{equation}
+\begin{equation}
+  \theta(t) = \theta + \omega t
+\end{equation}
+Il moto circolare uniforme ha accelerazione costante ortogonale alla traiettoria
+\begin{equation}
+  a = a_N = \frac{v^2}{R} = \omega^2 R
+\end{equation}
+
+È un moto periodico con periodo \(T = \frac{2 \pi R}{v} = \frac{2 \pi}{\omega}\), corrispondente al tempo necessario per compiere un giro completo.
+
+I moti proiettati sugli assi cartesiani sono:
+\begin{equation}
+  x = R \cos \theta = R \cos (\omega t + \omega_0) \
+  y = R \sin \theta = R \sin (\omega t + \omega_0)
+\end{equation}
+
+Nel caso del moto circolare non uniforme oltre all'accelerazione centripeta, che è variabile perché la velocità varia anche in modulo, dobbiamo considerare anche l'accelerazione tangenziale \(a_T = \frac{dv}{dt} \).
+
 \end{document}

@@ -394,27 +394,32 @@ Nel piano un punto è espresso in due coordinate. Queste possono fare riferiment
 \(x(t)\) e \(y(t)\) oppure, in termini di coordinate polari nel piano. 
 Le relazioni tra queste due sono:
 \begin{equation}
-  x = r \cos \Theta \ , \ y = r \sin \Theta
+  x = r \cos \theta \ , \ y = r \sin \theta
 \end{equation}
 \begin{equation}
-  r = \sqrt{x^2 + y^2 } \ , \ \tan \Theta = \frac{y}{x}
+  r = \sqrt{x^2 + y^2 } \ , \ \tan \theta = \frac{y}{x}
 \end{equation}
 
-La posizione del punto \(P\) può anche essere individuata per mezzo del \emph{raggio vettore}:
+La posizione del punto \(P\) può anche essere individuata per mezzo del \emph{raggio vettore} (segmento che va dall'origine \(O\) fino al punto \(P\)):
 \begin{equation}
   \overrightarrow{r}(t) = OP = x(t) \overrightarrow{u}_x + y(t) \overrightarrow{u}_y
 \end{equation}
 dove \(\overrightarrow{u}_x\) e \(\overrightarrow{u}_y\) rappresentano i versori degli assi cartesiani che si considerano fissi nel tempo.
 Se è nota la dipendenza dal tempo di \(\overrightarrow{r}\), cioè la funzione \(\overrightarrow{r}(t)\), è individuato il moto del punto \(P\).
 
-La posizione del punto lungo la traiettoria può anche essere data da una coordinata curvilinea \(s\), misurata a partire da un'origine arbitraria. Il valore di \(s\) esprime la lunghezza della traiettoria e varia nel tempo durante il moto: \(\frac{ds}{dt}\) indica la variazione temporale della posizione lungo la traiettoria cioè la velocità istantanea del punto, come definita nel modo rettilineo. 
+La posizione del punto lungo la traiettoria può anche essere data da una coordinata curvilinea \(s\) (direzione tangente punto per punto), misurata a partire da un'origine arbitraria. Il valore di \(s\) esprime la lunghezza della traiettoria e varia nel tempo durante il moto: \(\frac{ds}{dt}\) indica la variazione temporale della posizione lungo la traiettoria cioè la velocità istantanea del punto, come definita nel modo rettilineo. 
 Se diamo la forma della traiettoria e la velocità con cui viene percorsa abbiamo fornito una descrizione completa del moto. 
+
 Consideriamo due posizioni occupate dal punto \(P\) al tempo \(t\) e al tempo \(t + \Delta t\): esse sono individuate dai vettori \(\overrightarrow{r}(t)\) e \(\overrightarrow{r}(t + \Delta t) = \overrightarrow{r}(t) + \Delta \overrightarrow{r}\).
 Si costruisce il rapporto incrementale \(\frac{\overrightarrow{r}(t+\Delta t) - \overrightarrow{r}(t)}{\Delta t} = \frac{\Delta \overrightarrow{r}}{\Delta t}\) e si definisce velocità vettoriale il limite per \(\Delta t \rightarrow 0\):
 \begin{equation}
   \overrightarrow{v} = \frac{d \overrightarrow{r}}{dt}
 \end{equation}
-La velocità vettoriale è la derivata del raggio vettore rispetto al tempo. Al limite l'incremento del raggio vettore risulta in direzione tangente alla traiettoria nel punto \(P\) e in modulo e uguale allo spostamento infinitesimo \(ds\) lungo la traiettoria, per cui possiamo scrivere \(d \overrightarrow{r} = ds \overrightarrow{u}_T\) dove \(\overrightarrow{u}_t\) è il versore della tangente alla curva, variabile nel tempo man mano che iL punto avanza lungo la traiettoria.
+La velocità vettoriale è la derivata del raggio vettore rispetto al tempo. 
+
+Al limite l'incremento del raggio vettore risulta in direzione tangente alla traiettoria nel punto \(P\) e in modulo e uguale allo spostamento infinitesimo \(ds\) lungo la traiettoria, 
+per cui possiamo scrivere \(d \overrightarrow{r} = ds \overrightarrow{u}_T\) dove \(\overrightarrow{u}_t\) è il versore della tangente alla curva, variabile nel tempo man mano che il punto avanza lungo la traiettoria. 
+Questo non vale se non si è all'infinitesimo, lo si vede chiaramente con spostamenti \(\Delta s\) più grandi.
 
 In sostanza pensiamo il moto come una successione di spostamenti rettilinei infinitesimi con direzione variabile: la direzione istantanea del moto coincide con quella della tangente alla traiettoria nel punto occupato all'istante considerato.
 \begin{equation}

@@ -486,4 +486,49 @@ I moti proiettati sugli assi cartesiani sono:
 
 Nel caso del moto circolare non uniforme oltre all'accelerazione centripeta, che è variabile perché la velocità varia anche in modulo, dobbiamo considerare anche l'accelerazione tangenziale \(a_T = \frac{dv}{dt} \).
 
+\subsection{Moto parabolico dei corpi}
+
+Il moto (nel vuoto) di un punto \(P\) lanciato dall'origine \(0\) con velocità iniziale \(v_0\) formante un angolo \(\alpha\) con l'asse delle ascisse (asse orizzontale).
+In particolare vogliamo calcolare la traiettoria, la massima altezza raggiunta e la posizione \(G\) in cui il punto ricade sull'asse x ovvero la gittata OG.
+
+Il moto è caratterizzato da un accelerazione costante \(a = g = -g u_y\) e le condizioni iniziali sono \(r = O\) e \(v = v_0\) al tempo \(t = O\), istante di lancio. 
+Le velocità dei moti proiettati sugli assi sono \(v_x = v_0 \cos \alpha\) (costante) e \(v_y = v_0 \sin \alpha - g t\). 
+Quindi le leggi orarie dei moti proiettati sono
+\begin{equation}
+  x = v_0 \cos \alpha t \ , \ y = v_0 + \sin \alpha t - \frac{1}{2} g t^2
+\end{equation}
+sul l' asse \(x\) il moto è uniforme, sull'asse \(y\) uniformemente accelerato.
+
+La traiettoria si trova esprimendo \(x(t)\) in funzione di \(x\) rispetto al tempo e sostituendo in \(y(t)\).
+\begin{equation}
+  y(x) = x \tan \alpha - \frac{g}{2 v_0^2 \cos^2 \alpha} x^2
+\end{equation}
+che è l'equazione di una parabola.
+La direzione del moto, in funzione del tempo o della coordinata \(x\), può essere caratterizzata dall'angolo \(\phi\) che il vettore velocità forma con l'asse orizzontale: 
+\begin{equation}
+  \tan \phi = \frac{v_y}{v_x} = \tan \alpha - \frac{g}{v_0 \cos \alpha} t = \tan \alpha - \frac{g}{v_0^2 \cos^2 \alpha} x
+\end{equation}
+
+Per calcolare la \emph{gittata}, imponiamo \(y(x) = 0\) e otteniamo due soluzioni: \(x=0\) e
+\begin{equation}
+  x_{G}=\frac{2 v_{0}^{2} \cos ^{2} \alpha \tan \alpha}{g}=\frac{2 v_{0}^{2} \cos \alpha \sin \alpha}{g}=2 x_{M}
+\end{equation}
+con \(x_M = v_0^2 \cos \alpha \sin \alpha / g\) coordinata dal punto di metto del segmento OG e quindi per la simmetria della parabola, ascissa del punto di massima altezza. 
+L' altezza massima raggiunta è pertanto
+\begin{equation}
+  y(x_M) = y_M = \frac{v_0^2 \sin^2 \alpha}{2g}
+\end{equation} 
+
+Il tempo totale di volo \(t_G\) è pari al tempo impiegato a percorrere la traiettoria con velocità costante \(v_x = v_0 \cos \alpha : t_G = 2 x_M /v_0 \cos \alpha = 2v_0 \sin \alpha / g = 2 t_M\); 
+evidentemente \(t_G\) coincide con il tempo necessario per salire all'altezza \(y_M\) e ritornare al suolo. 
+
+Notiamo infine che nella posizione \(G\) la velocità è la stessa in modulo che alla partenza, ma è posta simmetricamente rispetto all'asse \(x\):
+\begin{equation}
+  v_x(t_G) = v_0 \cos \alpha \ , \ v_y (t_G) = -v_0 \sin \alpha \ , \ \tan \phi = - \tan \alpha
+\end{equation}
+
+Le caratteristiche geometriche del moto parabolico di un corpo vicino alla superficie terrestre si comprendono chiaramente nel sistema cartesiano adottato che è in definitiva il più naturale in questo problema in cui c'è una direzione di particolare importanza, 
+quella di \(g\), a 90° con una direzione di uso pratico molto comune, quella orizzontale. 
+Invece, per esempio, nella trattazione del moto circolare è certamente più semplice servirsi di un sistema di coordinate polari con centro nel centro di simmetria del sistema, mentre non hanno particolare significato gli assi \(x\) e \(y\).
+
 \end{document}

@@ -8,9 +8,9 @@
 % arara: latexmk: { clean: partial }
 \begin{document}
 
-\section{Capitolo 1 - Cinematica del punto}
+\chapter{Cinematica del punto}
 
-\subsection{Introduzione}
+\section{Introduzione}
 
 La meccanica riguarda lo studio del moto di un corpo: essa spiega la
 relazione che esiste tra le cause che generano il moto e le
@@ -80,7 +80,7 @@ tra le descrizioni di uno stesso moto visto da due sistemi di
 riferimento in movimento l'uno rispetto all'altro.
 
 
-\subsection{Moto rettilineo}
+\section{Moto rettilineo}
 Il moto rettilineo si svolge lungo una retta sulla quale vengono fissati
 arbitrariamente un' origine e un verso; il moto è descrivibile tramite
 una sola coordinata \(x(t)\).
@@ -101,7 +101,7 @@ metodi di ottimizzazione analitica.
 
 (Esempi)
 
-\subsection{Velocità nel moto rettilineo}
+\section{Velocità nel moto rettilineo}
 Introduciamo ora il concetto di velocità media e velocità istantanea nel
 moto rettilineo. Se al tempo \(t = t_1\) il punto si trova nella posizione \(x = x_1\) e al
 tempo \(t = t_2\) nella posizione \(x = x_2\) ,
@@ -166,7 +166,7 @@ Nel caso particolare di \(v = costante\) ottengo che:
 \(x(t) = x_0 + vt\). Infatti, nel moto rettilineo uniforme, lo spazio è
 una funzione lineare del tempo.
 
-\subsection{Accelerazione nel moto rettilineo}
+\section{Accelerazione nel moto rettilineo}
 
 Se la velocità cambia in un intervallo di tempo definiamo la grandezza
 \emph{accelerazione media} come \(a_m = \Delta v / \Delta t\).
@@ -235,8 +235,7 @@ Nel moto uniformemente accelerato (\(a\) = costante) si ha:
 \(v^2 = v_0^2 +2a (x-x_0)\).
 
 
-\subsection{\texorpdfstring{Moto verticale di un corpo
-}{Moto verticale di un corpo }}
+\section{Moto verticale di un corpo }
 
 Trascurando l'attrito con l'aria (dato che utilizzando i punti materiali
 trascuriamo le dimensioni), un corpo lasciato libero di cadere in
@@ -250,7 +249,7 @@ fenomeno: punto materiale lasciato cadere, punto materiale lanciato
 verso il suolo e punto materiale lanciato verso l'alto, li vediamo
 separatamente.
 
-\subsubsection{Punto lasciato cadere}
+\subsection{Punto lasciato cadere}
 
 Se lascio cadere un corpo (in un sistema di riferimento con asse \(x\)
 che punta in alto), esso sarà sottoposto ad una accelerazione di
@@ -269,7 +268,7 @@ Dato che la velocità continua ad aumentare potrebbe interessarci
 di Torricelli ottengo che il punto arriva al suolo con velocità
 \(v_c = \sqrt {2gh}\)
 
-\subsubsection{Punto lanciato verso il basso}
+\subsection{Punto lanciato verso il basso}
 
 A differenza del caso precedente, qui ho una velocità iniziale (\(v_0\))
 non nulla che va considerata. Quindi \(v(t) = -v_0 -gt\) e la legge
@@ -282,7 +281,7 @@ ottengo \(t_c = \frac {-v_0 + \sqrt {v_0^2 + 2g h}} {g}\).
 La velocità al suolo (sempre dall'equazione di Torricelli)
 \(v_c = \sqrt {v_0^2 + 2gh}\).
 
-\subsubsection{Punto lanciato verso l'alto}
+\subsection{Punto lanciato verso l'alto}
 
 Il punto parte dal suolo \(x_0 = 0\) in \(t_0 = 0\) con velocità
 \(v_ 0 =v_2 > 0\). Mentre il punto sale la sua velocità inizierà a
@@ -307,7 +306,7 @@ dalla legge oraria e \(v(x)\) dall'equazione di Torricelli:
 Il doppio segno sta ad indicare che il punto passa due volte per la
 stessa posizione (all'inizio e alla fine del moto).
 
-\subsection{Moto Armonico}
+\section{Moto Armonico}
 \paragraph{}
 Il moto armonico semplice lungo un asse rettilineo è un moto vario la cui legge oraria è definita dalla relazione:
 \begin{equation}
@@ -382,7 +381,7 @@ In questo caso di studio abbiamo visto solo i moti, ma ci possono essere altri f
 \end{equation}
 in cui la soluzione è sempre \(f(z) = A \sin(kz + \phi)\) cioè \(f\) descrive un oscillazione rispetto alla variabile \(z\), il cui periodo dipende da \(k\).
 
-\subsection{Moto nel piano. Posizione e Velocità}
+\section{Moto nel piano. Posizione e Velocità}
 
 Nel caso che il moto sia vincolato a svolgersi su di un piano la traiettoria del punto P,
 è in generale  una linea curva. Dobbiamo quindi analizzare la direzione e verso del moto oltre al valore numerico dello spostamento.
@@ -433,7 +432,7 @@ un punto potrebbe percorrere un'orbita chiusa ritornando al punto di partenza e 
 La traiettoria del moto e la definizione di velocità \(v \overrightarrow{u}_T\) non dipendono dal sistema di rifermento (invarianza delle relazioni vettoriali rispetto alla scelta del sistema di riferimento).
 Tuttavia un vettore che si esprime esplicitamente tramite le sue componenti cambia perciò queste dipendono dal sistema di riferimento.
 
-\subsection{Accelerazione nel moto piano}
+\section{Accelerazione nel moto piano}
 
 L'accelerazione nel moto piano deve esprimere le variazioni della velocità sia come \emph{modulo} che \emph{direzione} e quindi ci aspettiamo che abbia due componenti, 
 una legata alla variazione del modulo della velocità e la seconda al cambiamento di direzione del moto. 
@@ -454,7 +453,7 @@ Le due componenti dell'accelerazione si chiamano accelerazione tangenziale e acc
 In un moto curvilineo vario entrambe le componenti sono diverse da zero; se però il moto curvilineo è uniforme è nulla \(\overrightarrow{a}_T\); se invece il moto è rettilineo vario è nulla \(\overrightarrow{a}_N\) e solo nel moto rettilineo uniforme \(\overrightarrow{a}_N\) = \(\overrightarrow{a}_T\) = \(\overrightarrow{0}\).
 In altre parole con \(a_T \neq 0\) il moto è sempre vario, con \(a_N \neq 0\) è  sempre curvilineo. 
 
-\subsection{Moto circolare}
+\section{Moto circolare}
 
 Si chiama moto circolare un moto piano la cui traiettoria è rappresentata da una circonferenza. Considerando che la velocità varia continuamente direzione l'accelerazione centripeta è sempre diversa da zero.
 Nel moto circolare uniforme la velocità è costante in modulo e l'accelerazione tangente è nulla per cui \(\overrightarrow{a} = \overrightarrow{a}_N\);
@@ -491,7 +490,7 @@ I moti proiettati sugli assi cartesiani sono:
 
 Nel caso del moto circolare non uniforme oltre all'accelerazione centripeta, che è variabile perché la velocità varia anche in modulo, dobbiamo considerare anche l'accelerazione tangenziale \(a_T = \frac{dv}{dt} \).
 
-\subsection{Moto parabolico dei corpi}
+\section{Moto parabolico dei corpi}
 
 Il moto (nel vuoto) di un punto \(P\) lanciato dall'origine \(0\) con velocità iniziale \(v_0\) formante un angolo \(\alpha\) con l'asse delle ascisse (asse orizzontale).
 In particolare vogliamo calcolare la traiettoria, la massima altezza raggiunta e la posizione \(G\) in cui il punto ricade sull'asse x ovvero la gittata OG.
@@ -536,7 +535,7 @@ Le caratteristiche geometriche del moto parabolico di un corpo vicino alla super
 quella di \(g\), a 90° con una direzione di uso pratico molto comune, quella orizzontale. 
 Invece, per esempio, nella trattazione del moto circolare è certamente più semplice servirsi di un sistema di coordinate polari con centro nel centro di simmetria del sistema, mentre non hanno particolare significato gli assi \(x\) e \(y\).
 
-\subsection{Riepilogo}
+\section{Riepilogo}
 
 \begin{itemize}
   \item La descrizione del moto consiste nel determinare come varia la posizione del punto in funzione del tempo; se conosciamo la posizione ad un certo istante pos iamo sapere come si sviluppa il moto se abbiamo la direzione istantanea del moto e la rapidità con cui avviene lo spostamento: ciò porta al concetto di velocità e possiamo concepire il moto come una successione di spostamenti infinitesimi \(d \overrightarrow{r}= \overrightarrow{v} dt\).

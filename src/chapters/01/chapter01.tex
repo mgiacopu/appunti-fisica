@@ -428,4 +428,25 @@ un punto potrebbe percorrere un'orbita chiusa ritornando al punto di partenza e 
 La traiettoria del moto e la definizione di velocità \(v \overrightarrow{u}_T\) non dipendono dal sistema di rifermento (invarianza delle relazioni vettoriali rispetto alla scelta del sistema di riferimento).
 Tuttavia un vettore che si esprime esplicitamente tramite le sue componenti cambia perciò queste dipendono dal sistema di riferimento.
 
+\subsection{Accelerazione nel moto piano}
+
+L'accelerazione nel moto piano deve esprimere le variazioni della velocità sia come \emph{modulo} che \emph{direzione} e quindi ci aspettiamo che abbia due componenti, 
+una legata alla variazione del modulo della velocità e la seconda al cambiamento di direzione del moto. 
+Nel moto rettilineo, dove la velocità mantiene sempre la stessa direzione, l'accelerazione è espressa da un solo termine. 
+
+Anche nel moto piano l'accelerazione si definisce come derivata della velocità rispetto al tempo (ed è una grandezza vettoriale): 
+\begin{equation}
+  \overrightarrow{a} = \frac{d \overrightarrow{v}}{dt} = \frac{d^2 \overrightarrow{r}}{dt^2}
+\end{equation}
+Derivando le componenti del vettore:
+\begin{equation}
+  \overrightarrow{a}=\frac{d}{d t}\left(v \overrightarrow{u}_{\mathrm{T}}\right)=\frac{d v}{d t} \overrightarrow{u}_{\mathrm{T}}+v \frac{d \overrightarrow{u}_{\mathrm{T}}}{d t}=\frac{d v}{d t} \overrightarrow{u}_{\mathrm{T}}+v \frac{d \phi}{d t} \overrightarrow{u}_{\mathrm{N}}
+\end{equation}
+La prima componente, parallela alla velocità, esprime la variazione del modulo della velocità; il secondo termine, dipendente dalla variazione di direzione della velocità, è ortogonale a questa:
+\(\overrightarrow{u}_N\) è un vettore ortogonale a \(\overrightarrow{u}_T\) diretto verso la concavità della traiettoria, e \(d \phi/dt \) dice quanto rapidamente cambia la direzione di \(\overrightarrow{u}_T\)  e quindi di \(\overrightarrow{u}_N\). 
+
+Le due componenti dell'accelerazione si chiamano accelerazione tangenziale e accelerazione normale o centripeta. 
+In un moto curvilineo vario entrambe le componenti sono diverse da zero; se però il moto curvilineo è uniforme è nulla \(\overrightarrow{a}_T\); se invece il moto è rettilineo vario è nulla \(\overrightarrow{a}_N\) e solo nel moto rettilineo uniforme \(\overrightarrow{a}_N\) = \(\overrightarrow{a}_T\) = \(\overrightarrow{0}\).
+In altre parole con \(a_T \neq 0\) il moto è sempre vario, con \(a_N \neq 0\) è  sempre curvilineo. 
+
 \end{document}

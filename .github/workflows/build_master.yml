@@ -33,5 +33,6 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: New release available!
           document: src/dispensa-fisica.pdf
         if: ${{ success() }}

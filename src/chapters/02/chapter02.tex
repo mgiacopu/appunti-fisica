@@ -42,4 +42,46 @@ da questa possiamo ricavare tutte le proprietà al moto di un punto materiale. V
 Le leggi di Newton sono valide solo se il moto è studiato in una particolare classe di sistemi di riferimento, i cosiddetti sistemi di riferimento inerziali; altrimenti compaiono nelle formule termini correttivi.
 In breve un sistema di riferimento inerziale è un sistema che si muove in moto rettilineo uniforme rispetto a un altro sistema, ossia con velocità costante rispetto ad esso.
 
+\section{Quantità di moto}
+Si definisce \emph{quantità di moto} di un punto materiale il vettore:
+\begin{equation}
+    \overrightarrow{p} = m \overrightarrow{v}
+\end{equation}
+e ci dice quanta massa è in movimento e di quanto si muove.
+Se la massa è costante, l'equazione della seconda legge di Newton si può riscrivere come:
+\begin{equation}
+    \overrightarrow{F} = \frac{d \overrightarrow{p}}{dt}
+\end{equation}
+
+Questa relazione è la forma più generale della legge di Newton, utilizzabile anche se la massa non è costante. 
+La massa infatti può cambiare in due casi:
+\begin{itemize}
+    \item modifica della massa di un sistema macroscopico( approssimabile a punto materiale) come avviene per esempio in un veicolo a motore che brucia carburante o in una scala mobile; 
+    \item dipendenza della massa dalla velocità: secondo la teoria della relatività ristretta la massa varia al variare della sua velocità (la variazione di massa è rilevante solo a velocità prossime a \(c\))
+\end{itemize}
+
+È utile, quando si parla di quantità di moto, fare riferimento anche alla sua relazione rispetto alla forza.
+Dall' equazione precedente possiamo ottenere \(\overrightarrow{F} d t = d \overrightarrow{p}\): vediamo che l'azione di una forza durante un tempo \(d t\) (nel quale la forza agisce) provoca una variazione infinitesima della quantità di moto del punto. 
+In termini finiti si ha:
+\begin{equation}
+    \overrightarrow{I} = \int_0^t \overrightarrow{F} dt = \int_{p_0}^p d \overrightarrow{p} = \overrightarrow{p}-\overrightarrow{p_0} = \Delta \overrightarrow{p}
+\end{equation} che definisce il "Teorema dell'impulso".
+
+Il termine vettoriale \(I\), integrale della forza nel tempo, è chiamato impulso della forza. 
+La formula precedente esprime che l'impulso di una forza applicata ad un punto materiale provoca la variazione della sua quantità di moto: con \(m\) costante si ha ovviamente:
+\begin{equation}
+    \overrightarrow{I} = m (\overrightarrow{v} - \overrightarrow{v_0}) = m \Delta v
+\end{equation}
+
+La variazione della quantità di moto è tanto maggiore quanto più elevato è il valore dell'impulso ovvero, per una determinata forza costante, quanto maggiore è il tempo in cui agisce la forza.
+Il teorema dell'impulso è utilizzabile per calcolare effettivamente \(\Delta \overrightarrow{p}\) solo se si conosce la funzione \(F (t)\), in questo caso basta calcolare l'integrale.
+Se \(F = costante\), si ottiene subito
+\begin{equation}
+    \overrightarrow{F} t = m (\overrightarrow{v} - \overrightarrow{v_0})
+\end{equation}
+che è come misurare l'area di un rettangolo.
+Invece se misuriamo \(\Delta \overrightarrow{p}\) con il teorema della media intergrale possiamo calcolare \(\overrightarrow{F_m}\) della forza agente nell'intervallo di tempo \(t\).
+
+Quando \(\overrightarrow{F}\) è nulla, \(\Delta \overrightarrow{p} = 0\) e pertanto \(\overrightarrow{p} = costante\) : in assenza di forza applicata la quantità di moto di un punto materiale rimane costante o, la quantità di moto si conserva (principio di inerzia). 
+
 \end{document}

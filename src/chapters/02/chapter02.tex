@@ -180,4 +180,60 @@ Questo coefficente di attrito radente dipende dalle caratteristiche chimiche e d
 La forza di attrito radente, che è una reazione vincolare, non dipende solo dalle due superifici a contatto ma anche da quanto è premuto il corpo contro il piano (qui entra in gioco la componente \(N\)).
 Poi è importante notare che le forze di attrito sono sempre presenti per quanto si provi a ridurle.
 
+\section{Forza elastica}
+
+Si definisce \emph{forza elastica} (unidimensionale) una forza di direzione costante, con verso sempre rivolto verso il punto \(O\) chiamato centro.
+
+La legge di Hooke dice che:
+\begin{equation}
+    \overrightarrow{\mathbf{F_{el}}} = -k x \hat{x} \left[N\right]
+\end{equation}
+dove \(k\) è una costante positiva, detta \emph{costante elastica} e \(\hat{x}\) il versore della differenza di lunghezza rispetto \(O\).
+
+L'accelerazione vale:
+\begin{equation}
+    a = \frac{F}{m} = -\frac{k}{m}x = -\omega^2 x \left[m/s^{-2}\right]
+\end{equation}
+identifico quindi un moto armonico semplice con pulsazione \(\omega = \sqrt{\frac{k}{m}} \left[rad/s\right]\) e periodo \(T = \frac{2 \pi}{\omega} = 2 \pi \sqrt{\frac{m}{k}} \left[s\right]\).
+
+La forza elastica viene applicata tramite una molla, che ha una lunghezza a riposo \(l_0\) che varia se sottoposta a compressione o estensione. 
+In questi casi la molla produce una forza (elastica) che cerca di riportarla a riposo, il verso della forza è sempre di verso opposto all'elongazione. 
+Il modulo di questa forza \emph{di richiamo} è proporzionale alla deformazione fino a che non si supera il limite di elasticità della molla.
+Se voglio mantenere la molla nella posizione desiderata devo applicare una forza uguale e opposta a quella della molla.
+
+Se attacco una massa alla molla e la lascio andare avrò che la massa si muove con moto armonico per effetto della forza elastica su di esso.
+Dalla definizione di forza e dalla legge di Hooke ottengo:
+\begin{equation*}
+    F = -kx = m a = \frac{d^2 x}{dt^2}
+\end{equation*}
+Quindi vale:
+\begin{equation}
+    m \frac{d^2 x}{dt^2} + k x = 0  
+\end{equation}
+che viene detta equazione differenziale dell'oscillatore armonico semplice. 
+
+Risolvendo l'equazione differenziale ottengo la legge oraria che è:
+\begin{equation}
+    x(t) = A \cos (\omega t + \phi)
+\end{equation}
+Per verificare la soluzione posso sostituire \(\frac{d^2x}{dt^2}\) a \(x\) e ottengo che l'equazione è valida se \(\omega^2 = \frac{k}{m} \left[rad/s\right]\).
+Quindi la pulsazione di questo moto armonico è:
+\begin{equation}
+    \omega = \sqrt{\frac{k}{m}}
+\end{equation}
+
+Derivando ottengo le funzioni di velocità ed accelerazione:
+\begin{equation*}
+    v = -A \omega sin (\omega t + \phi)
+\end{equation*}
+\begin{equation*}
+    a = - A \omega^2 cos (\omega t + \phi)
+\end{equation*}
+equazioni medesime al quelle del moto armonico affrontato precedentemente.
+
+Dall'equazione differenziale posso ricavarmi anche il periodo che risulta essere:
+\begin{equation*}
+    T = \frac{2 \pi}{\omega} \left[s\right]
+\end{equation*}
+
 \end{document}

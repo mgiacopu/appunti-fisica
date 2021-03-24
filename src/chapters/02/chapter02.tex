@@ -236,4 +236,32 @@ Dall'equazione differenziale posso ricavarmi anche il periodo che risulta essere
     T = \frac{2 \pi}{\omega} \left[s\right]
 \end{equation*}
 
+\section{Piano inclinato}
+
+Un piano inclinato ha due caratteristiche fondamentali, un angolo \(\alpha\) che mi indica l'ampiezza del piano e \(\mu_s, \mu_d\) coefficenti di attrito (se questo non viene trascurato).
+Quando analizziamo un piano inclinato il nostro sistema di riferimento è cartesiano con l'asse \(x\) parallelo al piano inclinato e l'asse \(y\) ortogonale a quest'ultimo.
+Se metto un punto materiale di massa \(m\) su un piano inclinato grazie a questo sistema di riferimento posso scomporre la sua forza peso \(F_p\) nelle componenti \(F_{px}\) e \(F_{py}\).
+
+Nel caso in cui venga trascurato l'attrito ho che nell'asse perpendicolare \(\overrightarrow{\mathbf{F_{py}}} = \overrightarrow{\mathbf{N}}\), 
+mentre nell'asse parallelo \(\overrightarrow{\mathbf{F_{px}}} = m \overrightarrow{\mathbf{a}}\). 
+Infatti il corpo si muove lungo il piano a meno di forze esterne che ne bilancino il moto.
+
+Nel caso in cui ci sia attrito nell'asse \(y\) la situazione rimane analoga, nell'asse \(x\) invece l'attrito radente potrebbe bilanciare \(\overrightarrow{\mathbf{F_{px}}}\).
+Il corpo non inzia il moto fino a che:
+\begin{equation*}
+    F_{px} = m g \sin \alpha \leq \mu_s N = \mu_s m g \cos \alpha = \mu_s N
+\end{equation*}
+quindi la condizione per l'equilibrio statico è:
+\begin{equation}
+    \tan \alpha \leq \mu_s.
+\end{equation}
+
+Quando il corpo è in movimento, bisogna fare rifermento alla formula che utilizza l'attrito radente dinamico \(F_{px} = m g \sin \alpha < \mu_d m g \cos \alpha = \mu_d N\).
+
+Se il corpo è in movimento con velocità iniziale \(v_0\):
+\begin{itemize}
+    \item si ferma se \(\tan \alpha < \mu_d\).
+    \item prosegue con velocità \(v_0\) se \(\tan \alpha  = \mu_d\).
+    \item prosegue in moto uniformemente accelerato se \(\tan \alpha > \mu_d\).
+\end{itemize}
 \end{document}

@@ -281,4 +281,63 @@ Se si tratta di moto rettilineo ciò è possibile solo se la risultante delle fo
 Se invece il moto è curvilineo basta che sia nulla \(\overrightarrow{F_T}\) come deve essere se vogliamo che la velocità sia costante in modulo, ovvero che la risultante delle forze agenti sia puramente centripeta.
 Qualora \(\overrightarrow{F_N}\) sia anche costante in modulo il moto è circolare uniforme. 
 
+\section{Pendolo semplice}
+
+Il pendolo semplice è costituito da un punto materiale appeso tramite un filo inestensibile e di massa trascurabile. 
+La posizione di equilibrio statico è quella verticale, con il punto fermo ed il filo teso; la forza esercitata dal filo (tensione del filo) vale in modulo \(T_F = mg\).
+
+Se spostiamo il punto dalla verticale esso inizia ad oscillare attorno a questa, lungo un arco di circonferenza di raggio \(L\).
+Le forze agenti sul punto P sono il peso \( m g\) e la tensione del filo \(T_F\) per cui il moto è regolato da \(m \overrightarrow{g} + \overrightarrow{T_F} = m \overrightarrow{a}\).
+Considerando le componenti lungo la traiettoria e ortogonali a quest'ultima:
+\begin{equation*}
+    R_T = -mg \sin \theta = m a_T \ , \ R_N = T_F - mg \cos \theta = m a_N .
+\end{equation*}
+Il segno negativo della componente lungo la traiettoria è dovuto al fatto che  la forza ha segno opposto rispetto a quello della coordinata.
+\(R_T\) è una forza di richiamo che tende a riportare il punto sulla verticale, anche se non è di direzione costante come nel caso delle forze elastiche.\newline
+Ho quindi che \(a_T = L \frac {d^2 \theta} {dt^2}\) e \(a_N = \frac {v^2}{L}\), otteniamo:
+\begin{equation*}
+    \frac{d^{2} \theta}{d t^{2}}=-\frac{g}{L} \sin \theta \quad, \quad m \frac{v^{2}}{L}=T_{F}-m g \cos \theta
+\end{equation*}
+La prima è l'equazione differenziale del moto del pendolo, la sua soluzione è analiticamente complessa.
+So però che per piccoli valori di \(\theta\):
+\begin{equation*}
+    \sin \theta = \theta - \frac {\theta^3} {3!} + ...
+\end{equation*}
+Quindi per piccole oscillazioni l'equazione differenziale diventa
+\begin{equation*}
+    \frac{d^2 \theta}{dt^2} + \frac{g}{L} \theta = 0
+\end{equation*}
+che posto \(\omega^2 = g/L\).\newline
+La legge oraria del moto è:
+\begin{equation}
+    \theta = \theta_0 \sin (\omega t + \phi) ; 
+\end{equation}
+l'ampiezza \(\theta_0\) dell'oscillazione e la fase iniziale \(\phi\) dipendono dalle condizioni iniziali del moto.\newline
+Il periodo \(T\) è dato da:
+\begin{equation}
+    T = \frac{2 \pi}{ \omega} = 2 \pi \sqrt{\frac{L}{g}}
+\end{equation}
+ed è indipendente dall'ampiezza.\newline
+La legge oraria dello spostamento lungo l'arco di circonferenza è dato da
+\begin{equation*}
+    s = L \theta = L \theta_0 \sin (\omega t + \phi).
+\end{equation*}
+La velocità angolare e lineare diventano:
+\begin{equation}
+    \omega (t) = \frac{d \omega}{dt} = \omega \theta_0 \cos (\omega t + \phi)
+\end{equation}
+\begin{equation}
+    v = \frac{d s}{dt} = L \frac{d \theta}{ dt} = L \omega \theta_0 \cos (\omega t +\phi).
+\end{equation}
+La velocità è massima quando il punto passa per la verticale \((\theta = 0)\) e nulla agli estremi delle oscillazioni \((\theta= \theta_0)\) dove il verso del molo si inverte.\newline
+Quando l'ampiezza delle oscillazioni non è piccola il moto è ancora periodico, ma non armonico, e il periodo \(T'\) dipende dall'ampiezza.\newline
+La tensione del filo che sostiene il punto è:
+\begin{equation}
+    T_F = m [ g \cos \theta(t) + \frac{v^2(t)}{L} ]
+\end{equation}
+La tensione è massima nella posizione verticale, dove sia \(cos() \theta (t)\) che \(v(t)\) assumono i valori massimi, ed è minima ne i punti di inversione (indipendentemente dall'ampiezza). 
+
+È importante fare la differenza tra il pendolo semplice che abbiamo analizzato ora e il pendolo conico.
+Il moto del pendolo conico si svolge in un piano orizzontale ed è circolare uniforme; le forze sono ortogonali alla traiettoria e costanti ed è necessario comunicare al punto una velocità iniziale appropriata, che poi resta costante in modulo. 
+Il moto del pendolo semplice si svolge in un piano verticale e la risultante delle forze ha sia componente tangente che normale alla traiettoria, entrambe non costanti; il moto può avvenire anche con velocità iniziale nulla, purché sia \(\theta \neq 0\), ed è armonico semplice lungo un arco di circonferenza.
 \end{document}

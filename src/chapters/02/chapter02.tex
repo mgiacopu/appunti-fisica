@@ -355,4 +355,55 @@ Non è necessario che il filo sia completamente rettilineo, esso può essere par
 Nel risolvere gli esercizi sulla tensione dei fili è bene considerare un corpo alla volta, considerare le eventuali forze a cui è soggetto e metterle in ugualianza con la tensione \(T\).
 Per trovare l'accelerazione del sistema di punti materiali legati dai fili tesi bisogna usare la legge di Newton ed e mettere a sistema nel caso ci siano più corpi (e quindi più vincoli).
 
+\section{Lavoro, Potenza, Energia Cinetica}
+
+\subsection{Lavoro}
+
+Dato un punto materiale che si muove lungo una traiettoria curvilinea sollo l'azione di una forza \(\overrightarrow{F}\), si definisce lavoro della forza \(F\), compiuto durante lo spostamento del punto dalla posizione \(A\) a \(B\), la quantità scalare
+\begin{equation}
+    W = \int_A^B \overrightarrow{F} \cdot d \overrightarrow{s} = \int_A^B F \cos \theta ds = \int_A^B F_T ds . 
+\end{equation} 
+Il lavoro è l'integrale di linea della forza, cioè è dato dalla somma di infiniti contributi infinitesimi \(d W = F \cdot d s = F_T d s\).
+Si osservi che in generale lungo la traiettoria sia \(\overrightarrow{F}\) che \(\theta\) sono variabili.
+
+Una forza ortogonale alla traiettoria non compie lavoro perché \(\theta = \pi / 2 \). Il lavoro è positivo se \(0 \leq \theta < \pi / 2\) e in tale caso si parla di \emph{lavoro motore}. 
+Il lavoro risulta negativo, \emph{lavoro resistente}, se \(\pi / 2 < \theta \leq \pi \). Lavoro resistente è compiuto ad esempio dalle forze di attrito, il cui verso è opposto allo spostamento, \(\theta = \pi\). 
+
+Se sul punto P agiscono più forze per ciascuna posso calcolare il corrispondente lavoro e quindi il valoro complessivo risulta essere:
+\begin{equation}
+    W = \int_A^B \overrightarrow{F} \cdot d \overrightarrow{s} = \int_A^B (\overrightarrow{F_1} + ... + \overrightarrow{F_n}) \cdot d \overrightarrow{s} = \int_A^B \overrightarrow{F_1} \cdot d \overrightarrow{s} + ... + \int_A^B \overrightarrow{F_n} \cdot d \overrightarrow{s} = W_1 + ... W_n.
+\end{equation}
+quindi il lavoro è pari alla somma dei lavori delle singole forze agenti, ciascuno dei quali può essere positivo, negativo o nullo.
+
+Il lavoro totale è nullo, \(W = 0\) quando non agisce nessuna forza oppure agiscono forze la cui risultante è nulla o è sempre ortogonale alla traiettoria (equilibrio dinamico).
+
+\subsection{Potenza}
+
+La potenza corrisponde al \emph{lavoro per unità di tempo}:
+\begin{equation}
+    P = \frac{dW}{dt} = \overrightarrow{F} \cdot \frac{d \overrightarrow{r}}{dt} = \overrightarrow{F} \cdot \overrightarrow{v} = F_T v .
+\end{equation}
+Questa è la potenza istantanea, in generale variabile durante il moto, e caratterizza la rapidità di erogazione del lavoro. 
+La potenza media è il rapporto \(W/t\), cioè il lavoro totale diviso per il tempo durante il lavoro è stato svolto.
+Questa grandezza è utile a quantificare le prestanzioni di un dispositivo o macchina che fornisce lavoro. Infatti se confronto due macchine posso sapere quale mi eroga la stessa quantitià di lavoro nel minor tempo tramite la potenza.
+
+\subsection{Energia cinetica}
+
+Ricordando la definizione di lavoro infinitesimo ad uno spostamento infinitesimo.
+\begin{equation*}
+    d W=F_T d s=m a_T d s=m \frac{d v}{d t} d s=m \frac{d s}{d t} d v=m v d v
+\end{equation*}
+Se considero un percorso dalla posizione A a B abbiamo:
+\begin{equation}
+    W=\int_{A}^{f} m v d v=\frac{1}{2} m v_{B}^{2}-\frac{1}{2} m v_{A}^{2}=E_{k, B}-E_{k, A}=\Delta E_{k}
+\end{equation}
+Il lavoro è eguale alla variazione della quantità \(\frac{1}{2} m v^2\) che si chiama energia cinetica del punto materiale.
+
+Tutte le leggi con cui vengono definite le varie forme di energia contengono sempre la variazione di energia e pertanto tali quantità possono essere definite a meno di una costante. 
+Per esempio l'energia cinetica di un punto potrebbe essere scritta come \(\frac{1}{2} m v^2 + costante\), senza modificare la l'equazione di definizione in quanto nella differenza la costante scompare.
+
+Il lavoro è la manifestazione dell'azione di una forza ed è quindi conseguenza dell'interazione con l'ambiente circostante. 
+Si parla pertanto di lavoro \emph{scambiato} e non si dice mai che  un s istema possiede lavoro. 
+Si parla invece di energia posseduta dal sistema, che viene modificata dall'interazione con l'ambiente esterno. Un effetto misurabile dell'interazione è la variazione di energia. 
+
 \end{document}

@@ -416,28 +416,27 @@ dove \(\overrightarrow{r}_{AB}\) è la distanza tra \(A\) e \(B\).
 
 Svolgendo il prodotto scalare ottengo:
 \begin{equation}
-    W = - (E_{p,B} - E_{p,A}) = - \Delta E_p
+    W = - (mgz_b - mgz_a) =- (E_{p,B} - E_{p,A}) = - \Delta E_p
 \end{equation}
-Con \(E_p= m g z\) indichiamo una funzione della coordinata: del punto (misurata lungo un asse parallelo e di verso opposto alla forza peso) che ha questa proprietà: il lavoro è eguale all'opposto della variazione di questa funzione durante lo spostamento da \(A\) a \(B\) e pertanto non dipende dalla particolare traiettoria che collega \(A\) e \(B\).
-
+Con \(E_p= m g z\) indichiamo una funzione della coordinata del punto \(z\) (misurata lungo un asse parallelo e di verso opposto alla forza peso) che ha questa proprietà: il lavoro è eguale all'opposto della variazione di questa funzione durante lo spostamento da \(A\) a \(B\) e pertanto non dipende dalla particolare traiettoria che collega i due punti (conservazione della forza).\newline
 In base alla posizione di \(A\) e \(B\) posso trovarmi in due casi:
 \begin{itemize}
     \item Se \(B\) si trova più in basso di \(A\), ho \(W>0\) quindi \(E_p\) diminuisce.
     \item Se \(B\) si trovia più in alto di \(A\), ho \(W<0\) quindi \(E_p\) aumenta 
-    (il punto abbia una sufficiente velocità iniziale così che la diminuzione di energia cinetica eguagli il lavoro oppure bisogna applicare al punto un'altra forza il cui lavoro motore superi in modulo il lavoro resistente della forza peso).
+    (il punto quindi deve avere sufficiente velocità iniziale così che la diminuzione di energia cinetica eguagli il lavoro oppure bisogna applicare al punto un'altra forza il cui lavoro motore superi in modulo il lavoro resistente della forza peso).
 \end{itemize}
 
 La trattazione fatta per la forza peso è applicabile a qualsiasi altra forza costante \(\overrightarrow{F}\): si prende un asse parallelo e discorde a \(\overrightarrow{F}\) utilizzano le stesse formule precedenti con \(F\) al posto di \(mg\).
 
 \section{Lavoro di una forza elastica}
 
-Il lavoro della forza elastica \(\overrightarrow{F} =-k x \overrightarrow{u}_x\), per uno spostamento lungo l'asse \(x\) vale:
+Il lavoro della forza elastica \(\overrightarrow{F} =-k x \hat{x}\), per uno spostamento lungo l'asse \(x\) vale:
 \begin{equation}
-    W = \int_A^B -k x \overrightarrow{u}_x \cdot dx \overrightarrow{u}_x = -k \int_A^B x dx = \frac{1}{2} k x^2_A - \frac{1}{2} k x^2_B = - \Delta E_p,
+    W = \int_A^B -k x\hat{x} \cdot dx \hat{x} = -k \int_A^B x dx = \frac{1}{2} k x^2_A - \frac{1}{2} k x^2_B = - \Delta E_p,
 \end{equation}
-con \(E_p = \frac{1}{2} k x^2\) in funzione della posizione.
-
-Come nel caso della forza peso ho due casi:
+con \(E_p = \frac{1}{2} k x^2\) in funzione della posizione.\newline
+Come nel caso della forza peso si tratta di una forza conservativa, quindi non conta la traiettoria.
+A seconda del punto di inizio e fine posso avere due casi:
 \begin{itemize}
     \item Se la coordinata iniziale è maggiore di quella finale, cioè se il punto si muove verso il centro della forza, \(W>0\), quindi \(E_p\) diminuisce (spostamento naturale).
     \item Nel caso contrario di allontanamento dal centro \(W < 0\), \(E_p\) aumenta: per eseguire tale spostamento il punto deve possedere una velocità iniziale oppure si deve applicare una forza opportuna

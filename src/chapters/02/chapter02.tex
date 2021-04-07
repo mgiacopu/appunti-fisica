@@ -496,4 +496,34 @@ Sappiamo che ci sono forze per le quali non vale la proprietà di invarianza del
 Queste forze si chiamano non conservative o dissipative e per esse non si può introdurre l'energia potenziale. Il lavoro di una forza non conservativa si calcola con la definizione iniziale ed è sempre eguale, come per qualsiasi forza, alla variazione di energia cinetica.
 Le tipiche forze non conservative sono le forze di attrito.
 
+\section{Conservazione dell'energia}
+
+Se agiscono solo forze conservative ho l'ugualianza tra la differenza di energia cinetica e la differenza di energia potenziale.
+Vale quindi l'equazione:
+\begin{equation}
+    E_{k,A} + E_{p,A} = E_{k,B} + E_{p,B}
+\end{equation}
+
+Questa somma di valori risulta essere una costante che prende il nome di energia meccanica.
+\begin{equation}
+    E_m = E_p + E_k = costante
+\end{equation} 
+
+Quando agiscono sia le forze conservative che dissipative il valoro è dato dalla somma dei due lavori delle forze.
+\begin{equation*}
+    W = W_{cons} + W_{diss} = E_{k,B} - E_{k,A}
+\end{equation*}
+grazie alla proprietà delle forze conservative posso riscrivere \(W_{cons}\) come differenza di energia potenziale.
+\begin{equation*}
+    E_{p,A} - E_{p,B} + W_{diss} = E_{k,B} - E_{k,A}
+\end{equation*}
+posso finalmente ottenere facilmente il lavoro delle forze dissipative:
+\begin{equation}
+    \implies W_{diss} = (E_{k,B} + E_{p,B}) - (E_{k,A} + E_{p,A}) = E_{m,B} - E_{m,A}
+\end{equation}
+
+In presenza di forze dissipative l'energia meccanica non si conserva e la sua variazione è eguale al lavoro delle forze dissipative.
+Questo di solito avviene sempre perchè in qualunque processo meccanico è sempre presente una forza di attrito che si oppone al moto con \(W_{diss}<0\).
+Quindi l'energia meccanica diminuisce sempre.
+
 \end{document}

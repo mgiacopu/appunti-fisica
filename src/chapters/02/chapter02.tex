@@ -460,5 +460,40 @@ In particolare, data \(E_{k,A}\), il punto si ferma dopo un percorso:
     s_{AB} = E_{k,A} / \mu_d N
 \end{equation*} 
 
+\section{Forze conservative, energia potenziale}
+
+\subsection{Forze conservative}
+
+Le forze in cui il lavoro non dipende dal percorso si chiamano \emph{forze conservative}.
+Quando eseguiamo il calcolo del lavoro possiamo usare qualsiasi percorso che collega \(A\) e \(B\), quindi possiamo sfruttare il più semplice.
+
+Il lavoro è pertanto esprimibile come differenza dei valori che una funzione delle coordinate assume in \(A\) e in \(B\).
+Ho che in ogni percorso chiuso il lavoro è nullo:
+\begin{equation}
+    \int_A^B (\overrightarrow{F} \cdot d \overrightarrow{s}) + \int_B^A (\overrightarrow{F} \cdot d \overrightarrow{s}) = 0
+\end{equation}
+oppure analogamente in modo più formale:
+\begin{equation}
+    \oint \overrightarrow{F} \cdot d \overrightarrow{s} = 0
+\end{equation}
+
+\subsection{Energia potenziale}
+
+La funzione delle coordinate di cui abbiamo parlato finora si chiama energia potenziale e per tutte le forze conservative vale la relazione:
+\begin{equation}
+    W = E_{p_A} - E_{p,B} = - \Delta E_p .
+\end{equation}
+Non esiste una formula generale per l'energia potenziale, ma l'espressione esplicita dipende dalla particolare forza conservativa cui essa si riferisce.
+Ad esempio per la forza peso ho \(E_p = mgz\) e per la forza elastica \(E_p = \frac{1}{2} k x^2\).
+
+Dall'ultima equazione ho che:
+\begin{itemize}
+    \item se durante il moto l'energia potenziale diminuisce, \(\Delta E_p <0\), il lavoro è positivo, 
+    \item se l'energia potenziale aumenta, \(\Delta E_p >0\), il lavoro è negativo
+\end{itemize}
+
+Sappiamo che ci sono forze per le quali non vale la proprietà di invarianza del lavoro rispetto al percorso e non è quindi possibile esprimere il lavoro tramite le differenze dei valori di una funzione delle coordinate. 
+Queste forze si chiamano non conservative o dissipative e per esse non si può introdurre l'energia potenziale. Il lavoro di una forza non conservativa si calcola con la definizione iniziale ed è sempre eguale, come per qualsiasi forza, alla variazione di energia cinetica.
+Le tipiche forze non conservative sono le forze di attrito.
 
 \end{document}

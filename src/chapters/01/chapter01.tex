@@ -514,87 +514,157 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
 		Nota l'accelerazione e il valore della velocit\`a all'istante $t_0$ la velocit\`a in un istante $t$ \`e data da:
     $$\overrightarrow{v}(t)=v(t_0)+\int_{t_0}^t\overrightarrow{a}(t)dt$$
 \section{Moto circolare}
-
-Si chiama moto circolare un moto piano la cui traiettoria è rappresentata da una circonferenza. Considerando che la velocità varia continuamente direzione l'accelerazione centripeta è sempre diversa da zero.
+Si chiama moto circolare un moto piano la cui traiettoria è rappresentata da una circonferenza.
+Considerando che la velocità varia continuamente direzione l'accelerazione centripeta è sempre diversa da zero.
 Nel moto circolare uniforme la velocità è costante in modulo e l'accelerazione tangente è nulla per cui \(\overrightarrow{a} = \overrightarrow{a}_N\);
 se invece il modulo della velocità cambia nel tempo il moto circolare non è uniforme e \(\overrightarrow{a}_T\) è diversa da zero (quindi c'è anche una forza tangenziale).
 
 Il moto circolare può essere descritto facendo riferimento allo spazio percorso sulla circonferenza \(s(t)\) oppure
 utilizzando l'angolo \(\theta (t)\) sotteso dall'arco \(s(t)\), con \(\theta(t) = s(t)/R\).
 Se assumiamo come variabile l'angolo ci inseriamo in un sistema di coordinate polari con centro \(0\) in cui il moto avviene \(r(t) = R = costante\) e \(\theta(t)\) variabile.
-
-Siamo naturalmente interessati alle variazioni dell'angolo nel tempo e pertanto definiamo la \emph{velocità angolare} come la derivata dell'angolo rispetto al tempo:
-\begin{equation}
-  \omega = \frac{d \theta}{dt} = \frac{1}{R} \frac {ds} {dt} = \frac{v}{R} \udm{\frac{rad}{s}}
-\end{equation}
-
-Il moto circolare più semplice è quello uniforme (costanza modulo della velocità): \(v\) e \(\omega\) sono costanti e le leggi orarie sono:
-\begin{equation}
-  s(t) = s_0 + vt
-\end{equation}
-\begin{equation}
-  \theta(t) = \theta + \omega t
-\end{equation}
-Il moto circolare uniforme ha accelerazione costante ortogonale alla traiettoria
-\begin{equation}
-  a = a_N = \frac{v^2}{R} = \omega^2 R
-\end{equation}
-
-È un moto periodico con periodo \(T = \frac{2 \pi R}{v} = \frac{2 \pi}{\omega}\), corrispondente al tempo necessario per compiere un giro completo.
-
-I moti proiettati sugli assi cartesiani sono:
-\begin{equation}
-  x = R \cos \theta = R \cos (\omega t + \omega_0) \
-  y = R \sin \theta = R \sin (\omega t + \omega_0)
-\end{equation}
-
-Nel caso del moto circolare non uniforme oltre all'accelerazione centripeta, che è variabile perché la velocità varia anche in modulo, dobbiamo considerare anche l'accelerazione tangenziale \(a_T = \frac{dv}{dt} \).
-
+La rappresentazione in coordinate cartesiane \`e legata a $\theta(t)$:
+\begin{multicols}{2}
+  $$x(t)=R\cos\theta(t)$$
+  $$y(t)=R\sin\theta(t)$$
+\end{multicols}
+  \subsection{Velocit\`a angolare}
+  Siamo naturalmente interessati alle variazioni dell'angolo nel tempo e pertanto definiamo la \emph{velocità angolare} come la derivata dell'angolo rispetto al tempo:
+  \begin{equation}
+   \omega = \frac{d \theta}{dt} = \frac{1}{R} \frac {ds} {dt} = \frac{v}{R} \udm{\frac{rad}{s}}
+  \end{equation}
+	Si nota come la velocit\`a angolare \`e proporzionale alla velocit\`a con cui \`e descritta la circonferenza.
+	Nel moto circolare la velocit\`a radiale \`e identicamente nulla in quanto il raggio vettore \`e costante in modulo e la velocit\`a trasversale coincide con la velocit\`a: da $v_\theta=r\frac{d\theta}{dt}$ si trova che $v=R\omega$.
+  \subsection{Moto circolare uniforme}
+  Il moto circolare più semplice è quello uniforme (costanza modulo della velocità): \(v\) e \(\omega\) sono costanti e le leggi orarie sono:
+  \begin{equation}
+    s(t) = s_0 + vt
+  \end{equation}
+  \begin{equation}
+    \theta(t) = \theta + \omega t
+  \end{equation}
+  Si noti come il termine uniforme si rifersca al modulo della velocit\`a: il moto circolare uniforme ha accelerazione costante ortogonale alla traiettoria
+  \begin{equation}
+   a = a_N = \frac{v^2}{R} = \omega^2 R
+  \end{equation}
+    \subsubsection{Periodicit\`a}
+    È un moto periodico con periodo \(T = \frac{2 \pi R}{v} = \frac{2 \pi}{\omega}\), corrispondente al tempo necessario per compiere un giro completo.
+    \subsubsection{Proiezione dei moti sugli assi cartesiani}
+    I moti proiettati sugli assi cartesiani sono:
+    \begin{align}
+      x&= R \cos \theta = R \cos (\omega t + \omega_0) \\
+      y&= R \sin \theta = R \sin (\omega t + \omega_0)
+    \end{align}
+	\subsection{Moto circolare non uniforme}
+	Nel caso del moto circolare non uniforme si deve considerare l'accelerazione tangenziale $a_T=\frac{dv}{dt}$.
+		\subsubsection{Accelerazione angolare}
+		Essendo anche $\omega$ variabile si definisce l'accelerazione angolare:
+		\begin{align*}
+			a&=\dfrac{d\omega}{dt}=\\
+			 &=\dfrac{d^2\theta}{dt^2}=\\
+			 &=\dfrac{1}{R}\dfrac{dv}{dt}=\\
+			 &=\dfrac{a_T}{R}\\
+		\end{align*}
+		\subsubsection{Determinare la velocit\`a angolare dall'accelerazione}
+		Nota $a(t)$ si pu\`o integrare ottenendo:
+		$$\omega(t)=\omega_0+\int_{t_0}^ta(t)dt$$
+		$$\theta(t)=\theta_0+\int_{t_0}^t\omega(t)dt$$
+		\subsubsection{Determinare l'incremento della velocit\`a angolare in corrispondenza dell'incremento angolare}
+		Nota $a(\theta)$ si pu\`o calcolare l'incremento della velocit\`a angolare in corrispondenza all'incremento angolare $\theta-\theta_0$.
+		\begin{align*}
+			a&=\dfrac{d\omega}{dt}=\dfrac{d\omega}{d\theta}\dfrac{d\theta}{dt}=\\
+			 &=\omega\dfrac{d\omega}{d\theta}\Rightarrow\\
+			\Rightarrow&ad\theta=\omega d\omega\Rightarrow\\
+			\Rightarrow&\int_{\theta_0}^\theta a(\theta)d\theta=\dfrac{1}{2}\omega^2-\dfrac{1}{2}\omega_0^2
+		\end{align*}
+		\subsubsection{Moto circolare uniformemente accelerato}
+		Il moto circolare uniformemente accelerato \`e un moto in cui $a$ \`e costante, o $a_T$ costante.
+		Ponendo $t_0=0$:
+		$$\omega=\omega_0+at$$
+		$$\theta=\theta_0+\omega_0t+\dfrac{1}{2}at^2$$
+		L'accelerazione centripeta vale:
+		$$a_N=\omega^2R=(\omega_0+at)^2R$$
+		\subsubsection{Notazione vettoriale}
+		Si ampli il concetto di velocit\`a angolare del moto circolare mostrando come si possono associare ad esso caratteristiche vettoriali.
+		Si definisce velocit\`a angolare il vettore $\omega$ con modulo $\omega=\frac{d\theta}{dt}$, direzione perpendicolare al piano in cui giace la circonferenza e verso tale che all'estremo del vettore $\omega$ il moto appaia antiorario.
+		Risulta evidente che:
+		$$v=\omega\times r$$
+		Nel caso $\omega$ sia applicata al centro della circonferenza $r=R$, ma questa equazione risulta valida se $\omega$ \`e applicata in un qualsiasi altro punto dell'asse di rotazione, ovvero la retta ortogonale al piano del moto e passante per il centro della circonferenza.
+		Dato $\omega$ si individua l'asse di rotazione e il piano del moto circolare, il verso di percorrenza della circonferenza e come varia l'angolo nel tempo.
+		Da $\omega$ per derivazione rispetto al tempo si ottiene il vettore accelerazione angolare $a$, parallelo a $\omega$ e verso determinato dalla variazione del modulo di $\omega$ e modulo $a=\frac{d\omega}{dt}$.
+	\subsection{Accelerazione del moto circolare}
+		Tramite $A$ e $\omega$ si esprime l'accelerazione del moto circolare:
+		\begin{align*}
+			a&=\dfrac{dv}{dt}=\\
+			 &=\dfrac{d}{dt}(\omega\times r)=\\
+			 &=\dfrac{d\omega}{dt}\times r + \omega\times\dfrac{dr}{dt}\Rightarrow\\
+			\Rightarrow&a=a\times r+\omega\times v\\
+		\end{align*}
+		Si nota come il pirmo termine $a\times r$ \`e l'accelerazione tangenziale $a_T$ di modulo $aR$, mentre il secondo $\omega\times v$ \`e l'accelerazione centripeta $a_N$ di modulo $\omega^2R$.
+		Nel moto circolare uniforme $\omega$ \`e un vettore costante anche un modulo, $a$ \`e nulla e $a=a_N=\omega\times v$.
+		\subsubsection{Propriet\`a di $r$}
+		Il vettore $r$ applicato in $O$ ha modulo costante e descrive un moto rotatorio attorno all'asse di rotazione, ovvero alla direzione di $\omega$ formando un angolo $\phi$ costante con l'asse stesso.
+		La sua derivata $\frac{dr}{dt}$ si pu\`o scrivere $\omega\times r$.
+		Anche il vettroe $v$ descrive una rotazione intorno a $\omega$ con cui forma l'angolo $\phi=\frac{\pi}{2}$ e la sua derivata $\frac{dv}{dt}$ si pu\`o scrivere $\omega\times v$.
+		Al moto di rotazione di un asse rispetto ad un altro asse fisso con cui forma un angolo costante e ha un punto in comune si d\`a il nome di moto di precessione.
+		Dato un vettore di modulo costante $A$ che descrive un moto di precessione con velocit\`a angolare $\omega$, la sua derivata temporale pu\`o essere sempre scritta:
+		$$\dfrac{dA}{dt}=\omega\times A$$
+		Che risulta ortogonale a $A$.
+		Inoltre in modulo
+		$$dA=A\sin\phi d\theta$$
+		$$\dfrac{dA}{dt}=A\sin\phi\dfrac{d\theta}{dt}=\omega A\sin\phi=|\omega\times A|$$
 \section{Moto parabolico dei corpi}
-
-Il moto (nel vuoto) di un punto \(P\) lanciato dall'origine \(0\) con velocità iniziale \(v_0\) formante un angolo \(\alpha\) con l'asse delle ascisse (asse orizzontale).\\
-In particolare vogliamo calcolare la traiettoria, la massima altezza raggiunta e la posizione \(G\) in cui il punto ricade sull'asse x ovvero la gittata OG.
-
-Il moto è caratterizzato da un accelerazione costante \(a = g = -g u_y\) e le condizioni iniziali sono \(r = O\) e \(v = v_0\) al tempo \(t = O\), istante di lancio.
-Le velocità dei moti proiettati sugli assi sono \(v_x = v_0 \cos \alpha\) (costante) e \(v_y = v_0 \sin \alpha - g t\).
-Quindi le leggi orarie dei moti proiettati sono
-\begin{equation}
-  x = v_0 \cos \alpha t \ , \ y = v_0 + \sin \alpha t - \frac{1}{2} g t^2
-\end{equation}
-Sull'asse \(x\) il moto è uniforme, sull'asse \(y\) uniformemente accelerato.
-
-La traiettoria si trova esprimendo \(x(t)\) in funzione di \(x\) rispetto al tempo e sostituendo in \(y(t)\)
-\begin{equation}
-  y(x) = x \tan \alpha - \frac{g}{2 v_0^2 \cos^2 \alpha} x^2
-\end{equation}
-che è l'equazione di una parabola.
-La direzione del moto, in funzione del tempo o della coordinata \(x\), può essere caratterizzata dall'angolo \(\phi\) che il vettore velocità forma con l'asse orizzontale:
-\begin{equation}
-  \tan \phi = \frac{v_y}{v_x} = \tan \alpha - \frac{g}{v_0 \cos \alpha} t = \tan \alpha - \frac{g}{v_0^2 \cos^2 \alpha} x
-\end{equation}
-
-Per calcolare la \emph{gittata}, imponiamo \(y(x) = 0\) e otteniamo due soluzioni: \(x=0\) e
-\begin{equation}
-  x_{G}=\frac{2 v_{0}^{2} \cos ^{2} \alpha \tan \alpha}{g}=\frac{2 v_{0}^{2} \cos \alpha \sin \alpha}{g}=2 x_{M}
-\end{equation}
-con \(x_M = v_0^2 \cos \alpha \sin \alpha / g\) coordinata dal punto di metto del segmento OG e quindi per la simmetria della parabola, ascissa del punto di massima altezza.
-L'altezza massima raggiunta è pertanto
-\begin{equation}
-  y(x_M) = y_M = \frac{v_0^2 \sin^2 \alpha}{2g}
-\end{equation}
-
-Il tempo totale di volo \(t_G\) è pari al tempo impiegato a percorrere la traiettoria con velocità costante \(v_x = v_0 \cos \alpha : t_G = 2 x_M /v_0 \cos \alpha = 2v_0 \sin \alpha / g = 2 t_M\);
-evidentemente \(t_G\) coincide con il tempo necessario per salire all'altezza \(y_M\) e ritornare al suolo.
-
-Notiamo infine che nella posizione \(G\) la velocità è la stessa in modulo che alla partenza, ma è posta simmetricamente rispetto all'asse \(x\):
-\begin{equation}
-  v_x(t_G) = v_0 \cos \alpha \ , \ v_y (t_G) = -v_0 \sin \alpha \ , \ \tan \phi = - \tan \alpha
-\end{equation}
-
-Le caratteristiche geometriche del moto parabolico di un corpo vicino alla superficie terrestre si comprendono chiaramente nel sistema cartesiano adottato che è in definitiva il più naturale in questo problema in cui c'è una direzione di particolare importanza,
-quella di \(g\), a 90° con una direzione di uso pratico molto comune, quella orizzontale.\\
-Invece, per esempio, nella trattazione del moto circolare è certamente più semplice servirsi di un sistema di coordinate polari con centro nel centro di simmetria del sistema, mentre non hanno particolare significato gli assi \(x\) e \(y\).
-
+Si analizza il moto nel vuoto di un punto $P$ lanciato dall'origine $O$ con velocit\`a iniziale $v_0$ formante un angolo $\alpha$ con l'asse delle ascisse.
+Si vuole calcolare la traiettoria, la massima altezza raggiunta e la posizione $G$ in cui il punto ricade su $x$ o la gittata $OG$.
+	\subsection{Caratterizzazione}
+	Il moto \`e caratterizzato da un'accelerazione costante $a=g=-gu_x$ e le condizioni inziali sono $r=0$ e $v=v_0$ al tempo $t=0$.
+	Si nota come
+	$$v(t)=v_0+\int_{t_0}^ta(t)dt=v_0-gtu_x$$
+	\subsection{Velocit\`a}
+	La velocit\`a si trova nel piano individuato dai vettori costanti $v_\theta$ e $g$, il piano $x,y$.
+	Essendo $v_\theta=v_0\cos t au_x+v_\theta\sin au_y$:
+	$$v(t)=v_\theta\cos au_y+(v_\theta\sin a-gt)u_x$$
+	\subsection{Leggi orarie dei moti proiettati}
+	La velocit\`a dei moti proiettati sugli assi sono $v_y=v_o\cos\alpha$ e $v_x=v_0\sin\alpha-gt$.
+	Pertanto le leggi orarie dei moti proiettati sugli assi sono:
+	$$x=v_0\cos t\alpha t$$
+	$$y=v_0\sin\alpha t-\dfrac{1}{2}gt^2$$
+	Se sull'asse $x$ il moto \`e uniforme sull'asse $y$ \`e uniformemente accelerato.
+	\subsection{Traiettoria}
+	La traiettoria viene ricavata eliminando il tempo tra $x(t)$ e $y(t)$ e ottenendo la funzione:
+	$$y(t):t=\dfrac{x}{v_0}\cos\alpha$$
+	$$y(x)=x\tan\alpha-\dfrac{g}{2v_0^2\cos^2\alpha}x^2$$
+	Ovvero l'equazione di una parabola.
+	\subsection{Direzione del moto}
+	La direzione del moto in funzione del tempo o della coordinata $x$ pu\`o essere caratterizzata dall'angolo $\phi$ che il vettore velocit\`a forma con l'asse orizzontale:
+	\begin{align*}
+		\tan\phi&=\dfrac{v_y}{v_x}=\\
+		     &=\tan\alpha-\dfrac{g}{v_0\cos\alpha}t=\\
+				 &=\tan\alpha-\dfrac{g}{v_0^2\cos^2\alpha}x
+	\end{align*}
+	Per calcolare la gittata $OG$ si impne $y(x)=0$ e si ottengono due soluzione $x=0$ e:
+	\begin{align*}
+		x_G&=\dfrac{2v_0^2\cos^2\alpha\tan\alpha}{g}=\\
+		   &=\dfrac{2v_0^2\cos\alpha\sin\alpha}{g}=\\
+			 &=2X_M
+	\end{align*}
+	Dove $X_M=v_0^2\frac{\cos\alpha\sin\alpha}{g}$ \`e la coordinata dal punto di mezzo del segmento $OG$ e ascissa del punto di massima altezza.
+	\subsection{Altezza massima}
+	L'altezza massima raggiunta \`e pertanto:
+	$$y(X_M)=Y_M=\dfrac{v_0^2\sin^2\alpha}{2g}$$
+	L'altezza massima si pu\`o ottenere annullando $\frac{dy}{dx}$, ovvero imponendo
+	$$\tan\alpha-(\dfrac{g}{v_0^2}\cos^2\alpha)x=0$$
+	Si ricava da questo l'ascissa del massimo $X_M$ e si calcola $y(X_M)$.
+	Un altro modo \`e sfruttare il fatto che nel punto di massima altezza la velocit\`a \`e orizzontale, pertanto $u_y=0$< ovvero $t=t_M=v_0\sin\frac{\alpha}{g}$, sostituendo $x(t)$ e $y(t)$ si trovano $X_M$ e $Y_M$.
+	\subsection{Angolo di lancio per la gittata massima}
+	L'angolo di lancio per cui si ha la gittata massima si ottiene con la condizione $\frac{dx_G}{d\alpha}=0$< ovvero $\frac{2v_0^2}{g}(-\sin^2\alpha+\cos^2\alpha)=0$ e risulta $\alpha=45\si{\degree}$
+	\subsection{Tempo totale di volo}
+	Il tempo totale di volo $t_G$ \`e pari al tempo impiegato a percorere $OG$ con velocit\`a costante $v_x=v_0\cos\alpha$:
+	$$t_G=2\dfrac{X_M}{v_0}\cos\alpha=2v_0\sin\dfrac{\alpha}{g}=2t_M$$
+	Si nota come $t_G$ coincide con il tempo necessario per salire a $Y_M$ e tornare al suolo.
+	Si nota come nella posizione $G$ la velocit\`a \`e la stessa in modulo che alla partenza ma simmetricamente rispetto a $x$.
+	$$u_x(t_G)=v_0\cos\alpha$$
+	$$u_y(t_G)=-v_o\sin\alpha$$
+	$$\tan\phi=-\tan\alpha$$
 \section{Riepilogo}
 
 \begin{itemize}

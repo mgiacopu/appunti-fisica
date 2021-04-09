@@ -1,0 +1,88 @@
+\documentclass[class=book, crop=false, oneside, 12pt]{standalone}
+\usepackage{standalone}
+\usepackage{amsmath}
+\usepackage{../../style}
+
+\begin{document}
+\chapter{Moti relativi}
+
+\section{Sistemi di riferimento. Velocità e Accelerazione relative}
+
+Sperimentalmente è provato con estrema accuratezza che le leggi fisiche non dipendono dalla scelta del sistema di riferimento. 
+Fissato un sistema di riferimento e stabilita una certa proprietà, questa resta vera anche se cambiano l'origine e l'orientazione degli assi coordinati, ovvero se ci riferiamo ad un altro sistema ottenuto dal primo con una traslazione (spostamento dell'origine, conservando la stessa direzione degli assi) o con una rotazione (stessa origine, cambio della direzione degli assi) o con una operazione combinata.
+Non esiste pertanto un punto privilegiato dello spazio e nemmeno un'orientazione privilegiata: lo spazio appare omogeneo e isotropo. 
+
+Abbiamo già rilevato come il concetto stesso di moto sia relativo,  abbia cioè bisogno della precisazione del sistema di riferimento. 
+
+Consideriamo il problema riferendoci alla figura 3.1. 
+Il punto \(P\) è in movimento lungo una generica traiettoria. 
+Il suo moto viene osservato da una terna cartesiana con centro in \(O\) che, per convenzione, chiamiamo sistema fisso e da una terna cartesiana con centro \(O'\) che, sempre per convenzione, chiamiamo sistema mobile.
+
+Vogliamo ricavare una relazione tra la posizione, la velocità e l'accelerazione del punto \(P\), misurate da un osservatore solidale con il sistema fisso, e le corrispondenti grandezze misurate da un osservatore solidale con il sistema mobile. 
+
+\subsection{Posizione}
+
+La relazione tra le posizioni del punto \(P\), misurate rispetto ai due sistemi di riferimento, è la seguente:
+\begin{equation}
+    \overrightarrow{r} = \overrightarrow{OO'} + \overrightarrow{r'}
+\end{equation}
+con 
+\begin{equation*}
+    \overrightarrow{r} = x \overrightarrow{u_x} + y \overrightarrow{u_y} + z \overrightarrow{u_z} \ , \ \overrightarrow{r'} = x' \overrightarrow{u_{x'}} + y' \overrightarrow{u_{y'}} + z' \overrightarrow{u_{z'}} 
+\end{equation*}
+Assumiamo, dato che il primo sistema è fisso, che i versori \(\overrightarrow{u_x}, \overrightarrow{u_y}, \overrightarrow{u_z}\) sono indipendenti dal tempo.
+
+\subsection{Velocità}
+
+La velocità del punto \(P\) rispetto al sistema fisso, che chiamiamo velocità assoluta, è data da:
+\begin{equation}
+    \overrightarrow{v} = \frac{d \overrightarrow{r}}{dt} = \frac{dx}{dt} \overrightarrow{u_x} + frac{dy}{dt} \overrightarrow{u_y} + frac{dz}{dt} \overrightarrow{u_z}
+\end{equation}
+mentre quella misurata da un osservatore nel sistema mobile, che indichiamo come velocità relativa è
+\begin{equation}
+    \overrightarrow{v'} = \frac{dx'}{dt} \overrightarrow{u_{x'}} +\frac{dy'}{dt} \overrightarrow{u_{y'}} + \frac{dz'}{dt} \overrightarrow{u_{z'}}
+\end{equation}
+Infine la velocità dell origine \(O'\) del sistema di riferimento mobile misurata da un osservatore del sistema fisso e data da:
+\begin{equation}
+    \overrightarrow{v_{O'}}=\frac{d \overrightarrow{OO'}}{d t}=\frac{d x_{O'}}{d t} \overrightarrow{u_{x}}+\frac{d y_{O'}}{d t} \overrightarrow{u_{y}}+\frac{d z_{O'}}{d t} \overrightarrow{u_{z}}
+\end{equation}
+
+Derivando rispetto il tempo la (3.1) ottengo
+
+\begin{align*}
+    \overrightarrow{v}&=\frac{d \overrightarrow{r}}{dt} = \frac{d \overrightarrow{OO'}}{d t} + \frac{d \overrightarrow{r'}}{dt} = \frac{d x_{O'}}{d t} \overrightarrow{u_{x}}+\frac{d y_{O'}}{d t} \overrightarrow{u_{y}}+\frac{d z_{O'}}{d t} \overrightarrow{u_{z}}\\
+    &+\frac{dx'}{dt} \overrightarrow{u_{x'}} + \frac{dy'}{dt} \overrightarrow{u_{y'}} + \frac{dz'}{dt} \overrightarrow{u_{z'}} + x' \frac{d\overrightarrow{u_{x'}}}{dt}  + y' \frac{d\overrightarrow{u_{y'}}}{dt}  + z' \frac{d\overrightarrow{u_{z'}}}{dt}\\
+\end{align*}
+ovvero
+\begin{equation}
+    \overrightarrow{v} = \overrightarrow{v_{O'}} + \overrightarrow{v'} + x' \frac{d\overrightarrow{u_{x'}}}{dt}  + y' \frac{d\overrightarrow{u_{y'}}}{dt}  + z' \frac{d\overrightarrow{u_{z'}}}{dt}
+\end{equation}
+
+La derivata di un versore \(\overrightarrow{u}\), in quanto vettore con modulo costante, si può scrivere \(\omega \times \overrightarrow{u}\) ; pertanto per le derivate dei tre versori \(\overrightarrow{u_x},\overrightarrow{u_y},\overrightarrow{u_z}\), si hanno le seguenti formule, dette di Poisson:
+\begin{equation}
+    \frac{d \overrightarrow{u_{x}}}{d t}=\omega \times \overrightarrow{u_{x}} \quad, \quad \frac{d \mathbf{u_{y'}}}{d t}=\omega \times \overrightarrow{u_{y}}, \quad, \quad \frac{d \overrightarrow{u_{z'}}}{d t}=\omega \times \overrightarrow{u_{z}}
+\end{equation} 
+
+Posso riscrivere gli ultimi temini dell'equazione della velocità come:
+\begin{equation}
+    x' (\omega \overrightarrow{u_{x'}}) + y' (\omega \overrightarrow{u_{y'}}) + z' (\omega \overrightarrow{u_{z'}}) = \omega \times (x' \overrightarrow{u_{x'}} + y' \overrightarrow{u_{y'}} + z' \overrightarrow{u_{z'}}) = \omega \times \overrightarrow{r'}
+\end{equation}
+
+\subsubsection{Teorema delle velocità relative}
+Effettuando l'ultima sostituzione ottengo infine:
+
+\begin{equation}
+    \overrightarrow{v} = \overrightarrow{v_{O'}} + \overrightarrow{v'} + \omega \times \overrightarrow{r'}
+\end{equation}
+
+La differenza delle due velocità misurate nei sistemi di riferimento è chiamata \emph{velocità di trascinamento}
+\begin{equation*}
+    \overrightarrow{v_t} = \overrightarrow{v} - \overrightarrow{v'} = \overrightarrow{v_{O'}} + \omega \times \overrightarrow{r'}
+\end{equation*}
+La velocità di trascinamento è la velocità che il punto mobile \(P\) avrebbe se, nell’istante considerato, fosse solidale con il sistema relativo.
+
+Il moto di trascinamento, legato in pratica al moto del sistema mobile. può essere considerato in ogni istante come la somma di un termine traslatorio con velocità istantanea \(v_{O'}\) e di un termine rotatorio con velocità angolare \(\omega\), variabile in generale sia in modulo che in direzione.
+
+\subsection{Accelerazione}
+
+\end{document}

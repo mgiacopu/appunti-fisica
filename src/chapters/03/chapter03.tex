@@ -36,7 +36,7 @@ Assumiamo, dato che il primo sistema è fisso, che i versori \(\overrightarrow{u
 
 La velocità del punto \(P\) rispetto al sistema fisso, che chiamiamo velocità assoluta, è data da:
 \begin{equation}
-    \overrightarrow{v} = \frac{d \overrightarrow{r}}{dt} = \frac{dx}{dt} \overrightarrow{u_x} + frac{dy}{dt} \overrightarrow{u_y} + frac{dz}{dt} \overrightarrow{u_z}
+    \overrightarrow{v} = \frac{d \overrightarrow{r}}{dt} = \frac{dx}{dt} \overrightarrow{u_x} + \frac{dy}{dt} \overrightarrow{u_y} + \frac{dz}{dt} \overrightarrow{u_z}
 \end{equation}
 mentre quella misurata da un osservatore nel sistema mobile, che indichiamo come velocità relativa è
 \begin{equation}
@@ -107,15 +107,19 @@ Ho inoltre:
 \begin{equation*}
     \omega \times \frac{d \overrightarrow{r'}}{dt} = \omega \times \overrightarrow{v'} + \omega \times ( \omega \times \overrightarrow{r'})
 \end{equation*}
-pertanto
+
+\subsubsection{Teorema delle velocità relative}
+
+Ottengo quindi infine:
+
 \begin{equation}
     \overrightarrow{a} = \overrightarrow{a'} + \overrightarrow{a_{O'}} + \omega ( \omega \times \overrightarrow{r'}) + \frac{d \omega}{dt} \times \overrightarrow{r'} + 2 \omega \times \overrightarrow{v'}
 \end{equation}
 
 Le accelerazioni del punto \(P\) misurate nei due sistemi non coincidono ma sono messe in relazione tramite la (3.12), detta \emph{teorema delle accelerazioni relative}.
-Per valutare l'accelerazione di trascinamento \(a\), riprendiamo la discussione fatta per la velocità di trascinamento. 
-L'accelerazione di trascinamento è quella del punto \(P*\), solidale col sistema mobile, che coincide nell'istante considerato col punto \(P\). 
-Per \(P*, \overrightarrow{a', v'}\) sono nulle e da (3.12)
+Per valutare l'accelerazione di trascinamento \(\overrightarrow{a}\), riprendiamo la discussione fatta per la velocità di trascinamento. 
+L'accelerazione di trascinamento è quella del punto \(P^{\star}\), solidale col sistema mobile, che coincide nell'istante considerato col punto \(P\). 
+Per \(P^{\star}, \overrightarrow{a', v'}\) sono nulle e da (3.12)
 \begin{equation}
     \overrightarrow{a_t} = \overrightarrow{a_{O'}} + \omega \times (\omega \times \overrightarrow{r'}) + \frac{d \omega }{dt} \times \overrightarrow{r'}
 \end{equation}

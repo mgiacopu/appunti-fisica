@@ -85,4 +85,49 @@ Il moto di trascinamento, legato in pratica al moto del sistema mobile. può ess
 
 \subsection{Accelerazione}
 
+L'acceleraizone rispetto al sistema fisso viene detta \emph{accelerazione assoluta} ed è pari:
+
+\begin{equation}
+    \overrightarrow{a} = \frac{d^2 x }{dt^2} \overrightarrow{u_x} + \frac{d^2 y }{dt^2} \overrightarrow{u_y} + \frac{d^2 z }{dt^2} \overrightarrow{u_z}
+\end{equation}
+mentre rispetto al sistema mobile l'\emph{accelerazione relativa} è
+\begin{equation}
+    \overrightarrow{a'} = \frac{d^2 x' }{dt^2} \overrightarrow{u_{x'}} + \frac{d^2 y' }{dt^2} \overrightarrow{u_{y'}} + \frac{d^2 z' }{dt^2} \overrightarrow{u_{z'}} . 
+\end{equation}
+L'accerazopme del sistema mobile \(O'\) rispetto a \(O\) è dato da \(\overrightarrow{a_{0'}} = \frac{d \overrightarrow{v_{O'}}}{dt}\). Derivando rispetto al tempo ottengo:
+\begin{equation}
+    \overrightarrow{a} = \frac{d \overrightarrow{v}}{dt} = \frac{d \overrightarrow{v_{O'}}}{dt} + \frac{d \overrightarrow{v'}}{dt} + \frac{d \overrightarrow{\omega}}{dt} \times \overrightarrow{r'} + \omega \times \frac{d \overrightarrow{r'}}{dt}
+\end{equation}
+Calcolando \(d \overrightarrow{v'} / dt\) ricaviamo:
+\begin{align*}
+    \frac{d \overrightarrow{v'}}{d t} &=\frac{d}{d t}( \frac{d x'}{d t} \overrightarrow{u}_{x'}+\frac{d y'}{d t} \overrightarrow{u}_{y'}+\frac{d z'}{d t} \overrightarrow{u}_{z'})=\frac{d^{2} x'}{d t^{2}} \overrightarrow{u}_{x'}+\frac{d^{2} y'}{d t^{2}} \overrightarrow{u}_{y'} +\\
+    &+ \frac{d^{2} z'}{d t^{2}} \overrightarrow{u}_{z'}+\frac{d x'}{d t} \frac{d \overrightarrow{u}_{x'}}{d t}+\frac{d y'}{d t} \frac{d \overrightarrow{u}_{y'}}{d t}+\frac{d z'}{d t} \frac{d \overrightarrow{u}_{z'}}{d t}=\overrightarrow{a'}+\omega \times \overrightarrow{v'}\\
+\end{align*}
+Ho inoltre:
+\begin{equation*}
+    \omega \times \frac{d \overrightarrow{r'}}{dt} = \omega \times \overrightarrow{v'} + \omega \times ( \omega \times \overrightarrow{r'})
+\end{equation*}
+pertanto
+\begin{equation}
+    \overrightarrow{a} = \overrightarrow{a'} + \overrightarrow{a_{O'}} + \omega ( \omega \times \overrightarrow{r'}) + \frac{d \omega}{dt} \times \overrightarrow{r'} + 2 \omega \times \overrightarrow{v'}
+\end{equation}
+
+Le accelerazioni del punto \(P\) misurate nei due sistemi non coincidono ma sono messe in relazione tramite la (3.12), detta \emph{teorema delle accelerazioni relative}.
+Per valutare l'accelerazione di trascinamento \(a\), riprendiamo la discussione fatta per la velocità di trascinamento. 
+L'accelerazione di trascinamento è quella del punto \(P*\), solidale col sistema mobile, che coincide nell'istante considerato col punto \(P\). 
+Per \(P*, \overrightarrow{a', v'}\) sono nulle e da (3.12)
+\begin{equation}
+    \overrightarrow{a_t} = \overrightarrow{a_{O'}} + \omega \times (\omega \times \overrightarrow{r'}) + \frac{d \omega }{dt} \times \overrightarrow{r'}
+\end{equation}
+
+Possiamo riscrivere (3.12) come:
+\begin{equation*}
+    \overrightarrow{a} = \overrightarrow{a'} + \overrightarrow{a_t} + \overrightarrow{a_c}
+\end{equation*}
+l'ultimo termine
+\begin{equation*}
+    \overrightarrow{a_c} = 2 \omega \times \overrightarrow{v'}
+\end{equation*}
+è chiamato accelerazione complementare o di Coriolis; esso dipende dal moto di \(P\) rispetto al sistema mobile tramite la velocità relativa di \(\overrightarrow{v'}\)
+
 \end{document}

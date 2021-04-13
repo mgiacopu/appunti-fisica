@@ -94,15 +94,17 @@ mentre rispetto al sistema mobile l'\emph{accelerazione relativa} è
 \begin{equation}
     \overrightarrow{a'} = \frac{d^2 x' }{dt^2} \overrightarrow{u_{x'}} + \frac{d^2 y' }{dt^2} \overrightarrow{u_{y'}} + \frac{d^2 z' }{dt^2} \overrightarrow{u_{z'}} . 
 \end{equation}
-L'accerazopme del sistema mobile \(O'\) rispetto a \(O\) è dato da \(\overrightarrow{a_{0'}} = \frac{d \overrightarrow{v_{O'}}}{dt}\). Derivando rispetto al tempo ottengo:
+L'accelerazione del sistema mobile \(O'\) rispetto a \(O\) è dato da \(\overrightarrow{a_{0'}} = \frac{d \overrightarrow{v_{O'}}}{dt}\). Derivando rispetto al tempo ottengo:
 \begin{equation}
     \overrightarrow{a} = \frac{d \overrightarrow{v}}{dt} = \frac{d \overrightarrow{v_{O'}}}{dt} + \frac{d \overrightarrow{v'}}{dt} + \frac{d \overrightarrow{\omega}}{dt} \times \overrightarrow{r'} + \omega \times \frac{d \overrightarrow{r'}}{dt}
 \end{equation}
 Calcolando \(d \overrightarrow{v'} / dt\) ricaviamo:
-\begin{align*}
-    \frac{d \overrightarrow{v'}}{d t} &=\frac{d}{d t}( \frac{d x'}{d t} \overrightarrow{u}_{x'}+\frac{d y'}{d t} \overrightarrow{u}_{y'}+\frac{d z'}{d t} \overrightarrow{u}_{z'})=\frac{d^{2} x'}{d t^{2}} \overrightarrow{u}_{x'}+\frac{d^{2} y'}{d t^{2}} \overrightarrow{u}_{y'} +\\
-    &+ \frac{d^{2} z'}{d t^{2}} \overrightarrow{u}_{z'}+\frac{d x'}{d t} \frac{d \overrightarrow{u}_{x'}}{d t}+\frac{d y'}{d t} \frac{d \overrightarrow{u}_{y'}}{d t}+\frac{d z'}{d t} \frac{d \overrightarrow{u}_{z'}}{d t}=\overrightarrow{a'}+\omega \times \overrightarrow{v'}\\
-\end{align*}
+\begin{equation}
+\begin{aligned}
+    \frac{d \overrightarrow{v'}}{d t} &=\frac{d}{d t} \left(\frac{d x'}{d t} \overrightarrow{u}_{x'}+\frac{d y'}{d t} \overrightarrow{u}_{y'}+\frac{d z'}{d t} \overrightarrow{u}_{z'}\right) = \left( \frac{d^{2} x'}{d t^{2}} \overrightarrow{u}_{x'}+\frac{d^{2} y'}{d t^{2}} \overrightarrow{u}_{y'} + \frac{d^{2} z'}{d t^{2}} \overrightarrow{u}_{z'} \right)\\
+    & + \left( \frac{d x'}{d t} \frac{d \overrightarrow{u}_{x'}}{d t}+\frac{d y'}{d t} \frac{d \overrightarrow{u}_{y'}}{d t}+\frac{d z'}{d t} \frac{d \overrightarrow{u}_{z'}}{d t} \right)=\overrightarrow{a'}+\omega \times \overrightarrow{v'} 
+\end{aligned}
+\end{equation}
 Ho inoltre:
 \begin{equation*}
     \omega \times \frac{d \overrightarrow{r'}}{dt} = \omega \times \overrightarrow{v'} + \omega \times ( \omega \times \overrightarrow{r'})
@@ -113,7 +115,7 @@ Ho inoltre:
 Ottengo quindi infine:
 
 \begin{equation}
-    \overrightarrow{a} = \overrightarrow{a'} + \overrightarrow{a_{O'}} + \omega ( \omega \times \overrightarrow{r'}) + \frac{d \omega}{dt} \times \overrightarrow{r'} + 2 \omega \times \overrightarrow{v'}
+    \overrightarrow{a} = \overrightarrow{a'} + \overrightarrow{a_{O'}} + \omega \times ( \omega \times \overrightarrow{r'}) + \frac{d \omega}{dt} \times \overrightarrow{r'} + 2 \omega \times \overrightarrow{v'}
 \end{equation}
 
 Le accelerazioni del punto \(P\) misurate nei due sistemi non coincidono ma sono messe in relazione tramite la (3.12), detta \emph{teorema delle accelerazioni relative}.

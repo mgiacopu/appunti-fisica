@@ -15,13 +15,13 @@ La \emph{meccanica} riguarda lo studio del moto di un corpo: spiega la relazione
   \subsection{Punto materiale}
   Si definisce punto materiale un \emph{corpo puntiforme privo di dimensioni}.
   \`E assimilabile a un corpo di dimensioni trascurabili rispetto a quelle dello spazio in cui si muove o degli altri corpi con cui interagisce.
-  L'utilizzo di un punto materiale rende l'analisi moto pi\`u semplice in quanto rende trascurabili le propriet\`a fisiche del corpo, come la sua forma o dimensione, ininfluenti sul moto stesso.
-    Inoltre, a differenza di un corpo esteso non pu\`o compiere rotazioni o vibrazioni.
+  L'utilizzo di un punto materiale rende l'analisi moto pi\`u semplice in quanto \emph{rende trascurabili le propriet\`a fisiche del corpo}, come la sua forma o dimensione, ininfluenti sul moto stesso.
+    Inoltre, a differenza di un corpo esteso, non pu\`o compiere rotazioni o vibrazioni.
   \subsection{Cinematica}
   Un analisi completa del moto comprende:
     \begin{itemize}
-      \item Il collegamento del moto alle interazioni del corpo in esame con i corpi circostanti.
-      \item La descrizione geometrica dell'evoluzione temporale del fenomeno di movimento.
+      \item il collegamento del moto alle interazioni del corpo in esame con i corpi circostanti;
+      \item la descrizione geometrica dell'evoluzione temporale del fenomeno di movimento.
     \end{itemize}
   Si dice \emph{cinematica} lo studio descrittivo del moto di un corpo indipendente dalle cause che lo determinano.
     \subsubsection{Concetti fondamentali}
@@ -41,33 +41,39 @@ La \emph{quiete} è un particolare tipo di moto in cui le coordinate restano cos
 Si noti come questo stato non \`e assoluto ma relativo al sistema di riferimento da cui si osserva il moto.
 Lo stesso \emph{punto materiale} può apparire diverso in sistemi di riferimento differenti.
 \section{Moto rettilineo}
-Il moto rettilineo si svolge lungo una retta sulla quale vengono fissati arbitrariamente un'origine e un verso ed è pertanto descrivibile tramite una sola coordinata \(x(t)\).
-
+Il \emph{moto rettilineo} si svolge lungo una retta sulla quale vengono fissati arbitrariamente un'origine e un verso ed è pertanto descrivibile tramite una sola coordinata \(x(t)\).
 Le misure ottenute possono essere rappresentate in un sistema con due assi cartesiani detto \emph{diagramma orario}: sull'asse delle ordinate riportiamo i valori di \(x\) (metri) e su quello delle ascisse i corrispondenti valori del tempo (secondi).
-(Esempi)
+
+%TODO: Aggiungere esempi (?)
+
   \subsection{Velocità}
     \subsubsection{Velocit\`a media}
-    \begin{equation*}
+    \begin{equation}\label{velocita_media}
       v_m = \dfrac {\Delta x} {\Delta t} = \dfrac {x_2 - x_1} {t_2 - t_1} \udm{\dfrac {m} {s}}
-    \end{equation*}
+    \end{equation}
     \subsubsection{Velocit\`a istantanea}
-    Per sopperire alla mancanza di informazioni della velocit\`a media, in modo da individuare \(x(t)\) e le sue variazioni si suddivide \(\Delta t\) in numerosi piccoli intervalli \((\Delta x)_i\) percorsi in altrettanti piccoli intervalli $\Delta t\ (\Delta t)_i$.
-    Si noti come le corrispondenti velocit\`a medie $v_i=\frac{(\Delta x)_i}{(\Delta t)_i}$ sono diverse tra di loro e da $v_m$, in quanto in un generico moto rettilineo la velocit\`a non \`e costante nel tempo.
+    Per sopperire alla mancanza di informazioni della velocit\`a media, in modo da individuare \(x(t)\) e le sue variazioni si suddivide \(\Delta t\) in numerosi piccoli intervalli \((\Delta x)_i\) percorsi in altrettanti piccoli intervalli \((\Delta t)_i\).
+
+    Si noti come le corrispondenti velocit\`a medie $v_i=\frac{(\Delta x)_i}{(\Delta t)_i}$ sono diverse tra di loro e da $v_m$ in quanto in un generico moto rettilineo la velocit\`a non \`e costante nel tempo.
     Suddividendo $\Delta x$ in un numero elevatissimo di intervalli $dx$ infinitamente piccoli si pu\`o definire la velocit\`a istantanea in un istante $t$ del punto in movimento come:
-    \begin{equation*}
+    \begin{equation}
       v=\lim\limits_{\Delta t\rightarrow 0}\dfrac{\Delta x}{\Delta t}=\dfrac{dx}{dt}
-    \end{equation*}
-    La velocit\`a istantanea rappresenta pertanto la rapidit\`a di variazione temporale della posizione nell'istante $t$ considerato, pu\`o pertanto essere espressa in funzione del tempo $v(t)$.
+    \end{equation}
+    La velocit\`a istantanea rappresenta pertanto la rapidit\`a di variazione temporale della posizione nell'istante $t$ considerato: pu\`o pertanto essere espressa in funzione del tempo $v(t)$.
     Il segno fa riferimento al verso del moto su $x$.
   \subsection{Accelerazione}
-  La velocit\`a $v(t)$ pu\`o cariare in un determinato $\Delta t$ di una quantit\`a $\delta v$.
+  La velocit\`a $v(t)$ pu\`o variare in un determinato $\Delta t$ di una quantit\`a $\delta v$.
   Questa variazione si definisce accelerazione.
   Analogamente alla velocit\`a media si definisce l'accelerazione media come:
-  $$a_m=\dfrac{dv}{dt}\udm{\dfrac{m}{s^2}}$$
+  \begin{equation}
+	a_m=\dfrac{dv}{dt}\udm{\dfrac{m}{s^2}}
+  \end{equation}
   Allo stesso modo si definisce accelerazione istantanea:
-  $$a=\dfrac{dv}{dt}=\dfrac{d^2x}{dt^2}$$
+  \begin{equation}
+	a=\dfrac{dv}{dt}=\dfrac{d^2x}{dt^2}
+  \end{equation}
     \subsubsection{Significato fisico}
-    Si nota come:
+    Si noti come:
     \begin{itemize}
       \item $a=0$ implica velocit\`a costante e pertanto moto rettilineo uniforme.
       \item $a>0$ implica che la velocit\`a cresce nel tempo.
@@ -77,31 +83,37 @@ Le misure ottenute possono essere rappresentate in un sistema con due assi carte
     \subsubsection{Ottenere la velocit\`a nota la legge oraria}
     Nota la legge oraria $x(t)$ si pu\`o ottenere la velocit\`a istantanea con l'operazione di derivazione.
     \subsubsection{Ottenere la legge oraria nota la velocit\`a}
-		Nota la dipendenza del tempo della velocit\`a istantanea $v(t)$ si pu\`o ottenere la legge oraria $x(t)$.
+		Nota la dipendenza del tempo della velocit\`a istantanea $v(t)$ si pu\`o ottenere la legge oraria $x(t)$ tramite l'operazione inversa rispetto alla derivazione: l'integrazione.
+
 		Supponendo che il punto si trovi in $x$ al tempo $t$ e nella posizione $x+dx$ in $t+dt$ da $v=\frac{dx}{dt}$ si nota come lo spostamento infinitesimo $dx$ \`e uguale al prodotto del tempo $dt$ impiegato a percorrerlo per il valore della velocit\`a al tempo $t:dx=v(t)dt$, qualunque sia la dipendenza della velocit\`a dal tempo.
-		Lo spostamento complessivo sulla retta su cui si muove il punto in un intervallo finito $\Delta t = t - t_0$ \`e dato dalla somma di tutti i successivi valori $dx$.
-		Si utilizza l'operazione di integrazione:
+		Lo spostamento complessivo sulla retta su cui si muove il punto in un intervallo finito $\Delta t = t - t_0$ \`e dato dunque dalla somma di tutti i successivi valori $dx$.
 		\begin{align*}
 			\Delta x &= \int_{x_0}^x dx = \int_{t_0}^t v(t)dt\\
 			 x - x_0 &= \int_{t_0}^t v(t)dt\\
 			       x &= x_0 +\int_{t_0}^tv(t)dt
 		\end{align*}
 		Si ottiene pertanto la relazione generale che permette il calcolo dello spazio percorso nel moto rettilineo:
-		$$x(t) = x_0 + \int_{t_0}^t v(t)dt$$
-		Dove $x_0$ rappresenta la posizione iniziale del punto occupata nell'istante $t_0$
-		Si noti come $\Delta x$ rappresenta la somma algebrica degli spostamenti.
+		\begin{equation}
+			x(t) = x_0 + \int_{t_0}^t v(t)dt
+		\end{equation}
+
 		\subsubsection{Relazione tra velocit\`a media e istantanea}
-		Ricordando che $v_m = \frac{x-x_0}{t-t_0}$, la relazione tra velocit\`a media e istantanea:
-		$$v_m = \dfrac{1}{t-t_0}\int_{t_0}^{t}v(t)dt$$
+		Ricordando \eqref{velocita_media}, la relazione tra velocit\`a media e istantanea:
+		\begin{equation*}
+			v_m = \dfrac{1}{t-t_0}\int_{t_0}^{t}v(t)dt
+		\end{equation*}
 		\subsubsection{Ottenere la velocit\`a nota l'accelerazione}
 		Data una $a(t)$ si ricava $v(t)$:
-		\begin{align*}
-			dv &=a(t)dt\\
-			\Delta v &= \int_{v_0}^v dv\\
-			   &=\int_{t_0}^t a(t)dt\\
-		\end{align*}
+		\begin{gather*}
+			dv = a(t)dt\\
+			\Delta v = \int_{v_0}^v dv =\int_{t_0}^t a(t)dt
+		\end{gather*}
 		Pertanto:
-		$$v(t) = v_0 + \int_{t_0}^t a(t)dt$$
+
+		\begin{equation}
+			v(t) = v_0 + \int_{t_0}^t a(t)dt
+		\end{equation}
+
 		\subsubsection{Dipendenza dell'accelerazione dalla posizione}
 		Nota la dipendenza dell'accelerazione dalla posizione, ovvero $a(x)$ si pu\`o ricavare il valore della velocit\`a in ogni posizione $x$ o $v(x)$.
 		Questo avviene considerando le funzioni di funzione.

@@ -188,4 +188,60 @@ In entrambi i sistemi, note le condizioni iniziali del moto e le forze agenti, f
 Però nel sistema non inerziale la descrizione è più complicata, dovendosi introdurre termini correttivi non provenienti dalle interazioni fondamentali.
 In un sistema non inerziale può quindi essere difficoltoso capire comprendere come agiscono le forze. 
 
+\section{Moto di trascinamento rettilineo uniforme}
+
+In questo esempio ho due sistemi inerziali in moto rettilineo uniforme uno rispetto l'altro.
+Gli assi sono paralleli tra loro, e coincidono in \(t = 0\) poi \(O'\) si sposta con velocità costante \(\overrightarrow{v_{O'}}\) parallela all'asse \(x\) .
+Partendo da \(\overrightarrow{r'} = \overrightarrow{r} - \overrightarrow{OO'}\), la posizione del punto \(P\) divetna:
+\begin{equation*}
+    x' = x - v_{O'} \cdot t \ , \ y' = y \ , \ z' = z
+\end{equation*}
+\begin{equation*}
+    v_x' = v_x - v_{O'} \ , \ v_y ' = v_y \ , \ v_z ' = v_z
+\end{equation*}
+Le accelerazioni sono identiche perché abbiamo assunto che i due sistemi fossero inerziali.
+Queste relazione costituiscono una trasformazione galileiana tra i due sistemi.
+
+Per \(O\) l'equazione del moto è
+\begin{equation*}
+    x_P = x_A + v_P t
+\end{equation*}
+mentre per \(O'\) diventa:
+\begin{equation*}
+    x_P' = x_P - v_{O'} t = x_A + (v_P - v_{O'}) t = x_A + v_P' t
+\end{equation*}
+Il moto visto da \(O '\) è quindi uniforme, con velocità diversa secondo le relazioni precentemente viste.
+Nel caso in cui \(\overrightarrow{v_P}\) non sia parallela all'asse \(x\), ma giaccia nel piano \(x\), \(y\), i due osservatori misurano un moto rettilineo uniforme, però con angolo diverso rispetto all'asse \(x\).
+
+In conclusione, se il moto è rettilineo uniforme in un sistema, lo è anche nell'altro, però sono diverse le velocità e le pendenze delle corrispondenti traiettorie rettilinee.
+
+Se invece si fa lo stesso ma con un moto rettilineo uniformemente accelerato nel sistema con origine in \(O\). \newline
+Se
+\begin{equation*}
+    x_P = x_A + v_{P,A} t + \frac{1}{2} a t^2  (y_P = z_P = 0 )
+\end{equation*}
+l'osservatore in \(O'\) vede un moto uniformemente accelerato con la stessa accelerazione e diversa velocità iniziale, sempre rettilineo lungo l'asse \(x = x'\): 
+\begin{equation*}
+    x_P' = x_A + (v_{P,A}-v_{O'}) t + \frac{1}{2} a t^2
+\end{equation*}
+\(v_{P,A}\) è la velocità iniziale del punto nel sistema con origine \(O\).
+Nel piano \(x,y\) ho le equazioni:
+\begin{equation*}
+    x_P = \frac{1}{2} a_x t^2 \ , \ y_P = \frac{1}{2} a_y t^2
+\end{equation*}
+\begin{equation*}
+    v_x = a_x t \ , \ v_y = a_y t
+\end{equation*}
+\(O\) vede una traiettoria rettilinea con pendenza \(v_y / v_x = a_y / a_x\). 
+Invece \(O'\) misura
+\begin{equation*}
+    x_P' = \frac{1}{2} a_x t^2 - v_{O'} t \ , \ y_P ' = \frac{1}{2} a_y t^2
+\end{equation*}
+\begin{equation*}
+    v_x ' = a_x t - v_{O'} \ , \ v_y ' = a_y t  \ .
+\end{equation*}
+La pendenza della traiettoria è \(v_y' / v_x' = a_y t / (a_x t - v_{O'})\) e dato che risulta funzione del tempo la traiettoria vista da \(O'\) è curva.
+
+Se per esempio l'osservatore in \(O\) lancia un punto verso l'alto, ho che il primo osservatore vede una traiettoria verticale, con il punto che ritorna nella posizione da cui è partito, mentre il secondo (in \(O'\)) vede la traiettoria è parabolica nel piano.
+
 \end{document}

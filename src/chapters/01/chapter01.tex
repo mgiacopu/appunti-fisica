@@ -166,7 +166,7 @@ Si intende per moto rettilineo uniformemente accelerato un moto in cui l'acceler
 		     &= x_0 + v_0t +\dfrac{1}{2}at^2\qquad\qquad se\ t_0 = 0
 	\end{align*}
 \section{Moto verticale di un corpo}
-Trascurando l'attrito con l'aria un corpo lasciato libero di cadere in vicinanza della superficie terrestre si move verso il basso con una accelerazione costante $g=9.8\frac{m}{s^2}$.
+Trascurando l'attrito con l'aria un corpo lasciato libero di cadere in vicinanza della superficie terrestre si muove verso il basso con una accelerazione costante $g=9.8\frac{m}{s^2}$.
 Il moto \`e pertanto rettilineo uniformemente accelerato.
 	\subsection{Sistema di riferimento}
 	Il sistema di riferimento ha origine al suolo e l'asse delle $x$ rivolto verso l'alto.
@@ -214,7 +214,7 @@ Il moto \`e pertanto rettilineo uniformemente accelerato.
 		\subsubsection{Tempo di caduta}
 		$$t_c = \dfrac{-v_i+\sqrt{v_i^2+2gh}}{g}$$
 		\subsubsection{Velocit\`a di caduta}
-		$$v_c^2=v)i^2+2gh$$
+		$$v_c^2=v_i^2+2gh$$
 	\subsection{Lancio del punto verso l'alto partendo dal suolo}
 	Nel caso di un lancio del punto verso l'alto si nota come inizialmente:
 	\begin{multicols}{3}
@@ -236,7 +236,7 @@ Il moto \`e pertanto rettilineo uniformemente accelerato.
 		\subsubsection{Discesa}
 		Per $t\ge t_M$ si \`e nella situazione del primo esempio: punto che cade da un'altezza $x_M$ con velocit\`a iniziale nulla.
 		Pertanto:
-		$$t_s = \sqrt{2x_M}{g}=t_M$$
+		$$t_s = \sqrt{2x_M}/{g}=t_M$$ % TODO: Frazione sotto radice?
 		E la durata complessiva del moto \`e pertanto:
 		$$2t_M = \dfrac{2v_2}{g}$$
 		Ricavando $t(x)$ dalla legge oraria e da $v(x)$ si ha:
@@ -263,7 +263,7 @@ Dove:
 	Date le costanti $A$ e $\phi$ si determina la posizione iniziale del punto, che si trova a $t=0$ nell'origine solo se $\phi=\{0, \pi\}$.
 	\subsection{Periodicit\`a}
 	Essendo la funzione seno periodica con periodo $2\pi$ il moto risulta periodico e descrive oscillazioni di ampiezza $A$ rispetto al centro $O$ uguali tra loro e caratterizzate da una durata $T$ periodo del moto armonico.
-	Si dice pertanto periodico un moto in cui intervalli di tempo uguali il punto ripassa nella stessa posizione con la stessa velocit\`a.
+	Si dice pertanto periodico un moto in cui in intervalli di tempo uguali il punto ripassa nella stessa posizione con la stessa velocit\`a.
 	\subsection{Determinare il periodo}
 	Per determinare il periodo $T$ si considerino due tempi $t$ e $t'$ tali che $t'-t = T$.
 	Per definizione $x(t')=x(t)$, pertanto dalla legge oraria le fasi nei due istanti devono differire $2\pi$.
@@ -273,7 +273,7 @@ Dove:
 		\omega &=\dfrac{2\pi}{T}
 	\end{align*}
 		\subsubsection{Significato di $\omega$}
-		SI nota pertanco come il moto si ripete velocemente quando la pulsazione \`e grande mentre il moto \`e lento per vassi valori della pulsazione.
+		Si nota pertanto come il moto si ripeta velocemente quando la pulsazione \`e grande mentre come il moto sia lento per bassi valori della pulsazione.
 		\subsubsection{Frequenza del moto}
 		Si definisce frequenza $v$ del moto il numero di oscillazioni in un secondo:
 		\begin{align*}
@@ -299,16 +299,17 @@ Dove:
 		       &= -\omega^2 x
 	\end{align*}
 	L'accelerazione si annulla nel centro di oscillazione e assume il valore in modulo massimo $\omega^2 A$ agli estremi, dove si inverte la velocit\`a.
-	Si nota inoltre come sia proposizionale e d opposta allo spostamento dal centro di oscillazione.
-	A parte il valore dell'ampiezza le tre funzioni mostrano lo stesso andamento temporale, si nota unicamente uno spostamento di una rispetto all'altra lungo l'asse dei tempi.
-	Si nota pertanto come la velocit\`a sia sfasata di $\frac{\pi}{2}$  rispetto allo spostamento o si trova in quadratura di fase, mentre l'accelerazoine \`e sfasata di $\pi$ rispetto allo spostamento o si trova in opposizione di fase.
+	Si nota inoltre come sia proposizionale ed opposta allo spostamento dal centro di oscillazione.
+	A parte il valore dell'ampiezza, le tre funzioni mostrano lo stesso andamento temporale; si nota unicamente uno spostamento di una rispetto all'altra lungo l'asse dei tempi.
+	
+	Si nota pertanto come la velocit\`a sia sfasata di $\frac{\pi}{2}$  rispetto allo spostamento o si trova in quadratura di fase, mentre l'accelerazione \`e sfasata di $\pi$ rispetto allo spostamento o si trova in opposizione di fase.
 	\subsection{Condizioni iniziali}
 	Le costanti $A$ e $\phi$ identificano le condizioni iniziali:
 	$$ x(0) = x_0 = A \sin\phi$$
 	$$v(0) = v_0 = \omega A \cos\phi$$
 	Note le condizioni iniziali $x_0$ e $v_0$ si calcolano $A$ e $\phi$ come:
 	$$\tan \phi = \dfrac{\omega x_0}{v_0}$$
-	$$A^2 = x_0^2 + \dfrac{v_0^2+}{\omega^2}$$
+	$$A^2 = x_0^2 + \dfrac{v_0^2}{\omega^2}$$
 	\subsection{Dipendenza della velocit\`a dalla posizione}
 	\begin{align*}
 		v(x) &= \int_{x_o}^x a(x)dx\\
@@ -317,7 +318,7 @@ Dove:
 		     &=\dfrac{1}{2}v^2 - \dfrac{1}{2}v_0^2
 	\end{align*}
 	Pertanto
-	$$v^2 = v_0^2 + \omega^2(x_0^2(x_0^2-x^2)$$
+	$$v^2 = v_0^2 + \omega^2(x_0^2(x_0^2-x^2))$$
 	Con riferimento al centro dove $x_0 = 0$ e $v_0 = \omega A$
 	$$v^2(x)=\omega^2(A^2 - x^2)$$
 	Il segno di $v$ dipende dal verso di passaggio.
@@ -361,9 +362,9 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
 	\end{align*}
 	Risulta pertanto un andamento lineare decrescente
 	$$v(x)=v_0-kx$$
-	La velocit\`a si annulla in:
+	La velocit\`a si annulla in
 	$$x=\dfrac{v_0}{k}$$
-	Dove il punto si ferma.
+	dove il punto si ferma.
 	\subsection{Legge oraria}
 	La legge oraria si ricava per integrazione da $v(t)$:
 	\begin{align*}
@@ -373,9 +374,9 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
 				&=\dfrac{v_0}{k}(1-e^kt)
 	\end{align*}
 	\subsection{Costante di tempo}
-	Si definisce costante di tempo:
+	Si definisce costante di tempo
 	$$\tau = \dfrac{1}{k}$$
-	In un intervallo di tempo pari a $\tau$ la funzione si riduce di un fattore di $e$.
+	in un intervallo di tempo pari a $\tau$ la funzione si riduce di un fattore di $e$.
 	Minore il valore di $\tau$ pi\`u rapida la decrescita.
 
 \section{Moto nel piano}
@@ -383,6 +384,7 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
   Nel caso che il moto sia vincolato a svolgersi su di un piano la traiettoria del punto $P$ è in generale  una linea curva.
   Si devono quindi analizzare la direzione e verso del moto oltre al valore numerico dello spostamento.
   Grandezze con queste caratteristiche si chiamano \emph{vettori}.
+
   Si definisce vettore un segmento orientato caratterizzato da un \emph{modulo}, una \emph{direzione} ed un \emph{verso}.
     \subsubsection{Determinare un punto nel piano}
     Un punto nel piano \`e individuato da due coordinate distinte che possono fare riferimento a un sistema di coordinate cartesiane o polari.
@@ -418,11 +420,11 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
   \begin{equation*}
     \overrightarrow{v} = \frac{ds}{dt} \overrightarrow{u}_T = v \overrightarrow{u}_T
   \end{equation*}
-  Pertanto la velocità vettoriale \(\overrightarrow{v}\) individua in ogni istante con la sua direzione e verso direzione e il suo moto e con il suo modulo \(v = \frac{ds}{dt}\) la velocità istantanea con cui è percorsa la traiettoria.
+  Pertanto la velocità vettoriale \(\overrightarrow{v}\) individua in ogni istante con la sua direzione e verso il suo moto e con il suo modulo \(v = \frac{ds}{dt}\) la velocità istantanea con cui è percorsa la traiettoria.
 
   Bisogna fare attenzione a non confondere i concetti di raggio vettore e i suoi incrementi finiti da una parte e il percorso effettivo dall'altra: un punto potrebbe percorrere un'orbita chiusa ritornando al punto di partenza e in tal caso il raggio vettore non cambia, ma il punto ha percorso una traiettoria finita (\(\Delta \overrightarrow{r} = 0, \Delta s \neq 0\)) con velocità vettoriale istantanea diversa da zero (similmente a quello che accadeva nel MRU, risulta nulla la velocità vettoriale media).
 
-  La traiettoria del moto e la definizione di velocità \(v \overrightarrow{u}_T\) non dipendono dal sistema di riferimento (invarianza delle relazioni vettoriali rispetto alla scelta del sistema di riferimento).
+  La traiettoria del moto e la definizione di velocità \(v = \overrightarrow{u}_T\) non dipendono dal sistema di riferimento (invarianza delle relazioni vettoriali rispetto alla scelta del sistema di riferimento).
   Tuttavia un vettore che si esprime esplicitamente tramite le sue componenti cambia perciò queste dipendono dal sistema di riferimento.
 		\subsubsection{Calcolo delle componenti della velocit\`a}
 			\paragraph{Componenti cartesiane}

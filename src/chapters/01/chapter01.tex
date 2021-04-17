@@ -341,8 +341,8 @@ Dove:
 	Ovvero $f$ descrive un'oscillazione rispetto a $z$ il cui periodo dipende da $k$.
 \section{Moto rettilineo smorzato esponenzialmente}
 Si consideri ora un altro moto vario in cui l'accelerazione soddisfa la condizione $a = -kv$, con $k$ costante positiva.
-L'accelerazione \`e sempre contraria alla velocit\`a che deve necessariamente diminuire e varia ocn la stessa legge con cui varia la velocit\`a, ovvero:
-$$\dfrac{dv}{dt} = -kv$$
+L'accelerazione \`e sempre contraria alla velocit\`a che deve necessariamente diminuire e varia con la stessa legge con cui varia la velocit\`a, ovvero:
+$$a = \dfrac{dv}{dt} = -kv$$
 Integrando con il metodo della separazione delle variabili:
 \begin{align*}
 	&\dfrac{dv}{v} = -kdt\\
@@ -376,7 +376,7 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
 	\subsection{Costante di tempo}
 	Si definisce costante di tempo
 	$$\tau = \dfrac{1}{k}$$
-	in un intervallo di tempo pari a $\tau$ la funzione si riduce di un fattore di $e$.
+	in un intervallo di tempo pari a $\tau$ la funzione si riduce di un fattore di $e$. %TODO: Correggere il senso di questa frase
 	Minore il valore di $\tau$ pi\`u rapida la decrescita.
 
 \section{Moto nel piano}
@@ -457,7 +457,7 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
     $$\overrightarrow{r}(t)=\overrightarrow{r}(t_0)+\int_{t_0}^tv(t)dt$$
 		L'integrazione esplicita pu\`o essere fatta ricorrendo alle componenti, applicando
 		$$x(t)=x_0+\int_{t_0}^tv(t)dt$$
-		Ai moti rettilinei componenti.
+		ai moti rettilinei componenti.
   \subsection{Accelerazione nel moto piano}
   L'accelerazione nel moto piano deve esprimere le variazioni della velocità sia come \emph{modulo} che \emph{direzione} e quindi ci aspettiamo che abbia due componenti,
   una legata alla variazione del modulo della velocità e la seconda al cambiamento di direzione del moto.
@@ -491,7 +491,7 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
       $$a=\sqrt{a^2_T+a^2_N}=\sqrt{\biggl(\dfrac{d\overrightarrow{v}}{dt}\biggr)^2+\dfrac{v^4}{R^2}}$$
 			Le due componenti si chiamano accelerazione tangenziale e accelerazione normale o centripeta.
 		\subsubsection{Moto curvilineo uniforme}
-    In un moto curvilineo vario entrambe le componenti sono diverse da zero, me il moto \`e curvilineo uniforme $\overrightarrow{a_T}$ \`e nulla, mentre il moto \`e rettilineo vario \`e nulla $\overrightarrow{a_N}$, nel moto rettilineo uniforme sono entrambe nulle.
+    In un moto curvilineo vario entrambe le componenti sono diverse da zero; il moto \`e curvilineo uniforme se $\overrightarrow{a_T}$ \`e nulla, rettilineo vario se \`e nulla $\overrightarrow{a_N}$ o altrimenti rettilineo uniforme se sono entrambe nulle.
 		Ovvero:
 		\begin{multicols}{2}
 			\begin{itemize}
@@ -557,7 +557,7 @@ La rappresentazione in coordinate cartesiane \`e legata a $\theta(t)$:
   \begin{equation}
     \theta(t) = \theta + \omega t
   \end{equation}
-  Si noti come il termine uniforme si rifersca al modulo della velocit\`a: il moto circolare uniforme ha accelerazione costante ortogonale alla traiettoria
+  Si noti come il termine uniforme si riferisca al modulo della velocit\`a: il moto circolare uniforme ha accelerazione costante ortogonale alla traiettoria
   \begin{equation}
    a = a_N = \frac{v^2}{R} = \omega^2 R
   \end{equation}
@@ -614,12 +614,12 @@ La rappresentazione in coordinate cartesiane \`e legata a $\theta(t)$:
 			 &=\dfrac{d\omega}{dt}\times r + \omega\times\dfrac{dr}{dt}\Rightarrow\\
 			\Rightarrow&a=a\times r+\omega\times v\\
 		\end{align*}
-		Si nota come il pirmo termine $a\times r$ \`e l'accelerazione tangenziale $a_T$ di modulo $aR$, mentre il secondo $\omega\times v$ \`e l'accelerazione centripeta $a_N$ di modulo $\omega^2R$.
-		Nel moto circolare uniforme $\omega$ \`e un vettore costante anche un modulo, $a$ \`e nulla e $a=a_N=\omega\times v$.
+		Si nota come il primo termine $a\times r$ \`e l'accelerazione tangenziale $a_T$ di modulo $aR$, mentre il secondo $\omega\times v$ \`e l'accelerazione centripeta $a_N$ di modulo $\omega^2R$.
+		Nel moto circolare uniforme $\omega$ \`e un vettore costante anche in modulo, $a$ \`e nulla e $a=a_N=\omega\times v$.
 		\subsubsection{Propriet\`a di $r$}
 		Il vettore $r$ applicato in $O$ ha modulo costante e descrive un moto rotatorio attorno all'asse di rotazione, ovvero alla direzione di $\omega$ formando un angolo $\phi$ costante con l'asse stesso.
 		La sua derivata $\frac{dr}{dt}$ si pu\`o scrivere $\omega\times r$.
-		Anche il vettroe $v$ descrive una rotazione intorno a $\omega$ con cui forma l'angolo $\phi=\frac{\pi}{2}$ e la sua derivata $\frac{dv}{dt}$ si pu\`o scrivere $\omega\times v$.
+		Anche il vettore $v$ descrive una rotazione intorno a $\omega$ con cui forma l'angolo $\phi=\frac{\pi}{2}$ e la sua derivata $\frac{dv}{dt}$ si pu\`o scrivere $\omega\times v$.
 		Al moto di rotazione di un asse rispetto ad un altro asse fisso con cui forma un angolo costante e ha un punto in comune si d\`a il nome di moto di precessione.
 		Dato un vettore di modulo costante $A$ che descrive un moto di precessione con velocit\`a angolare $\omega$, la sua derivata temporale pu\`o essere sempre scritta:
 		$$\dfrac{dA}{dt}=\omega\times A$$
@@ -636,7 +636,7 @@ Si vuole calcolare la traiettoria, la massima altezza raggiunta e la posizione $
 	$$v(t)=v_0+\int_{t_0}^ta(t)dt=v_0-gtu_x$$
 	\subsection{Velocit\`a}
 	La velocit\`a si trova nel piano individuato dai vettori costanti $v_\theta$ e $g$, il piano $x,y$.
-	Essendo $v_\theta=v_0\cos t au_x+v_\theta\sin au_y$:
+	Essendo $v_\theta=v_0\cos t au_x+v_\theta\sin au_y$: %TODO: t au_x ??
 	$$v(t)=v_\theta\cos au_y+(v_\theta\sin a-gt)u_x$$
 	\subsection{Leggi orarie dei moti proiettati}
 	La velocit\`a dei moti proiettati sugli assi sono $v_y=v_o\cos\alpha$ e $v_x=v_0\sin\alpha-gt$.
@@ -646,7 +646,9 @@ Si vuole calcolare la traiettoria, la massima altezza raggiunta e la posizione $
     $$x=v_0\cos t\alpha t$$
     $$y=v_0\sin\alpha t-\dfrac{1}{2}gt^2$$
   \end{multicols}
-	Se sull'asse $x$ il moto \`e uniforme sull'asse $y$ \`e uniformemente accelerato.
+  \begin{tabular}{|p{13cm}}
+	Se sull'asse $x$ il moto \`e uniforme, sull'asse $y$ \`e uniformemente accelerato.\\
+  \end{tabular}
 	\subsection{Traiettoria}
 	La traiettoria viene ricavata eliminando il tempo tra $x(t)$ e $y(t)$ e ottenendo la funzione:
 	$$y(t):t=\dfrac{x}{v_0}\cos\alpha$$
@@ -659,7 +661,7 @@ Si vuole calcolare la traiettoria, la massima altezza raggiunta e la posizione $
 		        &=\tan\alpha-\dfrac{g}{v_0\cos\alpha}t=\\
 				    &=\tan\alpha-\dfrac{g}{v_0^2\cos^2\alpha}x
 	\end{align*}
-	Per calcolare la gittata $OG$ si impne $y(x)=0$ e si ottengono due soluzione $x=0$ e:
+	Per calcolare la gittata $OG$ si impone $y(x)=0$ e si ottengono due soluzioni $x=0$ e:
 	\begin{align*}
 		x_G&=\dfrac{2v_0^2\cos^2\alpha\tan\alpha}{g}=\\
 		   &=\dfrac{2v_0^2\cos\alpha\sin\alpha}{g}=\\
@@ -672,7 +674,7 @@ Si vuole calcolare la traiettoria, la massima altezza raggiunta e la posizione $
 	L'altezza massima si pu\`o ottenere annullando $\frac{dy}{dx}$, ovvero imponendo
 	$$\tan\alpha-(\dfrac{g}{v_0^2}\cos^2\alpha)x=0$$
 	Si ricava da questo l'ascissa del massimo $X_M$ e si calcola $y(X_M)$.
-	Un altro modo \`e sfruttare il fatto che nel punto di massima altezza la velocit\`a \`e orizzontale, pertanto $u_y=0$< ovvero $t=t_M=v_0\sin\frac{\alpha}{g}$, sostituendo $x(t)$ e $y(t)$ si trovano $X_M$ e $Y_M$.
+	Un altro modo \`e sfruttare il fatto che nel punto di massima altezza la velocit\`a \`e orizzontale, pertanto $u_y=0$ ovvero $t=t_M=v_0\sin\frac{\alpha}{g}$, sostituendo $x(t)$ e $y(t)$ si trovano $X_M$ e $Y_M$.
 	\subsection{Angolo di lancio per la gittata massima}
 	L'angolo di lancio per cui si ha la gittata massima si ottiene con la condizione $\frac{dx_G}{d\alpha}=0$ ovvero $\frac{2v_0^2}{g}(-\sin^2\alpha+\cos^2\alpha)=0$ e risulta $\alpha=45\si{\degree}$
 	\subsection{Tempo totale di volo}

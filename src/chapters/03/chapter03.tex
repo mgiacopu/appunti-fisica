@@ -168,9 +168,9 @@ Se il moto del secondo sistema è accelerato rispetto al sistema inerziale, (\(a
 
 Infatti, se \(\overrightarrow{F} = m \overrightarrow{a}\) nel sistema inerziale, nel sistema mobile in moto accelerato non può valere \(\overrightarrow{F} = m \overrightarrow{a'}\) poiché \( \overrightarrow{a'} \neq \overrightarrow{a}\).
 Ho anche che, se moltiplichiamo i termini di (3.15) per la massa del punto e teniamo conto che \(\overrightarrow{F} = m \overrightarrow{a}\), abbiamo:
-\begin{equation*}
+\begin{equation}
     \overrightarrow{F} - m \overrightarrow{a_t} - m \overrightarrow{a_c} = m \overrightarrow{a'}
-\end{equation*}
+\end{equation}
 
 \subsection{Forze apparenti o forze di inerzia}
 Questa equazione rappresenta una forma modificata dalla legge di Newton: in un sistema non inerziale il prodotto della massa del punto materiale per l'accelerazione misurata in quel sistema è eguale alla forza vera agente sul punto più le forze apparenti. 
@@ -243,5 +243,71 @@ Invece \(O'\) misura
 La pendenza della traiettoria è \(v_y' / v_x' = a_y t / (a_x t - v_{O'})\) e dato che risulta funzione del tempo la traiettoria vista da \(O'\) è curva.
 
 Se per esempio l'osservatore in \(O\) lancia un punto verso l'alto, ho che il primo osservatore vede una traiettoria verticale, con il punto che ritorna nella posizione da cui è partito, mentre il secondo (in \(O'\)) vede la traiettoria è parabolica nel piano.
+
+\section{Moto di trascinamento uniformemente accelerato}
+
+Assumendo la stessa condizione (geometrica) del sistema \(0'\) rispetto al sistema \(O\) dell'esempio precedente, 
+supponiamo ora che \(O'\) abbia un accelerazione costante \(\overrightarrow{a}_{O'} = \overrightarrow{a}_t\) e una velocità iniziale \(\overrightarrow{v_{in}}\) entrambe parallele all'asse \(x\).\newline
+La posizione e la velocità di \(O'\) sono espresse da
+\begin{equation*}
+    x_{O'} =v_{in} \ + \frac{1}{2} a_t t^2 \ , \ v_{O'} = v_{in} + a_t t
+\end{equation*}
+
+Le formule di traformazione tra i due sistemi di riferimento diventano:
+% TODO allineare
+\begin{equation*}
+    \overrightarrow{r'} = \overrightarrow{r} - \overrightarrow{OO'} \ , \ x' = x - v_{in} t - \frac{1}{2} a_t t^2
+\end{equation*}
+\begin{equation*}
+    \overrightarrow{v'} = \overrightarrow{v} - \overrightarrow{v_{O'}} \ , \ v_x' = v_x -v_{in} - a_t t
+\end{equation*}
+\begin{equation*}
+    \overrightarrow{a'} = \overrightarrow{a} - \overrightarrow{a_{O'}} \ , \ a_x' = a_x - a_t
+\end{equation*}
+
+% Salto il primo esempio, in caso si aggiunge più avanti. Passo al secondo che ha fatto Iuppa
+
+\subsection{Esempio carrello}
+% TODO aggiungi foto secondo esempio (carrello)
+Consideriamo di avere un punto materiale di massa \(m\), posto sul pavimento del carrello che continua a muoversi con accelerazione \(\overrightarrow{a}\). 
+Si assuma l'attrito nullo e che ad un estremo del carrello ci sia una molla di costante elastica \(k\) (figura ??). % TODO add reference
+Nel sistema inerziale si osservano i seguenti eventi: il punto resta fermo (non c'è attrito tra punto e pavimento) mentre il carrello gli scorre sotto, fino a quando l'estremo della molla lo raggiunge. 
+La molla inizia allora a comprimersi e il punto a muoversi; a regime il punto è fermo rispetto al carrello mentre è in moto, con la stessa accelerazione \(a\), del carrello, rispetto ad \(O\). 
+In tale condizione la molla è compressa dalla quantità \(x_C = m a_t / k\): infatti è la forza elastica della molla, \(k x\), che applicata al punto gli comunica l'accelerazione \(a_t\).
+
+Per l'osservatore \(O'\), posto sul carrello, inizialmente il punto è in moto con accelerazione \(-\overrightarrow{a}_{t}\). 
+Infatti \(\overrightarrow{a}' = \overrightarrow{a} -\overrightarrow{a}_t= -\overrightarrow{a}_t \), dato che \(\overrightarrow{a} = 0\). 
+Ad un certo istante il punto raggiunge la molla che si comprime e, di conseguenza, il punto si ferma; la molla resta compressa della quantità \(x_c\). 
+\(O'\) conclude che sul punto, che sembrerebbe libero, agisce la forza \(-m \overrightarrow{a}\), tanto è vero che quando il punto tocca la molla la comprime. 
+Poiché il punto appare da quell'istante fermo, si deduce che in modulo \(k x_c = m a_t\). 
+Posso quindi, partendo da \(x_c\) ricavare \(a_t\) (la molla diventa una sorta di accelerometro).
+
+\subsection{Esempio ascensore}
+
+Nell'ultimo esempio ho un asse \(z\) verticale con origine in \(O\) e un secondo asse \(z'\) verticale, con origine in \(O'\), solidale con un ascensore; 
+entrambi gli assi sono orientati verso l'alto. 
+L'ascensore inizia a salire con accelerazione \(\overrightarrow{a}_t\), descrive successivamente un moto uniforme ed infine decelera con accelerazione \(-\overrightarrow{a}_t\), fino a fermarsi; \(a_t\) è costante in modulo.
+L'osservatore nel sistema \(O'\) compie nell'ascensore esperimenti di caduta libera di corpi, misurandone l'accelerazione \(\overrightarrow{a}'\).
+Per l'osservatore in \(O\) l'accelerazione dei corpi lasciati cadere da \(O'\) è sempre pari a \(g\). 
+In base a (3.17) ho che \(\overrightarrow{g} =\overrightarrow{a}'+ \overrightarrow{a}_t\), e proiettando tale relazione sull'asse \(z\) si ha:
+\begin{itemize}
+    \item nella fase di accelerazione \(-g = a' + a_t \implies a' = -(g + a_t)\)
+    \item nella fase di moto uniforme \(-g = a' \implies a' = -g\)
+    \item nella fase di decelerazione \(-g = a' - a_t \implies a' = -(g-a_t)\) 
+\end{itemize}
+Nella fase di accelerazione \(O'\) constata che i corpi cadono con una accelerazione maggiore di quella di gravità,
+nella fase uniforme si torna all'accelerazione normale, mentre nella fase di decelerazione i corpi cadono con una accelerazione minore di \(g\) (diminuzione apparente del peso).
+
+Se fosse \(\overrightarrow{a}_t = \overrightarrow{g}\), come potrebbe accadere nella fase di decelerazione, oppure se l'ascensore scendesse in caduta libera, si troverebbe \(\overrightarrow{a}'= 0\): 
+un corpo abbandonato nell'ascensore con velocità iniziale nulla resta fermo rispetto ad \(O'\). 
+È la cosiddetta assenza di peso, avvertita da chi sta dentro l'ascensore e dovuta ovviamente non a una scomparsa reale dell'attrazione terrestre, ma al fatto che se tutto il sistema sta scendendo con la stessa accelerazione dei corpi che ad esso si riferiscono non c'è più accelerazione relativa e, tra l'altro, vengono a mancare le sensazioni ad essa connesse. 
+Un effetto analogo, come è ben noto, si manifesta nei satelliti artificiali che ruotano intorno alla terra.
+
+La spiegazione dell'assenza di accelerazione di gravità è quella data da \(O\) che misura in ogni caso \(g\) e ragiona in base a (3.17), attribuendo le variazioni all'accelerazione di trascinamento di \(O'\).
+Ma \(O'\), se non ha a priori questo tipo di informazioni, ragiona in modo diverso. 
+Egli vede che in certe situazioni l'accelerazione di un corpo che cade è \(g\), in accordo con quanto gli può essere comunicato dall'esterno, ma sperimenta anche situazioni diverse. 
+\(O'\) postula pertanto che in certe situazioni, che è capace di mettere in evidenza, ha origine un'accelerazione supplementare che si compone con \(g\) per dare i risultati osservati ovvero che alla forza peso va aggiunto il termine \(-m \overrightarrow{a}_{suppl}\); sulle cause del fenomeno non è però in grado di fare alcuna ipotesi.
+
+Notiamo che dall'esame delle misure di \(a'\) e \(a_{suppl}\) egli sarebbe in grado di accorgersi da solo che c'è un valore speciale, appunto \(g\), che si ottiene sempre sommando o sottraendo i valori di \(a'\) e \(a_{suppl}\); solo in seguito a un'informazione esterna potrebbe però accorgersi che \(a_{suppl}\) non è altro che \(a_t\) e che quindi egli ha un modo per mettere in evidenza cosa sta succedendo al suo sistema.
 
 \end{document}

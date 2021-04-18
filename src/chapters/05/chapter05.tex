@@ -10,4 +10,28 @@
 
 \chapter{Dinamica dei sistemi di punti materiali}
 
+\section{Sistemi di punti materiali, principio di azione e reazione}
+
+Consideriamo un insieme \(n\) di punti materiali che interagiscono tra loro.\newline
+La forza \(\overrightarrow{F}_i\) agente sull'\(i\)-esimo punto si può pensare come risultante delle \emph{forze esterne}
+agenti sul punto \(\overrightarrow{F}_i^{(E)}\), e delle forze esercitate dagli altri \(n-1\) punti, forze interne al sistema \(\overrightarrow{F}_i^{(I)}\):
+\begin{equation}
+    \overrightarrow{F}_i = \overrightarrow{F}_i^{(E)} + \overrightarrow{F}_i^{(I)}
+\end{equation}
+questa distinzione è utile ma comunque non fa si che il moto sia diviso nelle due forze perchè il moto di \(P_i\) dipende da \(\overrightarrow{F}_i\).
+
+La distinzione tra forze interne ed esterne dipende da come viene definito il sistema di punti, che è arbitraria.
+
+Alle forze interne si applica il principio di azione e reazione, indicato anche come terza legge di Newton. 
+Se il punto \(i\)-esimo esercita sul punto \(j\)-esimo la forza \(\overrightarrow{F}_{i,j}\) il punto \(j\)-esimo reagisce esercitando sul punto \(i\)-esimo la forza \(\overrightarrow{F}_{j,i}\)
+Si osserva che queste forze hanno la stessa direzione, verso opposto, stesso modulo e stessa retta di azione; esse possono essere attrattive o repulsive. 
+% TODO aggiungere disegno
+
+In generale la risultante \(\overrightarrow{F}_i^{(I)}\) delle forze interne agenti sull'\(i\)-esimo punto è diversa da zero, però la risultante di tutte le forze interne del sistema è nulla perché, in base al principio di azione e reazione, esse sono a due a due eguali ed opposte:
+\begin{equation}
+    \overrightarrow{R}^{(I)} = \sum_i \overrightarrow{F}_i^{(I)} = \sum_{i,j} \overrightarrow{F}_{i,j} = 0 
+\end{equation}
+con \(i  = 1,2,...,n\) , \(j = 1,2,...,n\) , \(i \neq j\).
+
+
 \end{document}

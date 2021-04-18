@@ -198,5 +198,81 @@ Nell'urto completamente anelastico viene assorbita l'energia \(E_k'\), cioè l'e
 È infatti dopo l'urto non c'è più moto rispetto al centro di massa, con cui i due punti vengono a  coincidere. 
 Nella realtà l'energia cinetica \(E_k'\) viene in parte utilizzata per la deformazione permanente dei due corpi. 
 
+\section{Urto elastico}
+
+Si definisce come urto elastico un urto durante il quale si conserva anche l'energia cinetica esterna questo comporta che le forze interne, che si manifestano durante l'urto, siano conservative. 
+I due corpi reali che si urtano subiscono durante l'urto delle deformazioni elastiche, riprendendo la configurazione iniziale subito dopo l'urto.
+L'energia potenziale del sistema prima e dopo l'urto è la stessa e pertanto, se si conserva l'energia meccanica, deve conservarsi anche l'energia cinetica.
+
+Valgono quindi le equazioni:
+\begin{equation*}
+    \overrightarrow{P}_{in} = \overrightarrow{P}_{fin} \ , \ E_{k,in} = E_{k,out}
+\end{equation*}
+
+Il caso più generale è tridimensionale e abbiamo sei incognite, le componenti delle velocità dei due punti dopo l'urto, ma solo quattro equazioni.
+Anche nel caso di urto nel piano, abbiamo quattro incognite e tre equazioni. 
+Quindi per risolvere un problema di urto elastico nel piano o nello spazio, oltre a conoscere le velocità prima dell'urto bisogna avere qualche altra informazione sulle velocità dopo l'urto.
+Invece nel caso unidimensionale (due punti che si muovono prima e dopo l'urto elastico lungo la stessa direzione) abbiamo due equazioni di conservazione e due incognite (le velocità dei due punti dopo l'urto) e possiamo risolvere il problema.
+
+Scriviamo dunque in quest'ultimo caso:
+\begin{equation*}
+    m_1 v_{1,in} + m_2 v_{2,in} = m_1 v_{1,fin} + m_2 v_{2,fin} = \left( m_1 + m_2 \right) v_{CM}
+\end{equation*}
+\begin{equation*}
+    \frac{1}{2} m_1 v_{1,in}^2 + \frac{1}{2} m_2 v_{2,in}^2 = \frac{1}{2} m_1 v_{1,fin}^2 + \frac{1}{2} m_2 v_{2,fin}^2
+\end{equation*}
+
+Per determinare i valori di \(v_{1,fin}\) e \(v_{2,fin}\) in funzione di \(v_{1,in}\) e \(v_{2,in}\) è più comodo considerare l'urto anche nel sistema di riferimento del centro di massa, dove \(P' =0\) e quindi: 
+\begin{equation*}
+    m_1 v_{1,in}' = -m_2 v_{2,in}' \ , \  m_1 v_{1,fin}' = -m_2 v_{2,fin}'
+\end{equation*}
+\begin{equation*}
+    \frac{1}{2} m_1 {v'}_{1,in}^2 + \frac{1}{2} m_2 {v'}_{2,in}^2 = \frac{1}{2} m_1 {v'}_{1,fin}^2 + \frac{1}{2} m_2 {v'}_{2,fin}^2
+\end{equation*}
+Da queste ottengo:
+\begin{equation*}
+    v_{1,fin}' = - v_{1,in}' \ , \ v_{2,fin}' = - v_{2,in}'
+\end{equation*}
+nel sistema del centro di massa la quantità di moto di ciascun punto resta la stessa in modulo, cambiando solo di verso. 
+
+Tornando nel sistema inerziale da:
+\begin{equation*}
+    v_{1,in} = {v'}_{1,in} + v_{CM} \ , \ v_{2,in} = {v'}_{2,in} + v_{CM}
+\end{equation*}
+\begin{equation*}
+    v_{1,fin} = {v'}_{1,fin} + v_{CM} \ , \ v_{2,fin} = {v'}_{2,fin} + v_{CM}
+\end{equation*}
+e da 
+\begin{equation*}
+    {v}_{CM} = \frac{m_1 {v}_1 + m_2 {v}_2}{m_1 + m_2}
+\end{equation*}
+Ottengo:
+\begin{equation}
+    v_{1,fin} = \frac{\left(m_1 - m_2\right)v_{1,in} + 2 m_2 v_{2,in} }{m_1 + m_2}
+\end{equation}
+\begin{equation}
+    v_{2,fin} = \frac{2 m_1 v_{1,in} + \left(m_2 - m_1\right)v_{2,in} }{m_1 + m_2}
+\end{equation}
+
+\subsection{Esempi}
+% TODO forse è meglio aggiungere assets come riferimento
+\begin{itemize}
+    \item \(m_1 = m_2 = m : v_{1,fin} = v_{2,in} \ , \ v_{2,fin} = v_{1,in}\) \newline
+    Si ottiene a seguito dell'urto uno scambio delle velocità. 
+    \item \(m_1 >> m_2 = m : v_{1,fin} \cong v_{1,in} \ , \ v_{2,fin} = 2 v_{1,in} - v_{2,in}\) \newline
+    Nell'urto la velocità di \(m_1\) rimane praticamente la stessa
+    \item \(m_1 << m_2 = m \ e \ v_{2,in} = 0  \ : \ v_{1,fin} = - v_{1,in} \ , \ v_{2,fin} \cong 0 \) \newline
+    In tale situazione \(m_1\) rimbalza all'indietro e \(m_2\) resta fermo. 
+    Questo è un caso molto particolare, in cui possiamo verificare che si conserva l'energia cinetica, ma non la quantità di moto.
+    Per esempio si tratta dell'urto di un punto contro un corpo massiccio, come una parete.
+    Durante l'urto si sviluppano forze vincolari esterne di tipo impulsivo e quindi paragonabili a quelle interne. 
+    Ciò non permette la conservazione della quantità di moto.
+    \item Urto obliquo contro una parete piana immobile liscia.\newline
+    Anche questo è un caso particolare; è un urto bidimensionale, ma siccome uno dei due corpi è immobile è possibile risolvere il problema conoscendo la velocità prima dell'urto.
+    Supponiamo che \(\overrightarrow{v}_{in}\) formi l'angolo \(\theta\) con la normale alla parete e abbia quindi le componenti \(v_{in} \sin \theta\) e \(v_{in} \cos \theta\). 
+    Nella direzione parallela alla parete non c'è urto, si conserva la relativa quantità di moto e la componente della velocità vale ancora \(v_{in} \sin \theta\) dopo l'urto; 
+    in direzione ortogonale abbiamo la situazione vista nel precedente caso e \(v_{in} \cos \theta\) diventa \(-v_{in} \cos \theta\). 
+    Quindi \(v_{fin}\) è eguale in modulo a \(v_{in}\) e forma ancora l'angolo \(\theta\) con la normale alla parete. 
+\end{itemize}
 
 \end{document}

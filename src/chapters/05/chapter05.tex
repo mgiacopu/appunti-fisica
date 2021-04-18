@@ -33,5 +33,57 @@ In generale la risultante \(\overrightarrow{F}_i^{(I)}\) delle forze interne age
 \end{equation}
 con \(i  = 1,2,...,n\) , \(j = 1,2,...,n\) , \(i \neq j\).
 
+\section{Centro di massa di un sistema di punti, Teorema del moto del centro di massa}
+
+\subsection{Centro di massa}
+
+Si definisce come centro di massa di un sistema di punti materiali il punto geometrico la cui posizione è individuata, nel sistema di riferimento considerato, dal raggio vettore:
+\begin{equation}
+    \overrightarrow{r}_{CM} = \frac{\sum_i {m_i \overrightarrow{r}_i}}{\sum_i m_i} = \frac{m_1 \overrightarrow{r}_1 + m_2 \overrightarrow{r}_2 + ... + m_n \overrightarrow{r}_n}{m_1 + m_2 + ... + m_n}
+\end{equation}
+
+Si noti che la posizione del centro di massa rispetto agli \(n\) punti materiali non dipende dal sistema di riferimento, mentre le sue coordinate invece variano a seconda del sistema prescelto.
+
+Se gli \(n\) punti sono in movimento, di norma la posizione del centro di massa varia; sulla base della definizione calcoliamo la velocità del centro di massa:
+\begin{equation}
+    \overrightarrow{v}_{CM} = \frac{d \overrightarrow{r}_CM}{dt}
+\end{equation}
+
+Data \(M = \sum_i m_i\) la massa totale del sistema, vediamo che quindi che \(P\) coincide con la quantità di moto \(M \overrightarrow{v}_{CM}\) del centro di massa, considerato come un punto materiale che abbia la posizione \(\overrightarrow{r}_{CM}\), la velocità \(v_{CM}\) e massa pari alla massa totale \(M\) del sistema.
+
+Analogamente possiamo ricavare l'accelerazione del centro di massa, derivando:
+\begin{equation}
+    \overrightarrow{a}_{CM} = \frac{d \overrightarrow{v}_{CM}}{dt} = \frac{\sum_i {m_i \frac{d \overrightarrow{v}_i}{dt}}}{\sum_i m_i} = \frac{\sum_i {m_i \overrightarrow{a}_i}}{\sum_i m_i} = \frac{\sum_i m_i \overrightarrow{a}_i}{M}
+\end{equation}
+
+Se il sistema di riferimento è inerziale
+\begin{equation*}
+    m_i \overrightarrow{a}_i = \overrightarrow{F}_i = \overrightarrow{F}_i^{(E)} + \overrightarrow{F}_i^{(I)}
+\end{equation*}
+secondo (5.1) e sostituendo
+\begin{equation}
+    M \overrightarrow{a}_{C M}=\sum_i m_{i} \overrightarrow{a}_{i}=\sum_{i}\left(\overrightarrow{F}_{i}^{(E)}+\overrightarrow{F}_{i}^{(I)}\right)=\overrightarrow{R}^{(E)}+\overrightarrow{R}^{(I)}=\overrightarrow{R}^{(E)}
+\end{equation}
+dato che la risultante delle forze è nulla. 
+
+\subsection{Teorema del moto del centro di massa}
+
+La relazione
+\begin{equation}
+    \overrightarrow{R}^{(E)} = M \overrightarrow{a}_{C M}
+\end{equation}
+esprime il teorema del moto del centro di massa. 
+Il centro di massa si muove come un punto materiale in cui sia concentrata tutta la massa del sistema e a cui sia applicata la risultante delle forze esterne.
+
+Ho inoltre
+
+\begin{equation}
+    \overrightarrow{R}^{(E)} = M \overrightarrow{a}_{C M} = M \frac{d \overrightarrow{v}_{C M}}{dt} = \frac{d}{dt} \left( M \overrightarrow{v}_{C M}\right) = \frac{d \overrightarrow{P}}{dt}
+\end{equation}
+
+La risultante delle forze esterne è euguale alla derivata rispello al tempo della quantità di moto totale del sistema. 
+
+Il moto del centro di massa è determinato dunque solo dalle forze esterne. 
+L'azione delle forze interne non può modificare lo stato di moto del centro di massa; invece il moto di ciascun punto dipende dall'azione delle forze esterne ed interne agenti su di esso.
 
 \end{document}

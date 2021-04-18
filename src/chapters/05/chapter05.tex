@@ -172,4 +172,31 @@ Il ragionamento non sarebbe corretto se \(F^{(E)}\) fosse impulsiva nell'interva
 
 Ricordiamo infine che a priori non è noto se le forze interne che si sviluppano nell'urto sono conservative e pertanto non si può assumere la conservazione dell'energia meccanica del sistema durante l'urto.
 
+\section{Urto completamente anelastico}
+
+L'urto si chiama completamente anelastico quando i due punti restano attaccati dopo l'urto formando un unico corpo puntiforme di massa \(m_1 + m_2\).
+Se \(\overrightarrow{v}_1\) e \(\overrightarrow{v}_2\) sono le velocità dei due punti, nell'istante prima dell'urto e \(\overrightarrow{v}'\) la velocità comune immediatamente dopo l'urto.
+Ottengo che:
+\begin{equation*}
+    m_1 \overrightarrow{v}_1 + m_2 \overrightarrow{v}_2 = \left( m_1 + m_2 \right) \overrightarrow{v}' = \left( m_1 + m_2 \right) \overrightarrow{v}_{CM}
+\end{equation*} 
+\begin{equation*}
+    \overrightarrow{v}_{CM} = \frac{m_1 \overrightarrow{v}_1 + m_2 \overrightarrow{v}_2}{m_1 + m_2}
+\end{equation*}
+\(\overrightarrow{v}_{CM}\) rimane invariata nell'urto. Le variazioni di quantità di moto dei singoli punti sono \(m_1 \overrightarrow{v}_{CM} - m_1 \overrightarrow{v}_{1}\) e \(m_2 \overrightarrow{v}_{CM} - m_2 \overrightarrow{v}_{2}\) e sono uguali ed opposte.
+
+L'energia cinetica prima dell'urto è:
+\begin{equation*}
+    E_{k,in} = \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 = E_k' + \frac{1}{2} \left( m_1 + m_2 \right) v_{CM}^2
+\end{equation*}
+quella finale per il Teorema di König diventa: % TODO Teorema di Konig è in 5.7 (lo spieghiamo?)
+\begin{equation*}
+    E_{k,fin} = \left( m_1 + m_2 \right) v_{CM}^2 < E_{k,in}
+\end{equation*}
+
+Nell'urto completamente anelastico viene assorbita l'energia \(E_k'\), cioè l'energia cinetica rispetto al centro di massa prima dell'urto. 
+È infatti dopo l'urto non c'è più moto rispetto al centro di massa, con cui i due punti vengono a  coincidere. 
+Nella realtà l'energia cinetica \(E_k'\) viene in parte utilizzata per la deformazione permanente dei due corpi. 
+
+
 \end{document}

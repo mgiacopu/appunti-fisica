@@ -133,5 +133,43 @@ Questo avviene analogamente anche per \(\overrightarrow{a}_{CM}\).
 
 In effetti \(\overrightarrow{r}_{CM}, \overrightarrow{v}_{CM}\) e \(\overrightarrow{a}_{CM}\) sono le medie pesate sulle masse dei raggi vettori, velocità, accelerazioni dei singoli punti e pertanto forniscono informazioni di proprietà medie e non sul moto dei singoli punti. 
 
+\section{Urti tra due punti materiali}
+
+Quando due punti materiali vengono a contatto e interagiscono per un intervallo di tempo trascurabile rispello al tempo di osservazione del sistema, si parla di urto tra i due punti.
+Data la brevità del fenomeno si assume che durante l'interazione i punti non si muovano in modo apprezzabile.
+
+Nell'urto si possono sviluppare forze molto intense che modificano la quantità di moto di ciascun punto.
+Queste forze che, come avviene in un urto, agiscono per un tempo breve rispello al tempo di osservazione, sono chiamate forze impulsive.
+
+Osserviamo che le forze che si manifestano durante il processo d'urto sono forze interne al sistema costituito dai due punti materiali interagenti. 
+In assenza di forze esterne si verifica pertanto durante l'urto la conservazione della quantità di moto totale.
+
+Se indichiamo con \(\overrightarrow{v}_{1,in}\), \(\overrightarrow{v}_{2,in}\), le velocità nell'istante precedente all'urto dei due punti materiali, di masse \(m_1\) e \(m_2\), e con \(\overrightarrow{v}_{1,fin}\), \(\overrightarrow{v}_{2,fin}\), le corrispondenti velocità nel istante successivo all'urto, la conservazione di \(\overrightarrow{P}\) si scrive:
+\begin{equation}
+    \overrightarrow{P}_{in} = m_1 \overrightarrow{v}_{1,in} + m_2 \overrightarrow{v}_{2,in} = m_1 \overrightarrow{v}_{1,fin} + m_2 \overrightarrow{v}_{2,fin} = \overrightarrow{P}_{fin}
+\end{equation}
+La quantità di moto del centro di massa rimane invariata nell'urto invece variano le quantità di moto di ciascun punto materiale per effetto dell'impulso della forza di interazione.
+\begin{equation*}
+    m_{1} \boldsymbol{v}_{1, fin}-m_{1} \boldsymbol{v}_{1, in}=\mathbf{I}_{2,1}=\int_{t_1}^{t_2} \mathbf{F}_{2,1} d t
+\end{equation*}
+\begin{equation*}
+    m_{2} \boldsymbol{v}_{2, fin}-m_{2} \boldsymbol{v}_{2, in}=\mathbf{I}_{1,2}=\int_{t_1}^{t_2} \mathbf{F}_{1,2} d t
+\end{equation*}
+Ho naturalmente
+\begin{equation*}
+    \overrightarrow{F}_{1,2} = - \overrightarrow{F}_{2,1} \implies \overrightarrow{I}_{1,2} = - \overrightarrow{I}_{2,1}
+\end{equation*}
+
+\subsection{Forze esterne}
+
+Possiamo conservare la quantità di moto totale anche in presenza di forze esterne se la durata dell'urto è sufficientemente piccola e le forze esterne non sono impulsive.
+Infatti la variazione di quantità di moto totale del sistema dovuta alle forze esterne è
+\begin{equation*}
+    \Delta \overrightarrow{P} = \int_{t_1}^{t_2} \overrightarrow{F}^{(E)} dt = \overrightarrow{F}_m^{(E)} \tau
+\end{equation*}
+e se \(\tau\) è molto breve \(\Delta P\) risulta trascurabile.
+Il ragionamento non sarebbe corretto se \(F^{(E)}\) fosse impulsiva nell'intervallo \(\tau\) quanto in tal caso il valore medio \(F_m^{(E)}\) potrebbe assumere valori notevoli.
+
+Ricordiamo infine che a priori non è noto se le forze interne che si sviluppano nell'urto sono conservative e pertanto non si può assumere la conservazione dell'energia meccanica del sistema durante l'urto.
 
 \end{document}

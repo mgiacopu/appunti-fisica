@@ -107,6 +107,62 @@ Una parete è sempre necessaria per impedire o ritardare l'equilibrio termico.
 
 Notiamo infine che l'esistenza di equilibrio termico tra due sistemi non presuppone affatto che essi siano anche in altri tipi di equilibrio, ne viceversa.
 
+\section{Definizione temperatura, termometri}
+
+Per fare una definizione operativa di temperatura devono essere realizzate due condizioni. 
+Deve esistere una grandezza \(X\) che caratterizza un fenomeno fisico e che varia con la temperatura. 
+\(X\) si chiama \emph{caratteristica termometrica} e la temperatura è una funzione di \(X\), \(\theta (X)\), detta \emph{funzione termometrica}. 
+Il dispositivo in cui avviene il fenomeno e che fornisce il valore della caratteristica termometrica è indicato come \emph{termometro}.
+
+In secondo luogo deve esistere un sistema, in uno stato di equilibrio, definibile con precisione e riproducibile con facilità, cui viene attribuito un valore arbitrario di temperatura, detto \emph{punto fisso}.
+
+Il punto fisso campione, è il umo triptJ dell'acqua, ovvero quel particolare stato in cui ghiaccio, acqua e vapor d'acqua saturo sono in equilibrio. 
+Al punto triplo dell'acqua è stata assegnata arbitrariamente la temperatura di \(273.16 K\), dove il simbolo \(K\) indica l'unità di misura prescelta, il kelvin.
+
+Per arrivare a esprimere numericamente la temperatura stabiliamo in via preliminare che la forma della funzione \(\theta(X)\) sia \(\theta(X) = aX\), con \(a\) costante.
+È la scelta più semplice, giustificata però dal fatto che è valida per il termometro assoluto.
+
+Il sistema, di cui vogliamo misurare la temperatura, viene messo a contatto termico con un termometro che, all'equilibrio termico, fornisce il valore \(X\).
+
+Tale termometro al punto triplo dell'acqua dà il valore \(X_{pt}\) e per definizione abbiamo
+\begin{equation*}
+    \theta (X_{pt}) = a X_{pt} = 273.16
+\end{equation*}
+da cui \(a = 273.16/X_{pt}\), valore valido per quel termometro. Ne segue che la temperatura \(T\) del sistema, espressa dal valore della funzione \(\theta (X) = a X\), si scrive
+\begin{equation}
+    T = 273.16 \frac{X}{X_{pt}} K    
+\end{equation}
+
+L'ultima formula è la formula fondamentale per ogni termometro e fornisce la temperatura empirica di quel termometro.
+
+Si usa il termine temperatura empirica in quanto, sperimentalmente, si constata che termometri di tipo diverso, o anche due diversi termometri dello stesso tipo, danno sempre letture diverse quando sono in equilibrio termico con lo stesso stato di un certo sistema, pur dando per costruzione tutti la stessa temperatura al punto triplo dell'acqua.
+Se si  vuole verificare se due sistemi sono alla stessa temperàtura si deve metterli uno alla volta in contatto termico con lo stesso termometro. 
+
+\subsection{Scale termometriche}
+
+La scala che viene più comunemente usata nelle normali misure di temperatura è quella Celsius, in cui la temperatura del punto triplo dell'acqua vale \(0.01\) gradi Celsius (simbolo \(^{\circ} C\)).
+Pertanto lo zero della scala Celsius è a \(273.15 K\) e corrisponde alla temperatura di fusione del ghiaccio a pressione atmosferica. 
+
+Il valore di una differenza di temperatura è assunto lo stesso in gradi Celsius o in kelvin e pertanto la formula di conversione dal valore in kelvin \(T (K)\) al valore in gradi Celsius \(t ( ^{\circ} C)\) è semplicemente
+\begin{equation*}
+    t (^{\circ} C) = T (K) - 273.15
+\end{equation*}
+
+Nei paesi anglosassoni vengono utilizzate altre due scale di temperatura, la scala Rankine \(t ( ^{\circ} R)\) e la scala Fahrenheit \( t ( ^{\circ} F)\), che sono così definite rispetto alla temperatura espressa in kelvin:
+\begin{equation*}
+    t ( ^{\circ} R) = \frac{9}{5} T (K)
+\end{equation*}
+\begin{equation*}
+    t (^{\circ} F) = \frac{9}{5} T (K) - 459.67
+\end{equation*}
+
+Il legame tra scala Fahrenheit e scala Celsius è pertanto:
+\begin{equation*}
+    t (^{\circ} F) = \frac{9}{5} t (^{\circ} C) + 32 \ , \ t(^{\circ} C) = \frac{5}{9} \left[t (^{\circ} F ) - 32\right]
+\end{equation*}
+
+Nella scala Fahrenheit il punto di fusione del ghiaccio (\(O ^{\circ} C \)) corrisponde a \(32 ^{\circ} F\) e il punto di ebollizione dell'acqua (\(100 ^{\circ} C\)) a \(212 ^{\circ} F\); la temperatura ambiente di \(20 ^{\circ} C\) vale \(68 ^{\circ} F\). 
+
 
 
 \end{document}

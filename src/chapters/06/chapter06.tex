@@ -215,5 +215,66 @@ dove rappresenta il calore scambiato, senza lavoro esterno per far variare di \(
 L'ultima equazione è detta \emph{equivalenza tra calore e lavoro}; essa indica anche come si possa eseguire una misura del calore scambiato. 
 Il calore viene in questo modo espresso in joule.
 
+\section{Primo principio della termodinamica, energia interna}
+
+\subsection{Primo principio della termodinamica}
+
+Si abbia un sistema che oltre allo scambio di lavoro meccanico con l'ambiente possa avere anche scambio di calore, cioè trasmissione di energia non accompagnata da fenomeni meccanici macroscopici.
+Il sistema compie una trasformazione dallo stato \(A\) allo stato \(B\), scambiando calore e lavoro con l'ambiente, \(Q\) e \(W\) dipendono dalla trasformazione che congiunge i due stati termodinamici, mentre invece la differenza \(Q-W\) risulta indipendente dalla trasformazione. 
+
+Si può scrivere posto \(\Delta U = U_B - U_A\):
+\begin{equation}
+    Q - W = \Delta U \ , \ Q = \Delta U + W
+\end{equation}
+che esprime il \emph{primo principio della termodinamica}
+
+\subsection{Implicazioni del primo principio}
+
+Le implicazioni del primo principio della termodinamica possono essere sviluppate su più punti
+\begin{enumerate}
+    \item Esiste una funzione delle coordinate termodinamiche del sistema o, come si dice, una funzione di stato, chiamata energia interna, le cui variazioni danno gli scambi energetici del sistema con l'ambiente che lo circonda durante una trasformazione. 
+    Dati due stati \(A\) e \(B\) è fissata \(\Delta U\): in una particolare trasformazione dallo stato \(A\) a quello \(B\) può essere preponderante lo scambio di calore, mentre in un'altra trasformazione, sempre tra tali stati, quello di lavoro, però in ambedue le diverse trasformazioni lo scambio totale \(Q - W\) è lo stesso. 
+    \item Quando, durante una trasformazione, si fornisce energia a un sistema, sia tramite un lavoro meccanico che con uno scambio di calore, questa resta immagazzinata sotto forma di energia interna e può essere successivamente riutilizzata.
+    Possiamo dire che la (6.5) costituisce l'espressione del bilancio energetico di una trasformazione termodinamica; si tratta di un bilancio più completo di quello che è possibile fare in meccanica, in quanto si tiene conto anche degli scambi di calore.
+    \item Il termine energia interna indica che non si tratta dell'energia cinetica o potenziale bensì di energia legata a proprietà interne del sistema, come moto molecolare o forze intermolecolari, che non dipendono dallo stato complessivo di moto, ma piuttosto dalla temperatura del sistema, dalla pressione a cui è sottoposto o dal volume che occupa. 
+    È importante osservare che l'espressione esplicita dell'energia interna in funzione delle coordinate termodinamiche che individuano lo stato di un sistema dipende dal sistema stesso.
+    \item Il primo principio mette in evidenza l'esistenza di un meccanismo di scambio di energia, che non è esprimibile come lavoro meccanico macroscopico: a questo diamo il nome di calore. 
+    Esso è ancora riconducibile a fenomeni meccanici, ma a livello microscopico.
+    Bisogna prestare attenzione al fatto che il calore e il lavoro sono forme di scambio di energia e quindi si deve sempre parlare di calore o lavoro scambiati tra sistemi e mai di calore o lavoro posseduti da un sistema. 
+    Ciò che un sistema possiede è una certa quantità di energia che può variare in una trasformazione, appunto a seguito di scambi di calore e lavoro.
+    \item Se un sistema termodinamico esegue una qualsiasi trasformazione che lo riporti allo stato iniziale, ovvero una trasformazione ciclica o chiusa, si ha per definizione.
+    \begin{equation}
+        \Delta U = 0 \implies Q = W
+    \end{equation}
+    il calore scambiato è eguale al lavoro scambiato. 
+    Se nella trasformazione ciclica il sistema complessivamente assorbe calore, \(Q > 0\), esso fornisce lavoro, \(W > 0\), costituisce una macchina termica. 
+    \item Per eseguire calcoli specifici è assai utile considerare trasformazioni termodinamiche nelle quali le variabili di stato cambiano di quantità infinitesime.
+    Il primo principio ha la forma:
+    \begin{equation*}
+        \delta Q = d U + \delta W
+    \end{equation*}
+    Integrando per una trasformazione finita si ha:
+    \begin{equation*}
+        \Delta U = \int_A^B d U = U_B - U_A
+    \end{equation*}
+    indipendente dalla trasformazione, mentre invece, come sappiamo:
+    \begin{equation*}
+        Q_{AB} = \int_A^B \delta Q
+    \end{equation*}
+    la variazione infinitesima di energia interna è un differenziale esatto, mentre \(\delta Q \) e \(\delta W\), cioè le quantità initesime di calore e lavoro scambiati, non sono differenziali esatti.
+    \item L'unità di misura di energia interna, calore e lavoro è la stessa, il Joule.
+\end{enumerate}
+
+\subsection{Convenzione segni lavoro e calore}
+
+%TODO ADD PHOTO
+
+Naturalmente quello che importa in una trasformazione è capire qual è il flusso energetico, cioè se il calore è assorbito o ceduto dal sistema, se il lavoro è prodotto o subito, in modo da poter correttamente pervenire al bilancio energetico. 
+I segni sono solo convenzionali, però scelta una certa convenzione questa va mantenuta in tutti i ragionamenti.
+
+Attenzione che qui si considerano \emph{flussi di energia dal sistema}
+Se il sistema assorbe calore, e diciamo che \(Q\) è positivo, questo calore è ceduto al sistema dall'ambiente e pertanto per l'ambiente è negativo e come tale dobbiamo trattarlo se ragioniamo sull'ambiente: se \(Q\) è il calore scambiato dal sistema, \(-Q\) è  quello scambiato dall'ambiente. 
+Un discorso analogo va fatto per il lavoro.
+
 
 \end{document}

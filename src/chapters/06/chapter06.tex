@@ -276,5 +276,53 @@ Attenzione che qui si considerano \emph{flussi di energia dal sistema}
 Se il sistema assorbe calore, e diciamo che \(Q\) è positivo, questo calore è ceduto al sistema dall'ambiente e pertanto per l'ambiente è negativo e come tale dobbiamo trattarlo se ragioniamo sull'ambiente: se \(Q\) è il calore scambiato dal sistema, \(-Q\) è  quello scambiato dall'ambiente. 
 Un discorso analogo va fatto per il lavoro.
 
+\section{Trasformazioni termodinamiche, lavoro e calore}
+
+Abbiamo definito una trasformazione come un passaggio del sistema attraverso diversi stati, ovvero come un processo in cui cambiano le coordinate termodinamiche, qualcuna o tutte, del sistema.
+Il primo principio della dinamica fissa il bilancio energetico di tale processo e infatti, oltre a definire una trasformazione, siamo interessati a calcolare quanto valgono \(\Delta U, W e Q\). 
+La quantità \(\Delta U\) può essere calcolata direttamente se è nota l'espressione esplicita di \(U\), altrimenti l'unico modo possibile è servirsi di del primo principio, conoscendo quindi il calore e il lavoro scambiati. 
+Però \(\Delta U\) non deve necessariamente essere calcolata lungo la data trasformazione, bensì lungo una qualsiasi altra che abbia gli stessi stati iniziale e finale e per la quale risulti più facile determinare \(Q\) e \(W\): 
+
+L'espressione del primo principio viene dunque usata in definitiva come equazione ad una incognita e deve essere collegata a relazioni che permettono il calcolo delle altre due quantità.
+
+\subsection{Trasformazioni adiabatiche}
+
+Si chiama trasformazione adiabatica una qualsiasi trasformazione in cui \(Q = 0\) in cui cioè il sistema non scambia calore con l'esterno, ossia è isolato termicamente dall'esterno.
+Sistema adiabatico è un sistema che compie solo trasformazioni adiabatiche e per il quale quindi il primo principio si scrive \(W = - \Delta U\).
+Gli scambi energetici con l'ambiente possono avvenire solo sotto forma di lavoro meccanico. 
+
+Sperimentalmente questa situazione si realizza chiudendo il sistema in un contenitore con pareti adiabatiche. 
+Infatti, richiamando quello visto precedentemente
+
+\begin{enumerate}
+    \item una trasformazione che porta all'equilibrio termico avviene con scambio di calore; 
+    \item una parete diatermica permette il passaggio di calore da un sistema all'altro, è quindi una parete conduttrice di calore
+    \item una parete adiabatica non permette il passaggio calore, è quindi isolante rispetto allo scambio di calore
+\end{enumerate}
+
+Nella pratica l'adiabaticità perfetta non esiste; tutte le sostanze con cui si realizzano pareti adiabatiche permettono un certo scambio di calore. 
+Si ammette che possa essere adiabatica una trasformazione che avviene rapidamente, così che non ci sia tempo per scambi di calore apprezzabili. 
+
+\subsection{Trasformazioni reversibili e irreversibili}
+
+Per effettuare una trasformazione che passi attraverso stati di equilibrio bisogna procedere con variazioni molto piccole delle coordinate termodinamiche, in modo che queste siano in pratica definite in ogni istante.
+Ciò si può realizzare discstandosi molto poco da uno stato di equilibrio, per permettere che la trasformazione avvenga, e attendendo il ristabilirsi dell'equilibrio nelle nuove condizioni prima di procedere a un'ulteriore variazione infinitesima di stato. 
+Ne consegue che la trasformazione deve svolgersi lentamente.
+
+La lentezza della trasformazione se è in pratica una condizione necessaria non è certamente sufficente.
+Oltre all'esame delle condizioni di equilibrio o non equilibrio si deve verificare durante la trasformazione l'eventuale presenza di forze dissipative, come attriti che si oppongono allo spostamento di parti meccaniche durante lo scambio di lavoro, attriti viscosi, ecc.
+
+In alternativa possiamo classificare le trasformazioni secondo il seguente schema:
+
+\begin{enumerate}
+    \item una trasformazione è detta reversibile se essa avviene attraverso stati di equilibrio e in assenza di qualsiasi forza dissipativa; 
+    \item una trasformazione è detta irreversibile qualora non si svolga secondo le modalità precedenti.
+    Ossia passi attraverso stati di non equilibrio o avvenga in presenza di forze dissipative oppure si verifichino durante il suo svolgimento, entrambe queste situazioni. 
+\end{enumerate}
+Le trasformazioni reversibili sono casi limite, utilissime concettualmente per i calcoli, ma difficilmente realizzabili.
+
+Una trasformazione reversibile può essere arrestata in qualunque stato intermedio e, variando di poco le condizioni esterne, si può invertire il verso della trasformazione, ripercorrendo gli stessi stati già attraversati.  
+In tal caso cambia il segno degli scambi di energia e della variazione di energia interna.
+
 
 \end{document}

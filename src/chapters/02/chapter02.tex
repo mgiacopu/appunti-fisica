@@ -29,7 +29,7 @@ L'effetto di una forza cambia con la direzione. Se più forze agiscono sullo ste
 \section{Legge di Newton }
 La formulazione quantitativa del legame tra la forza e lo stato di moto è data dalla legge di Newton:
 \begin{equation}
-    \overrightarrow{\mathbf{F}} = m \overrightarrow{\mathbf{a}} \ \udm{N}
+    \overrightarrow{F} = m \overrightarrow{a} \ \udm{N}
 \end{equation}
 L'interazione del punto con l'ambiente circostante, espressa tramite la forza \(F\), determina l'accelerazione del punto, ovvero la variazione della sua velocità nel tempo; \(m\) rappresenta la massa inerziale del punto (Seconda legge della dinamica).
 
@@ -38,7 +38,7 @@ Nello studio del corpo, che è sempre rappresentato come punto materiale, possia
 
 La legge può essere espansa come:
 \begin{equation}
-    \overrightarrow{\mathbf{F}} = m \frac{\overrightarrow{\mathbf{v}}}{dt} = m \frac{d^2 \overrightarrow{\mathbf{r}}}{dt^2} \ \udm{N} % TODO: Mazzoldi pag.35 -> cosa è r?
+    \overrightarrow{F} = m \frac{\overrightarrow{v}}{dt} = m \frac{d^2 \overrightarrow{r}}{dt^2} \ \udm{N} % TODO: Mazzoldi pag.35 -> cosa è r?
 \end{equation}
 da questa possiamo ricavare tutte le proprietà al moto di un punto materiale. Viceversa è possibile dall'accelerazione determinare la forza agente e la massa.
 
@@ -47,19 +47,19 @@ In breve un sistema di riferimento inerziale è un sistema che si muove in moto 
 
 La legge di Newton può essere anche riscritta in maniera più estesa come:
 \begin{equation}
-    \overrightarrow{\mathbf{F}}=\left(\frac{\mathrm{d} m}{\mathrm{~d} t}\right) \mathbf{v}+m\left(\frac{\mathrm{d} \mathbf{v}}{\mathrm{d} t}\right)=\left(\frac{\mathrm{d} m}{\mathrm{~d} t}\right) \mathbf{v}+m \mathbf{a} \ \udm{N}
+    \overrightarrow{F}=\left(\frac{\mathrm{d} m}{\mathrm{~d} t}\right) \mathbf{v}+m\left(\frac{\mathrm{d} \mathbf{v}}{\mathrm{d} t}\right)=\left(\frac{\mathrm{d} m}{\mathrm{~d} t}\right) \mathbf{v}+m \mathbf{a} \ \udm{N}
 \end{equation}
 per valutare anche la variazione di massa che si ha lungo il moto.
 
 \section{Quantità di moto}
 Si definisce \emph{quantità di moto} di un punto materiale il vettore:
 \begin{equation}
-    \overrightarrow{\mathbf{p}} = m \overrightarrow{\mathbf{v}} \ \udm{kg \cdot \frac{m}{s}}
+    \overrightarrow{p} = m \overrightarrow{v} \ \udm{kg \cdot \frac{m}{s}}
 \end{equation}
 e ci dice quanta massa è in movimento e di quanto si muove.
 Se la massa è costante, l'equazione della seconda legge di Newton si può riscrivere come:
 \begin{equation}
-    \overrightarrow{\mathbf{F}} = \frac{d \overrightarrow{\mathbf{p}}}{dt} \ \udm{N}
+    \overrightarrow{F} = \frac{d \overrightarrow{p}}{dt} \ \udm{N}
 \end{equation}
 
 Questa relazione è la forma più generale della legge di Newton, utilizzabile anche se la massa non è costante. 
@@ -70,37 +70,37 @@ La massa infatti può cambiare in due casi:
 \end{itemize}
 
 È utile, quando si parla di quantità di moto, fare riferimento anche alla sua relazione rispetto alla forza.
-Dall'equazione precedente possiamo ottenere \(\overrightarrow{\mathbf{F}} d t = d \overrightarrow{\mathbf{p}}\): vediamo che l'azione di una forza durante un tempo \(d t\) (nel quale la forza agisce) provoca una variazione infinitesima della quantità di moto del punto. 
+Dall'equazione precedente possiamo ottenere \(\overrightarrow{F} d t = d \overrightarrow{p}\): vediamo che l'azione di una forza durante un tempo \(d t\) (nel quale la forza agisce) provoca una variazione infinitesima della quantità di moto del punto. 
 In termini finiti si ha:
 \begin{equation}
-    \overrightarrow{\mathbf{I}} = \int_0^t \overrightarrow{\mathbf{F}} dt = \int_{p_0}^p d \overrightarrow{\mathbf{p}} = \overrightarrow{\mathbf{p}}-\overrightarrow{\mathbf{p_0}} = \Delta \overrightarrow{\mathbf{p}} \ \udm{N \cdot s}
+    \overrightarrow{I} = \int_0^t \overrightarrow{F} dt = \int_{p_0}^p d \overrightarrow{p} = \overrightarrow{p}-\overrightarrow{p_0} = \Delta \overrightarrow{p} \ \udm{N \cdot s}
 \end{equation} che definisce il "Teorema dell'impulso".
 
 Il termine vettoriale \(I\), integrale della forza nel tempo, è chiamato impulso della forza. 
 La formula precedente esprime che l'impulso di una forza applicata ad un punto materiale provoca la variazione della sua quantità di moto: con \(m\) costante si ha ovviamente:
 \begin{equation}
-    \overrightarrow{\mathbf{I}} = m (\overrightarrow{\mathbf{v}} - \overrightarrow{\mathbf{v_0}}) = m \Delta v \ \udm{N \cdot s}
+    \overrightarrow{I} = m (\overrightarrow{v} - \overrightarrow{v_0}) = m \Delta v \ \udm{N \cdot s}
 \end{equation}
 
 La variazione della quantità di moto è tanto maggiore quanto più elevato è il valore dell'impulso ovvero, per una determinata forza costante, quanto maggiore è il tempo in cui agisce la forza.
-Il teorema dell'impulso è utilizzabile per calcolare effettivamente \(\Delta \overrightarrow{\mathbf{p}}\) solo se si conosce la funzione \(F (t)\), in questo caso basta calcolare l'integrale.
+Il teorema dell'impulso è utilizzabile per calcolare effettivamente \(\Delta \overrightarrow{p}\) solo se si conosce la funzione \(F (t)\), in questo caso basta calcolare l'integrale.
 Se \(F = costante\), si ottiene subito
 \begin{equation*}
-    \overrightarrow{\mathbf{F}} t = m (\overrightarrow{\mathbf{v}} - \overrightarrow{\mathbf{v_0}}) \udm{N}
+    \overrightarrow{F} t = m (\overrightarrow{v} - \overrightarrow{v_0}) \udm{N}
 \end{equation*}
 che è come misurare l'area di un rettangolo.
-Invece se misuriamo \(\Delta \overrightarrow{\mathbf{p}}\) con il teorema della media integrale possiamo calcolare \(\overrightarrow{\mathbf{F_m}}\) della forza agente nell'intervallo di tempo \(t\).
+Invece se misuriamo \(\Delta \overrightarrow{p}\) con il teorema della media integrale possiamo calcolare \(\overrightarrow{F_m}\) della forza agente nell'intervallo di tempo \(t\).
 
-Quando \(\overrightarrow{\mathbf{F}}\) è nulla, \(\Delta \overrightarrow{\mathbf{p}} = 0\) e pertanto \(\overrightarrow{\mathbf{p}} = costante\) : in assenza di forza applicata la quantità di moto di un punto materiale rimane costante o la quantità di moto si conserva (principio di inerzia). 
+Quando \(\overrightarrow{F}\) è nulla, \(\Delta \overrightarrow{p} = 0\) e pertanto \(\overrightarrow{p} = costante\) : in assenza di forza applicata la quantità di moto di un punto materiale rimane costante o la quantità di moto si conserva (principio di inerzia). 
 
 \section{Risultante delle forze}
 Su un punto materiale possono agire contemporaneamente più forze: si constata che il moto del punto ha luogo come se agisse una sola forza, la risultante vettoriale delle forze applicate al punto
 \begin{equation*}
-    \overrightarrow{\mathbf{R}} = \overrightarrow{\mathbf{F}}_1+\overrightarrow{\mathbf{F}}_2+ ... + \overrightarrow{\mathbf{F}}_n = \Sigma_i \overrightarrow{\mathbf{F}}_i \ \udm{N}
+    \overrightarrow{R} = \overrightarrow{F}_1+\overrightarrow{F}_2+ ... + \overrightarrow{F}_n = \Sigma_i \overrightarrow{F}_i \ \udm{N}
 \end{equation*}
 Questa \`e una conferma della natura vettoriale dell'equazione di Newton.
 
-Nello studio del moto otteniamo informazioni solo sulla risultante delle forze agenti sul punto stesso \(\overrightarrow{\mathbf{R}}\) e non sulle singole forze che concorrono a formare la risultante.
+Nello studio del moto otteniamo informazioni solo sulla risultante delle forze agenti sul punto stesso \(\overrightarrow{R}\) e non sulle singole forze che concorrono a formare la risultante.
 Se \(R = 0\) ed il punto ha velocità nulla, esso rimane in quiete: sono realizzate le condizioni di equilibrio statico del punto. 
 Devono quindi essere nulle le componenti stesse della risultante, con riferimento ad un sistema di assi cartesiani.
 
@@ -113,7 +113,7 @@ Si introduce quindi la terza legge di Newton, detta anche legge dell'azione e re
 \emph{se un corpo A esercita una forza sul corpo B, allora il corpo B esercita una forza uguale e contraria}.
 
 Nel caso di un corpo appoggiato su di un tavolo, il corpo è soggetto all'azione di attrazione della terra, perpendicolarmente al piano.
-Il tavolo deve produrre, viste le condizioni di quiete del corpo, una forza uguale e contraria alla forza di attrazione terrestre che chiamiamo reazione vincolare \(\overrightarrow{\mathbf{N}}\).
+Il tavolo deve produrre, viste le condizioni di quiete del corpo, una forza uguale e contraria alla forza di attrazione terrestre che chiamiamo reazione vincolare \(\overrightarrow{N}\).
 
 In generale la reazione vincolare non è determinabile a priori, utilizzando una data formula, ma deve essere calcolata caso per caso dall'esame delle condizioni fisiche. 
 
@@ -131,19 +131,19 @@ Tra tutti i fenomeni fisici che osserviamo possiamo classificare quattro interaz
 
 Nel capitolo 1 abbiamo descritto vari moti, ora andiamo a vedere quali forze questi moti vanno a creare.
 
-Nel moto rettilineo uniforme ho \(\overrightarrow{\mathbf{v}} = costante, \overrightarrow{\mathbf{a}} = 0\), quindi la \(\overrightarrow{\mathbf{F}} = 0\).
+Nel moto rettilineo uniforme ho \(\overrightarrow{v} = costante, \overrightarrow{a} = 0\), quindi la \(\overrightarrow{F} = 0\).
 Posso ottenere questa condizione anche se agiscono più forze, l'importante è che la risultante sia nulla.
 
-Nel moto uniformemente accelerato ho \(\overrightarrow{\mathbf{a}} = costante\), quindi la forza agente è costante, 
+Nel moto uniformemente accelerato ho \(\overrightarrow{a} = costante\), quindi la forza agente è costante, 
 questo vale anche al contrario: se mi trovo una forza risultante costante nella direzione parallela al moto ho accelerazione costante.
 
-Se \(\overrightarrow{\mathbf{F}}\) è variabile ho un moto vario, posso quindi spezzare l'accelerazione nelle sue componenti:
+Se \(\overrightarrow{F}\) è variabile ho un moto vario, posso quindi spezzare l'accelerazione nelle sue componenti:
 \begin{itemize}
-    \item \(\overrightarrow{\mathbf{a_T}}\) detta tangenziale è parallela al moto e descrive una variazione in modulo della velocità
-    \item \(\overrightarrow{\mathbf{a_N}}\) detta ortogonale o centripeta, descrive una variazione di direzione della velocità
+    \item \(\overrightarrow{a_T}\) detta tangenziale è parallela al moto e descrive una variazione in modulo della velocità
+    \item \(\overrightarrow{a_N}\) detta ortogonale o centripeta, descrive una variazione di direzione della velocità
 \end{itemize}
 
-Nel moto circolare uniforme ho \(\overrightarrow{\mathbf{a_T}} = 0\) e \(\overrightarrow{\mathbf{a_N}} = costante\).
+Nel moto circolare uniforme ho \(\overrightarrow{a_T} = 0\) e \(\overrightarrow{a_N} = costante\).
 
 \section{Forza peso}
 
@@ -154,8 +154,8 @@ La forza che si crea ha modulo verso il suolo che vale
     g = 9.8 ms^{-2}
 \end{equation}
 
-Se agisce solo la forza peso ottengo che \(\overrightarrow{\mathbf{g}} = \overrightarrow{\mathbf{a}}\), 
-nel caso in cui è presente l'attrito dell'aria ho un accelerazione negativa rispetto a quella di gravita quindi ho che \(\overrightarrow{\mathbf{g}} \neq \overrightarrow{\mathbf{a}}\)
+Se agisce solo la forza peso ottengo che \(\overrightarrow{g} = \overrightarrow{a}\), 
+nel caso in cui è presente l'attrito dell'aria ho un accelerazione negativa rispetto a quella di gravita quindi ho che \(\overrightarrow{g} \neq \overrightarrow{a}\)
 
 È importante notare che un corpo presenta due tipi di massa:
 \begin{itemize}
@@ -191,7 +191,7 @@ Si definisce \emph{forza elastica} (unidimensionale) una forza di direzione cost
 
 La legge di Hooke dice che:
 \begin{equation}
-    \overrightarrow{\mathbf{F_{el}}} = -k x \hat{x} \udm{N}
+    \overrightarrow{F_{el}} = -k x \hat{x} \udm{N}
 \end{equation}
 dove \(k\) è una costante positiva, detta \emph{costante elastica} e \(\hat{x}\) il versore della differenza di lunghezza rispetto \(O\).
 
@@ -247,11 +247,11 @@ Un piano inclinato ha due caratteristiche fondamentali, un angolo \(\alpha\) che
 Quando analizziamo un piano inclinato il nostro sistema di riferimento è cartesiano con l'asse \(x\) parallelo al piano inclinato e l'asse \(y\) ortogonale a quest'ultimo.
 Se metto un punto materiale di massa \(m\) su un piano inclinato grazie a questo sistema di riferimento posso scomporre la sua forza peso \(F_p\) nelle componenti \(F_{px}\) e \(F_{py}\).
 
-Nel caso in cui venga trascurato l'attrito ho che nell'asse perpendicolare \(\overrightarrow{\mathbf{F_{py}}} = \overrightarrow{\mathbf{N}}\), 
-mentre nell'asse parallelo \(\overrightarrow{\mathbf{F_{px}}} = m \overrightarrow{\mathbf{a}}\). 
+Nel caso in cui venga trascurato l'attrito ho che nell'asse perpendicolare \(\overrightarrow{F_{py}} = \overrightarrow{N}\), 
+mentre nell'asse parallelo \(\overrightarrow{F_{px}} = m \overrightarrow{a}\). 
 Infatti il corpo si muove lungo il piano a meno di forze esterne che ne bilancino il moto.
 
-Nel caso in cui ci sia attrito nell'asse \(y\) la situazione rimane analoga, nell'asse \(x\) invece l'attrito radente potrebbe bilanciare \(\overrightarrow{\mathbf{F_{px}}}\).
+Nel caso in cui ci sia attrito nell'asse \(y\) la situazione rimane analoga, nell'asse \(x\) invece l'attrito radente potrebbe bilanciare \(\overrightarrow{F_{px}}\).
 Il corpo non inizia il moto fino a che:
 \begin{equation*}
     F_{px} = m g \sin \alpha \leq \mu_s N = \mu_s m g \cos \alpha = \mu_s N

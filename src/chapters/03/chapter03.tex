@@ -4,6 +4,7 @@
 \usepackage{../../style}
 
 \begin{document}
+
 \chapter{Moti relativi}
 
 \section{Sistemi di riferimento. Velocità e Accelerazione relative}
@@ -23,7 +24,7 @@ Vogliamo ricavare una relazione tra la posizione, la velocità e l'accelerazione
 \subsection{Posizione}
 
 La relazione tra le posizioni del punto \(P\), misurate rispetto ai due sistemi di riferimento, è la seguente:
-\begin{equation}
+\begin{equation} \label{pos_p}
     \overrightarrow{r} = \overrightarrow{OO'} + \overrightarrow{r'}
 \end{equation}
 con 
@@ -47,7 +48,7 @@ Infine la velocità dell origine \(O'\) del sistema di riferimento mobile misura
     \overrightarrow{v_{O'}}=\frac{d \overrightarrow{OO'}}{d t}=\frac{d x_{O'}}{d t} \overrightarrow{u_{x}}+\frac{d y_{O'}}{d t} \overrightarrow{u_{y}}+\frac{d z_{O'}}{d t} \overrightarrow{u_{z}}
 \end{equation}
 
-Derivando (3.1) rispetto al tempo ottengo
+Derivando (\ref{pos_p}) rispetto al tempo ottengo
 
 \begin{align*}
     \overrightarrow{v} = \frac{d \overrightarrow{r}}{dt} & = \frac{d \overrightarrow{OO'}}{d t} + \frac{d \overrightarrow{r'}}{dt} \\
@@ -100,12 +101,12 @@ L'accelerazione del sistema mobile \(O'\) rispetto a \(O\) è dato da \(\overrig
     \overrightarrow{a} = \frac{d \overrightarrow{v}}{dt} = \frac{d \overrightarrow{v_{O'}}}{dt} + \frac{d \overrightarrow{v'}}{dt} + \frac{d \overrightarrow{\omega}}{dt} \times \overrightarrow{r'} + \omega \times \frac{d \overrightarrow{r'}}{dt}
 \end{equation}
 Calcolando \(\frac{d \overrightarrow{v'}}{dt}\) ricaviamo:
-\begin{equation}
-\begin{aligned}
-    \frac{d \overrightarrow{v'}}{d t} &=\frac{d}{d t} \left(\frac{d x'}{d t} \overrightarrow{u}_{x'}+\frac{d y'}{d t} \overrightarrow{u}_{y'}+\frac{d z'}{d t} \overrightarrow{u}_{z'}\right) = \left( \frac{d^{2} x'}{d t^{2}} \overrightarrow{u}_{x'}+\frac{d^{2} y'}{d t^{2}} \overrightarrow{u}_{y'} + \frac{d^{2} z'}{d t^{2}} \overrightarrow{u}_{z'} \right)\\
-    & + \left( \frac{d x'}{d t} \frac{d \overrightarrow{u}_{x'}}{d t}+\frac{d y'}{d t} \frac{d \overrightarrow{u}_{y'}}{d t}+\frac{d z'}{d t} \frac{d \overrightarrow{u}_{z'}}{d t} \right) \\
-    & =\overrightarrow{a'}+\omega \times \overrightarrow{v'} 
-\end{aligned}
+\begin{equation} \label{teorema_acc_rel}
+    \begin{aligned}
+        \frac{d \overrightarrow{v'}}{d t} &=\frac{d}{d t} \left(\frac{d x'}{d t} \overrightarrow{u}_{x'}+\frac{d y'}{d t} \overrightarrow{u}_{y'}+\frac{d z'}{d t} \overrightarrow{u}_{z'}\right) = \left( \frac{d^{2} x'}{d t^{2}} \overrightarrow{u}_{x'}+\frac{d^{2} y'}{d t^{2}} \overrightarrow{u}_{y'} + \frac{d^{2} z'}{d t^{2}} \overrightarrow{u}_{z'} \right)\\
+        & + \left( \frac{d x'}{d t} \frac{d \overrightarrow{u}_{x'}}{d t}+\frac{d y'}{d t} \frac{d \overrightarrow{u}_{y'}}{d t}+\frac{d z'}{d t} \frac{d \overrightarrow{u}_{z'}}{d t} \right) \\
+        & =\overrightarrow{a'}+\omega \times \overrightarrow{v'} 
+    \end{aligned}
 \end{equation}
 Ho inoltre:
 \begin{equation*}
@@ -120,16 +121,16 @@ Ottengo quindi infine:
     \overrightarrow{a} = \overrightarrow{a'} + \overrightarrow{a_{O'}} + \omega \times ( \omega \times \overrightarrow{r'}) + \frac{d \omega}{dt} \times \overrightarrow{r'} + 2 \omega \times \overrightarrow{v'}
 \end{equation}
 
-Le accelerazioni del punto \(P\) misurate nei due sistemi non coincidono ma sono messe in relazione tramite la (3.12), detta \emph{teorema delle accelerazioni relative}.
+Le accelerazioni del punto \(P\) misurate nei due sistemi non coincidono ma sono messe in relazione tramite la (\ref{teorema_acc_rel}), detta \emph{teorema delle accelerazioni relative}.
 Per valutare l'accelerazione di trascinamento \(\overrightarrow{a}\), riprendiamo la discussione fatta per la velocità di trascinamento. 
 L'accelerazione di trascinamento è quella del punto \(P^{\star}\), solidale col sistema mobile, che coincide nell'istante considerato col punto \(P\). 
-Per \(P^{\star}, \overrightarrow{a', v'}\) sono nulle e da (3.12)
+Per \(P^{\star}, \overrightarrow{a', v'}\) sono nulle e da (\ref{teorema_acc_rel})
 \begin{equation}
     \overrightarrow{a_t} = \overrightarrow{a_{O'}} + \omega \times (\omega \times \overrightarrow{r'}) + \frac{d \omega }{dt} \times \overrightarrow{r'}
 \end{equation}
 
-Possiamo riscrivere (3.12) come:
-\begin{equation}
+Possiamo riscrivere (\ref{teorema_acc_rel}) come:
+\begin{equation}  \label{teorema_acc_cor}
     \overrightarrow{a} = \overrightarrow{a'} + \overrightarrow{a_t} + \overrightarrow{a_c}
 \end{equation}
 L'ultimo termine
@@ -170,8 +171,8 @@ Tale situazione fisica viene descritta anche con il termine di \emph{relatività
 Se il moto del secondo sistema è accelerato rispetto al sistema inerziale, (\(a_{O'} \neq 0\) oppure \(\omega \neq 0\) o entrambe) si osserva che la legge di Newton non è più valida, la forza vera che agisce sul punto considerato non è proporzionale all'accelerazione del punto, misurata nel sistema accelerato.
 
 Infatti, se \(\overrightarrow{F} = m \overrightarrow{a}\) nel sistema inerziale, nel sistema mobile in moto accelerato non può valere \(\overrightarrow{F} = m \overrightarrow{a'}\) poiché \( \overrightarrow{a'} \neq \overrightarrow{a}\).
-Ho anche che, se moltiplichiamo i termini di (3.15) per la massa del punto e teniamo conto che \(\overrightarrow{F} = m \overrightarrow{a}\), abbiamo:
-\begin{equation}
+Ho anche che, se moltiplichiamo i termini di (\ref{teorema_acc_cor}) per la massa del punto e teniamo conto che \(\overrightarrow{F} = m \overrightarrow{a}\), abbiamo:
+\begin{equation} \label{f_rel}
     \overrightarrow{F} - m \overrightarrow{a_t} - m \overrightarrow{a_c} = m \overrightarrow{a'}
 \end{equation}
 
@@ -183,7 +184,7 @@ Le forze apparenti non derivano dalle interazioni fondamentali e non esistono in
 \subsection{Sistema non inerziale}
 
 Se osserviamo in un sistema inerziale un punto materiale che descrive una traiettoria curva possiamo affermare che su di esso agisce una forza (vera); se \(\overrightarrow{F} = 0\) sappiamo che il moto è rettilineo uniforme e viceversa.\newline
-In un sistema accelerato vediamo da (3.15) che \(\overrightarrow{F} = 0\) non comporta \(\overrightarrow{a}' = 0\) e quindi l'osservazione di un moto rettilineo uniforme. 
+In un sistema accelerato vediamo da (\ref{teorema_acc_cor}) che \(\overrightarrow{F} = 0\) non comporta \(\overrightarrow{a}' = 0\) e quindi l'osservazione di un moto rettilineo uniforme. 
 Questo risultato giustifica il nome di sistema non inerziale per un sistema accelerato. 
 Analogamente, una traiettoria curva non presuppone necessariamente l'azione di una forza (vera),ma può essere un effetto apparente, conseguenza del moto accelerato del sistema in cui si trova l'osservatore, e così via.
 
@@ -289,7 +290,7 @@ entrambi gli assi sono orientati verso l'alto.
 L'ascensore inizia a salire con accelerazione \(\overrightarrow{a}_t\), descrive successivamente un moto uniforme ed infine decelera con accelerazione \(-\overrightarrow{a}_t\), fino a fermarsi; \(a_t\) è costante in modulo.
 L'osservatore nel sistema \(O'\) compie nell'ascensore esperimenti di caduta libera di corpi, misurandone l'accelerazione \(\overrightarrow{a}'\).
 Per l'osservatore in \(O\) l'accelerazione dei corpi lasciati cadere da \(O'\) è sempre pari a \(g\). 
-In base a (3.17) ho che \(\overrightarrow{g} =\overrightarrow{a}'+ \overrightarrow{a}_t\), e proiettando tale relazione sull'asse \(z\) si ha:
+In base a (\ref{f_rel}) ho che \(\overrightarrow{g} =\overrightarrow{a}'+ \overrightarrow{a}_t\), e proiettando tale relazione sull'asse \(z\) si ha:
 \begin{itemize}
     \item nella fase di accelerazione \(-g = a' + a_t \implies a' = -(g + a_t)\)
     \item nella fase di moto uniforme \(-g = a' \implies a' = -g\)
@@ -303,7 +304,7 @@ un corpo abbandonato nell'ascensore con velocità iniziale nulla resta fermo ris
 È la cosiddetta assenza di peso, avvertita da chi sta dentro l'ascensore e dovuta ovviamente non a una scomparsa reale dell'attrazione terrestre, ma al fatto che se tutto il sistema sta scendendo con la stessa accelerazione dei corpi che ad esso si riferiscono non c'è più accelerazione relativa e, tra l'altro, vengono a mancare le sensazioni ad essa connesse. 
 Un effetto analogo, come è ben noto, si manifesta nei satelliti artificiali che ruotano intorno alla terra.
 
-La spiegazione dell'assenza di accelerazione di gravità è quella data da \(O\) che misura in ogni caso \(g\) e ragiona in base a (3.17), attribuendo le variazioni all'accelerazione di trascinamento di \(O'\).
+La spiegazione dell'assenza di accelerazione di gravità è quella data da \(O\) che misura in ogni caso \(g\) e ragiona in base a (\ref{f_rel}), attribuendo le variazioni all'accelerazione di trascinamento di \(O'\).
 Ma \(O'\), se non ha a priori questo tipo di informazioni, ragiona in modo diverso. 
 Egli vede che in certe situazioni l'accelerazione di un corpo che cade è \(g\), in accordo con quanto gli può essere comunicato dall'esterno, ma sperimenta anche situazioni diverse. 
 \(O'\) postula pertanto che in certe situazioni, che è capace di mettere in evidenza, ha origine un'accelerazione supplementare che si compone con \(g\) per dare i risultati osservati ovvero che alla forza peso va aggiunto il termine \(-m \overrightarrow{a}_{suppl}\); sulle cause del fenomeno non è però in grado di fare alcuna ipotesi.

@@ -7,6 +7,7 @@
 % arara: pdflatex: { synctex: yes, shell: yes }
 % arara: latexmk: { clean: partial }
 \begin{document}
+
 % TODO check generale documento
 % TODO sistemare notazione versori (u_x vs \hat{x})
 % TODO fare (eventualmente) riassunto finale come cap1
@@ -177,7 +178,7 @@ La condizione è quindi:
     F > \mu_s N \udm{N}
 \end{equation*}
 
-Quando il corpo entra in movimento la forza di attrito che si oppone la moto è la forza di \emph{attrito radente dinamico} \(F_a = \mu_d N \ \udm{N}\) dove \(\mu_d\) rappresenta il coefficente di attrito dinamico.
+Quando il corpo entra in movimento la forza di attrito che si oppone la moto è la forza di \emph{attrito radente dinamico} \(F_a = \mu_d N \ \udm{N}\) dove \(\mu_d\) rappresenta il coefficiente di attrito dinamico.
 Ho sempre che \(\mu_d < \mu_s\) quindi l'attrito dinamico è sempre minore dell'attrito statico.
 Questo coefficiente di attrito radente dipende dalle caratteristiche chimiche e dallo stato della superficie dei due materiali che vanno a sfregarsi tra loro (è adimensionale).
 
@@ -242,7 +243,7 @@ Dall'equazione differenziale posso ricavarmi anche il periodo che risulta essere
 
 \section{Piano inclinato}
 
-Un piano inclinato ha due caratteristiche fondamentali, un angolo \(\alpha\) che mi indica l'ampiezza del piano e \(\mu_s, \mu_d\) coefficenti di attrito (se questo non viene trascurato).
+Un piano inclinato ha due caratteristiche fondamentali, un angolo \(\alpha\) che mi indica l'ampiezza del piano e \(\mu_s, \mu_d\) coefficienti di attrito (se questo non viene trascurato).
 Quando analizziamo un piano inclinato il nostro sistema di riferimento è cartesiano con l'asse \(x\) parallelo al piano inclinato e l'asse \(y\) ortogonale a quest'ultimo.
 Se metto un punto materiale di massa \(m\) su un piano inclinato grazie a questo sistema di riferimento posso scomporre la sua forza peso \(F_p\) nelle componenti \(F_{px}\) e \(F_{py}\).
 
@@ -251,7 +252,7 @@ mentre nell'asse parallelo \(\overrightarrow{\mathbf{F_{px}}} = m \overrightarro
 Infatti il corpo si muove lungo il piano a meno di forze esterne che ne bilancino il moto.
 
 Nel caso in cui ci sia attrito nell'asse \(y\) la situazione rimane analoga, nell'asse \(x\) invece l'attrito radente potrebbe bilanciare \(\overrightarrow{\mathbf{F_{px}}}\).
-Il corpo non inzia il moto fino a che:
+Il corpo non inizia il moto fino a che:
 \begin{equation*}
     F_{px} = m g \sin \alpha \leq \mu_s N = \mu_s m g \cos \alpha = \mu_s N
 \end{equation*}
@@ -324,20 +325,20 @@ Il periodo \(T\) è dato da:
 ed è indipendente dall'ampiezza.\newline
 La legge oraria dello spostamento lungo l'arco di circonferenza è dato da
 \begin{equation*}
-    s = L \theta = L \theta_0 \sin (\omega t + \phi). \udm{m}
+    s = L \theta = L \theta_0 \sin (\omega t + \phi) \udm{m}
 \end{equation*}
 La velocità angolare e lineare diventano:
 \begin{equation}
-    \omega (t) = \frac{d \omega}{dt} = \omega \theta_0 \cos (\omega t + \phi) \udm{rad \cdot s^{-1}}
+    \omega (t) = \frac{d \omega}{dt} = \omega \theta_0 \cos (\omega t + \phi) \udm{\frac{rad}{s}}
 \end{equation}
 \begin{equation}
-    v = \frac{d s}{dt} = L \frac{d \theta}{ dt} = L \omega \theta_0 \cos (\omega t +\phi). \udm{m/s}
+    v = \frac{d s}{dt} = L \frac{d \theta}{ dt} = L \omega \theta_0 \cos (\omega t +\phi). \udm{\frac{m}{s}}
 \end{equation}
 La velocità è massima quando il punto passa per la verticale \((\theta = 0)\) e nulla agli estremi delle oscillazioni \((\theta= \theta_0)\) dove il verso del molo si inverte.\newline
 Quando l'ampiezza delle oscillazioni non è piccola il moto è ancora periodico, ma non armonico, e il periodo \(T'\) dipende dall'ampiezza.\newline
 La tensione del filo che sostiene il punto è:
 \begin{equation}
-    T_F = m [ g \cos \theta(t) + \frac{v^2(t)}{L} ] \udm{N}
+    T_F = m [ g \cos ( \theta(t) ) + \frac{v^2(t)}{L} ] \udm{N}
 \end{equation}
 La tensione è massima nella posizione verticale, dove sia \(cos  (\theta (t))\) che \(v(t)\) assumono i valori massimi, ed è minima ne i punti di inversione (indipendentemente dall'ampiezza). 
 
@@ -357,25 +358,31 @@ Riassumendo, il filo teso esercita agli estremi la tensione \(T\), il cui valore
 Non è necessario che il filo sia completamente rettilineo, esso può essere parzialmente avvolto attorno ad un disco (carrucola), con lo scopo di cambiare la direzione della forza. 
 
 Nel risolvere gli esercizi sulla tensione dei fili è bene considerare un corpo alla volta, considerare le eventuali forze a cui è soggetto e metterle in ugualianza con la tensione \(T\).
-Per trovare l'accelerazione del sistema di punti materiali legati dai fili tesi bisogna usare la legge di Newton ed e mettere a sistema nel caso ci siano più corpi (e quindi più vincoli).
+Per trovare l'accelerazione del sistema di punti materiali legati dai fili tesi bisogna usare la legge di Newton e mettere a sistema nel caso ci siano più corpi (e quindi più vincoli).
 
 \section{Lavoro, Potenza, Energia Cinetica}
 
 \subsection{Lavoro}
 
-Dato un punto materiale che si muove lungo una traiettoria curvilinea sollo l'azione di una forza \(\overrightarrow{F}\), si definisce lavoro della forza \(F\), compiuto durante lo spostamento del punto dalla posizione \(A\) a \(B\), la quantità scalare
+Dato un punto materiale che si muove lungo una traiettoria curvilinea sotto l'azione di una forza \(\overrightarrow{F}\), si definisce lavoro della forza \(F\), compiuto durante lo spostamento del punto dalla posizione \(A\) a \(B\), la quantità scalare
 \begin{equation}
-    W = \int_A^B \overrightarrow{F} \cdot d \overrightarrow{s} = \int_A^B F \cos \theta ds = \int_A^B F_T ds \udm{J} = \udm{\frac{kg \cdot m^2}{s^2}}. 
+    W = \int_A^B \overrightarrow{F} \cdot d \overrightarrow{s} = \int_A^B F \cos \theta ds = \int_A^B F_T ds \udm{J} = \udm{\frac{kg \cdot m^2}{s^2}}
 \end{equation} 
 Il lavoro è l'integrale di linea della forza, cioè è dato dalla somma di infiniti contributi infinitesimi \(d W = F \cdot d s = F_T d s\).
 Si osservi che in generale lungo la traiettoria sia \(\overrightarrow{F}\) che \(\theta\) sono variabili.
 
-Una forza ortogonale alla traiettoria non compie lavoro perché \(\theta = \pi / 2 \). Il lavoro è positivo se \(0 \leq \theta < \pi / 2\) e in tale caso si parla di \emph{lavoro motore}. 
-Il lavoro risulta negativo, \emph{lavoro resistente}, se \(\pi / 2 < \theta \leq \pi \). Lavoro resistente è compiuto ad esempio dalle forze di attrito, il cui verso è opposto allo spostamento, \(\theta = \pi\). 
+Una forza ortogonale alla traiettoria non compie lavoro perché \(\theta = \pi / 2 \). 
+Il lavoro è positivo se \(0 \leq \theta < \pi / 2\) e in tale caso si parla di \emph{lavoro motore}. 
+Il lavoro risulta negativo, \emph{lavoro resistente}, se \(\pi / 2 < \theta \leq \pi \). 
+Lavoro resistente è compiuto ad esempio dalle forze di attrito, il cui verso è opposto allo spostamento, \(\theta = \pi\). 
 
-Se sul punto P agiscono più forze per ciascuna posso calcolare il corrispondente lavoro e quindi il valoro complessivo risulta essere:
+Se sul punto P agiscono più forze per ciascuna posso calcolare il corrispondente lavoro e quindi il valore complessivo risulta essere:
 \begin{equation}
-    W = \int_A^B \overrightarrow{F} \cdot d \overrightarrow{s} = \int_A^B (\overrightarrow{F_1} + ... + \overrightarrow{F_n}) \cdot d \overrightarrow{s} = \int_A^B \overrightarrow{F_1} \cdot d \overrightarrow{s} + ... + \int_A^B \overrightarrow{F_n} \cdot d \overrightarrow{s} = W_1 + ... W_n.
+    \begin{split}
+        W = \int_A^B \overrightarrow{F} \cdot d \overrightarrow{s} & = \int_A^B (\overrightarrow{F_1} + ... + \overrightarrow{F_n}) \cdot d \overrightarrow{s} \\
+        & = \int_A^B \overrightarrow{F_1} \cdot d \overrightarrow{s} + ... + \int_A^B \overrightarrow{F_n} \cdot d \overrightarrow{s} \\
+        & = W_1 + ... + W_n
+    \end{split}
 \end{equation}
 quindi il lavoro è pari alla somma dei lavori delle singole forze agenti, ciascuno dei quali può essere positivo, negativo o nullo.
 
@@ -385,11 +392,12 @@ Il lavoro totale è nullo, \(W = 0\) quando non agisce nessuna forza oppure agis
 
 La potenza corrisponde al \emph{lavoro per unità di tempo}:
 \begin{equation}
-    P = \frac{dW}{dt} = \overrightarrow{F} \cdot \frac{d \overrightarrow{r}}{dt} = \overrightarrow{F} \cdot \overrightarrow{v} = F_T v \udm{W} = \udm{\frac{kg \cdot m^2}{s^3}}.
+    P = \frac{dW}{dt} = \overrightarrow{F} \cdot \frac{d \overrightarrow{r}}{dt} = \overrightarrow{F} \cdot \overrightarrow{v} = F_T v \udm{W} = \udm{\frac{J}{s}} = \udm{\frac{kg \cdot m^2}{s^3}}
 \end{equation}
 Questa è la potenza istantanea, in generale variabile durante il moto, e caratterizza la rapidità di erogazione del lavoro. 
-La potenza media è il rapporto \(W/t\), cioè il lavoro totale diviso per il tempo durante il lavoro è stato svolto.
-Questa grandezza è utile a quantificare le prestanzioni di un dispositivo o macchina che fornisce lavoro. Infatti se confronto due macchine posso sapere quale mi eroga la stessa quantitià di lavoro nel minor tempo tramite la potenza.
+La potenza media è il rapporto \(\frac{W}{t}\), cioè il lavoro totale diviso per il tempo svolto per eseguirlo.\\
+Questa grandezza è utile a quantificare le prestazioni di un dispositivo o macchina che fornisce lavoro. 
+Infatti se confronto due macchine posso sapere quale mi eroga la stessa quantità di lavoro nel minor tempo tramite la potenza.
 
 \subsection{Energia cinetica}
 
@@ -401,14 +409,16 @@ Se considero un percorso dalla posizione A a B abbiamo:
 \begin{equation}
     W=\int_{A}^{f} m v d v=\frac{1}{2} m v_{B}^{2}-\frac{1}{2} m v_{A}^{2}=E_{k, B}-E_{k, A}=\Delta E_{k} \udm{J}
 \end{equation}
-Il lavoro è eguale alla variazione della quantità \(\frac{1}{2} m v^2\) che si chiama energia cinetica del punto materiale.
+Il lavoro è eguale alla variazione della quantità \(\frac{1}{2} m v^2\) che si chiama \emph{energia cinetica del punto materiale}.
 
 Tutte le leggi con cui vengono definite le varie forme di energia contengono sempre la variazione di energia e pertanto tali quantità possono essere definite a meno di una costante. 
-Per esempio l'energia cinetica di un punto potrebbe essere scritta come \(\frac{1}{2} m v^2 + costante\), senza modificare la l'equazione di definizione in quanto nella differenza la costante scompare.
+Per esempio l'energia cinetica di un punto potrebbe essere scritta come \(\frac{1}{2} m v^2 + costante\), senza modificare l'equazione di definizione in quanto nella differenza la costante scompare.
 
 Il lavoro è la manifestazione dell'azione di una forza ed è quindi conseguenza dell'interazione con l'ambiente circostante. 
-Si parla pertanto di lavoro \emph{scambiato} e non si dice mai che  un s istema possiede lavoro. 
-Si parla invece di energia posseduta dal sistema, che viene modificata dall'interazione con l'ambiente esterno. Un effetto misurabile dell'interazione è la variazione di energia. 
+Si parla pertanto di lavoro \emph{scambiato} e non si dice mai che un sistema possiede lavoro. 
+Si parla invece di energia posseduta dal sistema, che viene modificata dall'interazione con l'ambiente esterno. 
+
+Un effetto misurabile dell'interazione è la variazione di energia. 
 
 \section{Lavoro della forza peso}
 
@@ -426,7 +436,7 @@ Con \(E_p= m g z\) indichiamo una funzione della coordinata del punto \(z\) (mis
 In base alla posizione di \(A\) e \(B\) posso trovarmi in due casi:
 \begin{itemize}
     \item Se \(B\) si trova più in basso di \(A\), ho \(W>0\) quindi \(E_p\) diminuisce.
-    \item Se \(B\) si trovia più in alto di \(A\), ho \(W<0\) quindi \(E_p\) aumenta 
+    \item Se \(B\) si trova più in alto di \(A\), ho \(W<0\) quindi \(E_p\) aumenta 
     (il punto quindi deve avere sufficiente velocità iniziale così che la diminuzione di energia cinetica eguagli il lavoro oppure bisogna applicare al punto un'altra forza il cui lavoro motore superi in modulo il lavoro resistente della forza peso).
 \end{itemize}
 
@@ -436,14 +446,14 @@ La trattazione fatta per la forza peso è applicabile a qualsiasi altra forza co
 
 Il lavoro della forza elastica \(\overrightarrow{F} =-k x \hat{x}\), per uno spostamento lungo l'asse \(x\) vale:
 \begin{equation}
-    W = \int_A^B -k x\hat{x} \cdot dx \hat{x} = -k \int_A^B x dx = \frac{1}{2} k x^2_A - \frac{1}{2} k x^2_B = - \Delta E_p,
+    W = \int_A^B -k x\hat{x} \cdot dx \hat{x} = -k \int_A^B x dx = \frac{1}{2} k x^2_A - \frac{1}{2} k x^2_B = - \Delta E_p
 \end{equation}
 con \(E_p = \frac{1}{2} k x^2\) in funzione della posizione.\newline
 Come nel caso della forza peso si tratta di una forza conservativa, quindi non conta la traiettoria.
 A seconda del punto di inizio e fine posso avere due casi:
 \begin{itemize}
     \item Se la coordinata iniziale è maggiore di quella finale, cioè se il punto si muove verso il centro della forza, \(W>0\), quindi \(E_p\) diminuisce (spostamento naturale).
-    \item Nel caso contrario di allontanamento dal centro \(W < 0\), \(E_p\) aumenta: per eseguire tale spostamento il punto deve possedere una velocità iniziale oppure si deve applicare una forza opportuna
+    \item Nel caso contrario di allontanamento dal centro \(W < 0\), \(E_p\) aumenta: per eseguire tale spostamento il punto deve possedere una velocità iniziale oppure si deve applicare una forza opportuna.
 \end{itemize}
 
 \section{Lavoro di una forza di attrito radente}
@@ -461,7 +471,7 @@ Perché possa verificarsi il moto o deve agire un'altra forza che produca un lav
 Quindi l'energia cinetica iniziale diminuisce lungo il percorso quindi arriverò alla posizione \(B\) con una velocità minore.\newline
 In particolare, data \(E_{k,A}\), il punto si ferma dopo un percorso:
 \begin{equation*}
-    s_{AB} = E_{k,A} / \mu_d N
+    s_{AB} = \frac{E_{k,A}}{\mu_d N}
 \end{equation*} 
 
 \section{Forze conservative, energia potenziale}
@@ -485,7 +495,7 @@ oppure analogamente in modo più formale:
 
 La funzione delle coordinate di cui abbiamo parlato finora si chiama energia potenziale e per tutte le forze conservative vale la relazione:
 \begin{equation}
-    W = E_{p_A} - E_{p,B} = - \Delta E_p .
+    W = E_{p,A} - E_{p,B} = - \Delta E_p
 \end{equation}
 Non esiste una formula generale per l'energia potenziale, ma l'espressione esplicita dipende dalla particolare forza conservativa cui essa si riferisce.
 Ad esempio per la forza peso ho \(E_p = mgz\) e per la forza elastica \(E_p = \frac{1}{2} k x^2\).
@@ -498,11 +508,12 @@ Dall'ultima equazione ho che:
 
 Sappiamo che ci sono forze per le quali non vale la proprietà di invarianza del lavoro rispetto al percorso e non è quindi possibile esprimere il lavoro tramite le differenze dei valori di una funzione delle coordinate. 
 Queste forze si chiamano non conservative o dissipative e per esse non si può introdurre l'energia potenziale. Il lavoro di una forza non conservativa si calcola con la definizione iniziale ed è sempre eguale, come per qualsiasi forza, alla variazione di energia cinetica.
+
 Le tipiche forze non conservative sono le forze di attrito.
 
 \section{Conservazione dell'energia}
 
-Se agiscono solo forze conservative ho l'ugualianza tra la differenza di energia cinetica e la differenza di energia potenziale.
+Se agiscono solo forze conservative ho l'uguaglianza tra la differenza di energia cinetica e la differenza di energia potenziale.
 Vale quindi l'equazione:
 \begin{equation}
     E_{k,A} + E_{p,A} = E_{k,B} + E_{p,B}
@@ -513,21 +524,21 @@ Questa somma di valori risulta essere una costante che prende il nome di energia
     E_m = E_p + E_k = costante
 \end{equation} 
 
-Quando agiscono sia le forze conservative che dissipative il valoro è dato dalla somma dei due lavori delle forze.
+Quando agiscono sia le forze conservative che dissipative il valore è dato dalla somma dei due lavori delle forze.
 \begin{equation*}
     W = W_{cons} + W_{diss} = E_{k,B} - E_{k,A}
 \end{equation*}
-grazie alla proprietà delle forze conservative posso riscrivere \(W_{cons}\) come differenza di energia potenziale.
+Grazie alla proprietà delle forze conservative posso riscrivere \(W_{cons}\) come differenza di energia potenziale
 \begin{equation*}
     E_{p,A} - E_{p,B} + W_{diss} = E_{k,B} - E_{k,A}
 \end{equation*}
-posso finalmente ottenere facilmente il lavoro delle forze dissipative:
+potendo finalmente ottenere facilmente il lavoro delle forze dissipative:
 \begin{equation}
     \implies W_{diss} = (E_{k,B} + E_{p,B}) - (E_{k,A} + E_{p,A}) = E_{m,B} - E_{m,A}
 \end{equation}
 
-In presenza di forze dissipative l'energia meccanica non si conserva e la sua variazione è eguale al lavoro delle forze dissipative.
-Questo di solito avviene sempre perchè in qualunque processo meccanico è sempre presente una forza di attrito che si oppone al moto con \(W_{diss}<0\).
+In presenza di forze dissipative l'energia meccanica \textbf{non} si conserva e la sua variazione è eguale al lavoro delle forze dissipative.
+Questo di solito avviene sempre perché in qualunque processo meccanico è sempre presente una forza di attrito che si oppone al moto con \(W_{diss}<0\).
 Quindi l'energia meccanica diminuisce sempre.
 
 \end{document}

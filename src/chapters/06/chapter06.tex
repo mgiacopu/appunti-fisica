@@ -324,5 +324,71 @@ Le trasformazioni reversibili sono casi limite, utilissime concettualmente per i
 Una trasformazione reversibile può essere arrestata in qualunque stato intermedio e, variando di poco le condizioni esterne, si può invertire il verso della trasformazione, ripercorrendo gli stessi stati già attraversati.  
 In tal caso cambia il segno degli scambi di energia e della variazione di energia interna.
 
+\section{Calorimetria}
+Il primo principio della termodinamica introduce e definisce la grandezza fisica calore, mettendo in evidenza che, in generale, lo scambio di calore comporta per un sistema una variazione di energia interna e uno scambio di lavoro secondo, offrendo anche un modo esplicito per effettuare il calcolo.
+
+Esistono però processi particolari, e molto comuni, in cui è possibile ricavare un'espressione analitica del calore scambiato direttamente in funzione della variazione delle coordinate termodinamiche nella trasformazione.
+
+Un esempio possono essere due corpi a diversa temperatura che vengono messi in contatto termico all'interno di un contenitore adiabatico. 
+Nel processo viene raggiunto la temperatura di equilibrio \(T_e\).
+
+Nel processo non viene scambiato lavoro né con l'ambiente né tra i due corpi, se ammettiamo che le variazioni di volume dei due corpi siano trascurabili; inoltre i due corpi non scambiano calore con l'ambiente. 
+Pertanto \(Q\) e \(W\) sono nulli e l'energia interna totale del sistema, costituito dai due corpi, resta costante.
+
+Le rispettive energie interne dei due corpi \(\Delta U_1\) e \(\Delta U_2\) però cambiano.
+Dovendo essere \(\Delta U = \Delta U_1 + \Delta U_2 = 0\) abbiamo \(\Delta U_1 = - \Delta U_2\) le variazioni di energia interna dei due corpi sono eguali in modulo ed opposte.
+Inoltre applicando il primo principio della termodinamica so che \(\Delta U_1 = Q_1\) e \(\Delta U_2 = Q_2\): il calore scambiato dal primo corpo è uguale ed opposto a quello scambiato dal secondo \(Q_1 = Q_2\).
+
+D'altra parte gli esperimenti di Joule fanno ritenere che l'energia interna cresca con la temperatura, per cui \(\Delta U_1 < 0 \) e \(\Delta U_2 > 0 \):
+in conclusione possiamo affermare che il calore ceduto dal primo corpo, il corpo più caldo, è eguale in modulo a quello assorbito dal secondo corpo, più freddo. 
+
+Per effettuare la misura del calore scambiato viene effettuata la seguente metodologia:
+\begin{enumerate}
+    \item si cede \(Q_1\) ad una massa d'acqua, ponendo il corpo a contatto termico con l'acqua per il tempo necessario alla variazione \(T_e - T_1\), di temperatura del corpo; 
+    in corrispondenza anche l'acqua subisce una variazione di temperatura \(\Delta T\), con \(\Delta T\) non necessariamente eguale a \(T_e - T_1\) (in modulo);
+    \item si misura, per esempio con uno dei dispositivi di Joule, il lavoro \(W_2\) necessario per produrre la stessa variazione \(\Delta T\) nella stessa massa d'acqua; 
+    \item si pone \(| Q_1 | = W_2\)
+\end{enumerate}
+
+Nel realizzare queste misure si trova che esiste proporzionalità tra il calore \(Q\), la massa del corpo stesso e la variazione della sua temperatura:
+\begin{equation}
+    Q = m c \left(T_{fin} - T_{in}\right)
+\end{equation} 
+dove \(c\) è una grandezza caratteristica della sostanza di cui è costituito il corpo, in generale funzione a sua volta della temperatura, chiamata \emph{calore specifico}.
+Osserviamo che il calore è una grandezza estensiva, mentre il calore specifico è una grandezza intensiva.
+
+Il calore specifico rappresenta il calore che occorre scambiare con l'unità di massa di una data sostanza, alla temperatura \(T\), per farne variare la temperatura di \(1 K\) (ovvero di \(1 ^{\circ} C\))
+
+Il prodotto \(C = mc\), detto capacità termica del corpo rappresenta a sua volta il calore necessario per far variare di \(1 K\) la temperatura del corpo.
+
+Posso riscrivere 6.7 in termini infinitesimi:
+\begin{equation}
+    d Q = m c d T
+\end{equation}
+essendo \( d Q \) il calore infinitesimo scambiato dalla massa \(m\) alla temperatura \(T\) e \(d T\) la corrispondente variazione infinitesima di temperatura.
+
+Da quest'ultima equazione segue per il calore specifico:
+\begin{equation}
+    c = \frac{1}{m} \frac{d Q}{d T}
+\end{equation}
+
+Ritornando ai due corpi in contatto termico, l'eguaglianza \(Q_1 = -Q_2\) diviene in base a 
+\begin{equation*}
+    m_1 c_1 (T_e - T_1) = - m_2 c_2 \left(T_e - T_2\right)
+\end{equation*}
+da cui, noti i calori specifici e misurate le masse e le temperature iniziali, si può calcolare la temperatura finale di equilibrio \(T_e\).
+
+Il risultato trovato si può generalizzare: quando un corpo solido o liquido presenta una variazione di temperatura da \(T_1\) a \(T_2\) a seguito del contatto termico con un altro corpo, ammettiamo che abbia scambiato il calore
+\begin{equation}
+    Q = m c \left(T_2 - T_1\right)
+\end{equation}
+essendo \(m\) la sua massa e \(c\) il suo calore specifico. 
+Il calore risulta assorbito se \(T_2 > T_1\), ceduto se \(T_2<T_1\). 
+Qualora nell'intervallo di temperatura da \(T_1\) a \(T_2\) si possa assumere che il calore specifico sia praticamente costante bisogna invece scrivere
+\begin{equation}
+    Q = \int d Q = m \int_{T_1}^{T_2} c(T) d T
+\end{equation} 
+
+
 
 \end{document}

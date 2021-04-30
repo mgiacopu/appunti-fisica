@@ -422,5 +422,78 @@ Il calore \(Q\) deve essere ceduto alla sostanza per fare avvenire, ad esempio, 
 Nel caso dell'evaporazione il calore latente non ha un valore fisso, ma è una funzione decrescente della temperatura e si annulla alla temperatura critica.\newline
 Una caratteristica molto importante dei cambiamenti di fase è di essere, in opportune condizioni, trasformazioni praticamente reversibili.
 
+\section{Trasmissione del calore}
+
+Il primo principio della termodinamica riguarda gli scambi energetici che av-vengono durante una trasformazione termodinamica. Lo scambio di lavoro concerne il lavoro meccanico macroscopico legato allo spostamento di qualche oggetto, ad esempio la parete mobile di un recipiente pieno di gas. 
+Lo scambio di calore presuppone invece un meccanismo microscopico, cui accenneremo in seguito, e avviene quando due corpi sono a contatto direttamente o attraverso altri corpi.
+Lo scambio e anche il trasporto di calore entro un sistema possono avvenire tramite tre meccanismi distinti, che nel loro comlesso sono indicati come trasmissione calore: conduzione, convezione e irraggiamento termici.
+
+I tre meccanismi operano sempre in presenza di una differenza di temperatura tra sistema e ambiente o all'interno dello stesso sistema. 
+
+\subsection{Conduzione di calore}
+
+Consideriamo un corpo esteso in la temperatura non sia uniforme e tracciamo le superficie isoterme cioè il luogo dei punti in cui la funzione \(T(x,y,z)\) assume un valore costante.
+
+Se \(d S\) è un elemento una superficie isoterma, \(d T / d n\) il modulo del gradiente temperatura, ortogonale a \(d S\) e diretto nel verso delle temperatura, il calore che passa attraverso \(d S\) nel tempo \(d t\) è dato da
+\begin{equation}
+    d Q = - k \frac{d T }{d n} d S d t
+\end{equation}
+la grandezza \(k\), detta \emph{conducibilità} o \emph{conduttività termica}, è tipica del materiale ed è in generale funzione della temepratura.
+Il segno negativo indica che il flusso di calore avviene nel senso in cui la temperatura diminuisce, cioè nel verso opposto al gradiente di temperatura, dalla regione a temperatura maggiore a quella a temperatura minore.
+
+La conducibilità termica varia da sostanza a sostanza anche di diversi ordini di grandezza.
+La conducibilità termica ha una diversa dipendenza dalla temperatura per le varie sostanze. 
+Nei gas semplici \(k\) cresce debolmente con la temperatura, in proporzione alla radice quadrata della stessa. 
+Anche nei liquidi e nei dielettrici non vi è una notevole variazione con la temperatura. 
+Nei metalli puri la conducibilità presenta sempre un massimo a bassa temperatura, che è due o tre ordini di grandezza maggiore del valore a temperatura ambiente.
+
+Attraverso una superficie finita \(S\) nel tempo \(t\) passa dall'ambiente posto a sinistra della parete a quello a destra il calore 
+\begin{equation*}
+    Q = k \frac{T_1 - T_2}{s} S t
+\end{equation*}
+
+\subsection{Convezione di calore}
+
+La conduzione nei fluidi è difficile da osservare perché in essi si manifesta un altro fenomeno di trasmissione del calore, la convezione.
+
+Se si riscalda una massa fluida, quella parte più vicina alla sorgente di calore assume una temperatura maggiore e diminuisce di densità, dilatandosi. 
+Viene alterato l'equilibrio statico nel fluido, poiché gli elementi di fluido più caldi risentono, dalle parti di fluido circostante più fredde, una spinta di Archimede maggiore del loro peso. 
+Si originano correnti ascensionali (dette di convezione), che permettono ad elementi con temperatura minore di avvicinarsi a loro volta alla sorgente di calore. 
+La trasmissione di calore avviene con spostamenti di materia, tramite correnti convettive. 
+
+La convezione è responsabile del movimento delle masse d'aria nell'atmosferà o delle correnti marine, con effetti sulle condizioni climatiche e metereologiche.
+
+\subsection{Irraggiamento}
+
+Un corpo a temperatura \(T\) emette energia sotto forma di onde elettromagnetiche, che si propagano nello spazio circostante, anche se vuoto. 
+Il potere emissivo del corpo \(P\), che ha il significato di energia emessa per unità di tempo e per unità di superficie, è dato dalla legge di Stefan-Boltzmann: 
+\begin{equation}
+    P = \sigma e T^{4}
+\end{equation}
+dove \(\sigma\) è una costante universale, pari a  \(5.67 \cdot 10^{-8} J/m^2 s K^4\), ed \(e\) una grandezza, detta potere emissivo specifico, che può variare tra \(0\) e \(1\), dipendendo dalle proprietà della superficie. 
+Se \(e = 1\) la superficie è detta supe1ficie nera e presenta, a parità di temperatura, il massimo potere emissivo. 
+
+Tramite questi fenomeni la temperatura di un corpo aumenta o diminuisce a seconda del bilancio tra energia irradiata ed assorbita; se il bilancio è in parità la temperatura resta costante, il corpo è in equilibrio con l'ambiente circostante. 
+Naturalmente l'equilibrio può essere mantenuto anche fornendo o sottraendo energia con altri mezzi, per compensare l'irraggiamento. 
+È attraverso il meccanismo dell'irraggiamento che il sole trasmette energia alla superficie terrestre, nella misura di \(1.53 \cdot 10^3 J/m^2 s\).
+
+\subsection{Parete adiabatica, Vaso di Dewar}
+
+Vediamo in base ai vari effetti studiati come è possibile realizzare una parete adiabatica. 
+Se lo scopo è quello di limitare lo scambio di calore in presenza di piccole differenze di temperatura è sufficiente una opportuna combinazione di materiali isolanti, cioè materiali a bassa conducibilità termica; bisogna quindi impedire conduzione e convezione. 
+
+Si utilizza allo scopo un contenitore detto vaso Dewar dal nome del suo inventore, costituito da due pareti isolanti, internamente argentate, tra le quali è fatto il vuoto: in questo modo si minimizza la trasmissione di calore per conduzione e convenzione nell'intercapedine. 
+Resta la possibilità di trasmissione di energia per irraggiamento, anche se piccola a basse temperature: per questa ragione l'interno dell'intercapedine è argentato, cioè per ridurre il potere emissivo specifico (che è nullo per un parete perfettamente riflettente). 
+
+\subsection{Passaggio di calore dal solido a liquido}
+
+Consideriamo un solido alla temperatura \(T\), con una superficie pari a \(S\), mentre il fluido si trova, nei punti non prossimi al solido, alla temperatura \(T_0 < T\). 
+Il fenomeno è complesso perché avvengono sia convezione che conduzione e irraggiamento. 
+Tuttavia, in prima approssimazione, se \(\Delta T = T - T_0 \) non è molto grande, il fenomeno può essere descritto con una legge molto semplice, scoperta da Newton: il modulo del calore scambiato nel tempo \(t\), ceduto dal solido e assorbito dal fluido, è dato da
+\begin{equation}
+    Q = h (T-T_0) S t
+\end{equation}
+La costante \(h\) è detta conducibilità termica esterna; per un filo caldo (perché percorso da corrente elettrica) immerso in aria \(h = 10 J/m^2 s K\). 
+
 
 \end{document}

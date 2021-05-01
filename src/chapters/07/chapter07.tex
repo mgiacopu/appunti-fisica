@@ -181,5 +181,47 @@ se il gas viene compresso, \(V_B < V_A\) e il gas subisce un lavoro (negativo), 
 Il lavoro, se si può utilizzare (7.9), ha un semplice significato geometrico nel piano (\(p,V\)). 
 Nel caso di una trasformazione che passa attraverso stati di equilibrio ed è quindi rappresentabile con una curva continua, la curva \(p = p (V)\) nel piano ( \(p, V\)), il lavoro, in accordo con il significato geometrico dell'operazione di integrazione, è pari all'area compresa tra la curva e l'asse dei volumi. 
 
+\section{Energia interna del gas ideale}
+
+%TODO da revisionare
+La dipendenza dell'energia interna di un gas ideale dalle coordinate termodinamiche è stata ricavata analizzando il risultato dell'\emph{esperienza sull'espansione libera, eseguita da Joule}. 
+
+In un contenitore con pareti rigide e diatermiche, diviso in due parti eguali separate da un rubinetto, si trova un gas nella parte sinistra, mentre nella parte destra è stata realizzata una condizione di vuoto. 
+Il contenitore è immerso in un calorimetro e la temperatura di equilibrio è \(T\). 
+Si apre il rubinetto e si lasci a espandere il gas in tutto il volume a disposizione. 
+L'espansione è chiamata libera perché non ci sono forze esterne che agiscono sul gas.
+Sperimentalmente si osserva che, comunque si operi, aprendo lentamente o rapidamente il rubinetto, con gas inizialmente ad alta o bassa pressione, la temperatura del liquido calorimetrico alla fine del processo è sempre pari a \(T\), temperatura iniziale di equilibrio.
+
+Il gas quindi non scambia calore con il calorimetro, \(Q = 0\). 
+Esso inoltre non scambia lavoro con l'esterno (le pareti del contenitore sono rigide) e pertanto \(W = 0\). 
+Dal primo principio segue \(\Delta V = Q - W = 0\): \emph{nell'espansione libera l'energia interna di un gas ideale non varia}. 
+Possiamo allora giungere alla seguente conclusione: poiché nel processo la temperatura del gas non cambia, mentre variano pressione e volume (in accordo con (9.1) perché la trasformazione è isoterma, cioè \(p_{in} V_{in} = p_{fin} V_{fin}\)), l'energia interna deve essere funzione soltanto della temperatura. 
+
+Per determinare l'espressione esplicita della funzione \(U(T)\) consideriamo due generici stati di equilibrio \(A\) e \(B\): \(\Delta U = U_B - U_A\) deve essere la stessa qualsiasi trasformazione si scelga, essendo \(U\) una funzione di stato.
+Se scegliamo in particolare una frasformazione \(A C\) isocora e una isoterma, si ha:
+\begin{equation*}
+    \Delta U = U_B - U_A = U_B - U_C + U_C - U_A = U_C - U_A
+\end{equation*}
+in quanto \(U_B = U_C\) essendo gli stati \(B\) e \(C\) alla stessa temperatura ed \(U\) funzione sole della temperatura.
+
+Applichiamo ora il primo principio alla trasformazione isocora: dato che \(W = 0, \Delta U = Q\), dove \(Q\) è il calore scambiato in condizioni isocore. 
+Pertanto 
+\begin{equation}
+    \Delta U = U_B - U_A = n c_v (T_B - T_A) = n c_v \Delta T 
+\end{equation}
+\begin{equation}
+    \Delta U = U_B - U_A = n \int_{T_A}^{T_B} c_v d T
+\end{equation}
+a seconda che il calore specifico a volume costante sia indipendente dalla temperatura oppure no. 
+Per trasformazioni infinitesime
+\begin{equation}
+    d U = n c_v d T
+\end{equation}
+da cui si ricava
+\begin{equation}
+    c_v = \frac{1}{n} \frac{d U}{d T}
+\end{equation}
+
+
 
 \end{document}

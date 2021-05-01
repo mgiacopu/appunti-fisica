@@ -222,6 +222,126 @@ da cui si ricava
     c_v = \frac{1}{n} \frac{d U}{d T}
 \end{equation}
 
+\section{Studio di alcune trasformazioni}
 
+\subsection{Trasformazioni adiabatiche}
+
+Il gas è racchiuso dentro un contenitore con pareti adiabatiche e quindi può scambiare solo lavoro, per esempio in conseguenza del fatto che una parete è mobile. 
+Dal primo principio si ha
+\begin{equation*}
+    W_{AB} = - \Delta U = - n c_v (T_B -T_A)
+\end{equation*}
+se la trasformazione avviene tra i due stati di equilibrio \(A\) iniziale e \(B\) finale. 
+
+Se si ha un'espansione adiabatica il lavoro \(W_{AB}\) è positivo e quindi \(\Delta U\) è negativa e \(T_B\) è minore di \(T_A\): il gas si raffredda; se invece si ha una compressione adiabatica, \(W_{AB}<0, \Delta U > 0 , T_B > T_A\), il gas si riscalda. 
+Queste variazioni di temperatura sono comunemente sperimentate nelle variazioni rapide di volume di un gas.
+
+Se invece la trasformazione è \emph{adiabatica reversibile}, l'espressione infinitesima del primo principio diviene
+\begin{equation*}
+    d U + d W = n c_v d T + p d V = 0
+\end{equation*}
+in quanto possiamo esprimere il lavoro in funzione delle coordinate termodinamiche, appunto perché la trasformazione è reversibile.
+
+Per questa stessa ragione si può utilizzare l'equazione di stato in qualsiasi stato intermedio per esprimere la pressione come \(p = n R T / V\) e si ottiene
+\begin{equation*}
+    n c_V d T + \frac{n R T}{V} d V = 0
+\end{equation*}
+
+Se pariamo le variabili e utilizziamo la relazione di Mayer
+\begin{equation*}
+    \frac{c_p -c_V}{c_V} \frac{d V}{V} = - \frac{d T}{T} \implies (\gamma - 1) \frac{d V}{V} = - \frac{d T}{T}
+\end{equation*}
+Questa equazione differenzia le rappresenta la condizione a cui obbediscono le coordinate degli stati di un gas ideale collegati da una trasformazione adiabatica reversibile.
+
+\begin{equation*}
+    (\gamma - 1) \ln \frac{V_{B}}{V_A} = \ln \frac{T_A}{T_B} \implies \ln \left(\frac{V_B}{V_A}\right)^{\gamma - 1 } = \ln \frac{T_A}{T_B}
+\end{equation*}
+L'eguaglianza tra i logaritmi comporta l'eguaglianza tra gli argomenti, per cui
+\begin{equation*}
+    T_A V_A^{\gamma - 1} = T_B V_B^{\gamma - 1}
+\end{equation*}
+espressione che dà la relazione tra le coordinate termodinamiche del gas durante una trasformazione adiabatica reversibile. 
+
+Tramite l'equazione di stato si può trasformare la relazione tra \(T\) e \(V\) in una tra \(p\) e \(V\) o tra \(p\) e \(T\) e in conclusione si hanno tre espressioni equivalenti:
+\begin{equation}
+    T V^{\gamma - 1 } = costante \ , \ pV^{\gamma} = costante \ , \ T p^{\frac{1 - \gamma}{\gamma}}
+\end{equation}
+
+Le ( 7.14) sono un esempio di quando si possono esprimere i termini di ( 10.5) in funzione delle coordinate termodinamiche, si ottiene una relazione tra queste che rappresenta l'equazione della trasformazione.
+Esse si chiamano infatti le equazioni di una trasformazione adiabatica reversibile di un gas ideale.
+
+In particolare utilizziamo l'equazione \(p V^{\gamma} =  costante\) per rappresentare a trasformazione nel piano di Clapeyron. 
+Rispetto alla curva isoterma \(p V = costante\), passante per esempio per il punto rappresentativo dello stato \(A\), la curva adiabatica ha un andamento simile però con pendenza maggiore perché \(y\) è sempre maggiore di 1:  si conferma che \(T_B < T_A\).
+
+Una trasformazione adiabatica reversibile costituisce un caso limite, in quanto per essere reversibile dovrebbe svolgersi molto lentamente, ma ciò introduce difficoltà per mantenere l'adiabaticità. 
+Le trasformazioni reali sono irreversibili, in particolare possiamo considerare adiabatica irreversibile una trasformazione che comporta una variazione rapida di volume, così che non ci sia tempo per scambi di calore. 
+L'espansione libera di Joule è un altro caso di trasformazione adiabatica irreversibile.
+
+\subsection{Trasformazione isoterma}
+
+Nel caso di una trasformazione isoterma si considera il gas racchiuso in un recipiente che è in contatto termico con una sorgente di calore alla temperatura \(T\). 
+Durante la trasformazione la temperatura del gas resta costante al valore \(T\) e abbiamo
+\begin{equation*}
+    \Delta U = 0 \ , \ Q = W \ , \ p_A V_A = p_B V_B
+\end{equation*}
+
+Se la trasformazione è un espansione isoterma \(W_{AB}>0\) e quindi \(Q_{AB}>0\): il gas compie lavoro e assorbe calore. 
+Se invece la trasformazione è una compressione isoterma \(W_{AB} < 0 \) e \(Q_{AB} < 0\): il gas subisce lavoro e cede calore.
+
+Qualora la trasformazione sia isoterma reversibile dalla legge dei gas ideali e dal lavoro in una trasformazione finita si ha
+\begin{equation}
+    W_{AB} = \int_A^B p d V = \int_A^B \frac{n R T}{V} d V = n R T \int_A^B \frac{d V}{V} = n R T \ln \frac{V_{B}}{V_{A}} 
+\end{equation}
+e questa è anche l'espressione esplicita del calore scambiato.
+
+Si noti che è sempre \(Q \neq 0\): una trasformazione isoterma reversibile comporta sempre uno scambio di calore, a meno che non sia \(T = 0\), condizione che non è mai raggiungibile. 
+Una particolare trasformazione isoterma irreversibile è l'espansione libera di Joule. 
+Tale trasformazione è insieme adiabatica e isoterma: ciò è possibile solo perché la trasformazione è irreversibile, per una reversibile i due fatti sono ben distinti ed è impossibile che una trasformazione isoterma sia anche adiabatica.
+
+\subsection{Trasformazioni isocore}
+
+Il gas è contenuto in un recipiente diatermico di volume fisso: \(V = costante\) e \(W = 0\); il gas può scambiare solo calore e questo è eguale, per il primo principio, alla variazione dell'energia interna:
+\begin{equation*}
+    Q = \Delta U = m c_v (T_B - T_A) \ \  c_v = costante
+\end{equation*}
+
+Essendo il volume costante dell'equazione di stato:
+\begin{equation*}
+    \frac{p_A}{T_A} = \frac{p_B}{T_B} \implies \frac{p_A}{p_B} = \frac{T_A}{T_B}
+\end{equation*}
+Se si cede calore al gas, la sua pressione e la sua temperatura aumentano, mentre se si assorbe calore dal gas pressione e temperatura diminuiscono.
+
+\subsection{Trasformazioni isobare}
+
+Il gas è contenuto ora in un recipiente diatermico con una parete mobile su cui agisce una pressione esterna costante \(p\).
+Dall'equazione di stato o da ( 11.4) abbiamo che in una trasformazione isobara
+\begin{equation*}
+    \frac{v_A}{T_A} = \frac{v_B}{T_B} \implies \frac{v_A}{v_B} = \frac{T_A}{T_B}
+\end{equation*}
+
+Il gas può scambiare sia calore che lavoro, dati da 
+\begin{equation*}
+    Q = n c_p (T_B - T_A)
+\end{equation*}
+\begin{equation*}
+    W = p (V_B - V_A) = p (\frac{n R T_B}{p} - \frac{n R T_A}{p}) = n R (T_B - T_A) 
+\end{equation*}
+e deve essere sempre \(Q - W = \Delta U = n c_v (T_B - T_A)\).
+
+Se si cede calore al gas, il suo volume e la sua temperatura aumentano e il gas compie lavoro; se si assorbe calore dal gas, volume e temperatura diminuiscono, il gas subisce lavoro.
+
+Una trasformazione isobara si compie mettendo il gas, a temperatura \(T_A\), in contatto termico con una sorgente di calore a temperatura \(T_B\); non essendoci equilibrio termico la trasformazione è irreversibile. 
+Invece, per avere una trasformazione reversibile bisogna disporre di una serie infinita di sorgenti, come descritto per le trasformazioni isocore. 
+
+\subsection{Trasformazioni generiche}
+
+Per una trasformazione diversa da quelle precedenti possiamo utilizzare il primo principio nella forma:
+\begin{equation}
+    d Q = d U + d W = n c_v d T + d W
+\end{equation}
+È necessario poi esaminare attentamente le condizioni termodinamiche che regolano la trasformazione, per stabilire se essa sia reversibile o irreversibile.
+
+Se è reversibile possiamo utilizzare l'equazione di stato \(p V= n R T\) per il lavoro l'espressione \(d W = p d V \). 
+Si tenga presente che per il lavoro conviene verificare se può essere calcolato direttamente per via geometrica, cioè tramite l'area sotto la curva che rappresenta la trasformazione nel piano (\(p , V\)).
 
 \end{document}

@@ -222,6 +222,56 @@ da cui si ricava
     c_v = \frac{1}{n} \frac{d U}{d T}
 \end{equation}
 
+Poiché l'energia interna è funzione soltanto della temperatura, anche il calore specifico a volume costante di un gas ideale dipende solo dalla temperatura, potendo essere, in particolare, costante.
+Si può quindi scrivere in maniera esplicita il primo principio, per quel che riguarda le trasformazioni ideali:
+\begin{equation}
+    d Q = n c_v d T + d W \implies Q = n \int_{T_A}^{T_B} c_v d T + W
+\end{equation}
+\begin{equation}
+    Q = n c_v \Delta T + d W \ c_v = cost
+\end{equation}
+
+Se la trasformazione è reversibile, le equazioni precedenti diventano:
+\begin{equation}
+    d Q = n c_v d T + d p V \implies Q = n \int_{T_A}^{T_B} c_v d T + \int_{V_A}^{V_B} p d V
+\end{equation}
+\begin{equation}
+    Q = n c_v \Delta T + \int_{V_A}^{V_B} p d V \ c_v = cost
+\end{equation}
+
+\subsection{Relazione di Mayer}
+
+In una trasformazione isobara infinitesima \(d Q = n c_p d T\) e \(d W = p d V\)
+\begin{equation*}
+    n c_p d T = n c_v d T + p d V
+\end{equation*}
+Differenziando l'equazione di stato dei gas ideali \(p_V = n R T\) si ha
+\begin{equation*}
+    p d V + V d p = n R d T
+\end{equation*}
+in una trasformazione isobara \(d p = 0\) e quindi \(p d V = n R d T\). Pertanto
+\begin{equation*}
+    n c_p d T = n c_v d T + n R d T
+\end{equation*}
+semplificando si ottiene la relazione di Mayer
+\begin{equation}
+    c_p - c_v = R
+\end{equation}
+
+Di conseguenza in un gas ideale anche \(c_p\) è funzione soltanto della temperatura potendo in particolare essere costante.
+
+Il rapporto tra calori specifici
+\begin{equation*}
+    \gamma = \frac{c_p}{c_V}
+\end{equation*}
+risulta in un gas ideale sempre maggiore di 1 ed è funzione soltanto della temperatura o, in particolare, costante. 
+
+Sperimentalmente si trovano per i calori specifici dei gas ideali questi risultati:
+\begin{enumerate}
+    \item i gas ideali monoatomici hanno \(c_V\) costante e pari a \(\frac{3}{2} R\)
+    \item alcuni gas ideali biatomici hanno \(c_V\) costante e pari a \(\frac{5}{2} R\)
+\end{enumerate}
+
 \section{Studio di alcune trasformazioni}
 
 \subsection{Trasformazioni adiabatiche}

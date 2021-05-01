@@ -344,4 +344,38 @@ Per una trasformazione diversa da quelle precedenti possiamo utilizzare il primo
 Se è reversibile possiamo utilizzare l'equazione di stato \(p V= n R T\) per il lavoro l'espressione \(d W = p d V \). 
 Si tenga presente che per il lavoro conviene verificare se può essere calcolato direttamente per via geometrica, cioè tramite l'area sotto la curva che rappresenta la trasformazione nel piano (\(p , V\)).
 
+\section{Trasformazioni cicliche}
+
+Una trasformazione ciclica o ciclo è una trasformazione in cui lo stato finale coincide con lo stato iniziale. 
+Il primo principio ci dice che il calore scambiato è eguale al lavoro scambiato.
+
+Se durante il ciclo viene \emph{prodotto lavoro} (\(W > 0 \)), \emph{assorbendo calore} da un opportuno numero di sorgenti, tale \emph{ciclo} è detto \emph{termico}. 
+Il dispositivo che opera è indicato come \emph{macchina termica}. 
+Se invece il ciclo è tale che venga \emph{richiesto lavoro esterno} (\(W < 0\)), \emph{estraendo calore} da una o più sorgenti fredde per cederlo a sorgenti calde si parla di \emph{ciclo frigorifero}. 
+Il dispositivo corrispondente è detto \emph{macchina frigorifera}. 
+
+Se consideriamo le varie trasformazioni che compongono il ciclo e il calore e il lavoro complessivamente scambiati, possiamo scrivere 
+\begin{equation*}
+    Q = Q_A +Q_C
+\end{equation*}
+dove \(Q_A>0\) rappresenta la somma dei calori assorbiti e \(Q_C<0\) la somma dei calori ceduti,
+\begin{equation*}
+    W = W_F + W_S
+\end{equation*}
+in cui \(W_F >0\) è la somma dei lavori compiuti e \(W_S < 0\) è la somma dei lavori subiti.
+I calori e i lavori sono visti dal sistema che compie il ciclo e a cui sono riferiti gli aggettivi assorbito, ceduto, compito. 
+Per l'ambiente è esattamente il contrario.
+
+Per un ciclo termico si definisce rendimento la quantità adimensionale 
+\begin{equation}
+    \eta = \frac{W}{Q_A} = \frac{Q_A + Q_C}{Q_A} = 1+ \frac{Q_C}{Q_A} = 1 - \frac{|Q_C|}{Q_A}
+\end{equation}
+Il rendimento è quindi la percentuale di calore assorbito che viene trasformata in lavoro.
+Sperimentalmente si osserva sempre che
+\begin{equation*}
+    0 \leq \eta < 1
+\end{equation*}
+in un ciclo termico solo una frazione minore di 1 del calore assorbito viene trasformata in lavoro, il resto viene sempre ceduto.
+
+
 \end{document}

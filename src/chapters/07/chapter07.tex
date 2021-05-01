@@ -10,7 +10,139 @@
 
 \chapter{Gas ideali e reali}
 
+\section{Leggi di gas, equazioni di stato dei gas ideali}
 
+Un gas è un fluido con le seguenti caratteristiche:
+\begin{enumerate}
+    \item non ha forma né volume proprio, occupa pertanto tutto il volume a disposizione, per esempio quello del recipiente che lo contiene; 
+    \item è comprimibile facilmente, con conseguenti variazioni notevoli di volume, densità e pressione.
+\end{enumerate}
+
+Considerata una certa quantità di gas, le variabili termodinamiche più appropriate per descrivere lo stato termodinamico del gas e le eventuali trasformazioni sono la pressione \(p\), il volume \(V\) e la temperatura \(T\).
+
+Consideriamo il gas racchiuso dentro un contenitore di volume \(V\), con un valore della pressione eguale in tutti i punti, se \(V\) non è molto grande. 
+Quando il volume del contenitore cambia, come può avvenire se una parte dello stesso è mobile, si realizza uno scambio di lavoro con l'ambiente esterno; inoltre, a seconda del tipo di pareti del contenitore, diatermiche o adiabatiche, è possibile o viene impedito lo scambio di calore con l'ambiente. 
+Il gas può dunque compiere trasformazioni in cui scambia soltanto lavoro o calore con l'ambiente, oppure entrambi; in ogni caso il bilancio energetico è regolato dal primo principio della termodinamica.
+
+\subsection{Legge isoterma di Boyle}
+
+Si abbia un gas in equilibrio tennodinamico ad una certa pressione entro un dato volume e a temperatura \(T\): se si fanno variare i valori della pressione e del volume, mantenendo costante la temperatura, si trova che in tutti i possibili stati di equilibrio isotermi vale la relazione:
+\begin{equation}
+    pV = costante
+\end{equation}
+\emph{a temperatura costante la pressione è inversamente proporzionale al volume}.
+
+Una trasformazione isoterma tra due stati di equilibrio di un gas si può realizzare, ad esempio, se il contenitore, a pareti diatermiche, è  mantenuto in contatto termico con una sorgente di calore alla temperatura \(T\) e la parete mobile si muove a seguito di una differenza infinitesima di pressione tra gas e ambiente esterno. 
+Si hanno condizioni di equilibrio meccanico e termico e possiamo assumere che durante la trasformazione la temperatura sia costante e la pressione del gas sempre eguale a quella esterna.
+
+In un sistema di coordinate cartesiane ortogonali nel piano, con il volume sull'asse delle ascisse e la pressione sull'asse delle ordinate, il luogo dei punti che rappresentano gli stati di equilibrio di un gas a una data temperatura è costituito da un ramo di iperbole
+Per ogni temperatura si ha una diversa iperbole e le curve così ottenute si chiamano le isoterme del gas ideale. 
+
+\subsection{Legge isobara di Volta-Gay Lussac}
+
+Se la pressione di un gas durante una trasformazione resta costante, si parla di trasformazione isobara; si verifica che in condizioni isobare il volume varia linearmente con la temperatura:
+\begin{equation}
+    V = V_0 (1 + \alpha t)
+\end{equation}
+la temperatura è espressa in gradi Celsius, \(V_0\) è il volume occupato dal gas per \(t=0\) e \(\alpha\) è una costante che varia poco al variare del tipo di gas, detta \emph{coeffience di dilatazione termica}.
+
+Per provare la validità della legge isobara di Volta-Gay Lussac si può mettere il gas in equilibrio termico con diverse sorgenti di calore, mantenendo sempre l'equilibrio meccanico con l'ambiente (pressione interna eguale alla pressione esterna costante) e ogni volta misurare il volume del contenitore, che ha una parete mobile. 
+La trasformazione isobara, nel piano \(( p, V )\) già considerato, è rappresentata da un segmento di retta parallelo all'asse dei volumi.
+
+\subsection{Legge isocora di Volta-Gay Lussac}
+
+Se invece si mantiene costante il volume di un gas la pressione risulta funzione lineare della temperatura:
+\begin{equation}
+    p = p_0 (1 + \beta t)
+\end{equation}
+Anche ora la temperatura è espressa in gradi Celsius; \(p_0\) è la pressione del gas per \(t = 0\) e \(\beta\) una costante, praticamente indipendente dal tipo di gas.
+
+Una trasformazione a volume costante si dice isocora; nel piano \(( p, V )\) essa è rappresentata da un egmento di retta parallelo all'asse delle pressioni.
+
+La verifica della legge isocora di Volta-Gay Lussac si può eseguire utilizzando il solito contenitore, mantenendo bloccata la parete mobile e misurando la pressione in diversi stati di equilibrio, con il gas in contatto termico con diverse sorgenti di calore.
+
+Ricordiamo quanto detto all'inizio e cioè che il comportamento dei diversi gas è in accordo con le leggi precedenti quanto più ci si avvicina alle condizioni di gas ideale (bassa pressione e alta temperatura). 
+Così facendo si osserva anche che le costanti \(\alpha\) e \(\beta\) assumono lo stesso valore per tutti i gas: 
+\begin{equation*}
+    \alpha = \beta = \frac{1}{273.15} ^{\circ} C^{-1}
+\end{equation*}
+
+Posso quindi riscrivere le leggi 
+\begin{equation}
+    V = V_0 \alpha (\frac{1}{\alpha} + t) = V_0 \alpha T
+\end{equation}
+\begin{equation}
+    p = p_0 \alpha (\frac{1}{\alpha} + t) = p_0 \alpha T
+\end{equation}
+dove con \(T = \frac{1}{\alpha} + t = 272.15 + t \) è indicata la temperatura misurata in kelvin.
+
+\subsection{Legge di Avogadro}
+
+La legge di Avogadro stabilisce che \emph{volumi eguali di gas diversi, alla stessa temperatura e pressione, contengono lo stesso numero di molecole}.
+Essa si riferisce a gas che abbiano un comportamento ideale e quindi obbediscano alle leggi precedentemente enunciate.
+
+Se si considera una massa \(M\) eguale ad \(A\) grammi di gas, quantità che si chiama mole, il numero di Avogadro vale:
+\begin{equation*}
+    N_A = 6.0221 \cdot 10^{23} molecole/mole
+\end{equation*}
+
+Dalla legge di Avogadro discende la definizione della settima unità fondametale, quella della quantità di materia. 
+Si chiama mole una Mole quantità di materia che contiene tante entità elementari quanti sono gli atomi contenuti in \(0.012 kg\) dell'isotopo \(^{12} C\) del carbonio.
+
+Come conseguenza della legge di Avogadro \emph{una mole di qualsiasi gas, a una data temperatura e pression, occupa sempre lo stesso volume}.\newline
+Si trova che se la pressione è quella atmosferica (\( p_0 = 101325 Pa\)) e la temperatura è \(T_0 = 273.15 K = 0 ^{circ} C \), tale volume vale \(V_m\)viene indicato col nome di \emph{volume molare}. 
+Pertanto \(n\) moli occupano un volume pari a \(n V_m\) e in particolare una chilomole occupa \(22.414 m^3\), nelle dette condizioni di pressione e temperatura. 
+
+\subsection{Equazione di stato del gas ideale}
+
+Se consideriamo \(n\) moli di un gas alla pressione atmosferica \(p_0\) e alla temperatura \(T_0 = 273.15 K\), esse occupano, come abbiamo appena detto, il volume \(V_0 = n V\).
+
+Mantenendo costante il volume e portando la temperatura al valore \(T\)
+\begin{equation*}
+    p_T = p_0 \alpha T
+\end{equation*} 
+
+Moltiplicando per \(V_0\) si ha
+\begin{equation*}
+    p_T V_0 = p_0 V_0 \alpha T = p_0 V_T
+\end{equation*}
+\(V_0\) e \(p_T\) sono le coordinate termodinamiche in un particolare stato di equilibrio alla temperatura \(T\), 
+come lo sono \(p_0\) e \(V_T\) per un altro stato, sempre alla temperatura \(T\).
+
+Otteniamo dunque:
+\begin{equation*}
+    pV = p_0 V_0 \alpha T = n p_0 V_m \alpha T
+\end{equation*}
+
+Il prodotto \(p_0 V_m \alpha\) è una costante universale, che ha lo stesso valore per tutti i gas, e quindi: 
+
+\subsubsection*{Legge di stato del gas ideale}
+
+\begin{equation}
+    p V = n R T
+\end{equation}
+con
+\begin{equation*}
+    R = p_0 V_m \alpha = 1.01325 \cdot 10^5 \cdot 0.022414 \cdot \frac{1}{273.15} = 8.314 J / mole K
+\end{equation*}
+
+Definiamo, sulla base delle tre leggi elementari e della legge di Avogadro, come \emph{gas ideale un sistema le cui coordinate termodinamiche in uno stato di equilibrio obbediscono alla (7.6), detta equazione di stato di un gas ideale.}
+
+L'equazione di stato contiene le leggi precedenti: infatti basta mantenere costante \(T\), \(p\) o \(V\) in (7.6)  e si ottengono le tre leggi isoterma, isobara o isocora. 
+Anche la legge di Avogadro è contenuta in (7.6), se \(R\) è una costante universale.
+
+Ricordando che \(n = N / N_A\), con \(N\) numero di molecole del gas, abbiamo 
+\begin{equation}
+    p V = \frac{N}{N_A} R T = N k_b T
+\end{equation}
+la costante universale
+\begin{equation}
+    k_b = \frac{R}{N_A} = \frac{8.314}{6.0221 \cdot 10^23} = 1.3807 \cdot 10^{-23} \udm{J/K}
+\end{equation}
+è detta costante di Boltzmann.
+
+L'equazione di stato dei gas ideali esprime un comportamento limite, al quale si avvicinano i gas reali quanto più lontana è la loro temperatura da \(T = 0\) e quanto più bassa è la loro pressione ovvero la loro densità, cioè quanto più sono caldi e rarefatti. 
+In queste condizioni le differenze di comportamento dei diversi gas praticamente scompaiono e tutti seguono approssimativamente (7.6).
 
 
 \end{document}

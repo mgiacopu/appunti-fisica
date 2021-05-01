@@ -1,0 +1,53 @@
+\documentclass[oneside]{book}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{textcomp}
+\usepackage{makecell}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{pdfpages}
+\usepackage{multicol}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{mhchem}
+\usepackage{float}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\rightmark}
+\cfoot{\leftmark}
+\rfoot{\thepage}
+
+\setcounter{secnumdepth}{5}
+
+\lstset{
+    frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=none, % display line numbers on the left
+    commentstyle=\color{green}, % comment color
+    keywordstyle=\color{red}, % keyword color
+    stringstyle=\color{blue}, % string color
+    breaklines=true,
+    postbreak=\mbox{\textcolor{green}{$\hookrightarrow$}\space}
+}
+
+\renewcommand{\lstlistingname}{}% Listing -> Algorithm
+\renewcommand{\lstlistlistingname}{Algoritmi}% List of Listings -> List of Algorithms
+\author{
+  Giacomo Fantoni \\
+  \small Telegram: \href{https://t.me/GiacomoFantoni}{@GiacomoFantoni} \\[3pt]
+  Github: \href{https://github.com/giacThePhantom/AlgoritmiStruttureDati}{https://github.com/giacThePhantom/AlgoritmiStruttureDati}}
+
+
+\renewcommand*{\listalgorithmcfname}{}
+\renewcommand*{\algorithmcfname}{}
+\renewcommand*{\algorithmautorefname}{}
+\renewcommand{\thealgocf}{}
+
+\newcommand{\vect}[1]{\overrightarrow{#1}}

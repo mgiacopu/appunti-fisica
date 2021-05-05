@@ -1,5 +1,7 @@
 \section{Cinematica}
-
+$$x(t)$$
+$$v(t) = \frac{dx}{dt}$$
+$$a(t) = \frac{dv}{dt} = \frac{d^2x}{dt^2}$$
 	\subsection{Moto rettilineo}
 	\begin{itemize}
 		\item Velocit\`a media: $v_m = \frac{\Delta x}{\Delta t}$
@@ -15,41 +17,30 @@
 	\end{itemize}
 	\subsection{Moto rettilineo uniforme}
 	\begin{itemize}
-		\item Legge oraria: $x(t) = x_0 + v(t-t_0)$
+		\item $x(t) = x_0 + v(t-t_0)$
 	\end{itemize}
 	\subsection{Moto rettilineo uniformemente accelerato}
 	\begin{itemize}
-		\item Veloci\`a da tempo: $v(t) = v_0+at$.
-		\item Legge oraria: $x(t) = x_0 + tv_0 + \frac{1}{2}t^2a$
+		\item $x(t) = x_0 + tv_0 + \frac{1}{2}t^2a$
+		\item $v(t) = v_0+at$.
 	\end{itemize}
 	\subsection{Moto verticale}
 	\begin{itemize}
 		\item $g=-9.81$
-		\item Caduta con veloci\`a iniziale nulla $v(t) = -gt$ legge oraria $x(t) = h - \frac{1}{2}gt^2$ tempo di arrivo al suolo $t = \sqrt{\frac{2g}{g}}$ $v^2(x) = 2g(h-x)$ veloci\`a di arrivo al suolo $v=\sqrt{2gh}$
-		\item Caduta con veloci\`a non nulla $v(t) =-v_i -gt$ $x=h-v_it-\frac{1}{2}gt^2$ $t(x) = \frac{-v_i + \sqrt{v_i^2+2g(h-x)}}{g}$ tempo di caduta $t_c = \frac{-v_i + \sqrt{v_i^2+2gh}}{g}$ veloci\`a di caduta $v_c^2 = v_i^2 + 2gh$
-		\item Lancio del punto verso l'alto partendo dal suolo: $v = v_2 - gt$ $x = v_2t - \frac{1}{2}gt^2$ $t_M = \frac{v_2}{g}$ $x_M = x(t_M) = \frac{v_2^2}{2g}$
 	\end{itemize}
 	\subsection{Moto armonico semplice}
 	\begin{itemize}
-		\item Legge oraria $x(t)=A\sin(\omega t+\phi)$
+		\item $x(t)=A\sin(\omega t+\phi)$
 		\item $T = \frac{2\pi}{\omega}$
 		\item $\omega = 2\pi v$
-		\item Veloci\`a $\omega A\cos(\omega t+\phi)$
-		\item Accelerazione $-\omega^2 x$
+		\item $v = \omega A\cos(\omega t+\phi)$
+		\item $a = -\omega^2 x$
 		\item $x_0 = A\sin\phi$ $v_0 = \omega A\cos \phi$
 		\item $\tan\phi = \frac{\omega x_0}{v_0}$
 		\item $A^2 = x_0^2 + \frac{v_0^2}{\omega^2}$
 		\item $v(x) = \frac{1}{2}v^2-\frac{1}{2}v_0^2$
 		\item $v^2 = v_0^2+\omega^2(x_0^2(x_0^2 - x^2))$
 		\item $v^2(x) = \omega^2(A^2-x^2)$
-	\end{itemize}
-	\subsection{Moto smorzato esponenzialmente}
-	\begin{itemize}
-		\item $a = -kv$
-		\item $v(t)=v_0e^{-kt}$
-		\item $v(x) = \frac{v_0}{k}$
-		\item $x(t) = \frac{v_0}{k}(1-e^{k}t)$
-		\item Costante di tempo $\tau=\frac{1}{k}$ il tempo di riduzione di $x(t)$ di un fattore di $e$
 	\end{itemize}
 	\subsection{Moto nel piano}
 	\begin{itemize}

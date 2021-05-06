@@ -10,4 +10,69 @@
 
 \chapter{Secondo principio della Termodinamica}
 
+\section{Enunciati del secondo principio della termodinamica}
+
+Il primo principio della termodinamica non pone limiti alle trasformazioni di energia da una forma all'altra, però la situazione sperimentale non appare simmetrica: mentre è sempre possibile trasformare integralmente lavoro in calore, per esempio sfruttando l'attrito, la trasformazione contraria di calore in lavoro sembra essere limitata, indipendentemente dal primo principio.
+
+\subsection{Esempio: macchina termica}
+
+Prendiamo in esame il caso di una macchina che compie un ciclo termico scambiando calore con due sorgenti. 
+Si verifica che il calore scambiato complessivamente dal sistema, che viene utilizzato per far funzionare la macchina \(M\), con le due sorgenti di calore alle temperature \(T_1\) e \(T_2\) (\(T_2 > T_1\) ) è dato dalla somma di una quantità \(Q_A\), assorbita dalla sorgente a temperatura maggiore, e di una quantità \(Q_C\), ceduta alla sorgente a temperatura minore. 
+Si osserva che è sempre \(Q_C<0\), cioè non succede mai \(Q_C \geq 0\). 
+Questo risultato comporta che \(Q_A\) non viene trasformato integralmente in lavoro, ma una parte \(Q_C\) viene sempre ceduta alla sorgente a temperatura inferiore. 
+Il lavoro è \(W = Q_A + Q_C\) e in accordo con il primo principio (\(\Delta U = 0\) in un processo ciclico), però non si ha mai \(W = Q_A\), bensì \(W < Q_A\). 
+
+Nel caso ci siano più sorgenti con cui la macchina \(M\) scambia calore la situazione è analoga: la somma dei calori assorbiti non si trasforma mai totalmente in avoro, una parte viene sempre ceduta restando cioè sotto forma di calore scambiato. 
+Non esistono esempi contrari: in un processo ciclico vi è una impossibilità di trasformazione integrale di calore in lavoro ovvero la trasformazione di calore in lavoro è sempre accompagnata da cessione di calore. 
+
+Accanto all'impossibilità finora discussa esiste un'altra impossibilità sperimentale. 
+Se consideriamo due corpi a temperatura diversa e li mettiamo a contatto termico, c'è sempre una cessione di calore dal corpo caldo al corpo freddo fino a che si raggiunge l'equilibrio termico. 
+Il calore non passa mai spontaneamente dal corpo freddo al corpo caldo. 
+È possibile fare avvenire questo passaggio, come si realizza in una macchina frigorifera, ma deve essere eseguito un lavoro sulla sostanza che compie il ciclo.
+
+\subsection{Enunciati}
+
+Il secondo principio della termodinamica consiste nel prendere atto di queste impossibilità sperimentali, che non presentano eccezioni conosciute, e  nel trasformarle in postulati, secondo i seguenti enunciati. 
+
+Enunciato di \emph{Kelvin-Plank}\newline
+\emph{È impossibile realizzare un processo che abbia come unico risultato la trasformazione in lavoro del calore fornito da una sorgente a temperatura uniforme.}
+
+Enunciato di \emph{Clausius}\newline
+\emph{È impossibile realizzare un processo che abbia come unico risultato il trasferimento di una quantità di calore da un corpo ad un altro a temperatura maggiore. }
+
+L'aggettivo unico utilizzato nei due enunciati è essenziale: abbiamo infatti già visto negli esempi dell'espansione isoterma di un gas ideale e del ciclo frigorifero che i processi proibiti dal secondo principio sono possibili, se non costituiscono l'unico risultato. 
+Conseguenza immediata del secondo principio, nell'enunciato di Kelvin-Planck, sono i fatti già evidenziati: in un processo ciclico per produrre effettivamente lavoro sono necessarie sempre almeno due sorgenti, cioè non può sussistere il risultato \(Q_C = 0\), ma deve essere \(Q_A > |Q_C|\) e quindi, \(\eta < 1\).
+
+\subsection{Equivalenza degli enunciati}
+
+Gli enunciati di Kelvin-Planck e di Clausius, pur se riferiti a fatti sperimentali che appaiono molto diversi, sono strettamente connessi in quanto se fosse possibile realizzare uno dei processi proibiti sarebbe possibile realizzare anche l'altro.
+
+\subsubsection*{Kelvin-Plank \(\implies\) Clausius}
+
+%TODO aggiungi foto macchine
+Supponiamo infatti che sia possibile realizzare un processo ciclico che trasformi integralmente calore in lavoro, in contrasto con l'enunciato di Kelvin-Planck. 
+Questo fatto è rappresentato nella figura xxx, dove la macchina termica \(1\) produce il lavoro \(W\) trasformando il calore \(Q_A\) assorbito dalla sorgente a temperatura \(T_2 : W = Q_A\) ed è nulla la cessione di calore alla sorgente fredda. 
+Utilizziamo il lavoro \(W\) per far funzionare una macchina frigorifera, che preleva il calore \(Q_1\) dalla sorgente a temperatura \(T_1\) e cede il calore \(Q_2\) alla sorgente a temperatura \(T_2>T_1\). 
+Questa seconda macchina non contraddice l'enunciato di Clausius dato che nel processo interviene il lavoro \(W^{\prime} = -W\) fatto sul sistema (il lavoro \(W\) è fatto dalla macchina \(1\) ed è positivo, mentre \(W^{\prime}\) è subito dalla macchina \(2\) ed è negativo: 
+le due quantità sono eguali in modulo, ma opposte in segno). 
+Il bilancio della macchina \(2\), sulla base del primo principio, è 
+\begin{equation*}
+    Q_1 + Q_2 = W^{\prime} = - W.
+\end{equation*}
+La macchina complessiva, costituita dall'insieme delle due macchine, assorbe \(Q_1\) a temperatura \(T_1\) e scambia a temperatura \(T_2\). 
+Se \(Q_1\) è assorbito, \(-Q_1\) è ceduto. 
+Il lavoro complessivo della macchina è nullo in quanto non c'è scambio di lavoro con l'ambiente esterno e l'unico risultato pertanto è il passaggio spontaneo di calore dalla sorgente a temperatura inferiore a quella a temperatura superiore, violando l'enunciato di Clausius.
+
+\subsubsection*{Clausius \(\implies\) Kelvin-Plank}
+
+Supponiamo ora di poter realizzare una macchina che come unico risultato faccia passare il calore \(Q\) da una sorgente a temperatura \(T_1\) ad un'altra a temperatura \(T_2 > T_1\) e consideriamo una seconda macchina che lavori normalmente tra le due sorgenti, in accordo col secondo principio. 
+Dimensioniamo questa seconda macchina in modo che \( Q_1 = Q\), cioè in modo da cedere alla sorgente a \(T_1\) lo stesso calore che viene assorbito dalla prima macchina.
+Pertanto alla fine di un ciclo della macchina complessiva la sorgente a \(T_1\) non scambia calore e il lavoro prodotto è dato da 
+\begin{equation*}
+    W = Q_2 + Q_1 = Q_2 + Q
+\end{equation*}
+ed è positivo, perché \(Q_2 > |Q_1| = |Q| \); tale lavoro è eguale al calore complessivamente scambiato con la sorgente a \(T_2\) e in conclusione l'unico risultato è la trasformazione integrale in lavoro del calore assorbito da una sola sorgente (a temperatura \(T_2\) ), violando l'enunciato di Kelvin-Planck.
+
+L'unione dei risultati ottenuti costituisce la cosiddetta equivalenza tra i due enunciati del secondo principio della termodinamica nel senso che abbiamo visto: la negazione di uno ha come conseguenza la negazione dell'altro.
+
 \end{document}

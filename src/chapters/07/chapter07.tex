@@ -573,4 +573,117 @@ ricordando che \(V_B / V_A = V_C / V_D\).
 Anche per i cicli frigoriferi sono verificati alcuni fatti di carattere generale: 
 il calore ceduto dal sistema alle sorgenti calde è sempre maggiore, in modulo, di quello assorbito, cioè sottratto alla sorgente fredda e quindi il processo avviene sempre in presenza di lavoro fornito dall'ambiente al sistema ($Q_0 + |W| = | Q_C |$).
 
+\section{Teoria cinetica dei gas}
+
+\subsection{Modello cinetico del gas ideale}
+
+\begin{enumerate}
+    \item \emph{un gas è costituito da molecole uguali, in modo continuo e disordinato}
+    \item \emph{gli urti tra molecole e tra molecole e parenti del contenitore sono elastici}
+    \item \emph{non ci sono forze intermolecolari, se non durante gli urti}: gli urti sono dovuti cieè a forze repulsive a corto raggio di azione, mentre si assumono trascurabile le forze attrattive tra le molecole
+    \item \emph{le dimensioni delle molecole sono molto piccole rispetto alle distanze medie tra di esse}
+\end{enumerate}
+
+Sulla base della prima ipotesi (caos molecolare), in ogni istante, considerata una qualsiasi direzione orientata \(\overrightarrow{u}\), ci sono tante molecole che hanno velocità concode a \(\overrightarrow{u}\) quante hanno velocità discorde a \(\overrightarrow{u}\); la velocità media \(\overrightarrow{v}_m\) è quindi nulla. 
+Infatti macroscopicamente un gas chiuso in un recipiente è in quiete, \(overrightarrow{P} = M \overrightarrow{v}_{CM}\). 
+Inoltre il numero di molecole per unità di volume deve essere lo stesso in ogni parte del recipiente occupato dal gas (densità costante).
+
+La seconda ipotesi implica che negli urti tra molecole si conservano quantità di moto ed energia, mentre nell'urto di una molecola contro una parete si conserva solo l'energia (forze esterne impulsive)
+
+Dalla terza ipotesi deriva che l'energia potenziale interna è nulla e quindi la sola forma di energia è quella cinetica.
+
+Infine la quarta ipotesi indica che il volume totale occupato dalle molecole è trascurabile rispetto a quello del recipiente.
+
+Sulla base di questo modello cinetico è stata sviluppata la teoria cinetica dei gas, che permette di arrivare a previsioni sul comportamento dei gas, che si possono verificare sperimentalmente.
+
+\subsection{Calcolo della pressione}
+
+Si considera un contenitore cubico di lato \(a\) riempito con un gas che si comporta come prescritto dal modello cinetico. 
+La velocità di una molecola è data da \(\overrightarrow{v} = v_x \overrightarrow{u_x} + v_y \overrightarrow{u_y} + v_z \overrightarrow{u_z}\) con le componenti alle pareti opposte.
+
+Nell'urto elastico contro la parete \(y z\) cambia solo la componente \(v_x \overrightarrow{u}_x\) che diventa \(-v_x \overrightarrow{u}_x\) mentre le altre rimangono invariate, data l'assenza di forze di attrito.
+La variazione di quantità di moto nell'urto della molecola con la parete \(y z\) è pari a \(-2 m v \overrightarrow{u}_x\), se \(m\) è la massa della molecola, e quindi l'impulso comunicato alla parete è \(2 m v_x \overrightarrow{u}_x\).
+
+L'urto successivo contro la parete \(y\): considerata avviene dopo un tempo \(t = 2a / v\), necessario per attraversare nei due sensi il cubo lungo la direzione \(x\). 
+In realtà non è la stessa molecola che compie l'urto successivo perché nel tragitto \(2a\) essa può subire un urto contro un'altra molecola e venire deviata. 
+Tuttavia, a causa del moto completamente disordinato (prima ipotesi), per una molecola che perde la componente \(v_x\), ce n'è un'altra che, a seguito di un urto, acquista tale componente \(v_x\). 
+
+Pertanto il numero di urti al secondo sulla parete \(y z\) è dato da \(1 /t = v_c / 2a\) e l'impulso comunicato in un secondo, pari alla componente \(x\) della forza media esercitata sulla parete da una molecola, vale in modulo:
+\begin{equation*}
+    F_x = 2m v_x \frac{v^2_x}{2a} = \frac{m v^2_x}{a}
+\end{equation*}
+
+La forza risultante sulla parete è
+\begin{equation*}
+    R_x = \frac{m}{a} \sum_i v_{x,i}^2
+\end{equation*}
+dove la somma è estesa a tutte le molecole; la pressione sulla parete \(y z\) di area \(S = a^2\), dovuta agli urti molecolari, risulta essere quindi
+
+\begin{equation*}
+    p = \frac{R_x}{S} = \frac{m}{a^3} \sum_i v_{x,i}^2 = \frac{N m}{V} \frac{1}{N} \sum_i v_{x,i}^2
+\end{equation*}
+dove \(N\) è il numero totale di molecole nel cubo di volume \(V= a^3\). 
+
+Si chiama velocità media quadratica la quantità \(\bar{v}\), definita come radice quadrata di 
+\begin{equation*}
+    \bar{v}^2 =  \bar{v}^2_x + \bar{v}^2_y + \bar{v}^2_z = \frac{1}{N} \sum_i \left(v_{x,i}^2 + v_{y,i}^2 + v_{z,i}^2\right)
+\end{equation*}
+Se il moto è completamente disordinato non c'è alcuna direzione preferita per le molecole e pertanto i valori medi quadratici \(\bar{v}_x^2, \bar{v}_y^2, \bar{v}_z^2\) sono eguali tra loro:
+\begin{equation*}
+    \bar{v}_x^2 = \bar{v}_y^2 = \bar{v}_z^2 = \frac{\bar{v}^2}{3}
+\end{equation*}
+
+In conclusione
+\begin{equation*}
+    p = \frac{N m}{V} \frac{\bar{v}^2}{3} \implies pV = \frac{1}{3} N m \bar{v}^2
+\end{equation*}
+
+Il ragionamento è identico per quanto riguarda gli urti sulle altre pareti e si estende a contenitori di forma qualunque. 
+Il risultato è generale, nel senso che non dipende da come sono distribuite le velocità delle singole molecole in un gas alla temperatura \(T\), finché tutte le direzioni del moto sono equivalenti. 
+
+Definendo come energia cinetica media di traslazione delle molecole \(\bar{E_k} = \frac{1}{2} m \bar{v}^2\), si ha 
+\begin{equation*}
+    p V = \frac{2}{3} N \bar{E_k}
+\end{equation*}
+\emph{il prodotto pressione per volume è proporzionale all'energia cinetica media delle molecole N\(\bar{E_k}\), che nel gas ideale coincide con l'energia totale}.
+
+Per un gas ideale ho che \(p V = n R T\), egualiado si trova:
+\begin{equation*}
+    \bar{E_k} = \frac{3}{2} \frac{n}{N} R T = \frac{3}{2} \frac{R}{N_A} T
+\end{equation*}
+dato che \(n N_A = N\).
+
+\begin{equation}
+    \bar{E_k} = \frac{3}{2} k_B T
+\end{equation}
+\emph{l'energia cinetica media di una molecola di un gas ideale è proporzionale alla temperatura del gas.}
+Abbiamo trovato il significato microscopico della grandezza temperatura: \emph{essa è proporzionale all'energia cinetica media delle molecole}. 
+
+\subsection{Equipartizione dell'energia}
+% TODO verificare se c'è tutto (11.10 Mazzoldi 1)
+Lo sviluppo successivo della teoria cinetica dei gas porta alla previsione che la relazione precedente è di carattere generale, in questo senso: 
+ad ogni termine quadratico dell'energia classica di una molecola di un corpo corrisponde, all'equilibrio termodinamico, un'energia media pari a \(\frac{1}{2} k_B T\), essendo \(T\) la temperatura del sistema. 
+Questo risultato può essere anche espresso affermando che ad ogni componente indipendente del moto compete la stessa energia media \emph{ossia per ogni grado di libertà c'è il contributo} \(\frac{1}{2} k_B T\); 
+esso è noto come \emph{principio dell'equipartizione dell'energia}. 
+
+Pertanto per un sistema con \(l\) gradi di libertà
+\begin{equation}
+    \bar{E} = \frac{l}{2} k_B T
+\end{equation}
+
+Le molecole di un gas ideale monoatomico presentano \emph{tre gradi di libertà} e la loro energia, esclusivamente cinetica, ha tre termini quadratici:
+\begin{equation*}
+    E_k = \frac{1}{2} m v_x^2 + \frac{1}{2} m v_y^2 + \frac{1}{2} m v_z^2
+\end{equation*}
+Per esse il principio dell'equipartizione dell'energia prevede 
+\begin{equation*}
+    \bar{E_k} = \bar{E}_x + \bar{E}_y + \bar{E}_z = \frac{3}{2} k_B T
+\end{equation*}
+
+Le energie cinetiche medie calcolate per le molecole monoatomiche e biatomiche sono l'unica forma di energia interna di un gas e allora, per una mole di gas, deve sussistere l'eguaglianza
+\begin{equation*}
+    \Delta U = c_V \Delta T = \Delta E_k = \frac{l}{2} N_A k_B \Delta T = \frac{l}{2} R \Delta T
+\end{equation*}
+
+
 \end{document}

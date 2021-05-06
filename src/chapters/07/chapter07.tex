@@ -429,7 +429,127 @@ Sperimentalmente si osserva sempre che
 \end{equation*}
 in un ciclo termico solo una frazione minore di 1 del calore assorbito viene trasformata in lavoro, il resto viene sempre ceduto.
 
-\subsection{Ciclo termico}
+\subsection{Ciclo di Carnot}
+
+Il ciclo di Carnot è costituito da quattro trasformazioni reversibili, dove sono indicati anche i versi degli scambi di calore: 
+
+\begin{enumerate}
+    \item trasformazione A B, espansione isoterma reversibile;
+    \item trasformazione B C, espansione adiabatica reversibile,
+    \item trasformazione CD, compressione isoterma reversibile.
+    \item trasformazione DA, compressione adiabatica reversibile.
+\end{enumerate}
+%TODO aggiungi foto
+
+Nello stato \(A\) il gas è in equilibrio a contatto termico con una sorgente di calore a temperatura \(T_2\).
+L'espansione isoterma reversibile \(AB\) può essere considerata come una successione di trasformazioni infinitesime: in ciascuna a seguito di una diminuzione \(dp\) della pressione esterna (equilibrio meccanico) il gas si espande di una quantità \(d V\) raffreddandosi di \(d T\); si ha quindi cessione di calore \(d Q\) dalla sorgente a temperatura \(T_2\) (equilibrio termico) al gas che ritorna alla temperatura \(T_2\). 
+Come risultato, il gas passa reversibilmente dallo stato \(A\), di coordinate termodinamiche \(p_A\), \(V_A\), \(T_A\), allo stato \(B\) di coordinate \(p_B\), \(V_B\), \(T_B\), assorbendo il calore
+\begin{equation*}
+    Q_A = n R T_2 \ln \frac{V_B}{V_A} = W_{AB}
+\end{equation*}
+\(W_{AB}\) è il lavoro fatto dal gas nell'espansione isoterma. 
+
+Nella trasformazione \(B C\) il gas è isolato da qualsiasi sorgente di calore. 
+Seguendo lo schema adottato per la trasformazione \(AB\), durante ciascuna trasformazione infinitesima si ha una diminuzione \(d p\) della pressione esterna, un'espansione \(d V\) e un raffreddamento \(d T\). 
+Il gas passa quindi dallo stato \(B\) (\(p_B, V_B, T_B\)) allo stato \(C\) ( \(p_C, V_C, T_1\) ), con \(T_1\) minore di \(T_2\) e, secondo \(TV^{\gamma-1} = costante\):
+\begin{equation*}
+    T_2 V_B^{\gamma - 1} = T_1 V_C^{\gamma-1}
+\end{equation*}
+Il lavoro fatto dal gas è \(W_{BC} = -\Delta U_{BC} = n c_V \left(T_2 - T_1\right)\).
+
+Nella trasformazione \(C D\) il gas è a contatto termico con una sorgente di calore a temperatura \(T_1\). 
+Il processo è analogo ad \(A B\), però ora si aumenta la presione esterna di \(d p\), il gas si comprime di una quantità \(d V\) ed aumenta la sua temperatura di \(d T\), cede \(d Q\) alla sorgente a temperatura \(T_1\) e ritorna alla temperatura \(T_1\). 
+Il calore ceduto complessivamente è 
+\begin{equation*}
+    Q_C = n R T \ln \frac{V_D}{V_C} = W_{CD}
+\end{equation*}
+ed è negativo, come il lavoro, poichè \(V_D < V_C\).
+
+Infine nella trasformazione \(D A\) il gas è di nuovo isolato termicamente, si aumenta la pressione esterna di \(d p\), il volume del gas diminuisce di \(d V\) e  la temperatura aumenta di \(d T\). 
+Il gas ritorna nello stato iniziale e vale, avendo assunto \(\gamma\) costante, la relazione
+\begin{equation*}
+    T_2 V_A^{\gamma - 1} = T_1 V_D^{\gamma - 1}
+\end{equation*}
+Il lavoro subito è \(W_{DA} = -\Delta U_{DA} = n c_V \left(T_1 - T_2\right) = - W_{BC}\)
+
+Sommando tutti i contributi otteniamo
+\begin{equation*}
+    Q = Q_A + Q_C = W = W_{AB} + W_{BC} + W_{CD} + W_{DA} = W_{AB} + W_{CD}
+\end{equation*}
+questa quantità coincide con l'area racchiusa dal ciclo.
+
+IL rendimento del ciclo è:
+\begin{equation*}
+    \eta = \ + \frac{Q_C}{Q_B} = 1 + \frac{n R T_1 \ln \left(V_D / V_C \right) }{n R T_2 \ln \left(V_B / V_A \right)} = 1 - \frac{T_1 \ln \left(V_C / V_D \right) }{T_2 \ln \left(V_B / V_A \right)}
+\end{equation*}
+
+Dividendo membro a membro i termini delle relazioni
+\begin{equation*}
+    T_2 V_B^{\gamma - 1} = T_1 V_C^{\gamma - 1} \ , \ T_2 V_A^{\gamma - 1} = T_1 V_D^{\gamma - 1} 
+\end{equation*}
+ottenendo \(\left(\frac{V_B}{V_A}\right)^{\gamma - 1} = \left(\frac{V_C}{V_D}\right)^{\gamma - 1}\) ovvero \(\left(\frac{V_B}{V_A}\right) = \left(\frac{V_C}{V_D}\right)\).
+
+Quindi
+\begin{equation}
+    \eta = 1 - \frac{T_1}{T_2}
+\end{equation}
+
+Si noti il fatto molto importante che non compare alcuna grandezza caratteristica del gas, ma solo i valori delle temperature delle sorgenti con cui il gas scambia calore: 
+\emph{il rendimento del ciclo di Carnot, descritto da un gas ideale con calore specifico costante, dipende solo dalle temperature a cui avvengono gli scambi isotermi di calore}.
+
+Poiché \(T_1 < T_2\) verifichiamo che \(\eta<1\); inoltre da \(V_B / V_A\) e \(Q_A > | Q_C | \). 
+Il gas complessivamente assorbe calore perché \(Q_A + Q_C > 0\) e produce il lavoro \(W = Q_A + Q_C\), pari alla somma algebrica di quello fatto durante l'espansione isoterma e subito durante la compressione isoterma (i lavori svolti durante le adiabatiche sono eguali ed opposti). 
+
+\subsection{Ciclo di Otto}
+
+Il ciclo termico di Otto schematizza il funzionamento di un motore a scoppio a quattro tempi, come quello del motore automobilistico a benzina. 
+Nel ciclo di Otto si suppone che la miscela aria-benzina sia assimilabile a un gas ideale biatomico e che il ciclo sia reversibile. 
+\begin{enumerate}
+    \item Nella trasfom1azione \(O A\) la miscela benzina-aria viene a aspirata nel cilindro, a pressione costante (\emph{fase di aspirazione}). 
+    \item Nella trasformazione adiabatica reversibile \(A B\) la miscela nel cilindro viene compressa rapidamente dal pistone dal volume \(V_2\) al volume \(V_1\) (\emph{fase di compressione}). 
+    \item La trasformazione \(B C\) schematizza l'incendio della miscela dovuto alla scintilla prodotta dalla candela con conseguente esplosione, che provoca una rapida crescita della temperatura e della pressione del gas; 
+    si assume che il riscaldamento sia isocoro con assorbimento di calore da una successione di sorgenti a temperatura crescente
+    \begin{equation*}
+        Q_A = n c_V (T_C - T_B)
+    \end{equation*}
+    Questa è la fase di \emph{accensione e combustione}. 
+    \item Il gas caldo si espande rapidamente spingendo il pistone e ritornando al volume \(V_2\) con una trasformazione adiabatica reversibile \(C D\), durante la quale viene compiuto lavoro (\emph{fase di espansione}). 
+    \item La trasformazione \(D A\), isocora reversibile con la cessione del calore
+    \begin{equation*}
+        Q_C = n c_V ( T_A - T_D)
+    \end{equation*}
+    schematizza l'apertura della valvola verso il tubo di scappamento con conseguente riduzione della pressione al valore iniziale, mentre il gas cede calore all'ambiente (\emph{fase di decompressione}).
+    \item Infine nella trasformazione \(A O\) a pressione costante il gas viene espulso dal cilindro e il pistone ritorna nella posizione iniziale (\emph{fase di scarico}). 
+    I \emph{quattro tempi} sono le trasformazioni\( O A, AB, CD, A O\). 
+    Il \emph{rendimento} del ciclo di Otto è dato da
+    \begin{equation*}
+        \eta = 1 + \frac{Q_C}{Q_A} = 1 - \frac{n c_V (T_A -T_D)}{n c_V (T_C - T_B)} = 1 + \frac{n c_V (T_D -T_A)}{n c_V (T_C - T_B)}
+    \end{equation*}
+\end{enumerate}
+
+Sperimentalmente è molto più facile misurare i volumi \(V_1 (= V_B = V_C)\) e \(V_2 (= V_A = V_D)\) e il loro rapporto \(r = V_2 / V_1\) (\emph{rapporto di compressione}). 
+Dalle relazioni 
+\begin{equation*}
+    T_D V_2^{\gamma - 1} = T_C V_1^{\gamma - 1} \ , \ T_A V_2^{\gamma - 1} = T_B V_1^{\gamma - 1} 
+\end{equation*}
+sottraendo membro a membro si ottiene
+\begin{equation*}
+    \left(T_D - T_A\right) V_2^{\gamma - 1} = \left(T_C - T_B \right) V_1^{\gamma}
+\end{equation*}
+Pertanto
+\begin{equation*}
+    \eta = 1 - \frac{V_1}{V_2}^{\gamma - 1} = 1 - \frac{1}{r^{0.4}}
+\end{equation*}
+avendo utilizzato \(\gamma = 1.4\), valore valido per un gas biatomico.
+
+Il rendimento aumenta all'aumentare del rapporto di compressione, che però non deve assumere valori troppo grandi se si vuole evitare il fenomeno dell'auto-combustione, cioè l'esplosione anticipata dovuta al riscaldamento della miscela durante la fase di compressione. 
+
+Il rendimento del ciclo di Otto calcolato con la formula appena ricavata va inteso come valore massimo teorico: nei motori reali si ottengono rendimenti \(0.2 - 0.3\). 
+La differenza è dovuta a varie cause: innanzitutto il ciclo è solo un'approssimazione dei processi reali, che non possono essere così semplificati; per esempio le fasi di combustione ed espansione non sono nettamente separate, le fasi di compressione ed espansione sono state assunte adiabatiche perché molto rapide, cosicché sia trascurabile lo scambio di calore con l'esterno, ma non sono certamente reversibili (non c'è equilibrio meccanico). 
+Inoltre sono stati trascurati gli attriti e le perdite di calore attraverso le pareti del cilindro. 
+D'altra parte è importante avere un modello che indichi le massime prestazioni possibili.
+
+\subsection{Ciclo frigorifero}
 
 In un ciclo frigorifero il sistema complessivamente assorbe lavoro e cede calore(\(Q = W < 0\)). 
 Nella situazione più semplice il sistema asso il calo \(Q_0\) dalla sorgente fredda, assorbe lavoro e cede il calore \(Q_C\) a una sorgente calda: risulta sempre \(|Q_C| > Q_0\).
@@ -440,5 +560,17 @@ Si definisce \emph{efficienza} o \emph{coefficente di prestazione} di un ciclo f
 \end{equation}
 tanto maggiore quanto minore è il modulo del lavoro speso nel ciclo, a parità di calore \(Q_0\) assorbito. 
 
+\subsection{Ciclo di Carnot Inverso}
+
+Un ciclo di Carnot percorso in senso inverso costituisce un esempio di ciclo frigorifero reversibile.
+Il gas assorbe il calore $Q_0 = n R T_1 \ln (V_C / V_D )$ dalla sorgente alla temperatura $T_1$ (sorgente fredda) e cede il calore $Q_C = n R T_2 \ln (V_A / V_B )$ alla sorgente alla temperatura $T_2$ (sorgente calda), assorbendo il lavoro $W = Q_0 + Q_C$. 
+L'efficienza è 
+\begin{equation*}
+    \xi = \frac{Q_0}{Q_C + Q_0} = \frac{n R T_1 \ln (V_C / V_D )}{n R T_2 \ln (V_B / V_A ) - n R T_1 \ln (V_C / V_D )} = \frac{T_1}{T_2 - T_1}
+\end{equation*}
+ricordando che \(V_B / V_A = V_C / V_D\).
+
+Anche per i cicli frigoriferi sono verificati alcuni fatti di carattere generale: 
+il calore ceduto dal sistema alle sorgenti calde è sempre maggiore, in modulo, di quello assorbito, cioè sottratto alla sorgente fredda e quindi il processo avviene sempre in presenza di lavoro fornito dall'ambiente al sistema ($Q_0 + |W| = | Q_C |$).
 
 \end{document}

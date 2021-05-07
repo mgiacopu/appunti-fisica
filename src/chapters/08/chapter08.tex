@@ -34,7 +34,7 @@ Il calore non passa mai spontaneamente dal corpo freddo al corpo caldo.
 
 Il secondo principio della termodinamica consiste nel prendere atto di queste impossibilità sperimentali, che non presentano eccezioni conosciute, e  nel trasformarle in postulati, secondo i seguenti enunciati. 
 
-Enunciato di \emph{Kelvin-Plank}\newline
+Enunciato di \emph{Kelvin-Planck}\newline
 \emph{È impossibile realizzare un processo che abbia come unico risultato la trasformazione in lavoro del calore fornito da una sorgente a temperatura uniforme.}
 
 Enunciato di \emph{Clausius}\newline
@@ -47,7 +47,7 @@ Conseguenza immediata del secondo principio, nell'enunciato di Kelvin-Planck, so
 
 Gli enunciati di Kelvin-Planck e di Clausius, pur se riferiti a fatti sperimentali che appaiono molto diversi, sono strettamente connessi in quanto se fosse possibile realizzare uno dei processi proibiti sarebbe possibile realizzare anche l'altro.
 
-\subsubsection*{Kelvin-Plank \(\implies\) Clausius}
+\subsubsection*{Kelvin-Planck \(\implies\) Clausius}
 
 %TODO aggiungi foto macchine
 Supponiamo infatti che sia possibile realizzare un processo ciclico che trasformi integralmente calore in lavoro, in contrasto con l'enunciato di Kelvin-Planck. 
@@ -63,7 +63,7 @@ La macchina complessiva, costituita dall'insieme delle due macchine, assorbe \(Q
 Se \(Q_1\) è assorbito, \(-Q_1\) è ceduto. 
 Il lavoro complessivo della macchina è nullo in quanto non c'è scambio di lavoro con l'ambiente esterno e l'unico risultato pertanto è il passaggio spontaneo di calore dalla sorgente a temperatura inferiore a quella a temperatura superiore, violando l'enunciato di Clausius.
 
-\subsubsection*{Clausius \(\implies\) Kelvin-Plank}
+\subsubsection*{Clausius \(\implies\) Kelvin-Planck}
 
 Supponiamo ora di poter realizzare una macchina che come unico risultato faccia passare il calore \(Q\) da una sorgente a temperatura \(T_1\) ad un'altra a temperatura \(T_2 > T_1\) e consideriamo una seconda macchina che lavori normalmente tra le due sorgenti, in accordo col secondo principio. 
 Dimensioniamo questa seconda macchina in modo che \( Q_1 = Q\), cioè in modo da cedere alla sorgente a \(T_1\) lo stesso calore che viene assorbito dalla prima macchina.
@@ -97,5 +97,76 @@ Il sistema può essere riportato allo stato iniziale attraverso altre trasformaz
 
 Le considerazioni esposte sono importanti perché nella pratica tutte le trasformazioni che avvengono in natura contengono fattori di irreversibilità.  
 La rappresentazione di un fenomeno reale con una trasformazione reversibile costituisce quindi una idealizzazione del processo che permette di eseguire calcoli altrimenti impossibili e avere stime sulle grandezze in gioco, spesso sotto forma di limiti superiori.
+
+\section{Teorema di Carnot}
+
+Il teorema di Canot rappresenta una prima precisazione quantitativa dell'enunciato di Kelvin-Planck in quanto fissa la massima percentuale di calore assorbito da una macchina termica che può essere trasformata in lavoro.
+
+Consideriamo due macchine che lavorano utilizzando le stesse sorgenti di calore alle temperature \(T_1\) e \(T_2>T_1\), dimensionate in modo tale da produrre lo stesso lavoro. 
+Indichiamo le due macchine con i simboli \(X\) e \(R\): per la prima macchina non facciamo per ora alcuna ipotesi di reversibilità o irreversibilità, mentre assumiamo che la seconda sia reversibile. 
+I rendimenti delle due macchine sono, data l'ipotesi sul lavoro,
+\begin{equation*}
+    \eta_X = \frac{W}{Q_2} \ , \ \eta_R = \frac{W}{Q^{\prime}_2}
+\end{equation*}
+Dal primo principio abbiamo inoltre:
+\begin{equation}
+    Q_2 + Q_1 = W = Q_1^{\prime} + Q_2^{\prime}
+\end{equation}
+
+Supponiamo che sia \(\eta_X > \eta_R\) e costruiamo una macchina composta da \(X\) e \(R\), in cui quest'ultima viene fatta funzionare come macchina frigorifera, assorbendo il lavoro \(-W\) e il calore \(-Q^{\prime}_1\) e cedendo il calore \(-Q_2^{\prime}\):
+sfruttiamo così una proprietà caratteristica di un processo reversibile come è stato ipotizzato.
+
+Dall'ipotesi segue:
+\begin{equation*}
+    \frac{W}{Q_2} > \frac{W}{Q_2^{\prime}} \Leftrightarrow Q_2 < Q_2^{\prime} \Leftrightarrow Q_2 - Q_2^{\prime} < 0
+\end{equation*}
+e quindi da (8.1)
+\begin{equation*}
+    Q_1 - Q_1^{\prime} = Q_2^{\prime} - Q_2 > 0 
+\end{equation*}
+
+Abbiamo complessivamente i seguenti risultati:
+\begin{enumerate}
+    \item la macchina assorbe il calore \(Q = Q_1 -Q_1^{\prime}> 0\) dalla sorgente a temperatura \(T_1\);
+    \item non viene scambiato calore con l'esterno
+    \item la macchina cede il calore \(-Q = Q_2 - Q_2^{\prime} < 0 \) alla sorgente a temperatura \(T_2\).
+\end{enumerate} 
+L'unico risultato alla fine di un ciclo è il passaggio di calore dalla sorgente fredda alla sorgente calda, in contrasto con l'enunciato di Clausius. 
+Allora è sbagliata l'ipotesi di partenza e deve essere
+\begin{equation}
+    \eta_X \leq \eta_R
+\end{equation}
+
+Se anche la macchina \(X\) fosse reversibile, potremmo supporre \(\eta_R > \eta_X\), far funzionare la macchina \(X\) come macchina frigorifera (calore e lavoro cambierebbero solo di segno dato \(X\) reversibile)
+e troveremmo \(\eta_X \geq \eta_R\).
+Le disugualianze sono compatibili solo se
+\begin{equation}
+    \eta_X = \eta_R
+\end{equation}
+
+In conclusione il il \emph{Teorema di Carnot} afferma che tutte le macchine reversibili che lavorano tra le stesse sorgenti alle temperature \(T_1\) e \(T_2\) hanno rendimento eguale; qualsiasi altra macchina che lavori tra le stesse sorgenti non può avere rendimento maggiore. 
+Il risultato è indipendente dal particolare sistema che compie il ciclo, come si deduce dal fatto che le proprietà del sistema non compaiono nella dimostrazione.
+
+Da ( 8.3) deduciamo allora che il rendimento del \emph{ciclo di Carnot a gas ideale} rappresenta il rendimentodi tutte le macchine reversibili che lavorano con due sole sorgenti alle temperature \(T_1\) e \(T_2\).
+Il teorema di Carnot risulta valido anche per macchine che lavorano con più sorgenti, non esiste però una formula generale come quella vista prima.
+
+Ritornando al caso di due sorgenti si ha che, per qualsiasi macchina reversibile, la relazione tra calori scambiati e temperature a cui avviene lo scambio è
+\begin{equation}
+    \frac{Q_1}{T_1} + \frac{Q_2}{T_2} = 0
+\end{equation}
+Ricordiamo che \(T\) è la temperatura misurata col termometro a gas ideale. 
+Fissate dunque le temperature delle sorgenti, \(T_1\) e \(T_2\), con \(T_2 > T_1\), per il teorema di Carnot
+\begin{equation}
+    \eta_R = \eta_{max} = 1- \frac{T_1}{T_2}
+\end{equation}
+la macchina reversibile è quella che sfrutta meglio l'energia fornitale sotto forma di calore.
+Infatti a parità di calore assorbito QA , la macchina reversibile è quella che fornisce il lavoro massimo, 
+\begin{equation}
+    W_{max} = Q_A \eta_R = Q_A \left(1 - \frac{T_1}{T_2}\right) = T_1 \left(\frac{Q_A}{T_1} - \frac{Q_A}{T_2}\right)
+\end{equation}
+ovvero, a parità di lavoro fornito, la macchina reversibile è quella che assorbe meno calore
+\begin{equation}
+    Q_{min} = \frac{W}{\eta_R} = \frac{W}{1- \frac{T_1}{T_2}}
+\end{equation}
 
 \end{document}

@@ -235,4 +235,27 @@ Inoltre i calori sono quelli visti dal sistema, positivi se il sistema li assorb
 
 Osserviamo infine che mentre la somma dei calori cambiati, \(d Q\), è sempre diversa da zero per un ciclo che scambia lavoro, in accordo con il primo principio, quando il calore scambiato viene diviso per il valore della temperatura della sorgente con cui avviene lo scambio e si somma su tutto il ciclo, il risultato è nullo se il ciclo è reversibile e negativo negli altri casi. 
 
+\section{La funzione di stato Entropia}
+
+Siano \(A\) e \(B\) due stati qualunque di un sistema termodinamico e passiamo da uno all'altro tramite due diverse trasformazioni reversibili
+Se percorriamo in senso inverso la trasformazione 2 (chiamandola-2), abbiamo composto un ciclo reversibile, che si svolge da A a B lungo la prima trasforma-zione e da B ad A lungo la seconda invertita
+
+Dal teorema di Clausius per macchine reversibili:
+\begin{equation*}
+    \oint \frac{d Q}{T} = 0 = \int_A^B \left(\frac{d Q}{T}\right)_1 + \int_B^A \left(\frac{d Q}{T}\right)_{-2} = \int_A^B \left(\frac{d Q}{T}\right)_1 - \int_A^B \left(\frac{d Q}{T}\right)_{2} 
+\end{equation*}
+L'ultimo passaggio discende dalla proprietà delle trasformazioni reversibili secondo cui il cambio di verso nella trasformazione comporta soltanto il cambio di segno degli scambi energetici. 
+Ottengo quindi
+\begin{equation*}
+    \int_A^B \left(\frac{d Q}{T}\right)_1 = \int_A^B \left(\frac{d Q}{T}\right)_2 = \text{ ... } = \int_A^B \left(\frac{d Q}{T}\right)_i
+\end{equation*}
+lungo qualsiasi trasformazione reversibile che colleghi gli stati termodinamici \(A\) e \(B\). 
+
+Il valore dell'integrale \(\int_A^B \left(\frac{d Q}{T}\right)_{rev}\) esteso ad una qualunque trasformazione reversibile che congiunge due stati di un sistema termodinamico, è sempre lo stesso, cioè non dipende dalla particolare trasformazione reversibile scelta per eseguire il calcolo. \newline
+Si può quindi porre l'integrale eguale alla variazione di una funzione che dipende solo dalle coordinate termodinamiche del sistema nei due stati di equilibrio \(A\) e \(B\):
+\begin{equation}
+    \int_A^B \left(\frac{d Q}{T}\right)_{rev} = S_{B} - S{A} = \Delta S
+\end{equation}
+La funzione di stato così introdotta è detta \emph{entropia}.\newline
+La definizione (8.12) dà l'entropia a meno di una costante additiva arbitraria.
 \end{document}

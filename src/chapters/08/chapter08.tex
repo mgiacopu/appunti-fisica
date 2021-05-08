@@ -169,4 +169,70 @@ ovvero, a parità di lavoro fornito, la macchina reversibile è quella che assor
     Q_{min} = \frac{W}{\eta_R} = \frac{W}{1- \frac{T_1}{T_2}}
 \end{equation}
 
+\section{Teorema di Clausius}
+
+La relazione (8.4), conseguenza del teorema di Carnot per le macchine reversibili che lavorano tra due sorgenti, può essere estesa e generalizzata a macchine termiche operanti con più sorgenti di calore. 
+
+\subsection{Enunciato}
+
+Data una macchina \(M\) qualsiasi la quale scambia calore con \(n\) sorgenti, sussiste la relazLcme 
+\begin{equation}
+    \sum_{i = 1}^{n} \frac{Q_i}{T_i} \leq 0
+\end{equation}
+dove \(Q_1, Q_2, ... , Q_n\) sono i calori scambiati con le sorgenti a temperatura \(T_1, T_2, ... , T_n.\)
+% TODO add photo
+
+\subsection{Dimostrazione}
+
+Per dimostrare il teorema di Clausius, immaginiamo di aggiungere \(n\) macchine reversibili funzionanti tra le sorgenti già considerate alle temperature \(T_1 , T_2 , ... , T_n\) e una sorgente a temperatura \(T_0\): ciascuna di queste macchine \(R_i\); scambia con la sorgente a \(T_i\); il calore \(-Q_i\), opposto a quello scambiato con la stessa sorgente dalla macchina \(M\), e con la sorgente a \(T_0\) il calore \(Q_0\).
+%TODO add photo
+
+Applichiamo (8.4) a ciacuna macchina reversibile:\newline
+\begin{align*}
+    \text{per } &R_1 & -\frac{Q_1}{T_1} + \frac{Q_{01}}{T_0} &= 0 \implies \frac{Q_{01}}{T_0} = \frac{Q_1}{T_1} \\
+    \text{per } &R_i & -\frac{Q_i}{T_i} + \frac{Q_{0i}}{T_0} &= 0 \implies \frac{Q_{0i}}{T_0} = \frac{Q_i}{T_i} \\
+    \text{per } &R_n & -\frac{Q_i}{T_i} + \frac{Q_{0n}}{T_0} &= 0 \implies \frac{Q_{0n}}{T_0} = \frac{Q_n}{T_n} \\
+\end{align*}
+
+e sommando a tutte le macchine 
+\begin{equation*}
+    \frac{1}{T_0} \sum_i Q_{0i} = \sum_{i} \frac{Q_i}{T_i}
+\end{equation*}
+
+Alla fine di un ciclo della macchina \(M\) e delle macchine reversibili \(R_1, ... , R_n\) le sorgenti a \(T_0, ... , T_n\) sono rimaste invariate in quanto ciascuna ha scambiato calori eguali ed opposti con le macchine. 
+Pertanto la macchina complessiva costituita da \(M\) e dalle \(n\) macchine ausiliarie compie una trasfonnazione ciclica monoterma perché scambia calore solo con la sorgente a temperatura \(T_0\).
+Dato che il calore totale scambiato durante un ciclo monotemo non può essere positivo ottengo:
+\begin{equation*}
+    \sum_i Q_{0i} \leq 0 \implies \sum_i \frac{Q_i}{T_i} \leq 0
+\end{equation*}
+poichè \(T_0 > 0 \).
+
+Se lo scambio di calore di \(M\) avviene con una serie infinita di sorgenti, detto \(d Q\) il calore scambiato con la sorgente a temperatura \(T\), la (8.8) diventa
+\begin{equation}
+    \oint \frac{d Q}{T} \leq 0
+\end{equation}
+dove \(\oint\) indica che l'integrale è esteso a tutto il ciclo descritto dalla macchina \(M\).
+
+\subsection{Teorema di Clausius per macchine reversibili}
+
+Le equazioni (8.8) e (8.9) esprimono il teorema di Clausius per una macchina generica.
+Se la macchina \(M\) è reversibile invertiamo tutti i cicli: tutti gli scambi di calore cambiano di segno e deve essere \(\sum \left(-Q_{0i}\right) \leq 0\). 
+Ne segue che le disugualianze del teorema vanno invertite e si ha compatibilità tra i due casi solo se 
+\begin{equation}
+    \sum_{i = 1}^{n} \frac{Q_i}{T_i} = 0 \text{ oppure } \oint \frac{d Q}{T} = 0
+\end{equation}
+
+\subsection{Teorema di Clausius per macchine irreversibili}
+
+Quando il processo ciclico è irreversibile, a rigore vale il segno di minore o eguale; però, sulla base delle considerazioni sui processi irreversibili 
+possiamo assumere che in generale si verifica la diseguaglianza e scrivere il teorema di Clausius per le macchine irreversibili come
+\begin{equation}
+    \sum_{i = 1}^{n} \frac{Q_i}{T_i} < 0 \text{ oppure } \oint \frac{d Q}{T} < 0
+\end{equation} 
+
+Si tenga presente che la temperatura \(T\) nelle (8.12) e (8.13) è quella della sorgente con cui avviene lo scambio di calore: essa coincide con la temperatura del sistema che compie il ciclo solo se il processo è reversibile. 
+Inoltre i calori sono quelli visti dal sistema, positivi se il sistema li assorbe, negativi se li cede.
+
+Osserviamo infine che mentre la somma dei calori cambiati, \(d Q\), è sempre diversa da zero per un ciclo che scambia lavoro, in accordo con il primo principio, quando il calore scambiato viene diviso per il valore della temperatura della sorgente con cui avviene lo scambio e si somma su tutto il ciclo, il risultato è nullo se il ciclo è reversibile e negativo negli altri casi. 
+
 \end{document}

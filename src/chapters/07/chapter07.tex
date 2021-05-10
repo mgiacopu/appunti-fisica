@@ -2,7 +2,7 @@
 \usepackage{standalone}
 \usepackage{amsmath}
 \usepackage{../../style}
-% \graphicspath{{./assets/images/}}
+\graphicspath{{./assets/images/}}
 
 % arara: pdflatex: { synctex: yes, shell: yes }
 % arara: latexmk: { clean: partial }
@@ -442,7 +442,12 @@ Il ciclo di Carnot è costituito da quattro trasformazioni reversibili, dove son
     \item trasformazione CD, compressione isoterma reversibile.
     \item trasformazione DA, compressione adiabatica reversibile.
 \end{enumerate}
-%TODO aggiungi foto
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{ciclo-di-carnot}
+    \centering
+    \caption{Ciclo di Carnot}
+\end{figure}
 
 Nello stato \(A\) il gas è in equilibrio a contatto termico con una sorgente di calore a temperatura \(T_2\).
 L'espansione isoterma reversibile \(AB\) può essere considerata come una successione di trasformazioni infinitesime: in ciascuna a seguito di una diminuzione \(dp\) della pressione esterna (equilibrio meccanico) il gas si espande di una quantità \(d V\) raffreddandosi di \(d T\); si ha quindi cessione di calore \(d Q\) dalla sorgente a temperatura \(T_2\) (equilibrio termico) al gas che ritorna alla temperatura \(T_2\). 
@@ -507,6 +512,13 @@ Il gas complessivamente assorbe calore perché \(Q_A + Q_C > 0\) e produce il la
 
 Il ciclo termico di Otto schematizza il funzionamento di un motore a scoppio a quattro tempi, come quello del motore automobilistico a benzina. 
 Nel ciclo di Otto si suppone che la miscela aria-benzina sia assimilabile a un gas ideale biatomico e che il ciclo sia reversibile. 
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{ciclo-otto}
+    \centering
+    \caption{Ciclo di Otto}
+\end{figure}
+
 \begin{enumerate}
     \item Nella trasformazione \(O A\) la miscela benzina-aria viene aspirata nel cilindro, a pressione costante (\emph{fase di aspirazione}). 
     \item Nella trasformazione adiabatica reversibile \(A B\) la miscela nel cilindro viene compressa rapidamente dal pistone dal volume \(V_2\) al volume \(V_1\) (\emph{fase di compressione}). 

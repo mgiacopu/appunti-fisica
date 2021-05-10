@@ -22,12 +22,13 @@ Si osserva che è sempre \(Q_C<0\), cioè non succede mai \(Q_C \geq 0\).
 Questo risultato comporta che \(Q_A\) non viene trasformato integralmente in lavoro, ma una parte \(Q_C\) viene sempre ceduta alla sorgente a temperatura inferiore. 
 Il lavoro è \(W = Q_A + Q_C\) e in accordo con il primo principio (\(\Delta U = 0\) in un processo ciclico), però non si ha mai \(W = Q_A\), bensì \(W < Q_A\). 
 
-Nel caso ci siano più sorgenti con cui la macchina \(M\) scambia calore la situazione è analoga: la somma dei calori assorbiti non si trasforma mai totalmente in avoro, una parte viene sempre ceduta restando cioè sotto forma di calore scambiato. 
+Nel caso ci siano più sorgenti con cui la macchina \(M\) scambia calore la situazione è analoga: la somma dei calori assorbiti non si trasforma mai totalmente in lavoro, una parte viene sempre ceduta restando cioè sotto forma di calore scambiato. 
 Non esistono esempi contrari: in un processo ciclico vi è una impossibilità di trasformazione integrale di calore in lavoro ovvero la trasformazione di calore in lavoro è sempre accompagnata da cessione di calore. 
 
 Accanto all'impossibilità finora discussa esiste un'altra impossibilità sperimentale. 
 Se consideriamo due corpi a temperatura diversa e li mettiamo a contatto termico, c'è sempre una cessione di calore dal corpo caldo al corpo freddo fino a che si raggiunge l'equilibrio termico. 
-Il calore non passa mai spontaneamente dal corpo freddo al corpo caldo. 
+
+\emph{Il calore non passa mai spontaneamente dal corpo freddo al corpo caldo}. 
 È possibile fare avvenire questo passaggio, come si realizza in una macchina frigorifera, ma deve essere eseguito un lavoro sulla sostanza che compie il ciclo.
 
 \subsection{Enunciati}
@@ -50,6 +51,9 @@ Gli enunciati di Kelvin-Planck e di Clausius, pur se riferiti a fatti sperimenta
 \subsubsection*{Kelvin-Planck \(\implies\) Clausius}
 
 %TODO aggiungi foto macchine
+% TODO Potrebbero andar bene o facciamo a mano? 
+% https://www.science.unitn.it/~fisica1/fisica1/appunti/termo/cap_5/images/cap_5-2.gif
+% https://www.science.unitn.it/~fisica1/fisica1/appunti/termo/cap_5/images/secondopr3.gif
 Supponiamo infatti che sia possibile realizzare un processo ciclico che trasformi integralmente calore in lavoro, in contrasto con l'enunciato di Kelvin-Planck. 
 Questo fatto è rappresentato nella figura xxx, dove la macchina termica \(1\) produce il lavoro \(W\) trasformando il calore \(Q_A\) assorbito dalla sorgente a temperatura \(T_2 : W = Q_A\) ed è nulla la cessione di calore alla sorgente fredda. 
 Utilizziamo il lavoro \(W\) per far funzionare una macchina frigorifera, che preleva il calore \(Q_1\) dalla sorgente a temperatura \(T_1\) e cede il calore \(Q_2\) alla sorgente a temperatura \(T_2>T_1\). 
@@ -81,7 +85,7 @@ Quando viene compiuta una trasformazione reversibile da uno stato \(A\) ad uno s
 L'argomento si estende ai cicli reversibili: alla fine di un ciclo il sistema torna sempre nello stato iniziale, ma l'ambiente ha subito una modifica perché ha, per esempio, ceduto calore e assorbito lavoro. 
 Percorrendo il ciclo in senso inverso gli scambi energetici dell'ambiente sono eguali ed opposti ed esso ritorna nello stato iniziale.
 
-In generale: \emph{una trasformazione reversibile non comporta alterazioni permenenti, nel senso che è sempre possibile riportare nei rispettivi stati iniziali il sistema e l'ambiente che con esso interagisce}
+In generale: \emph{una trasformazione reversibile non comporta alterazioni permanenti, nel senso che è sempre possibile riportare nei rispettivi stati iniziali il sistema e l'ambiente che con esso interagisce}
 
 La situazione è completamente diversa per le trasformazioni irreversibili:
 \begin{enumerate}
@@ -100,7 +104,7 @@ La rappresentazione di un fenomeno reale con una trasformazione reversibile cost
 
 \section{Teorema di Carnot}
 
-Il teorema di Canot rappresenta una prima precisazione quantitativa dell'enunciato di Kelvin-Planck in quanto fissa la massima percentuale di calore assorbito da una macchina termica che può essere trasformata in lavoro.
+Il teorema di Carnot rappresenta una prima precisazione quantitativa dell'enunciato di Kelvin-Planck in quanto fissa la massima percentuale di calore assorbito da una macchina termica che può essere trasformata in lavoro.
 
 Consideriamo due macchine che lavorano utilizzando le stesse sorgenti di calore alle temperature \(T_1\) e \(T_2>T_1\), dimensionate in modo tale da produrre lo stesso lavoro. 
 Indichiamo le due macchine con i simboli \(X\) e \(R\): per la prima macchina non facciamo per ora alcuna ipotesi di reversibilità o irreversibilità, mentre assumiamo che la seconda sia reversibile. 
@@ -139,19 +143,19 @@ Allora è sbagliata l'ipotesi di partenza e deve essere
 
 Se anche la macchina \(X\) fosse reversibile, potremmo supporre \(\eta_R > \eta_X\), far funzionare la macchina \(X\) come macchina frigorifera (calore e lavoro cambierebbero solo di segno dato \(X\) reversibile)
 e troveremmo \(\eta_X \geq \eta_R\).
-Le disugualianze sono compatibili solo se
-\begin{equation}
+Le disuguaglianze sono compatibili solo se
+\begin{equation} \label{teorema_carnot}
     \eta_X = \eta_R
 \end{equation}
 
-In conclusione il il \emph{Teorema di Carnot} afferma che tutte le macchine reversibili che lavorano tra le stesse sorgenti alle temperature \(T_1\) e \(T_2\) hanno rendimento eguale; qualsiasi altra macchina che lavori tra le stesse sorgenti non può avere rendimento maggiore. 
+In conclusione il \emph{Teorema di Carnot} afferma che tutte le macchine reversibili che lavorano tra le stesse sorgenti alle temperature \(T_1\) e \(T_2\) hanno rendimento eguale; qualsiasi altra macchina che lavori tra le stesse sorgenti non può avere rendimento maggiore. 
 Il risultato è indipendente dal particolare sistema che compie il ciclo, come si deduce dal fatto che le proprietà del sistema non compaiono nella dimostrazione.
 
-Da ( 8.3) deduciamo allora che il rendimento del \emph{ciclo di Carnot a gas ideale} rappresenta il rendimentodi tutte le macchine reversibili che lavorano con due sole sorgenti alle temperature \(T_1\) e \(T_2\).
+Da (\ref{teorema_carnot}) deduciamo allora che il rendimento del \emph{ciclo di Carnot a gas ideale} rappresenta il rendimento di tutte le macchine reversibili che lavorano con due sole sorgenti alle temperature \(T_1\) e \(T_2\).
 Il teorema di Carnot risulta valido anche per macchine che lavorano con più sorgenti, non esiste però una formula generale come quella vista prima.
 
 Ritornando al caso di due sorgenti si ha che, per qualsiasi macchina reversibile, la relazione tra calori scambiati e temperature a cui avviene lo scambio è
-\begin{equation}
+\begin{equation} \label{rel_q_temp}
     \frac{Q_1}{T_1} + \frac{Q_2}{T_2} = 0
 \end{equation}
 Ricordiamo che \(T\) è la temperatura misurata col termometro a gas ideale. 
@@ -160,23 +164,23 @@ Fissate dunque le temperature delle sorgenti, \(T_1\) e \(T_2\), con \(T_2 > T_1
     \eta_R = \eta_{max} = 1- \frac{T_1}{T_2}
 \end{equation}
 la macchina reversibile è quella che sfrutta meglio l'energia fornitale sotto forma di calore.
-Infatti a parità di calore assorbito QA , la macchina reversibile è quella che fornisce il lavoro massimo, 
+Infatti a parità di calore assorbito \(Q_A\), la macchina reversibile è quella che fornisce il lavoro massimo, 
 \begin{equation}
     W_{max} = Q_A \eta_R = Q_A \left(1 - \frac{T_1}{T_2}\right) = T_1 \left(\frac{Q_A}{T_1} - \frac{Q_A}{T_2}\right)
 \end{equation}
-ovvero, a parità di lavoro fornito, la macchina reversibile è quella che assorbe meno calore
+ovvero, \emph{a parità di lavoro fornito, la macchina reversibile è quella che assorbe meno calore}.
 \begin{equation}
     Q_{min} = \frac{W}{\eta_R} = \frac{W}{1- \frac{T_1}{T_2}}
 \end{equation}
 
 \section{Teorema di Clausius}
 
-La relazione (8.4), conseguenza del teorema di Carnot per le macchine reversibili che lavorano tra due sorgenti, può essere estesa e generalizzata a macchine termiche operanti con più sorgenti di calore. 
+La relazione (\ref{rel_q_temp}), conseguenza del teorema di Carnot per le macchine reversibili che lavorano tra due sorgenti, può essere estesa e generalizzata a macchine termiche operanti con più sorgenti di calore. 
 
 \subsection{Enunciato}
 
-Data una macchina \(M\) qualsiasi la quale scambia calore con \(n\) sorgenti, sussiste la relazLcme 
-\begin{equation}
+Data una macchina \(M\) qualsiasi la quale scambia calore con \(n\) sorgenti, sussiste la relazione 
+\begin{equation} \label{enunciato_teorema_clausius}
     \sum_{i = 1}^{n} \frac{Q_i}{T_i} \leq 0
 \end{equation}
 dove \(Q_1, Q_2, ... , Q_n\) sono i calori scambiati con le sorgenti a temperatura \(T_1, T_2, ... , T_n.\)
@@ -186,8 +190,9 @@ dove \(Q_1, Q_2, ... , Q_n\) sono i calori scambiati con le sorgenti a temperatu
 
 Per dimostrare il teorema di Clausius, immaginiamo di aggiungere \(n\) macchine reversibili funzionanti tra le sorgenti già considerate alle temperature \(T_1 , T_2 , ... , T_n\) e una sorgente a temperatura \(T_0\): ciascuna di queste macchine \(R_i\); scambia con la sorgente a \(T_i\); il calore \(-Q_i\), opposto a quello scambiato con la stessa sorgente dalla macchina \(M\), e con la sorgente a \(T_0\) il calore \(Q_0\).
 %TODO add photo
+% TODO: Foto possibili da qui: http://www.science.unitn.it/~fisica1/fisica1/appunti/termo/cap_5/cap_5_5_3.htm
 
-Applichiamo (8.4) a ciacuna macchina reversibile:\newline
+Applichiamo (\ref{rel_q_temp}) a ciacuna macchina reversibile:\\
 \begin{align*}
     \text{per } &R_1 & -\frac{Q_1}{T_1} + \frac{Q_{01}}{T_0} &= 0 \implies \frac{Q_{01}}{T_0} = \frac{Q_1}{T_1} \\
     \text{per } &R_i & -\frac{Q_i}{T_i} + \frac{Q_{0i}}{T_0} &= 0 \implies \frac{Q_{0i}}{T_0} = \frac{Q_i}{T_i} \\
@@ -200,45 +205,45 @@ e sommando a tutte le macchine
 \end{equation*}
 
 Alla fine di un ciclo della macchina \(M\) e delle macchine reversibili \(R_1, ... , R_n\) le sorgenti a \(T_0, ... , T_n\) sono rimaste invariate in quanto ciascuna ha scambiato calori eguali ed opposti con le macchine. 
-Pertanto la macchina complessiva costituita da \(M\) e dalle \(n\) macchine ausiliarie compie una trasfonnazione ciclica monoterma perché scambia calore solo con la sorgente a temperatura \(T_0\).
-Dato che il calore totale scambiato durante un ciclo monotemo non può essere positivo ottengo:
+Pertanto la macchina complessiva costituita da \(M\) e dalle \(n\) macchine ausiliarie compie una trasformazione ciclica monoterma perché scambia calore solo con la sorgente a temperatura \(T_0\).
+Dato che il calore totale scambiato durante un ciclo monotermo non può essere positivo ottengo:
 \begin{equation*}
     \sum_i Q_{0i} \leq 0 \implies \sum_i \frac{Q_i}{T_i} \leq 0
 \end{equation*}
 poichè \(T_0 > 0 \).
 
-Se lo scambio di calore di \(M\) avviene con una serie infinita di sorgenti, detto \(d Q\) il calore scambiato con la sorgente a temperatura \(T\), la (8.8) diventa
-\begin{equation}
+Se lo scambio di calore di \(M\) avviene con una serie infinita di sorgenti, detto \(d Q\) il calore scambiato con la sorgente a temperatura \(T\), la (\ref{enunciato_teorema_clausius}) diventa
+\begin{equation} \label{conclusione_dim_teorema_clausius}
     \oint \frac{d Q}{T} \leq 0
 \end{equation}
 dove \(\oint\) indica che l'integrale è esteso a tutto il ciclo descritto dalla macchina \(M\).
 
 \subsection{Teorema di Clausius per macchine reversibili}
 
-Le equazioni (8.8) e (8.9) esprimono il teorema di Clausius per una macchina generica.
+Le equazioni (\ref{enunciato_teorema_clausius}) e (\ref{conclusione_dim_teorema_clausius}) esprimono il teorema di Clausius per una macchina generica.
 Se la macchina \(M\) è reversibile invertiamo tutti i cicli: tutti gli scambi di calore cambiano di segno e deve essere \(\sum \left(-Q_{0i}\right) \leq 0\). 
 Ne segue che le disugualianze del teorema vanno invertite e si ha compatibilità tra i due casi solo se 
-\begin{equation}
+\begin{equation} \label{comp_clausius_rev}
     \sum_{i = 1}^{n} \frac{Q_i}{T_i} = 0 \text{ oppure } \oint \frac{d Q}{T} = 0
 \end{equation}
 
 \subsection{Teorema di Clausius per macchine irreversibili}
 
-Quando il processo ciclico è irreversibile, a rigore vale il segno di minore o eguale; però, sulla base delle considerazioni sui processi irreversibili 
-possiamo assumere che in generale si verifica la diseguaglianza e scrivere il teorema di Clausius per le macchine irreversibili come
-\begin{equation}
+Quando il processo ciclico è irreversibile, a rigore di logica vale il segno di minore o eguale; 
+però, sulla base delle considerazioni sui processi irreversibili, possiamo assumere che in generale si verifica la diseguaglianza e si può scrivere il teorema di Clausius per le macchine irreversibili come
+\begin{equation} \label{comp_clausius_irrev}
     \sum_{i = 1}^{n} \frac{Q_i}{T_i} < 0 \text{ oppure } \oint \frac{d Q}{T} < 0
 \end{equation} 
 
-Si tenga presente che la temperatura \(T\) nelle (8.12) e (8.13) è quella della sorgente con cui avviene lo scambio di calore: essa coincide con la temperatura del sistema che compie il ciclo solo se il processo è reversibile. 
+Si tenga presente che la temperatura \(T\) nelle (\ref{comp_clausius_rev}) e (\ref{comp_clausius_irrev}) è quella della sorgente con cui avviene lo scambio di calore: essa coincide con la temperatura del sistema che compie il ciclo solo se il processo è reversibile. 
 Inoltre i calori sono quelli visti dal sistema, positivi se il sistema li assorbe, negativi se li cede.
 
 Osserviamo infine che mentre la somma dei calori cambiati, \(d Q\), è sempre diversa da zero per un ciclo che scambia lavoro, in accordo con il primo principio, quando il calore scambiato viene diviso per il valore della temperatura della sorgente con cui avviene lo scambio e si somma su tutto il ciclo, il risultato è nullo se il ciclo è reversibile e negativo negli altri casi. 
 
 \section{La funzione di stato Entropia}
 
-Siano \(A\) e \(B\) due stati qualunque di un sistema termodinamico e passiamo da uno all'altro tramite due diverse trasformazioni reversibili
-Se percorriamo in senso inverso la trasformazione 2 (chiamandola-2), abbiamo composto un ciclo reversibile, che si svolge da A a B lungo la prima trasforma-zione e da B ad A lungo la seconda invertita
+Siano \(A\) e \(B\) due stati qualunque di un sistema termodinamico e passiamo da uno all'altro tramite due diverse trasformazioni reversibili.
+Se percorriamo in senso inverso la trasformazione 2 (chiamandola -2), abbiamo composto un ciclo reversibile, che si svolge da A a B lungo la prima trasforma-zione e da B ad A lungo la seconda invertita
 
 Dal teorema di Clausius per macchine reversibili:
 \begin{equation*}
@@ -253,9 +258,11 @@ lungo qualsiasi trasformazione reversibile che colleghi gli stati termodinamici 
 
 Il valore dell'integrale \(\int_A^B \left(\frac{d Q}{T}\right)_{rev}\) esteso ad una qualunque trasformazione reversibile che congiunge due stati di un sistema termodinamico, è sempre lo stesso, cioè non dipende dalla particolare trasformazione reversibile scelta per eseguire il calcolo. \newline
 Si può quindi porre l'integrale eguale alla variazione di una funzione che dipende solo dalle coordinate termodinamiche del sistema nei due stati di equilibrio \(A\) e \(B\):
-\begin{equation}
-    \int_A^B \left(\frac{d Q}{T}\right)_{rev} = S_{B} - S{A} = \Delta S
+\begin{equation} \label{entropia}
+    \int_A^B \left(\frac{d Q}{T}\right)_{rev(A, B)} = S_{B} - S_{A} = \Delta S_{A\rightarrow B}
 \end{equation}
 La funzione di stato così introdotta è detta \emph{entropia}.\newline
-La definizione (8.12) dà l'entropia a meno di una costante additiva arbitraria.
+La definizione (\ref{entropia}) dà l'entropia a meno di una costante additiva arbitraria.
+
+
 \end{document}

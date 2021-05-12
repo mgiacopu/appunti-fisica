@@ -243,7 +243,7 @@ Osserviamo infine che mentre la somma dei calori cambiati, \(d Q\), è sempre di
 \section{La funzione di stato Entropia}
 
 Siano \(A\) e \(B\) due stati qualunque di un sistema termodinamico e passiamo da uno all'altro tramite due diverse trasformazioni reversibili.
-Se percorriamo in senso inverso la trasformazione 2 (chiamandola -2), abbiamo composto un ciclo reversibile, che si svolge da A a B lungo la prima trasforma-zione e da B ad A lungo la seconda invertita
+Se percorriamo in senso inverso la trasformazione 2 (chiamandola -2), abbiamo composto un ciclo reversibile, che si svolge da A a B lungo la prima trasformazione e da B ad A lungo la seconda invertita
 
 Dal teorema di Clausius per macchine reversibili:
 \begin{equation*}
@@ -330,8 +330,84 @@ in una adiabatica reversibile
     \Delta S = 0
 \end{equation}
 e che perfinizione in una trasformazione ciclica
-\begin{equation}
+\begin{equation} \label{entropia_trasformazione_ciclica}
     \Delta S = 0
+\end{equation}
+
+\section{Il principio di aumento dell'entropia, Calcoli di variazione dell'entropia}
+%TODO add photo 
+Siano \(A\) e \(B\) due stati qualunque di un sistema termodinamico e passiamo da uno all'altro tramite due diverse trasformazioni reversibili.
+Se percorriamo in senso inverso la trasformazione 2 (chiamandola -2), abbiamo composto un ciclo reversibile, che si svolge da \(A\) a \(B\) lungo la prima trasformazione e da \(B\) ad \( A\) lungo la seconda invertita.\newline
+Il ciclo delle trasformazioni \(1\) e \(-2\) rimane quindi rimane irreversibile: il teorema di Clausius ci dice:
+\begin{equation*}
+    \oint \frac{d Q}{T} = \int_A^B \left(\frac{d Q}{T}\right)_1 + \int_B^A \left(\frac{d Q}{T}\right)_{-2} = \int_A^B \left(\frac{d Q}{T}\right)_{irr} - \int_A^B \left(\frac{d Q}{T}\right)_{rev} < 0
+\end{equation*}
+L'utimo integrale rappresenta la differenza di entropia quindi:
+\begin{equation}
+    S_B - S_A = \int_A^B \left(\frac{d Q}{T}\right)_{rev} > \int_A^B \left(\frac{d Q}{T}\right)_{irr}
+\end{equation}
+Se per una generica trasformazione \(A B\) effettivamente eseguita da un sistema siamo in grado di calcolare \(\int_A^B \frac{d Q}{T}\), in generale il risultato non è eguale alla variazione di entropia \(S_B - S_A\), ma minore; se vogliamo calcolare \(S_B - S_A\) per quella data trasformazione, dobbiamo servirci di un'altra trasfonnazione \(A B\) reversibile.
+In termini infinitesimi si scrive
+\begin{equation}
+    d S = \left(\frac{d Q}{T}\right)_{rev} > \left(\frac{d Q}{T}\right)_{irr}
+\end{equation}
+Se il sistema che descrive la trasformazione \(A B\) è isolato termicamente, cioè non scambia calore, si \(d Q = 0\) e quindi da
+\begin{equation} \label{entropia_sistema_isolato}
+    S_B - S_A \geq 0 \implies S_B \geq S_A
+\end{equation}
+\emph{L'entropia di un sistema termicamente isolato non può diminuire: essa aumenta se la trasformazione è irreversibile, resta costante solo se la trasformazione è reversibile}.
+La (\ref{entropia_sistema_isolato}) esprime il \emph{principio di aumento dell'entropia}; la sua forma infinitesiam
+\begin{equation}
+    d S \leq 0 \text{sistema isolato}
+\end{equation}
+viene chiamata \emph{formulazione metematica del secondo principio della termodinamica}
+
+Un sistema isolato si ottiene sempre quando si considera un sistema propriamente detto ed il suo ambiente, cioè un universo termodinamico. 
+Per l'universo termodinamico
+\begin{equation*}
+    \Delta S_u \geq 0 \text{con} \Delta S_u = \Delta S_{sist} + \Delta S_{amb}
+\end{equation*}
+Se l'universo compie una trasformazione reversibile 
+\begin{equation*}
+    \Delta S_u = 0 \implies \Delta S_{sist} = - \Delta S_{amb}
+\end{equation*}
+se invece l'universo compie una trasformazione irreversibile
+\begin{equation*}
+    \Delta S_u > 0 \implies \Delta S_{sist} \neq -\Delta S_{amb}
+\end{equation*}
+In particolare, quando la trasformazione è ciclica, sappiamo da ( \ref{entropia_trasformazione_ciclica}) che \(\Delta S_{sist}  =0\); allora,
+\begin{equation*}
+    \text{se il ciclo è reversibile} \Delta S_u = \Delta S_{amb} = 0
+\end{equation*}
+\begin{equation*}
+    \text{se il ciclo è irreversibile} \Delta S_u = \Delta S_{amb} > 0 
+\end{equation*}
+
+Una conclusione importante che si trae dai risultati appena esposti è che l'irreversibilità è sempre accompagnata da un aumento di entropia dell'universo. 
+D'altra parte abbiamo già rilevato più volte che i processi naturali sono tutti sostanzialmente irreversibili. 
+Possiamo quindi affennare che ogni processo naturale si svolge necessariamente nel verso che determina un aumento dell'entropia complessiva del sistema e del suo ambiente. 
+L'evoluzione termina quando viene raggiunto il massimo valore dell'entropia compatibile con le condizioni fisiche di sistema e ambiente: tale stato corrisponde allo stato di equilibrio stabile.
+Questo non significa che l'entropia debba aumentare in tutte le varie parti del sistema e dell'ambiente che costituiscono l'universo tennodinamico. 
+In una o più parti l'entropia può diminuire, ma ce n'è almeno un'altra in cui aumenta, in modo da soddisfare la (\ref{entropia_sistema_isolato}).
+
+\subsection{Trasformazioni adiabatiche}
+
+Un sistema che compie una trasformazione adiabatica costituisce un caso particolare di universo termodinamico, in cui il sistema è assunto essere isolato termicamente dall'ambiente: l'ambiente non scambia calore col sistema, ma soltanto lavoro; pertanto \(\Delta S_{amb} = 0\) e 
+\begin{equation*}
+    \Delta S_{sist} = \Delta S_u \geq 0 
+\end{equation*}
+
+Se la trasformazione è reversibile \(\Delta S_{sist} = 0\), la trasformazione cioè è iso-entropica.
+
+Per una trasformazione adiabatica irreversibile invece \(\Delta S_{sist}> 0 \), l'entropia aumenta. 
+In effetti questa volta \(d Q =0\) non implica \(d S =0\): il calore scambiato lungo la trasformazione è nullo, però \(\Delta S_{sist}\) non è calcolabile lungo questa trasformazione, bensì lungo un'altra con gli stessi estremi, ma reversibile, che non può essere adiabatica a sua volta. 
+Questo perché due stati collegati con una adiabatica irreversibile hanno necessariamente entropia diversa e non possono quindi essere collegati anche con una adiabatica reversibile, che è isoentropica (vale anche il vice versa).
+
+\subsection{Cambiamenti di fase}
+%TODO add reference
+I cambiamenti di fase sono processi isotermi: mettendo insieme , la variazione di entropia di \(m\) chilogrammi di una sostanza che cambia fase alla temperatura \(T\) è 
+\begin{equation}
+    \Delta S = \frac{m \lambda}{T}
 \end{equation}
 
 \end{document}

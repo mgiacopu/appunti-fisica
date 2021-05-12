@@ -259,10 +259,79 @@ lungo qualsiasi trasformazione reversibile che colleghi gli stati termodinamici 
 Il valore dell'integrale \(\int_A^B \left(\frac{d Q}{T}\right)_{rev}\) esteso ad una qualunque trasformazione reversibile che congiunge due stati di un sistema termodinamico, è sempre lo stesso, cioè non dipende dalla particolare trasformazione reversibile scelta per eseguire il calcolo. \newline
 Si può quindi porre l'integrale eguale alla variazione di una funzione che dipende solo dalle coordinate termodinamiche del sistema nei due stati di equilibrio \(A\) e \(B\):
 \begin{equation} \label{entropia}
-    \int_A^B \left(\frac{d Q}{T}\right)_{rev(A, B)} = S_{B} - S_{A} = \Delta S_{A\rightarrow B}
+    \int_A^B \left(\frac{d Q}{T}\right)_{rev(A, B)} = S_{B} - S_{A} = \Delta S_{A\rightarrow B} \udm{\frac{J}{K}}
 \end{equation}
 La funzione di stato così introdotta è detta \emph{entropia}.\newline
 La definizione (\ref{entropia}) dà l'entropia a meno di una costante additiva arbitraria.
 
+La definizione (\ref{entropia}) può essere scritta anche in forma infinitesima, cioè con riferimento ad una trasformazione reversibile infinitesima, che implica una variazione infinitesima delle coordinate termodinamiche:
+\begin{equation} \label{entropia_infinitesima}
+    d S = \left(\frac{dQ}{T}\right)
+\end{equation}
+\(d Q\) non è un differenziale esatto, però se tale quantità è divisa per \(T\) ed è considerata in una trasformazione reversibile, essa dà luogo al differenziale esatto \(d S\).
+
+\emph{L'entropia è una quantità additiva}. Dati due sistemi di entropia \(S_1\) e \(S_2\), l'entropia complessiva è espressa da \(S = S_1 + S_2\).
+Questa proprietà è conseguenza del fatto che l'energia interna complessiva dei due sistemi è la somma delle energie interne come pure il lavoro complessivo è la somma dei lavori, per lo meno se i sistemi sono indipendenti, pertanto anche il calore scambiato dal sistema complessivo è la somma dei calori scambiati e il risultato si estende all'entropia.
+In particolare risulta che se si aumenta la massa di un sistema, l'entropia aumenta in proporzione.
+L'entropia quindi ha le caratteristiche di una \emph{grandezza estensiva}.
+
+Data una trasformazione irreversibile che collega lo stato \(A\) allo stato \(B\) di cui si vuole calcolare l'entropia.
+Abbiamo le seguenti indicazioni:
+\begin{enumerate}
+    \item l'entropia degli stati iniziale e finale è certamente definibile, a partire ad esempio da un certo stato di riferimento; 
+    \item conseguentemente è definibile la variazione \(S_B - S_A\) 
+    \item la variazione \(S_B - S_A\) non dipende dal tipo di trasformazione che collega \(A\) e \(B\), ma solo dalle coordinate termodinamiche di \(A\) e \(B\), in quanto l'entropia è una funzione di stato. 
+\end{enumerate}
+
+Pertanto per il calcolo della variazione di entropia nella trasformazione irreversibile da \(A\) a \(B\) basta scegliere una qualsiasi trasfomazione reversibile che colleghi \(A\) a \(B\) ed applicare a questa (\ref{entropia}): il risultato è valido in ogni caso.
+
+\subsection{Diagrammi TS}
+
+L'entropia, essendo funzione di stato, può essere scelta come variabile indipendente (coordinata tennodinamica) per descrivere, insieme ad una seconda variabile indipendente opportunamente scelta (spesso \(T\)), lo stato termodinamico di un sistema.
+Nel piano \(\left(T, S\right)\) una trasformazione reversibile è rappresentata da un tratto di curva continua che fornisce il grafico della funzione \(T (S)\).
+Il calore scambiato dal sistema che descrive la trasformazione è, secondo (\ref{entropia_infinitesima}),
+\begin{equation}
+    d Q_{rev} = T ds \implies Q_{rev} = \int_A^B T d S
+\end{equation}
+
+Ne deriva che il calore scambiato nella trasformazione, assorbito se si passa da \(A\) a \(B\) (\(S_B > S_A\)), ceduto se invece si va da \(B\) ad \(A\), è dato dall'area sotto la curva \(A B\). 
+Nel piano \(\left(T, S\right)\) il calore ha una semplice interpretazione grafica, come il lavoro ne piano \(\left(p, V\right)\), se le trasformazioni sono reversibili.
+
+\subsubsection*{Trasformazioni e cicli}
+
+Un ciclo reversibile nel piano \(\left(T, S\right)\) delimita un area che è pari alla somma algebrica dei calori scambiati in totale del sistema, \(Q_A + Q_C\), positiva se il ciclo è percorso in senso orario negativa in caso contrario.
+Tale area rappresenta anche il lavoro compiuto (primo principio).
+Il rendimento di una macchina che compie un ciclo termico ha una semplice rappresentazione: esso è dato dal rapporto tra l'are racchiusa dal ciclo (\(W\)) e l'area totale sottesa dalla curva superiore \(Q_A\). 
+
+Nel piano \(\left(T, S\right)\) una trasformazione isoterma reversibile è rappresentata da segmento orizzontale (\(T = \text{costante}\)), una trasformazione adiabatica reversibile da un segmento verticale (\(S = \text{costante}\)): infatti in tal caso \(d Q_{rev} = 0\) e, da (\ref{entropia_infinitesima}), \(d S = 0\).
+Una trasformazione adiabatica reversibile è dunque isoentropica, lungo di essa 'entropia del sistema non varia.
+
+Un ciclo di Carnot ha la forma di un rettangolo, le formule sono:
+\begin{equation*}
+    Q_A = T_2 \left(S_2 - S_1\right) \ , \ Q_C = T_1 \left(S_1 - S_2\right)
+\end{equation*}
+\begin{equation*}
+    Q = Q_A + Q_C = \left(T_2 - T_1 \right) \left(S_2 - S_1\right)
+\end{equation*}
+\begin{equation*}
+    \eta = 1 + \frac{Q_C}{Q_A} = 1- \frac{T_1}{T_2}
+\end{equation*}
+Poi so che \(S_2 - S_1 = Q_A / T_2 = -Q_C / T_1\):
+\begin{equation*}
+    W = \left(T_2 - T_1\right) \left(S_2 - S_1\right) = \left(T_2 - T_1 \right) Q_A / T_2
+\end{equation*}
+
+Quindi ho trovato che in una isoterma reversibile l'entropia vale:
+\begin{equation}
+    \Delta S = \frac{Q}{T}
+\end{equation}
+in una adiabatica reversibile
+\begin{equation}
+    \Delta S = 0
+\end{equation}
+e che perfinizione in una trasformazione ciclica
+\begin{equation}
+    \Delta S = 0
+\end{equation}
 
 \end{document}

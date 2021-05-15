@@ -2,7 +2,7 @@
 \usepackage{standalone}
 \usepackage{amsmath}
 \usepackage{../../style}
-% \graphicspath{{./assets/images/}}
+\graphicspath{{./assets/images/}}
 
 % arara: pdflatex: { synctex: yes, shell: yes }
 % arara: latexmk: { clean: partial }
@@ -256,7 +256,7 @@ Ottengo quindi
 \end{equation*}
 lungo qualsiasi trasformazione reversibile che colleghi gli stati termodinamici \(A\) e \(B\). 
 
-Il valore dell'integrale \(\int_A^B \left(\frac{d Q}{T}\right)_{rev}\) esteso ad una qualunque trasformazione reversibile che congiunge due stati di un sistema termodinamico, è sempre lo stesso, cioè non dipende dalla particolare trasformazione reversibile scelta per eseguire il calcolo. \newline
+Il valore dell'integrale \(\int_A^B \left(\frac{d Q}{T}\right)_{rev}\) esteso ad una qualunque trasformazione reversibile che congiunge due stati di un sistema termodinamico è sempre lo stesso, cioè non dipende dalla particolare trasformazione reversibile scelta per eseguire il calcolo. \newline
 Si può quindi porre l'integrale eguale alla variazione di una funzione che dipende solo dalle coordinate termodinamiche del sistema nei due stati di equilibrio \(A\) e \(B\):
 \begin{equation} \label{entropia}
     \int_A^B \left(\frac{d Q}{T}\right)_{rev(A, B)} = S_{B} - S_{A} = \Delta S_{A\rightarrow B} \udm{\frac{J}{K}}
@@ -275,15 +275,14 @@ Questa proprietà è conseguenza del fatto che l'energia interna complessiva dei
 In particolare risulta che se si aumenta la massa di un sistema, l'entropia aumenta in proporzione.
 L'entropia quindi ha le caratteristiche di una \emph{grandezza estensiva}.
 
-Data una trasformazione irreversibile che collega lo stato \(A\) allo stato \(B\) di cui si vuole calcolare l'entropia.
-Abbiamo le seguenti indicazioni:
+Data una trasformazione irreversibile che collega lo stato \(A\) allo stato \(B\) di cui si vuole calcolare l'entropia, abbiamo le seguenti indicazioni:
 \begin{enumerate}
-    \item l'entropia degli stati iniziale e finale è certamente definibile, a partire ad esempio da un certo stato di riferimento; 
+    \item l'entropia dello stato iniziale e finale è certamente definibile, a partire ad esempio da un certo stato di riferimento; 
     \item conseguentemente è definibile la variazione \(S_B - S_A\) 
     \item la variazione \(S_B - S_A\) non dipende dal tipo di trasformazione che collega \(A\) e \(B\), ma solo dalle coordinate termodinamiche di \(A\) e \(B\), in quanto l'entropia è una funzione di stato. 
 \end{enumerate}
 
-Pertanto per il calcolo della variazione di entropia nella trasformazione irreversibile da \(A\) a \(B\) basta scegliere una qualsiasi trasfomazione reversibile che colleghi \(A\) a \(B\) ed applicare a questa (\ref{entropia}): il risultato è valido in ogni caso.
+Pertanto per il calcolo della variazione di entropia nella trasformazione irreversibile da \(A\) a \(B\) basta scegliere una qualsiasi trasformazione reversibile che colleghi \(A\) a \(B\) ed applicare a questa (\ref{entropia}): il risultato è valido in ogni caso.
 
 \subsection{Diagrammi TS}
 
@@ -299,12 +298,18 @@ Nel piano \(\left(T, S\right)\) il calore ha una semplice interpretazione grafic
 
 \subsubsection*{Trasformazioni e cicli}
 
-Un ciclo reversibile nel piano \(\left(T, S\right)\) delimita un area che è pari alla somma algebrica dei calori scambiati in totale del sistema, \(Q_A + Q_C\), positiva se il ciclo è percorso in senso orario negativa in caso contrario.
+Un ciclo reversibile nel piano \(\left(T, S\right)\) delimita un'area che è pari alla somma algebrica dei calori scambiati in totale del sistema, \(Q_A + Q_C\), positiva se il ciclo è percorso in senso orario negativa in caso contrario.
 Tale area rappresenta anche il lavoro compiuto (primo principio).
-Il rendimento di una macchina che compie un ciclo termico ha una semplice rappresentazione: esso è dato dal rapporto tra l'are racchiusa dal ciclo (\(W\)) e l'area totale sottesa dalla curva superiore \(Q_A\). 
+Il rendimento di una macchina che compie un ciclo termico ha una semplice rappresentazione: esso è dato dal rapporto tra l'area racchiusa dal ciclo (\(W\)) e l'area totale sottesa dalla curva superiore \(Q_A\). 
 
 Nel piano \(\left(T, S\right)\) una trasformazione isoterma reversibile è rappresentata da segmento orizzontale (\(T = \text{costante}\)), una trasformazione adiabatica reversibile da un segmento verticale (\(S = \text{costante}\)): infatti in tal caso \(d Q_{rev} = 0\) e, da (\ref{entropia_infinitesima}), \(d S = 0\).
-Una trasformazione adiabatica reversibile è dunque isoentropica, lungo di essa 'entropia del sistema non varia.
+Una trasformazione adiabatica reversibile è dunque isoentropica, lungo di essa l'entropia del sistema non varia.
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{ciclo-carnot-piano-t-s}
+    \centering
+    \caption{Ciclo di Carnot nel piano (T, S)}
+\end{figure}
 
 Un ciclo di Carnot ha la forma di un rettangolo, le formule sono:
 \begin{equation*}
@@ -316,20 +321,20 @@ Un ciclo di Carnot ha la forma di un rettangolo, le formule sono:
 \begin{equation*}
     \eta = 1 + \frac{Q_C}{Q_A} = 1- \frac{T_1}{T_2}
 \end{equation*}
-Poi so che \(S_2 - S_1 = Q_A / T_2 = -Q_C / T_1\):
+Poi so che \(S_2 - S_1 = \frac{Q_A}{T_2} = \frac{-Q_C}{T_1}\):
 \begin{equation*}
-    W = \left(T_2 - T_1\right) \left(S_2 - S_1\right) = \left(T_2 - T_1 \right) Q_A / T_2
+    W = \left(T_2 - T_1\right) \left(S_2 - S_1\right) = \left(T_2 - T_1 \right) \frac{Q_A}{T_2}
 \end{equation*}
 
-Quindi ho trovato che in una isoterma reversibile l'entropia vale:
+Quindi ho trovato che in una isoterma reversibile l'entropia vale
 \begin{equation}
     \Delta S = \frac{Q}{T}
 \end{equation}
-in una adiabatica reversibile
+In una adiabatica reversibile
 \begin{equation}
     \Delta S = 0
 \end{equation}
-e che perfinizione in una trasformazione ciclica
+e che, per definizione, in una trasformazione ciclica
 \begin{equation} \label{entropia_trasformazione_ciclica}
     \Delta S = 0
 \end{equation}
@@ -338,6 +343,8 @@ e che perfinizione in una trasformazione ciclica
 %TODO add photo 
 Siano \(A\) e \(B\) due stati qualunque di un sistema termodinamico e passiamo da uno all'altro tramite due diverse trasformazioni reversibili.
 Se percorriamo in senso inverso la trasformazione 2 (chiamandola -2), abbiamo composto un ciclo reversibile, che si svolge da \(A\) a \(B\) lungo la prima trasformazione e da \(B\) ad \( A\) lungo la seconda invertita.\newline
+% TODO: Queste prime due righe sono identiche all'inizio sezione 'La funzione di stato Entropia'; è voluto?
+
 Il ciclo delle trasformazioni \(1\) e \(-2\) rimane quindi rimane irreversibile: il teorema di Clausius ci dice:
 \begin{equation*}
     \oint \frac{d Q}{T} = \int_A^B \left(\frac{d Q}{T}\right)_1 + \int_B^A \left(\frac{d Q}{T}\right)_{-2} = \int_A^B \left(\frac{d Q}{T}\right)_{irr} - \int_A^B \left(\frac{d Q}{T}\right)_{rev} < 0
@@ -346,7 +353,8 @@ L'utimo integrale rappresenta la differenza di entropia quindi:
 \begin{equation}
     S_B - S_A = \int_A^B \left(\frac{d Q}{T}\right)_{rev} > \int_A^B \left(\frac{d Q}{T}\right)_{irr}
 \end{equation}
-Se per una generica trasformazione \(A B\) effettivamente eseguita da un sistema siamo in grado di calcolare \(\int_A^B \frac{d Q}{T}\), in generale il risultato non è eguale alla variazione di entropia \(S_B - S_A\), ma minore; se vogliamo calcolare \(S_B - S_A\) per quella data trasformazione, dobbiamo servirci di un'altra trasfonnazione \(A B\) reversibile.
+Se per una generica trasformazione \(A B\) effettivamente eseguita da un sistema siamo in grado di calcolare \(\int_A^B \frac{d Q}{T}\), in generale il risultato non è eguale alla variazione di entropia \(S_B - S_A\), ma minore;
+se vogliamo calcolare \(S_B - S_A\) per quella data trasformazione, dobbiamo servirci di un'altra trasformazione \(A B\) reversibile.
 In termini infinitesimi si scrive
 \begin{equation}
     d S = \left(\frac{d Q}{T}\right)_{rev} > \left(\frac{d Q}{T}\right)_{irr}
@@ -356,16 +364,17 @@ Se il sistema che descrive la trasformazione \(A B\) è isolato termicamente, ci
     S_B - S_A \geq 0 \implies S_B \geq S_A
 \end{equation}
 \emph{L'entropia di un sistema termicamente isolato non può diminuire: essa aumenta se la trasformazione è irreversibile, resta costante solo se la trasformazione è reversibile}.
-La (\ref{entropia_sistema_isolato}) esprime il \emph{principio di aumento dell'entropia}; la sua forma infinitesiam
-\begin{equation}
-    d S \leq 0 \text{sistema isolato}
-\end{equation}
-viene chiamata \emph{formulazione metematica del secondo principio della termodinamica}
 
-Un sistema isolato si ottiene sempre quando si considera un sistema propriamente detto ed il suo ambiente, cioè un universo termodinamico. 
+La (\ref{entropia_sistema_isolato}) esprime il \emph{principio di aumento dell'entropia}; la sua forma infinitesima
+\begin{equation}
+    d S \leq 0 \; \text{(sistema isolato)}
+\end{equation}
+viene chiamata \emph{formulazione matematica del secondo principio della termodinamica}.
+
+Un sistema isolato si ottiene sempre quando si considera un sistema termodinamico ed il suo ambiente esterno, cioè un universo termodinamico.\newline
 Per l'universo termodinamico
 \begin{equation*}
-    \Delta S_u \geq 0 \text{con} \Delta S_u = \Delta S_{sist} + \Delta S_{amb}
+    \Delta S_u \geq 0 \; \text{con} \; \Delta S_u = \Delta S_{sist} + \Delta S_{amb}
 \end{equation*}
 Se l'universo compie una trasformazione reversibile 
 \begin{equation*}
@@ -375,19 +384,19 @@ se invece l'universo compie una trasformazione irreversibile
 \begin{equation*}
     \Delta S_u > 0 \implies \Delta S_{sist} \neq -\Delta S_{amb}
 \end{equation*}
-In particolare, quando la trasformazione è ciclica, sappiamo da ( \ref{entropia_trasformazione_ciclica}) che \(\Delta S_{sist}  =0\); allora,
+In particolare, quando la trasformazione è ciclica, sappiamo da (\ref{entropia_trasformazione_ciclica}) che \(\Delta S_{sist}  =0\); allora,
 \begin{equation*}
-    \text{se il ciclo è reversibile} \Delta S_u = \Delta S_{amb} = 0
+    \text{se il ciclo è reversibile:} \; \Delta S_u = \Delta S_{amb} = 0
 \end{equation*}
 \begin{equation*}
-    \text{se il ciclo è irreversibile} \Delta S_u = \Delta S_{amb} > 0 
+    \text{se il ciclo è irreversibile:} \; \Delta S_u = \Delta S_{amb} > 0 
 \end{equation*}
 
 Una conclusione importante che si trae dai risultati appena esposti è che l'irreversibilità è sempre accompagnata da un aumento di entropia dell'universo. 
 D'altra parte abbiamo già rilevato più volte che i processi naturali sono tutti sostanzialmente irreversibili. 
-Possiamo quindi affennare che ogni processo naturale si svolge necessariamente nel verso che determina un aumento dell'entropia complessiva del sistema e del suo ambiente. 
+Possiamo quindi affermare che ogni processo naturale si svolge necessariamente nel verso che determina un aumento dell'entropia complessiva del sistema e del suo ambiente. 
 L'evoluzione termina quando viene raggiunto il massimo valore dell'entropia compatibile con le condizioni fisiche di sistema e ambiente: tale stato corrisponde allo stato di equilibrio stabile.
-Questo non significa che l'entropia debba aumentare in tutte le varie parti del sistema e dell'ambiente che costituiscono l'universo tennodinamico. 
+Questo non significa che l'entropia debba aumentare in tutte le varie parti del sistema e dell'ambiente che costituiscono l'universo termodinamico. 
 In una o più parti l'entropia può diminuire, ma ce n'è almeno un'altra in cui aumenta, in modo da soddisfare la (\ref{entropia_sistema_isolato}).
 
 \subsection{Trasformazioni adiabatiche}
@@ -405,7 +414,7 @@ Questo perché due stati collegati con una adiabatica irreversibile hanno necess
 
 \subsection{Cambiamenti di fase}
 %TODO add reference
-I cambiamenti di fase sono processi isotermi: mettendo insieme , la variazione di entropia di \(m\) chilogrammi di una sostanza che cambia fase alla temperatura \(T\) è 
+I cambiamenti di fase sono processi isotermi: la variazione di entropia di \(m\) chilogrammi di una sostanza che cambia fase alla temperatura \(T\) è 
 \begin{equation}
     \Delta S = \frac{m \lambda}{T}
 \end{equation}
@@ -432,11 +441,11 @@ Integrando e utlizzando la relazione di Mayer ottengo:
     S_B - S_A &= n c_P \ln \frac{T_B}{T_A} - n R \ln \frac{p_B}{p_A}\\
 \end{align*}
 
-Dati gli stati iniziale e finale la variazione di entropia di un gas ideale si può dunque scrivere utilizzando una qualsiasi delle espressioni viste, indipendentemente dalla trasformazione \(A B\) realmente avvenuta; si vede che in generale la variazione di entropia dipende da due coordinate termodinamiche.
+Dati lo stato iniziale e finale, la variazione di entropia di un gas ideale si può dunque scrivere utilizzando una qualsiasi delle espressioni viste, indipendentemente dalla trasformazione \(A B\) realmente avvenuta; si vede che in generale la variazione di entropia dipende da due coordinate termodinamiche.
 \begin{align*}
-    \text{trasformazione isoterma } S_B - S_A = n R \ln \frac{V_B}{V_A} = - n R \ln \frac{p_B}{p_A} \\
-    \text{trasformazione isocora } S_B - S_A = n c_V \ln \frac{T_B}{T_A} = n c_V \ln \frac{p_B}{p_A}\\
-    \text{trasformazione isobara } S_B - S_A = n c_P \ln \frac{T_B}{T_A} = n c_p \ln \frac{V_B}{V_A}\\
+    \text{trasformazione isoterma} \; &S_B - S_A = n R \ln \frac{V_B}{V_A} = - n R \ln \frac{p_B}{p_A} \\
+    \text{trasformazione isocora} \; &S_B - S_A = n c_V \ln \frac{T_B}{T_A} = n c_V \ln \frac{p_B}{p_A}\\
+    \text{trasformazione isobara} \; &S_B - S_A = n c_P \ln \frac{T_B}{T_A} = n c_p \ln \frac{V_B}{V_A}\\
 \end{align*}
 
 

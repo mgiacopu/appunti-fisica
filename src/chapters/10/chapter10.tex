@@ -10,5 +10,100 @@
 
 \chapter{Lavoro elettrico, Potenziale elettrostatico}
 
+\section{Lavoro della forza elettrica, tensione, potenziale}
+
+La formula che esprime la forza subita da una carica \(q_0\) in un campo elettrostatico, è valida quando le cariche che generano il campo sono fisse e costanti e la carica \(q_0\) è a sua volta fissa oppure si muove senza però perturbare la distribuzione delle cariche sorgenti (da qui il termine \emph{elettrostatico}).
+
+\subsection{Campo elettromotore}
+
+Però possiamo dire più in generale che quando su una carica \(q_0\) agisce una forza F di qualsiasi natura, non necessariamente elettrostatica, ma ad esempio dovuta a processi chimici o ad azioni meccaniche, o altre cause, possiamo definire sempre un campo elettrico \(E\), che si indica anche col nome di campo elettromotore,
+\begin{equation} \label{campo_elettromotore}
+    \overrightarrow{E} = \frac{\overrightarrow{F}}{q_0} \implies \overrightarrow{F} = q_0 \overrightarrow{E}
+\end{equation}
+Formalmente: \emph{la forza che agisce su una carica elettrica, che come tale prende il nome di forza elettrica, si esprime sempre come prodotto della carica per un certo campo elettrico}.
+
+\subsection{Lavoro}
+
+Il lavoro della forza \(\overrightarrow{F}\) per uno spostamento \(d \overrightarrow{s}\) della carica \(q_0\) è dato da:
+\begin{equation}
+    d W = \overrightarrow{F} \cdot d \overrightarrow{s} = q_0 \overrightarrow{E} \cdot d \overrightarrow{s} = q_0 E \cos \theta = q_0 E_s d s
+\end{equation}
+dove \(\theta\) è l'angolo tra il campo elettrico \(\overrightarrow{E}\) e lo spostamento \(d \overrightarrow{s}\) e \(E_s\) la componente di \(\overrightarrow{E}\) lungo \(d \overrightarrow{s}\).
+
+Per uno spostamento finito dalla posizione \(A\) alla posizione \(B\) lungo un percorso \(C_1\) il lavoro si ottiene suddividendo il percorso in una serie infinita di segmenti infinitesimi \(d \overrightarrow{s}_i\), calcolando per ognuno di essi il lavoro \(dW_i\).
+La somma diventa:
+\begin{equation} \label{lavoro_elettrostatico}
+    W_1 = \int_{C_1} d W_1 = \int_{C_1} \overrightarrow{F} \cdot d \overrightarrow{s} = q_0 \int_{C_1} \overrightarrow{E} \cdot d \overrightarrow{s}
+\end{equation}
+dove \(d \overrightarrow{s}\) è un vettore elementare tangente alla curva, e l'ultimo integrale è l'integrale di linea del campo \(\overrightarrow{E}\) lungo \(C_1\).
+
+\subsection{Tensione elettrica}
+
+Il rapporto \(W_1 / q_0\) tra il lavoro compiuto dalla forza \(\overrightarrow{F}\) nello spostamento della carica \(q_0\) da \(A\) a \(B\) lungo il percorso \(C_1\), e il valore della carica, definisce la \emph{tensione elettrica tra i due punti \(A\) e \(B\) relativa al percorso \(C_1\)}:
+\begin{equation}
+    \mathcal{F} \left(A \rightarrow B \text{ lungo } C_1\right) = \int_{C_1} \overrightarrow{E} \cdot d \overrightarrow{s}
+\end{equation}
+Se considero un altro percorso \(C_2\) trovo un lavoro diverso e quindi un \emph{diverso valore della tensione elettrica}.
+\begin{equation*}
+    \mathcal{F} \left(A \rightarrow B \text{ lungo } C_1\right) \neq \mathcal{F} \left(A \rightarrow B \text{ lungo } C_2\right)
+\end{equation*}
+
+\subsection{Lavoro in un percorso chiuso}
+
+Per un percorso chiuso \(C\) formato dal percorso \(C_1\) da \(A\) a \(B\) e dal percorso \(-C_2\) da \(B\) ad \(A\), il valoro risulta:
+\begin{equation*}
+    W = \oint_{C} \overrightarrow{F} \cdot d \overrightarrow{s} = \int_{C_1} \overrightarrow{F} \cdot d \overrightarrow{s} + \int_{C_2} \overrightarrow{F} \cdot d \overrightarrow{s} = \int_{C_1} \overrightarrow{F} \cdot d \overrightarrow{s} - \int_{-C_2} \overrightarrow{F} \cdot d \overrightarrow{s} = W_1 - W_2
+\end{equation*}
+Ottengo quindi che \emph{in generale il lavoro per un percorso chiuso è diverso da zero}. Inserendo (\ref{campo_elettromotore})
+\begin{equation}
+    W = \oint_{C} \overrightarrow{F} \cdot d \overrightarrow{s} = q_0 \oint_{C} \overrightarrow{E} \cdot d \overrightarrow{s} = q_0 \mathcal{E}
+\end{equation}
+Il lavoro per spostare una carica lungo il percorso chiuso \(C\) è dato dal prodotto della carica per la circuitazione del campo elettrico lungo \(C\).
+
+\subsection{Forza elettromotrice}
+
+L'integrale 
+\begin{equation}
+    \mathcal{E} = \oint_C \overrightarrow{E} \cdot d \overrightarrow{s}
+\end{equation}
+che esprime il rapporto tra lavoro compiuto sulla carica e la carica stessa per lo spostamento \(C\) si definisce \emph{forza elettromotrice (f.e.m. del campo elettrico)} relativa al percorso \(C\).
+
+Essa è in generale diversa da zero e dipende dalle caratteristiche del campo e dal percorso \(C\) scelto, malgrando il nome \emph{non è una forza}.
+
+\subsection{Forze conservative}
+
+Ne deriva che il lavoro lungo un qualsiasi percorso chiuso è nullo, ovvero che la circuitazione di una forza conservativa è nulla.
+Non si verifica in natura che qualsiasi forza elettrica sia conservativa; questo è però il caso delle forze elettrostatiche, ottengo quindi che \emph{il campo elettrostatico è conservativo}.
+
+\subsection*{differenza di potenziale}
+
+Non dipendendo dal percorso effettivamente seguito l'integrale che compare nella (\ref{lavoro_elettrostatico}) può sempre essere espresso come differenza dei valori di una funzione delle coordinate, chiamata potenziale elettrostatico: 
+\begin{equation} \label{differenza_di_potenziale}
+    V_B - V_A = \Delta V = - \int_A^B \overrightarrow{E} \cdot d \overrightarrow{s}
+\end{equation}
+In realtà è la differenza di potenziale (d.d.p.) elettrostatico tra il punto \(B\) e il punto \(A\) ad essere definita da (\ref{differenza_di_potenziale}) e ciò vuol dire che il potenziale elettrostatico in un punto è determinato a meno di una costante additiva.
+
+Inserendo la differenza di potenziale nella definizione di lavoro:
+\begin{equation}
+    W_{AB} = -q_0 \left(V_B - V_A\right) = -q_0 \Delta V
+\end{equation}
+
+\subsection*{Energia potenziale}
+
+Ricordiamo che ad ogni forza conservativa è associata una determinata \emph{energia potenziale} e che il lavoro della forza  conservativa \emph{è pari all'opposto della variazione della corrispondente energia potenziale}.
+\begin{equation*}
+    W_{AB} = - \Delta U_e = - \left[U_e (B) - U_e (A)\right]
+\end{equation*}
+segue l'ugualianza:
+\begin{equation}
+    \Delta U_e = q_0 \Delta V
+\end{equation}
+La \(U_e\) prende il nome di energia potenziale elettrostatica, risulta proporzionale al potenziale elettrostatico e anch'essa definita a meno di una costante additiva. 
+
+Segue che per un qualsiasi percorso chiuso nella regione in cui è definito il campo elettrostatico \(E\), essendo la differenza di potenziale nulla in quanto \(A \equiv B\), valgono le relazioni:
+\begin{equation}
+    \mathcal{E} = \oint \overrightarrow{E} \cdot d \overrightarrow{s} = 0 \ , \ W = q_0 \mathcal{E} = 0
+\end{equation}
+In un campo elettrostatico la forza elettromotrice è uguale a zero, ovvero è nullo il lavoro compiuto dalla forza elettrostatica per qualsiasi percorso ciclico.
 
 \end{document}

@@ -106,4 +106,100 @@ Segue che per un qualsiasi percorso chiuso nella regione in cui è definito il c
 \end{equation}
 In un campo elettrostatico la forza elettromotrice è uguale a zero, ovvero è nullo il lavoro compiuto dalla forza elettrostatica per qualsiasi percorso ciclico.
 
+\section{Calcolo del potenziale elettrostatico}
+
+\subsection*{Campo generato da una carica puntiforme}
+
+\subsubsection*{Lavoro}
+
+Il lavoro della forza \(\overrightarrow{F}\) per uno spostamento elementare \(d \overrightarrow{s}\) della carica \(q_0\) nel campo della carica puntiforme \(q\), fissa in \(0\), è dato da:
+\begin{equation*}
+    d W = q_0 \overrightarrow{E} \cdot d \overrightarrow{s} = \frac{q_0 \ q}{4 \pi \epsilon_0} \frac{\overrightarrow{u} \cdot d \overrightarrow{s}}{r^2} = \frac{q_0 \ q}{ 4 \pi \epsilon_0} \frac{d r }{r^2}
+\end{equation*}
+per cui
+\begin{equation*}
+    \overrightarrow{E} \cdot d \overrightarrow{s} = \frac{q}{4 \pi \epsilon_0} \frac{d r }{r^2}
+\end{equation*}
+dove \(dr = \overrightarrow{u} \cdot d \overrightarrow{s} = ds \cos \theta\), proiezione di \(d \overrightarrow{s}\) lungo la direzione \(\overrightarrow{u}\) del campo, rappresenta di quanto è variata la distanza \(r\) tra \(q_0\) e \(q\) a seguito dello spostamento \(d \overrightarrow{s}\).  
+La funzione integranda risulta così dipendere soltanto dalla variabile \(r\) per cui si ottiene subito, per uno spostamento dal punto \(A\) al punto \(B\) caratterizzati rispettivamente dalle distanze \(r_A\) e \(r_B\) dal punto \(O\).
+\begin{equation}
+    \int_A^B \overrightarrow{E} \cdot d \overrightarrow{s} = \frac{q}{4 \pi \epsilon_0} \int_{r_A}^{r_B} \frac{dr}{r^2} = - \left(\frac{q}{4 \pi \epsilon_0 r_b} - \frac{q}{4 \pi \epsilon_0 r_a}\right)
+\end{equation}
+Il lavoro corrispondente è
+\begin{equation}
+    W = q_0 \int_A^B \overrightarrow{E} \cdot d \overrightarrow{s} = -- \left (\frac{q \ q_0}{4 \pi \epsilon_0 r_b} - \frac{q \ q_0}{4 \pi \epsilon_0 r_a}\right)
+\end{equation}
+Abbiamo così verificato che il lavoro \emph{non dipende dal percorso seguito}.
+
+\subsubsection*{Differenza di potenziale ed energia potenziale}
+
+Dall'espressione del lavoro possiamo ricavare le epsressioni per la differenza di potenziale elettrostatico e di energia potenziale elettrostatica
+\begin{equation}
+    V_B - V_A = \left(\frac{q}{4 \pi \epsilon_0 r_B} - \frac{q}{4 \pi \epsilon_0 r_A}\right)
+\end{equation}
+\begin{equation}
+    U_e(B) - U_e(A) = \frac{q_0 q}{4 \pi \epsilon_0 r_B} - \frac{q_0 q}{4 \pi \epsilon_0 r_A}
+\end{equation}
+Il potenziale e l'energia potenziale sono definiti a meno di una costante additiva, ottengo quindi:
+\begin{equation*}
+    V(r) = \frac{q}{4 \pi \epsilon_0 r} + A \ , \ U_e(r) = \frac{q q_0}{4 \pi \epsilon_0 r} + B 
+\end{equation*}
+che danno rispettivamente il \emph{potenziale elettrostatico} in un punto a distanza \(r\) dalla carica \(q\) e l'\emph{energia potenziale elettrostatica} della carica \(q_0\) distante \(r\) da \(q\). 
+
+Posso determinare completamente \(V(r)\) e \(U_e(r)\) imponendo la condizione ulteriore \(r \rightarrow \infty\).  
+Infatti per cariche molto lontane l'interazione è trascurabile.
+
+In conclusione abbiamo:
+\begin{equation}
+    V(r) = -\int_{\infty}^r \overrightarrow{E} \cdot d \overrightarrow{s} = \frac{q}{4 \pi \epsilon_0 r}
+\end{equation}
+\begin{equation}
+    U_e(r) = q_0 V(r) = -q_0 \int_{\infty}^r \overrightarrow{E} \cdot d \overrightarrow{s} =\frac{q q_0}{4 \pi \epsilon_0 r}
+\end{equation}
+Osserviamo che il potenziale è costante in tutti i punti della superficie sferica di raggio \(r\) con centro nella carica \(q\).
+
+\section{Numero arbitrario di cariche puntiformi}
+
+I risultati trovati si estendono senza difficoltà, in base al principio di sovrapposizione, al caso di un campo elettrostatico generato da un numero qualsiasi di cariche puntiformi fisse \(q_1, q_2, ... , q_n\). 
+Il lavoro per uno spostamento finito da \(A\) a \(B\) della carica \(q_0\) è 
+\begin{equation*}
+    W = \int_A^B \overrightarrow{F} \cdot d \overrightarrow{s} = q_0 \int_A^B \overrightarrow{E} \cdot d \overrightarrow{s}
+\end{equation*}
+inserendo anche l'estensione per tutti i campi
+\begin{equation*}
+    \int_A^B \overrightarrow{E} \cdot d \overrightarrow{s} = \int_A^B \left(\sum_i \overrightarrow{E}_i \right) \cdot d \overrightarrow{s} = \sum_i \int_A^B \overrightarrow{E}_i \cdot d \overrightarrow{s} = \sum_i \int_A^B \frac{q_i}{4 \pi \epsilon_0 r_i^2}\overrightarrow{u}_i \cdot d \overrightarrow{s}
+\end{equation*}
+Quindi il lavoro diventa
+\begin{equation}
+    W = q_0 \int_A^B \overrightarrow{E} \cdot d \overrightarrow{s} = \sum_i \int_A^B \frac{q_i}{4 \pi \epsilon_0 r_i^2}\overrightarrow{u}_i \cdot d \overrightarrow{s}
+\end{equation}
+
+Ottengo in modo simile anche la differenza di potenziale elettrostatico e la differenza di energia potenziale
+\begin{equation}
+    V_B - V_A = \left(\sum_i \frac{q_i}{4 \pi \epsilon_0 r_{B,i}^2} - \sum_i \frac{q_i}{4 \pi \epsilon_0 r_{A,i}^2}\right)
+\end{equation}
+\begin{equation}
+    W = - q_0 \left( V_B - V_A \right) = - \left(\sum_i \frac{q_i q_0}{4 \pi \epsilon_0 r_{B,i}^2} - \sum_i \frac{q_i q_0}{4 \pi \epsilon_0 r_{A,i}^2}\right) = - \Delta U_e
+\end{equation}
+
+Il potenziale generato dal sistema di cariche nel punto \(P (x, y, z)\), distante \(r_i\) dalla carica \(q_i\), è 
+\begin{equation}
+    V(x,y,z) = - \int_{\infty}^P \overrightarrow{E} \cdot d \overrightarrow{s} = \sum_i \frac{q_i}{4 \pi \epsilon_0 r_i}
+\end{equation}
+\emph{il potenziale elettrostatico prodotto da un sistema discreto di cariche è uguale alla somma dei potenziali elettrostatici prodotti singolarmente dalle cariche}.
+
+\subsection{Cariche distribuite in modo continuo}
+
+Nel caso in cui le cariche siano distribuite in modo continuo, per il calcolo del potenziale elettrostatico basta sostituire la sommatoria con l'integrale
+\begin{equation}
+    V (P) = \int dV = \frac{1}{4 \pi \epsilon_0} \int \frac{d q}{r}
+\end{equation}
+dove \(dq\), è un elemento infinitesimo di carica, \(r\) la sua distanza dal punto \(P\) in cui si calcola il potenziale e \(dV\) il potenziale elettrostatico che essa produce in \(P\).
+
+In ogni caso, fissata la distribuzione di cariche, si può calcolare in qualsiasi punto P(x, y, z) il potenziale \(V(x, y, z)\) indipendentemente dalla presenza della carica di prova \(q_0\).  
+L'energia potenziale elettrostatica di tale carica \(q_0\) posta nel punto \(P\) è data da:
+\begin{equation}
+    U_e (x,y,z) = q_0 V(x,y,z)
+\end{equation}
+
 \end{document}

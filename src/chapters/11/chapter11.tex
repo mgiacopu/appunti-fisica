@@ -60,7 +60,7 @@ e infine, se \(\theta_2 = \pi\), abbiamo l'angolo solido sotto cui dal centro è
 
 Consideriamo, una superficie \( d \Sigma\) in una regione in cui è definito un campo \(\overrightarrow{E}\) e orientiamola fissando il verso del versore della normale \(\overrightarrow{u}_n\). 
 Si definisce flusso del campo \(\overrightarrow{E}\) attraverso la superficie \(d \Sigma\) la quantità scalare 
-\begin{equation}
+\begin{equation} \label{definizione_flusso}
     d \Phi (\overrightarrow{E}) = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = E \cos \theta d \Sigma = E_n d \Sigma
 \end{equation}
 
@@ -99,4 +99,76 @@ Unificando la struttura dell'ultimo membro la legge di Gauss si presenta in mani
     \Phi (E) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{q}{\epsilon_0}
 \end{equation}
 
+\section{Dimostrazione della legge di Gauss}
+
+Prendiamo in esame il campo elettrostatico prodotto da una carica puntiforme \(q\), e calcoliamo il flusso attraverso l'elemento di superficie orientata utilizzando (\ref{definizione_flusso}):
+\begin{equation*}
+    d \Phi (\overrightarrow{E}) = \frac{q}{4 \pi \epsilon_0} \frac{\overrightarrow{u}_r \cdot \overrightarrow{u}_n d \Sigma}{r^2} = \frac{q}{4 \pi \epsilon_0} + \frac{d \Sigma \cos \theta}{r^2} = \frac{q}{4 \pi \epsilon_0} + \frac{d \Sigma_0 }{r^2}
+\end{equation*}
+dove \(d \Sigma_0\) è la proiezione di \(d \Sigma\) sul piano perpendicolare a \(\overrightarrow{u}_r\). 
+Per definizione \(d \Sigma_0 / r^2\) è l'angolo solido \(d \Omega\) sotto cui è visto dalla carica \(q\) il contorno di \(d \Sigma\), per cui
+\begin{equation}
+    d \Phi (\overrightarrow{E}) = \frac{q}{4 \pi \epsilon_0} d \Omega
+\end{equation}
+
+Il flusso del campo elettrostatico \(\overrightarrow{E}\) di una carica puntiforme \(q\) dipende solo dall'angolo solido e non dalla superficie né dalla sua distanza dalla carica; ottengo quindi
+\begin{equation*}
+    d \Omega = \frac{d \Sigma_1 \cos \theta_1}{r_1^2} = \frac{d \Sigma_{1,0}}{r_1^2} = \frac{d \Sigma_2 \cos \theta_2}{r_2^2} = \frac{d \Sigma_{2,0}}{r_2^2}
+\end{equation*}
+
+Il flusso attraverso una superficie finita è dato da
+\begin{equation} \label{flusso_superficie_finita}
+    \Phi (E) = \int_{\Sigma} \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{q}{4 \pi \epsilon_0} \int d \Omega = \frac{q}{4 \pi \epsilon_0} \Omega 
+\end{equation}
+con \(\Omega\), angolo solido sotto cui è visto il contorno della superficie \(\Sigma\), dalla carica \(q\).
+
+\subsection{Carica Interna}
+
+Se la carica è interna, tutti i contributi \(\overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma\) si sommano in quanto hanno sempre lo stesso segno in qualsiasi punto di \(\Sigma\), e applicando (\ref{flusso_superficie_chiusa}) abbiamo
+\begin{equation} \label{flusso_carica_interna}
+    \Phi (E) = \frac{q}{4 \pi \epsilon_0} \oint d \Omega = \frac{q}{4 \pi \epsilon_0} 4 \pi = \frac{q}{\epsilon_0}
+\end{equation}
+infatti l'angolo solido totale sotto cui è vista una superficie chiusa qualunque da un punto all'interno è \(4 \pi\).
+
+\subsection{Carica Esterna}
+
+Se invece la carica è esterna alla superficie chiusa, consideriamo, un cono elementare che sottende l'angolo solido \(d \Omega\) e che stacca sulla superficie chiusa due elementi \(d \Sigma_1\) e \(d \Sigma_2\);
+l'orientazione della normale è tale che su \(d \Sigma_1 \overrightarrow{E} \cdot \overrightarrow{u}_n <0 \) e su \(d \Sigma_2 \overrightarrow{E} \cdot \overrightarrow{u}_n <0\). 
+
+I flussi attraverso i due elementi sono: 
+\begin{equation*}
+    d \Phi_1 (E) = \overrightarrow{E}_1 \cdot \overrightarrow{u}_n d \Sigma_1 = - \frac{q}{4 \pi \epsilon_0} d \Omega
+\end{equation*}
+\begin{equation*}
+    d \Phi_2 (E) = \overrightarrow{E}_2 \cdot \overrightarrow{u}_n d \Sigma_2 = \frac{q}{4 \pi \epsilon_0} d \Omega = - d \Phi_1 (E)
+\end{equation*}
+\begin{equation*}
+    \implies d \Phi_1 (E) + d \Phi_2 (E) = 0
+\end{equation*}
+
+Integrando su tutta la superficie ottengo:
+\begin{equation} \label{flusso_carica_esterna}
+    d \Phi_1 (E) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
+\end{equation}
+
+Posso riassumere (\ref{flusso_carica_interna}) e (\ref{flusso_carica_esterna}): \emph{il flusso totale attraverso una superficie chiusa del campo elettrostatico di una carica puntiforme \(q\) vale \(q /\epsilon_0\) se la carica è interna alla superficie, vale zero se la carica è esterna}.
+
+\subsection{Cariche puntiformi e cariche uniformemente distribuite}
+
+Il risultato enunciato si estende al caso di più cariche puntiformi, attraverso il principio di sovrapposizione e la proprietà additiva degli integrali: 
+il flusso attraverso una superficie chiusa del campo elettrostatico \(\overrightarrow{E}\) generato da un sistema discreto di cariche è dato da
+\begin{equation*}
+    \Phi (E) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \oint (\Sigma_i \overrightarrow{E}_i) \cdot \overrightarrow{u}_n d \Sigma = \Sigma_i \oint \overrightarrow{E}_i \cdot \overrightarrow{u}_n d \Sigma
+\end{equation*}
+Ciascun integrale vale \(q_i / \epsilon_0\) se la carica è contenuta all'interno della superficie e vale zero se la carica è esterna.
+\begin{equation} \label{flusso_cariche_puntiformi}
+    \Phi (E) = \frac{1}{\epsilon_0} (\Sigma_i q_i)_{int}
+\end{equation}
+essendo la somma estesa a tutte e sole le cariche poste all'interno della superficie \(\Sigma\).
+
+Nel caso più generale in cui il campo sia generato da una distribuzione continua di cariche, la (\ref{flusso_cariche_puntiformi}) diviene
+\begin{equation} \label{flusso_distribuzione_continua}
+    \Phi (E) = \frac{1}{\epsilon_0} \int_{\tau} dq
+\end{equation}
+dove l'integrale, esteso al volume \(\tau\) racchiuso dalla superficie \(\Sigma\), rappresenta sempre la carica totale contenuta all'interno di \(\Sigma\).
 \end{document}

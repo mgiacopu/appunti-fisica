@@ -67,11 +67,11 @@ Si definisce flusso del campo \(\overrightarrow{E}\) attraverso la superficie \(
 Il flusso attraverso una superficie finita \(\Sigma\), si ottiene suddividendo la superficie \(\Sigma\) in elementi infinitesimi di superficie \(d \Sigma_i\), calcolando per ciascuno di essi il flusso infinitesimo \(d \Phi (\overrightarrow{E}_i) = \overrightarrow{E}_i \cdot u_{i,n} d \Sigma_i\), 
 e sommando gli infiniti contributi, procedura che porta ad un integrale di superficie:
 \begin{equation}
-    \Phi (E) = \int_{\Sigma} = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
+    \Phi (\overrightarrow{E}) = \int_{\Sigma} = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
 \end{equation}
 Se la superficie è chiusa, il flusso si scrive, con l'integrale di ciclo chiuso:
 \begin{equation} \label{flusso_superficie_chiusa}
-    \Phi (E) = \oint_{\Sigma} = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
+    \Phi (\overrightarrow{E}) = \oint_{\Sigma} = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
 \end{equation}
 
 In questo caso è convenzione orientare la normale verso l'esterno. 
@@ -84,19 +84,19 @@ Pertanto (\ref{flusso_superficie_chiusa}) dà \emph{il flusso netto attraverso l
 La legge di Gauss stabilisce che: 
 il flusso del campo elettrostatico \(\overrightarrow{E}\) prodotto da un sistema di cariche attraverso una superficie chiusa è uguale alla somma algebrica delle cariche elettriche contenute all'interno della superficie, divisa per \(\epsilon_0\).
 \begin{equation}
-    \Phi E = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{1}{\epsilon_0} (\Sigma_i q_i)_{int}
+    \Phi (\overrightarrow{E}) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{1}{\epsilon_0} (\Sigma_i q_i)_{int}
 \end{equation}
 La legge vale indipendentemente da come sono distribuite le cariche all'interno della superficie.
 Si noti che il campo \(\overrightarrow{E}\) che compare nell'integrale del flusso è il campo risultante delle tre cariche.
 \begin{equation}
-    \Phi (E) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{1}{\epsilon_0} \int dq
+    \Phi (\overrightarrow{E}) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{1}{\epsilon_0} \int dq
 \end{equation}
 essendo l'integrale al terzo membro esteso a tutto il volume \(\tau\) racchiuso da \(\Sigma\).. 
 In pratica, poi, l'integrale è esteso ai soli punti in cui c'è carica \(dp \neq 0\). 
 
 Unificando la struttura dell'ultimo membro la legge di Gauss si presenta in maniera generale come:
 \begin{equation}
-    \Phi (E) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{q}{\epsilon_0}
+    \Phi (\overrightarrow{E}) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{q}{\epsilon_0}
 \end{equation}
 
 \section{Dimostrazione della legge di Gauss}
@@ -118,7 +118,7 @@ Il flusso del campo elettrostatico \(\overrightarrow{E}\) di una carica puntifor
 
 Il flusso attraverso una superficie finita è dato da
 \begin{equation} \label{flusso_superficie_finita}
-    \Phi (E) = \int_{\Sigma} \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{q}{4 \pi \epsilon_0} \int d \Omega = \frac{q}{4 \pi \epsilon_0} \Omega 
+    \Phi (\overrightarrow{E}) = \int_{\Sigma} \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{q}{4 \pi \epsilon_0} \int d \Omega = \frac{q}{4 \pi \epsilon_0} \Omega 
 \end{equation}
 con \(\Omega\), angolo solido sotto cui è visto il contorno della superficie \(\Sigma\), dalla carica \(q\).
 
@@ -126,7 +126,7 @@ con \(\Omega\), angolo solido sotto cui è visto il contorno della superficie \(
 
 Se la carica è interna, tutti i contributi \(\overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma\) si sommano in quanto hanno sempre lo stesso segno in qualsiasi punto di \(\Sigma\), e applicando (\ref{flusso_superficie_chiusa}) abbiamo
 \begin{equation} \label{flusso_carica_interna}
-    \Phi (E) = \frac{q}{4 \pi \epsilon_0} \oint d \Omega = \frac{q}{4 \pi \epsilon_0} 4 \pi = \frac{q}{\epsilon_0}
+    \Phi (\overrightarrow{E}) = \frac{q}{4 \pi \epsilon_0} \oint d \Omega = \frac{q}{4 \pi \epsilon_0} 4 \pi = \frac{q}{\epsilon_0}
 \end{equation}
 infatti l'angolo solido totale sotto cui è vista una superficie chiusa qualunque da un punto all'interno è \(4 \pi\).
 
@@ -137,18 +137,18 @@ l'orientazione della normale è tale che su \(d \Sigma_1 \overrightarrow{E} \cdo
 
 I flussi attraverso i due elementi sono: 
 \begin{equation*}
-    d \Phi_1 (E) = \overrightarrow{E}_1 \cdot \overrightarrow{u}_n d \Sigma_1 = - \frac{q}{4 \pi \epsilon_0} d \Omega
+    d \Phi_1 (\overrightarrow{E}) = \overrightarrow{E}_1 \cdot \overrightarrow{u}_n d \Sigma_1 = - \frac{q}{4 \pi \epsilon_0} d \Omega
 \end{equation*}
 \begin{equation*}
-    d \Phi_2 (E) = \overrightarrow{E}_2 \cdot \overrightarrow{u}_n d \Sigma_2 = \frac{q}{4 \pi \epsilon_0} d \Omega = - d \Phi_1 (E)
+    d \Phi_2 (\overrightarrow{E}) = \overrightarrow{E}_2 \cdot \overrightarrow{u}_n d \Sigma_2 = \frac{q}{4 \pi \epsilon_0} d \Omega = - d \Phi_1 (E)
 \end{equation*}
 \begin{equation*}
-    \implies d \Phi_1 (E) + d \Phi_2 (E) = 0
+    \implies d \Phi_1 (\overrightarrow{E}) + d \Phi_2 (\overrightarrow{E}) = 0
 \end{equation*}
 
 Integrando su tutta la superficie ottengo:
 \begin{equation} \label{flusso_carica_esterna}
-    d \Phi_1 (E) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
+    d \Phi_1 (\overrightarrow{E}) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
 \end{equation}
 
 Posso riassumere (\ref{flusso_carica_interna}) e (\ref{flusso_carica_esterna}): \emph{il flusso totale attraverso una superficie chiusa del campo elettrostatico di una carica puntiforme \(q\) vale \(q /\epsilon_0\) se la carica è interna alla superficie, vale zero se la carica è esterna}.
@@ -158,17 +158,17 @@ Posso riassumere (\ref{flusso_carica_interna}) e (\ref{flusso_carica_esterna}): 
 Il risultato enunciato si estende al caso di più cariche puntiformi, attraverso il principio di sovrapposizione e la proprietà additiva degli integrali: 
 il flusso attraverso una superficie chiusa del campo elettrostatico \(\overrightarrow{E}\) generato da un sistema discreto di cariche è dato da
 \begin{equation*}
-    \Phi (E) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \oint (\Sigma_i \overrightarrow{E}_i) \cdot \overrightarrow{u}_n d \Sigma = \Sigma_i \oint \overrightarrow{E}_i \cdot \overrightarrow{u}_n d \Sigma
+    \Phi (\overrightarrow{E}) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \oint (\Sigma_i \overrightarrow{E}_i) \cdot \overrightarrow{u}_n d \Sigma = \Sigma_i \oint \overrightarrow{E}_i \cdot \overrightarrow{u}_n d \Sigma
 \end{equation*}
 Ciascun integrale vale \(q_i / \epsilon_0\) se la carica è contenuta all'interno della superficie e vale zero se la carica è esterna.
 \begin{equation} \label{flusso_cariche_puntiformi}
-    \Phi (E) = \frac{1}{\epsilon_0} (\Sigma_i q_i)_{int}
+    \Phi (\overrightarrow{E}) = \frac{1}{\epsilon_0} (\Sigma_i q_i)_{int}
 \end{equation}
 essendo la somma estesa a tutte e sole le cariche poste all'interno della superficie \(\Sigma\).
 
 Nel caso più generale in cui il campo sia generato da una distribuzione continua di cariche, la (\ref{flusso_cariche_puntiformi}) diviene
 \begin{equation} \label{flusso_distribuzione_continua}
-    \Phi (E) = \frac{1}{\epsilon_0} \int_{\tau} dq
+    \Phi (\overrightarrow{E}) = \frac{1}{\epsilon_0} \int_{\tau} dq
 \end{equation}
 dove l'integrale, esteso al volume \(\tau\) racchiuso dalla superficie \(\Sigma\), rappresenta sempre la carica totale contenuta all'interno di \(\Sigma\).
 \end{document}

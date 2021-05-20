@@ -54,5 +54,49 @@ e infine, se \(\theta_2 = \pi\), abbiamo l'angolo solido sotto cui dal centro è
     \Omega = 4 \pi
 \end{equation}
 
+\section{Flusso del campo elettrostatico, Legge di Gauss}
+
+\subsection{Definizione di flusso attraverso una superficie}
+
+Consideriamo, una superficie \( d \Sigma\) in una regione in cui è definito un campo \(\overrightarrow{E}\) e orientiamola fissando il verso del versore della normale \(\overrightarrow{u}_n\). 
+Si definisce flusso del campo \(\overrightarrow{E}\) attraverso la superficie \(d \Sigma\) la quantità scalare 
+\begin{equation}
+    d \Phi (\overrightarrow{E}) = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = E \cos \theta d \Sigma = E_n d \Sigma
+\end{equation}
+
+Il flusso attraverso una superficie finita \(\Sigma\), si ottiene suddividendo la superficie \(\Sigma\) in elementi infinitesimi di superficie \(d \Sigma_i\), calcolando per ciascuno di essi il flusso infinitesimo \(d \Phi (\overrightarrow{E}_i) = \overrightarrow{E}_i \cdot u_{i,n} d \Sigma_i\), 
+e sommando gli infiniti contributi, procedura che porta ad un integrale di superficie:
+\begin{equation}
+    \Phi (E) = \int_{\Sigma} = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
+\end{equation}
+Se la superficie è chiusa, il flusso si scrive, con l'integrale di ciclo chiuso:
+\begin{equation} \label{flusso_superficie_chiusa}
+    \Phi (E) = \oint_{\Sigma} = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
+\end{equation}
+
+In questo caso è convenzione orientare la normale verso l'esterno. 
+I contributi positivi all'integrale (\ref{flusso_superficie_chiusa}) sono quelli per cui \(E \cdot \overrightarrow{u}_n> 0\), dovuti a quelle zone dove anche \(\overrightarrow{E}\) punta verso l'esterno: essi rappresentano un flusso di \(\overrightarrow{E}\) \emph{uscente dalla superficie}. 
+I contributi negativi provengono dalle zone in cui \(E \cdot \overrightarrow{u}_n < 0\), in cui cioè \(\overrightarrow{E}\) punta verso l'interno, e rappresentano un flusso di \(\overrightarrow{E}\) \emph{entrante}. 
+Pertanto (\ref{flusso_superficie_chiusa}) dà \emph{il flusso netto attraverso la superficie chiusa}; se esso è nullo vuol dire che il flusso entrante eguaglia in modulo il flusso uscente.
+
+\subsection{Legge di Gauss}
+
+La legge di Gauss stabilisce che: 
+il flusso del campo elettrostatico \(\overrightarrow{E}\) prodotto da un sistema di cariche attraverso una superficie chiusa è uguale alla somma algebrica delle cariche elettriche contenute all'interno della superficie, divisa per \(\epsilon_0\).
+\begin{equation}
+    \Phi E = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{1}{\epsilon_0} (\Sigma_i q_i)_{int}
+\end{equation}
+La legge vale indipendentemente da come sono distribuite le cariche all'interno della superficie.
+Si noti che il campo \(\overrightarrow{E}\) che compare nell'integrale del flusso è il campo risultante delle tre cariche.
+\begin{equation}
+    \Phi (E) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{1}{\epsilon_0} \int dq
+\end{equation}
+essendo l'integrale al terzo membro esteso a tutto il volume \(\tau\) racchiuso da \(\Sigma\).. 
+In pratica, poi, l'integrale è esteso ai soli punti in cui c'è carica \(dp \neq 0\). 
+
+Unificando la struttura dell'ultimo membro la legge di Gauss si presenta in maniera generale come:
+\begin{equation}
+    \Phi (E) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{q}{\epsilon_0}
+\end{equation}
 
 \end{document}

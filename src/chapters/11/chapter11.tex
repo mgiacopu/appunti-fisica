@@ -10,5 +10,49 @@
 
 \chapter{Legge di Gauss}
 
+\section{Angolo solido}
+
+Sia \(d \Sigma\) un elemento di superficie, \(\overrightarrow{u}_n\) la sua normale e \(d \Sigma_0\) la sua funzione ortogonale a \(\overrightarrow{u}_r\), il versore del raggio uscente da un punto di osservazione \(0\). 
+Si definisce angolo solido infinitesimo, la quantità
+\begin{equation}
+    d \Omega = \frac{d \Sigma \cos \alpha}{r^2} = \frac{d \Sigma_0}{r^2}
+\end{equation}
+
+L'angolo solido è l'estensione a tre dimensioni del concetto di angolo piano infinitesimo:
+\begin{equation}
+    d \theta = \frac{ds' \cos \alpha}{r} = \frac{ds}{r}
+\end{equation}
+La superficie \(d \Sigma_0\) è un elemento di calotta sferica e la sua area vale (nel sistema a coordinate polari)
+\begin{equation} \label{misura_infinitesimo_angolo_solido}
+    d \Omega = \frac{d \Sigma_0}{r^2} = \sin \theta d \theta d \phi
+\end{equation}
+
+La (\ref{misura_infinitesimo_angolo_solido}) esprime l'angolo solido sotto cui dal punto \(0\) si vede il contorno \(ABCD\) della superficie \(d \Sigma_0\): 
+risulta che \(d \Omega\) non dipende dal raggio \(r\). 
+Geometricamente, possiamo dire che l'angolo solido dà una misura della parte di spazio compresa entro un fascio di semirette uscenti da \(0\), così come l'angolo piano dà una misura della parte di piano compresa tra due semirette uscenti da \(0\).
+
+Per una superficie finita l'angolo solido è dato dall'integrale
+\begin{equation}
+    \Omega \sin \theta d \theta d \phi
+\end{equation}
+che è un integrale doppio sulle variabili \(\theta\) e \(\phi\).
+
+Se, a \(0\) costante, si fa variare \(\phi\) da zero a \(2 \pi\), abbiamo l'angolo solido sotto cui da \(0\) è vista la corona sferica infinitesima
+\begin{equation}
+    d \Omega = \sin \theta d \theta \int_0^{2 \pi} d \phi = 2 \pi \sin \theta d \theta
+\end{equation}
+Integrando da \(\theta_1\) a \(\theta_2\)
+\begin{equation*}
+    \Omega (\theta_1 , \theta_2) = 2 \pi \left(\cos \theta_1 - \cos \theta_2 \right)
+\end{equation*}
+In particolare se \(\theta_1 = 0\) e \(\theta_2 = \theta\)
+\begin{equation}
+    \Omega (\theta) = 2 \pi (1- \cos \theta)
+\end{equation}
+e infine, se \(\theta_2 = \pi\), abbiamo l'angolo solido sotto cui dal centro è vista tutta la superficie sferica, 
+\begin{equation}
+    \Omega = 4 \pi
+\end{equation}
+
 
 \end{document}

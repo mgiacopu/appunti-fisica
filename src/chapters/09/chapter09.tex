@@ -159,6 +159,69 @@ Il campo elettrostatico in un punto \(P\) prodotto da un sistema discreto di car
 La (\ref{equiv_campi}) può essere interpretata dicendo che il sistema di cariche è la sorgente del campo elettrostatico \(E\): la carica \(q_0\) interagisce con questo subendo la forza \(F\); 
 l'azione elettrica tra cariche, che è una azione a distanza, avviene attraverso il campo. 
 
+\section{Campo elettrico prodotto da una distribuzione continua di cariche}
+
+Se la distribuzione di carica è continua il campo elettrostatico che essa crea in un punto \(P\) si può ottenere dividendo, la carica in elementi infinitesimi \(dq\).  
+Il campo elettrostatico prodotto da \(dq\) in un punto \(P\) distante \(r^{\prime}\) è approssimabile ad una carica puntiforme: 
+\begin{equation*}
+    d \overrightarrow{E} = \frac{d q}{4 \pi \epsilon_0 r^{\prime 2}} \overrightarrow{u}^{\prime}
+\end{equation*}
+Il campo elettrostatico risultante in \(P\) si calcola ricorrendo al principio di sovrapposizione; poiché la somma è estesa ad un numero infinito di contributi infinitesimi, essa si riduce ad un integrale vettoriale esteso a tutta la distribuzione continua:
+\begin{equation}
+    \overrightarrow{E} = \frac{1}{4 \pi \epsilon_0} \int \frac{dq}{r^{\prime 2}} \overrightarrow{u}_x
+\end{equation}
+
+Per chiarire il significato di questa formula (generale) si distiguono diversi casi caratterizzati da un elevato grado di simmetria.
+
+\subsubsection*{Anello carico}
+
+Una carica \(q\) è distribuita uniformemente su un sottile anello di raggio \(R\).  
+Il campo elettrico è dato dalla formula:
+\begin{equation*}
+    \overrightarrow{E} (x) = \frac{q}{4 \pi \epsilon_0} \frac{x}{\left(R^2 + x^2\right)^{3/2}} \overrightarrow{u}_x
+\end{equation*}
+con \(R\) raggio dell'anello, \(x\) la distanza dal punto \(P\).
+Il campo elettrostatico è parallelo e concorde all'asse dell'anello per \(x > 0\), è parallelo e discorde per \(x < 0\) ed è nullo nel centro dell'anello, 
+dove tutti i contributi elementari si elidono.
+
+Nei punti a grande distanza dal centro (\(x >> R\)) 
+\begin{equation*}
+    \overrightarrow{E} (x>>R) =\frac{q}{4 \pi \epsilon_0 x^2} \overrightarrow{u}_x
+\end{equation*}
+concorde all'asse a destra e discorde a sinistra, come se la carica fosse concentrata nel centro dell'anello; non si distingue più, in questa situazione, la struttura della distribuzione.
+
+\subsubsection*{Disco carico}
+
+Un disco sottile di raggio \(R\) ha una carica \(q\) distribuita uniformemente su tutta la sua superficie.  
+Il campo elettrico è dato da:
+\begin{equation*}
+    \overrightarrow{E} (x) = \pm \frac{q}{2 \pi \epsilon_0 R^2} \left(1 - \frac{|x|}{\sqrt{x^2 + R^2}}\right) \overrightarrow{u}_x
+\end{equation*}
+Il segno positivo vale per \(x > 0\), quello negativo per \(x < 0\).  
+Anche in questo caso, ad una lunga distanza, il disco è visto come carica puntiforme.  
+
+Quando x tende a zero i limiti destro e sinistro del campo sono diversi e valgono rispettivamente
+\begin{equation*}
+    \overrightarrow{E}_{+} (x) = \frac{\sigma}{2 \epsilon_0} \overrightarrow{u}_x \ , \ \overrightarrow{E}_{-} (x) = \frac{\sigma}{2 \epsilon_0} \overrightarrow{u}_x 
+\end{equation*}
+
+Se ora facciamo tendere \(R\) all'infinito, mantenendo \(\sigma\) costante, otteniamo un piano indefinito uniformemente carico
+\begin{equation*}
+    E = \pm \frac{\sigma}{2 \epsilon_0} \overrightarrow{u}_x
+\end{equation*}
+ed è ortogonale al piano, uscente da esso e costante in ogni punto dello spazio, anche detto \emph{uniforme}.
+
+\subsubsection*{Due piani indefiniti carichi}
+
+Dati due piani indefiniti carichi con densità superficiale l'uno \(+ \sigma\) e l'altro \(- \sigma\).
+i campi elettrostatici \(\overrightarrow{E}_{+}\) e \(\overrightarrow{E}_{-}\) generati separatamente dai due piani sono in modulo entrambi eguali a \(\sigma / 2 \epsilon_0\).
+Utilizzando il principio di sovrapposizione, per calcolare il campo risultante \(\overrightarrow{E} = \overrightarrow{E}_{+} + \overrightarrow{E}_{-}\) si vede che i campi si sommano nella regione compresa tra i due piani e si annullano all'esterno.  
+All'interno il campo elettrico vale:
+\begin{equation*}
+    \overrightarrow{E} = \frac{\sigma}{\epsilon_0} \overrightarrow{u}_x
+\end{equation*}
+nullo all'esterno dei due piani.
+
 \section{Linee di forza del campo elettrostatico}
 % TODO meglio aggiungere alcune foto
 L'introduzione del concetto di campo elettrostatico mette in evidenza che la presenza di un sistema di cariche, dal caso più semplice della singola carica puntiforme al caso più generale di una distribuzione spaziale, modifica lo spazio circostante nel senso che una carica di prova posta in un qualsiasi punto risente della forza (\ref{equiv_campi}), attribuita all'interazione con il campo elettrostatico.

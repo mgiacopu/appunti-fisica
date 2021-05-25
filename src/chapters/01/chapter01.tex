@@ -44,7 +44,7 @@ Lo stesso \emph{punto materiale} può apparire diverso in sistemi di riferimento
 Il \emph{moto rettilineo} si svolge lungo una retta sulla quale vengono fissati arbitrariamente un'origine e un verso ed è pertanto descrivibile tramite una sola coordinata \(x(t)\).
 Le misure ottenute possono essere rappresentate in un sistema con due assi cartesiani detto \emph{diagramma orario}: sull'asse delle ordinate riportiamo i valori di \(x\) (metri) e su quello delle ascisse i corrispondenti valori del tempo (secondi).
 
-%TODO: Aggiungere esempi (?)
+%TODO: Aggiungere grafici
 
   \subsection{Velocità}
     \subsubsection{Velocit\`a media}
@@ -236,7 +236,7 @@ Il moto \`e pertanto rettilineo uniformemente accelerato.
 		\subsubsection{Discesa}
 		Per $t\ge t_M$ si \`e nella situazione del primo esempio: punto che cade da un'altezza $x_M$ con velocit\`a iniziale nulla.
 		Pertanto:
-		$$t_s = \sqrt{2x_M}/{g}=t_M$$ % TODO: Frazione sotto radice?
+		$$t_s = \frac{\sqrt{2x_M}}{g}=t_M$$
 		E la durata complessiva del moto \`e pertanto:
 		$$2t_M = \dfrac{2v_2}{g}$$
 		Ricavando $t(x)$ dalla legge oraria e da $v(x)$ si ha:
@@ -374,9 +374,11 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
 				&=\dfrac{v_0}{k}(1-e^kt)
 	\end{align*}
 	\subsection{Costante di tempo}
-	Si definisce costante di tempo
+	La rapidità di variazione della funzione $e^{-kt}$ è determinata dal valore di $k$.
+	Posto
 	$$\tau = \dfrac{1}{k}$$
-	in un intervallo di tempo pari a $\tau$ la funzione si riduce di un fattore di $e$. %TODO: Correggere il senso di questa frase
+	detto anche \emph{costante di tempo}, so che in un intervallo di tempo pari a $\tau$ la funzione si riduce di un fattore di $e$
+	$$\frac{e^{-k\left(t + \tau\right)}}{e^{-k \tau}} = e^{-1}$$
 	Minore il valore di $\tau$ pi\`u rapida la decrescita.
 
 \section{Moto nel piano}
@@ -636,14 +638,14 @@ Si vuole calcolare la traiettoria, la massima altezza raggiunta e la posizione $
 	$$v(t)=v_0+\int_{t_0}^ta(t)dt=v_0-gtu_x$$
 	\subsection{Velocit\`a}
 	La velocit\`a si trova nel piano individuato dai vettori costanti $v_\theta$ e $g$, il piano $x,y$.
-	Essendo $v_\theta=v_0\cos t au_x+v_\theta\sin au_y$: %TODO: t au_x ??
-	$$v(t)=v_\theta\cos au_y+(v_\theta\sin a-gt)u_x$$
+	Essendo $v_\theta=v_0\cos \alpha u_x+v_\theta\sin \alpha u_y$:
+	$$v(t)=v_\theta\cos \alpha u_y+(v_\theta\sin \alpha-gt)u_x$$
 	\subsection{Leggi orarie dei moti proiettati}
 	La velocit\`a dei moti proiettati sugli assi sono $v_y=v_o\cos\alpha$ e $v_x=v_0\sin\alpha-gt$.
 	Pertanto le leggi orarie dei moti proiettati sugli assi sono:
   \begin{multicols}{2}
     \noindent
-    $$x=v_0\cos t\alpha t$$
+    $$x=v_0\cos \alpha t$$
     $$y=v_0\sin\alpha t-\dfrac{1}{2}gt^2$$
   \end{multicols}
   \begin{tabular}{|p{13cm}}

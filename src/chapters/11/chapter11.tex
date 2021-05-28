@@ -178,4 +178,144 @@ Nel caso più generale in cui il campo sia generato da una distribuzione continu
     \Phi (\overrightarrow{E}) = \frac{1}{\epsilon_0} \int_{\tau} dq
 \end{equation}
 dove l'integrale, esteso al volume \(\tau\) racchiuso dalla superficie \(\Sigma\), rappresenta sempre la carica totale contenuta all'interno di \(\Sigma\).
+
+\section{Applicazioni teorema di Gauss}
+
+La legge di Gauss diventa uno strumento molto efficace per determinare il campo elettrostatico E nei casi in cui la distribuzione di carica che genera il campo elettrostatico presenti un elevato grado di simmetria (sferica, cilindrica, piana).
+In queste condizioni di norma è facile individuare a priori l'andamento delle linee di forza e trovare di conseguenza delle superficie chiuse \(\overrightarrow{E}\) nei cui punti il campo elettrostatico è parallelo o ortogonale alla superficie stessa, per cui i contributi \(\overrightarrow{E} \cdot \overrightarrow{u}_x d \Sigma\) o sono nulli, o si scrivono semplicemente \(E d \Sigma\). 
+Se inoltre si può dedurre che il modulo del campo elettrostatico è costante in una zona di area \(\Sigma^{\prime}\) in cui \(\overrightarrow{E}\) è parallelo a \(\overrightarrow{u}_n\), la legge di Gauss assume la forma:
+\begin{equation*}
+    \Phi (\overrightarrow{E}) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = E \Sigma = \frac{q}{e_0}
+\end{equation*}
+da cui si trova subito il modulo del campo elettrostatico: 
+\begin{equation*}
+    E = \frac{q}{e_0 \Sigma^{\prime}}
+\end{equation*}
+dove \(q\) è la carica posta all'interno della superficie chiusa \(\Sigma\). 
+
+\subsection{Campo elettrostatico di una distribuzione sferica superificale di carica}
+% TODO aggiungere foto del caso
+Una carica \(q\) è distribuita con densità superficiale costante \(\sigma\) su una superficie sferica di raggio \(R\).  
+Nel punto \(P\) distante \(r > R\) dal centro \(\overrightarrow{E}\) è certamente radiale, in quanto è dovuto alla somma di contributi a due a due simmetrici, eguali in modulo, la cui risultante è radiale; se così non fosse vorrebbe dire che \(\sigma\) non è uniforme.  
+In qualsiasi altro punto che ha la stessa distanza di \(P\) dal centro la situazione è la stessa. 
+Ciò significa che il campo ha modulo costante su una superficie sferica di raggio \(r\), è  ortogonale a questa e ha verso uscente o entrante a seconda del segno della carica.
+
+
+Applicando ad una superficie sferica \(\Sigma\); di raggio \(r > R\):
+\begin{equation*}
+    \Phi (\overrightarrow{E}) = \oint \overrightarrow{E}(r) \overrightarrow{u}_r \cdot \overrightarrow{u}_n d \Sigma = \overrightarrow{E}(r) \oint d \Sigma = E(r) 4 \pi r^2 = \frac{q}{e_0}
+\end{equation*}
+con \(q = 4 \pi R^2 \Sigma\). Ottengo quindi:
+\begin{equation*}
+    \overrightarrow{E}(r) = \frac{q}{4 \pi \epsilon_0 r^2} = \frac{\sigma R^2}{\epsilon_0 r^2}
+\end{equation*}
+\begin{equation*}
+    \overrightarrow{E} = \frac{q}{4 \pi \epsilon_0 r^2} \overrightarrow{u}_r
+\end{equation*}
+
+Il campo all'esterno di una distribuzione superficiale sferica uniforme di carica è eguale a quello di una carica puntiforme di egual valore posta nel centro della superficie sferica; a parità di carica esso non dipende dal raggio della distribuzione.
+
+All'interno della superficie sferica valgono le stesse ragioni di simmetria per cui il campo dovrebbe essere radiale e il flusso attraverso una qualsiasi superficie sferica \(\Sigma^{\prime}\) di raggio \(r < R\) dovrebbe valere \(E \Sigma^{\prime}\).
+D'altra parte all'interno non c'è carica, il flusso attraverso \(\Sigma^{\prime}\) è nullo e quindi deve essere \(E = 0\) per \(r < R\): all'interno di una distribuzione superficiale sferica uniforme il campo elettrostatico è nullo.
+% TODO aggiungere grafici
+\subsection{Campo elettrostatico prodotto da una sfera uniformemente carica}
+% TODO aggiungere foto del caso
+Una carica \(q\) è distribuita con densità spaziale \(\rho\) uniforme nel volume di una sfera di raggio \(R\).  
+Il ragionamento basato sulla simmetria sferica utilizzato precedentemente, è valido anche adesso per \(r > R\) e possiamo subito dire che il campo all'esterno di una sfera uniformemente carica vale
+\begin{equation*}
+    \overrightarrow{E} = \frac{q}{4 \pi \epsilon_0 r^2}\overrightarrow{u}_r = \frac{\rho R^3}{3 \epsilon_0 r^2} \overrightarrow{u}_r
+\end{equation*}
+con 
+\begin{equation*}
+    q = \frac{4}{3} \pi R^3 \rho
+\end{equation*}
+è come se la carica fosse concentrata nel centro della sfera.  
+
+Ne segue che il modulo del campo elettrostatico a distanza \(r < R\) dal centro vale
+\begin{equation*}
+    E = \frac{q^{\prime}}{4 \pi \epsilon_0 r^2} = \frac{q r }{4 \pi \epsilon_0 R^3} = \frac{\rho r}{3 \epsilon_0}
+\end{equation*}
+In conclusione, il campo cresce linearmente dal valore zero assunto nel centro della sfera al valore \(\rho R / 3 \epsilon_0 = q / 4 \pi \epsilon_0 R^2\) assunto sulla superficie della sfera; all'esterno esso decresce con il quadrato della distanza dal centro.
+
+Il potenziale della sfera è dato da \(V = q / 4 \pi \epsilon_0 r\) e in particolare vale
+\begin{equation*}
+    V(R) = \frac{q}{4 \pi \epsilon_0 R} = \frac{\rho R^2}{3 \epsilon_0}
+\end{equation*}
+sulla superficie della sfera. All'interno
+\begin{equation*}
+    V(R) - V(r) = - \int_r^R \overrightarrow{E} \cdot d \overrightarrow{s} = - \int_r^R \frac{\rho r}{3 \epsilon_0} dr = - \frac{\rho}{6 \epsilon_0} (R^2 - r^2)
+\end{equation*}
+\begin{equation*}
+    \implies V(r) = \frac{\rho}{6 \epsilon_0} (3 R^2 - r^2) = \frac{q}{8 \pi \epsilon_0 R} \left(3 - \frac{r^2}{R}\right)
+\end{equation*}
+% TODO add grafici
+\subsection{Campo elettrostatico di un cilindro uniformemente carico}
+
+Una distribuzione spaziale continua e uniforme di carica ha forma cilindrica di raggio \(R\); la lunghezza del cilindro è molto grande (al limite infinito) rispetto a \(R\) 
+
+La simmetria cilindrica del problema suggerisce che il campo elettrostatico sia diretto in ogni punto ortogonalmente all'asse del cilindro formato dalla carica e sia costante su ogni superficie cilindrica coassiale di raggio \(r\).
+Per applicare la legge di Gauss consideriamo una scatola cilindrica \(\Sigma\); di raggio \(r > R\) e altezza \(h\).
+
+Il flusso di \(\overrightarrow{E}\) attraverso le basi di \(\Sigma\); è nullo in quanto il campo è parallelo alle basi e quindi ortogonale a \(\overrightarrow{u}_n\). 
+Il flusso attraverso la superficie laterale, che per quanto detto coincide con il flusso totale attraverso \(\Sigma\), vale
+\begin{equation*}
+    \Phi(E) = E \Sigma = 2 \pi r h E = \frac{q}{\epsilon_0}
+\end{equation*} 
+La carica contenuta entro \(\Sigma\) è 
+\begin{equation*}
+    q = \int \rho d \tau = \rho \pi R^2 h = \lambda h
+\end{equation*}
+definendo
+\begin{equation*}
+    \lambda = \rho \pi R^2 = \frac{q}{h}
+\end{equation*}
+la carica contenuta in un cilindro di raggio \(R\) e altezza unitaria.
+
+Quindi
+\begin{equation*}
+    \Phi(\overrightarrow{E}) = 2 \pi r h E = \frac{\lambda h}{\epsilon_0} 
+\end{equation*}
+\begin{equation*}
+    E = \frac{\lambda}{2 \pi \epsilon_0 r}
+\end{equation*}
+
+La d.d.p. tra due qualsiasi superficie equipotenziali, che sono superficie cilindriche coassiali di raggi \(r_1\) e \(r_2\), con \(r_2 > r_1\) è: 
+\begin{equation*}
+    V(r_2) - V(r_1) = - \int_{r_1}^{r_2} E d r = - \int_{r_1}^{r_2} \frac{\lambda}{2 \pi \epsilon_0 r} d r = - \frac{\lambda}{2 \pi \epsilon_0} \ln \frac{r_2}{r_1}
+\end{equation*}
+rispetto al bordo \(r >> R\)
+\begin{equation*}
+    V(r_2) - V(r_1) = - \frac{\lambda}{2 \pi \epsilon_0} \ln \frac{r}{R}
+\end{equation*}
+
+I risultati trovati valgono anche per un sottile filo rettilineo molto lungo, su cui è depositata una carica distribuita con densità uniforme \(\lambda\).
+
+\subsection{Campo elettrostatico di un piano indefinito uniformemente carico}
+
+Una carica è distribuita con densità superficiale \(\sigma\) su un piano indefinito.  
+Sempre in base a ragionamenti di simmetria si deduce che il campo elettrostatico è ortogonale al piano su cui è distribuita la carica e ha versi opposti dalle due parti (cioè è sempre uscente o sempre entrante).
+Come superficie a cui applicare la legge di Gauss scegliamo una scatola cilindrica con le basi, di area \(\Sigma\), parallele al piano, così che il flusso attraverso le basi è \(2 E \Sigma\); mentre quello attraverso la superficie laterale è nullo.
+
+All'interno della scatola c'è la carica \(q = \sigma \Sigma\): e Quindi
+\begin{equation*}
+    \Phi(\overrightarrow{E}) = 2 E \Sigma = \frac{\sigma \Sigma}{\epsilon_0} \implies E = \frac{\sigma}{2 \epsilon_0}
+\end{equation*}
+
+Vettorialmente, dato \(x\) un asse ortogonale al piano,
+\begin{equation*}
+    E_1 = E(x > 0 ) = \frac{\sigma}{2 \epsilon_0} \overrightarrow{u}_x
+\end{equation*}
+\begin{equation*}
+    E_2 = E(x < 0 ) = - \frac{\sigma}{2 \epsilon_0} \overrightarrow{u}_x
+\end{equation*}
+nel passaggio attraverso la superficie carica il campo elettrostatico è discontinuo e ottengo che nel passaggio
+\begin{equation*}
+    E_1 - E_2 = \frac{\sigma}{2 \epsilon_0} \overrightarrow{u}_x - \frac{- \sigma}{2 \epsilon_0} \overrightarrow{u}_x = \frac{\sigma}{\epsilon_0} \overrightarrow{u}_x
+\end{equation*}
+
+La differenza di potenziale elettrostatico tra due punti distanti \(x_1\) e dal piano, con \(x_2 > x_1\) è 
+\begin{equation*}
+    V(x_2) - V(x_1) = - \int_{x_1}^{x_2} E dx = - \frac{\sigma}{2 \epsilon_0} (x_2 - x_1)
+\end{equation*}
+
 \end{document}

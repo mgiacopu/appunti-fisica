@@ -73,5 +73,61 @@ Abbiamo così una distribuzione di carica elettrica indotta dei due segni sulla 
 
 Se poniamo a contatto due o più conduttori, ad esempio collegandoli con un filo conduttore, si costituisce un unico corpo conduttore e in equilibrio vale ovunque la condizione \(E = 0\), \(V =\text{ costante}\): i conduttori a contatto hanno lo stesso potenziale. 
 
+\section{Conduttore cavo, schermo elettrostatico}
+
+\subsection{Conduttore cavo}
+
+Consideriamo un conduttore carico che abbia nel suo interno una cavità all'interno della quale non ci siano cariche elettriche. 
+Nella massa del conduttore il campo elettrostatico è nullo e pertanto è nullo il flusso attraverso qualsiasi superficie chiusa, in particolare attraverso qualsiasi superficie chiusa \(\Sigma\) che racchiuda la cavità: segue, per la legge di Gauss, che all'interno di \(\Sigma\) non ci sono cariche e quindi sulle pareti della cavità la carica è nulla.
+
+\subsubsection{Dimostrazione}
+
+Se sulle pareti della cavità fossero presenti due distribuzioni di carica di segno opposto, ci sarebbero nella cavità linee di forza, uscenti dalle cariche positive e entranti in quelle negative. 
+La circuitazione di \(\overrightarrow{E}\) lungo una linea chiusa, costituita da un tratto \(C_1\) interno alla cavità su cui \(\overrightarrow{E} \neq 0\) e da un tratto \(C_2\) interno al conduttore dove \(\overrightarrow{E} = 0\), darebbe
+\begin{equation*}
+    \oint \overrightarrow{E} \cdot d \overrightarrow{s} = \int_{C_1} \overrightarrow{E} \cdot d \overrightarrow{s} + \int_{C_2} \overrightarrow{E} \cdot d \overrightarrow{s} = \int_{C_1} \overrightarrow{E} \cdot d \overrightarrow{s} \neq 0
+\end{equation*}
+in contrasto col fatto che \(\overrightarrow{E}\) è conservativo. 
+Pertanto il campo nella cavità deve es-sere nullo se l'integrale di linea esteso a qualsiasi percorso \(C_1\) interno alla cavità deve essere nullo: sulle pareti della cavità non possono esserci cariche elettriche.
+Inoltre è chiaro che il potenziale elettrostatico in un qualsiasi punto della cavità è uguale a quello del conduttore: se ci fosse una differenza di potenziale dovrebbe infatti esserci un campo elettrostatico diverso da zero. 
+
+In conclusione:
+\begin{itemize}
+    \item la carica di un conduttore in equilibrio elettrostatico si distribuisce sempre e soltanto sulla superficie esterna, anche in presenza di una o più cavità all'interno del conduttore; 
+    \item il campo elettrostatico è nullo e il potenziale elettrostatico è costante in ogni punto interno alla superficie del conduttore, anche in presenza di cavità.
+\end{itemize}
+
+In particolare un conduttore sferico isolato carico di raggio \(R\), che sia pieno o con una cavità sferica concentrica o con cavità di qualsiasi forma, ha sempre campo elettrostatico nullo all'interno e campo elettrostatico in vicinanza della superficie esterna:
+\begin{equation*}
+    \overrightarrow{E} = \frac{\sigma}{\epsilon_0} \overrightarrow{u}_n = \frac{q}{4 \pi \epsilon_0 R^2}
+\end{equation*}
+uguale a quella di una carica puntiforme \(q\) posta nel centro \(O\) della superficie sferica. 
+
+\subsection{Induzione completa}
+
+Consideriamo adesso un conduttore \(C_2\) cavo, isolato e privo di carica, e introduciamo un altro conduttore \(C_1\) carico nella cavità, mantenendolo isolato da \(C_2\). 
+In condizioni di equilibrio, se \(C_1\) ha sulla sua superficie esterna una carica \(q\), una carica \(- q\) risulta distribuita sulla superficie interna e una carica \(q\) sulla superficie esterna di \(C_2\).
+
+\subsubsection{Dimostrazione}
+
+Tale fatto si spiega subito con la legge di Gauss: attraverso una superficie chiusa \(\Sigma\) interna a \(C_2\) e contenente la cavità il flusso di \(\overrightarrow{E}\) è nullo in quanto è nullo il campo stesso; di conseguenza all'interno di \(\Sigma\) non c'è carica e se \(C_1\) porta la carica \(q\), sulla superficie interna di \(C_2\) deve necessariamente comparire una carica \(-q\). 
+Inoltre essendo \(C_2\) neutro, lo spostamento di una carica \(- q\) sulla superficie interna provoca la comparsa di una carica \(+q\) sulla superficie esterna. 
+
+Siamo di fronte a un fenomeno di induzione che in questo caso, essendo la carica \(q\) completamente contenuta all'interno di una cavità chiusa, si chiama induzione completa: \emph{tutte le linee di forza che partono da \(C_1\) terminano su \(C_2\)}.
+
+Dalla superficie esterna di \(C_2\) partono altre linee di forza, il cui andamento in prossimità del conduttore riflette la distribuzione delle cariche sulla superficie stessa. 
+Le due zone in cui esiste un campo sono separate da una zona in cui, in equilibrio, non può esistere campo elettrostatico. 
+
+Il campo elettrostatico all'interno della cavità è determinato dal valore di \(q\), dalla posizione di \(C_1\) e dalla forma geometrica delle due superficie affacciate. 
+Però, fissato \(q\), all'esterno l'effetto è sempre lo stesso, qualunque siano forma e  posizione. 
+Infatti possiamo dire che l'informazione sulla situazione interna potrebbe passàre all'esterno solo attraverso un campo elettrostatico che penetrasse nel conduttore \(C_2\): ma questo non è possibile per la proprietà dei conduttori in equilibrio di avere campo elettrostatico nullo all'interno. 
+Al limite si può portare \(C_1\) a contatto con \(C_2\), con il che le cariche \(+q\) e \(-q\) si elidono, ma all'esterno non cambia nulla: questo fatto ci fa anche capire che la distribuzione della carica \(-q\) sulla faccia interna di \(C_2\) è sempre tale che, sommando l'effetto della carica \(q\) di \(C_1\), il campo elettrostatico dovuto alle cariche nella cavità è nullo all'esterno della cavità.
+
+Analogamente, se variamo la carica sulla superficie esterna oppure variamo la sua distribuzione, ad esempio avvicinando al conduttore un altro corpo carico, cambia il campo elettrostatico all'esterno, ma la distribuzione di carica sulla superficie esterna di \(C_2\) è sempre tale da dare campo elettrostatico nullo all'interno di \(C_2\) e quindi non può alterare il campo locale esistente nella cavità. 
+
+\subsection{Schermo elettrostatico}
+
+Pertanto finché lo spazio interno e lo spazio esterno non sono comunicanti: il conduttore cavo costituisce uno schermo elettrostatico perfetto tra spazio interno e spazio esterno
+
 
 \end{document}

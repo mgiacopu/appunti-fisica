@@ -274,5 +274,90 @@ Il ragionamento si estende a \(n\) condensatori:
 
 \emph{in un sistema di condensatori in serie la carica è la stessa su ciascuno, l'inverso della capacità equivalente è somma degli inversi delle singole capacità}. 
 
+\section{Energia del campo elettrico}
+
+\subsection{Carica di un condensatore}
+
+Il processo di carica di un condensatore, in cui si passa dalla situazione di carica zero sulle armature alla situazione ( \(+q\), \(-q\)) con una differenza di potenziale \(V =q / C\) tra le armature, consiste in definitiva in una separazione di cariche e richiede un determinato lavoro che, essendo il campo elettrostatico conservativo, dipende soltanto dallo stato iniziale e dallo stato finale.
+Per eseguire il calcolo possiamo immaginare quindi che la carica di un condensatore avvenga sottraendo, tramite un agente esterno, una carica \(dq\) dall'armatura negativa e portandola sull'armatura positiva, così che alla fine una carica \(+q\) è stata trasferita da un'armatura all'altra, lasciando la prima con una carica \(-q\), e si è stabilita tra le armature la differenza di potenziale \(V\); la carica totale è in ogni istante nulla.
+
+Se in una fase intermedia del processo la differenza di potenziale tra le armature è \(V^{\prime}\), in quanto è già stata trasferita la carica \(q' = C V^{\prime}\) il lavoro per spostare l'ulteriore carica \(dq^{\prime}\) attraverso la differenza di potenziale \(V^{\prime}\) è
+\begin{equation*}
+    d W = V^{\prime} d q^{\prime} = \frac{q^{\prime}}{C} d q^{\prime}
+\end{equation*}
+e quindi il valoro complessivo per effettuare la separazione delle cariche è
+\begin{equation*}
+    W = \int dW = \int_0^q \frac{q^{\prime}}{C}d q^{\prime} = \frac{q^2}{2 C}
+\end{equation*}
+Esso dipende solo dalla carica trasportata e dalla capacità del condensatore e non contiene informazioni sul processo effettivo.
+
+Questo lavoro, effettuato contro la forza elettrostatica che si oppone a un accumulo di cariche dello stesso segno, viene immagazzinato nel sistema sotto forma di energia (potenziale) elettrostatica. 
+Assumendo che l'energia sia nulla quando \(q = 0\), abbiamo \(W = U_e\), servendoci delle ( \ref{capacita_condensatore}), scriviamo tre espressioni equivalenti per l'energia elettrostatica del condensatore di capacità \(C\), carico con carica \(q\) e differenza di potenziale \(V\):
+\begin{equation} \label{energia_elettrostatica}
+    U_e = \frac{1}{2} \frac{q^2}{C} = \frac{1}{2} C V^2 = \frac{1}{2} q V
+\end{equation} 
+
+Alle stesse espressioni si arriva per l'energia elettrostatica di un conduttore carico isolato immaginando il processo di carica come un trasporto di carica dall'infinito, dove \(V = 0\), alla superficie del conduttore. 
+Ciò torna formalmente con l'idea di considerare un conduttore isolato come un condensatore con un'armatura all'infinito.
+
+Il ragionamento svolto per il calcolo dell'energia del condensatore lega l'energia alle cariche, che la possiedono in quanto si trovano ad un certo potenziale: l'energia totale è la somma delle energie potenziali delle singole cariche. 
+È però possibile trovare un'espressione alternativa dell'energia, legata al campo elettrostatico prodotto dal sistema di cariche piuttosto che alle sorgenti del campo stesso.
+Riprendo (\ref{energia_elettrostatica}) con la relazione \(V =Eh\)
+\begin{equation*}
+    U_e = \frac{1}{2} C V^2 = \frac{1}{2} \frac{\epsilon_0 \Sigma}{h} E^2 h^2 = \frac{1}{2} \epsilon_0 E^2 \Sigma h = \frac{1}{2} \epsilon_0 E^2 \tau
+\end{equation*}
+essendo \(\tau = \Sigma h\) il volume del condensatore, cioè il volume in cui è definito il campo elettrostatico.
+
+Se facciamo l'ipotesi che l'energia elettrostatica sia distribuita nei punti in cui c'è campo elettrostatico e che questa distribuzione sia uniforme come il campo, possiamo dire che la densità di energia elettrostatica, ovvero l'energia elettrostatica per unità di volume, è
+\begin{equation} \label{densita_energia_elettrostatica}
+    u_e = \frac{U_e}{\tau} = \frac{1}{2} \epsilon_0 E^2
+\end{equation}
+che risulta pertanto \emph{proporzionale al quadrato del campo elettrostatico}.  
+La generalità di questa formula, in cui non compare alcun elemento caratteristico del sistema per cui il calcolo è stato eseguito, ma soltanto il valore del campo e una proprietà del mezzo (in questo caso il vuoto), suggerisce che (\ref{densita_energia_elettrostatica}) si possa applicare a qualsiasi situazione.
+
+In effetti si può dimostrare che in una regione in cui è definito un campo elettrostatico l'energia contenuta in ogni volume infinitesimo \(d \tau\), al cui interno il campo elettrostatico vale \(E\) è 
+\begin{equation*}
+    d U_e = u_e d \tau = \frac{1}{2} \epsilon_0 E^2 d \tau
+\end{equation*}
+l'energia totale del campo elettrostatico si ottiene integrando su tutto il volume in cui il campo elettrostatico è diverso da zero: 
+\begin{equation} \label{energia_totale_campo_elettrostatico}
+    U_e = \int d U_e = \int \frac{1}{2} \epsilon_0 E^2 d \tau
+\end{equation}
+Questa energia corrisponde al lavoro speso per costruire la distribuzione di cariche che dà origine al campo elettrostatico. 
+Le (\ref{densita_energia_elettrostatica}) e  (\ref{energia_totale_campo_elettrostatico}) valgono per qualsiasi campo elettrico, indipendentemente dalla sua natura.
+
+\subsection{Pressione elettrostatica}
+
+Calcolo la forza tra due armature di un condensatore piano, di area \(\Sigma\) distanti \(h\), carico con una carica \(q\), e il rapporto \(F/\Sigma\), detto pressione elettrostatica.  
+L'energia elettrostatica di un condensatore piano con armature di area \(\Sigma\) distanti \(h\) è: 
+\begin{equation*}
+    U_e = \frac{q^2}{2 C} = \frac{q^2}{2 \epsilon_0 \Sigma} h
+\end{equation*}
+
+Tra le armature, cariche di segno opposto, si esercita una forza \(F\) attrattiva che per ragioni di simmetria è parallela a \(\overrightarrow{E}\).  
+Per uno spostamento \(dh\) dell'armatura positiva ( \(dh < 0\)) l'energia elettrostatica diminuisce dielettrici
+\begin{equation*}
+    d U_e = \frac{q^2}{2 \epsilon_0 \Sigma} dh = \frac{\sigma^2}{2 \epsilon_0}  \Sigma dh
+\end{equation*}
+e viene fornito dalla forza \(\overrightarrow{F}\) il lavoro
+\begin{equation*}
+    d W = \overrightarrow{F} \cdot d \overrightarrow{h} = - d U_e = - \frac{q^2}{2 \epsilon_0} \Sigma dh > 0
+\end{equation*}
+positivo, per cui la forza \(\overrightarrow{F}\) è concorde a \(dh\) e vale:
+\begin{equation}
+    F =  - \frac{\sigma}{2 \epsilon_0} \Sigma 
+\end{equation}
+
+Esprimendo \(\sigma\) in funzione del campo elettrostatico \(E\) abbiamo in modulo:
+\begin{equation*}
+    F =  - \frac{\sigma}{2 \epsilon_0} \Sigma = \frac{1}{2} \epsilon_0 E^2 \Sigma
+\end{equation*}
+e la forza per unità di superficie risulta 
+\begin{equation}
+    p = \frac{F}{\Sigma} = \frac{1}{2} \epsilon_0 E^2
+\end{equation} \label{pressione_elettrostatica}
+detto \emph{pressione elettrostatica}.
+
+La (\ref{pressione_elettrostatica}), che non contiene elementi caratteristici del sistema, ha validità generale, qualsiasi sia la distribuzione di carica superficiale e mostra che la pressione elettrostatica ha la stessa espressione della densità di energia. 
 
 \end{document}

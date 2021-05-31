@@ -221,5 +221,58 @@ La capacità di un condensatore piano è data da
 \end{equation}
 Questa volta non ci sono approssimazioni geometriche, però quest'ultima è approssimata per un'altra ragione: il campo si può supporre uniforme solo nella regione centrale del condensatore, lontano dai bordi.
 
+\section{Collegamento di condensatori}
+
+Un condensatore viene utilizzato essenzialmente come deposito di carica; pur essendo la carica totale nulla, essa è separata nella quantità \(+q\) e \(-q\), proporzionali per un conduttore di data capacità alla differenza di potenziale tra le armature.
+Tramite opportuni collegamenti conduttivi esterni è possibile far fluire la carica negativa ( elettroni) da un'armatura all'altra, generando una corrente elettrica che scarica il condensatore. 
+
+Possiamo però subito descrivere come si collegano con fili conduttori più condensatori tra loro e calcolare la capacità equivalente. 
+Noi supponiamo costanti nel tempo le cariche e le differenze di potenziale, però i risultati sono validi anche in regime variabile.
+
+\subsection{Condensatori in parallelo}
+
+La connessione in parallelo delle armature consiste nel realizzare due soli conduttori. 
+In tal modo, essendo ciascun conduttore equipotenziale, la \(d.d.p.\) applicata al condensatore \(C_1\) è eguale a quella applicata al condensatore \(C_2\).
+\begin{equation*}
+    q_1 = C_1 V \ , \ q_2 = C_2 V
+\end{equation*}
+La carica globale sul conduttore superiore, costituito dalle due armature superiori è
+\begin{equation*}
+    q = q_1 + q_2 = \left(C_1 + C_2 \right)V
+\end{equation*}
+sul conduttore inferiore la carica è \(-q = -( q_1 + q_2)\). Definiamo capacità equivalente del sistema
+\begin{equation}
+    C_{eq} = \frac{q}{V} = C_1 + C_2
+\end{equation} 
+
+Due condensatori in parallelo si comportano come un unico condensatore la cui capacità è data dalla somma delle capacità dei componenti. 
+Il ragionamento si estende a \(n\) condensatori:
+\begin{equation*}
+    C_{eq} = C_1 + ... + C_n
+\end{equation*}
+\emph{in un sistema di condensatori in parallelo ai capi di ciascuno c'è la stessa differenza di potenziale e la capacità equivalente è somma delle singole capacità}.
+
+\subsection{Condensatori in serie}
+% TODO aggiungi foto
+Nella connessione in serie c'è un solo collegamento tra i due condensatori e viene costituito un sistema composto da \(n\) conduttori: ai due estremi si applica la differenza di potenziale \(V = V_C-V_A\) e il conduttore intermedio assume un potenziale \(V_B\).
+Se \(+q\) è la carica sull'armatura di \(C_1\) a potenziale \(V_C\), per induzione compare la carica \(-q\) sull'armatura affacciata e \(+q\) sull'armatura di \(C_2\) a questa collegata, dovendo essere il conduttore centrale neutro; sempre per induzione compare la carica \(-q\) sull'armatura di \(C_2\) a potenziale \(V_A\). 
+Vediamo che il valore della carica è lo stesso nei due condensatori. 
+\begin{equation*}
+    V_C -V_B = \frac{q}{C_1} \ , \ V_B - V_A = \frac{q}{C_2}
+\end{equation*}
+\begin{equation*}
+    V = V_C -V_B = \frac{q}{C_1} + \frac{q}{C_2} = q \left(\frac{1}{C_1} + \frac{1}{C_2}\right) = \frac{q}{C_{eq}}
+\end{equation*}
+\begin{equation*}
+    \frac{1}{C_{eq}} = \frac{1}{C_1} + \frac{1}{C_2} , \ , C_{eq} = \frac{C_1 C_2}{C_1 + C_2}
+\end{equation*}
+
+Il ragionamento si estende a \(n\) condensatori:
+\begin{equation}
+    \frac{1}{C_{eq}} =  \frac{1}{C_{1}} +  \frac{1}{C_{2}} + ... +  \frac{1}{C_n}
+\end{equation}
+
+\emph{in un sistema di condensatori in serie la carica è la stessa su ciascuno, l'inverso della capacità equivalente è somma degli inversi delle singole capacità}. 
+
 
 \end{document}

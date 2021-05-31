@@ -129,5 +129,97 @@ Analogamente, se variamo la carica sulla superficie esterna oppure variamo la su
 
 Pertanto finché lo spazio interno e lo spazio esterno non sono comunicanti: il conduttore cavo costituisce uno schermo elettrostatico perfetto tra spazio interno e spazio esterno
 
+\section{Condensatori}
+
+Consideriamo il sistema costituito da un conduttore sferico di raggio \(R_1\) al centro di un conduttore sferico cavo di raggio interno \(R_2\) e raggio esterno \(R_3\).
+Se \(+q\) è la carica depositata sul conduttore interno, \(-q\) è quella che deve esistere, in equilibrio, sulla superficie interna della cavità, affinché all'interno del conduttore cavo il campo elettrostatico risulti nullo; una carica \(+q\) è naturalmente presente sulla superficie esterna del conduttore cavo. 
+Il campo elettrostatico all'interno della cavità \(E(r) = \frac{q}{4 \pi \epsilon_0 r^2}\) è  determinato dalle cariche presenti sulle superficie che la delimitano; la differenza di potenziale tra i conduttori è 
+\begin{equation*}
+    V_1 - V_2 = \frac{q}{4 \pi \epsilon_0} \left(\frac{1}{R_1} - \frac{1}{R_2}\right)
+\end{equation*}
+che riscritta completa
+\begin{equation}
+    C = \frac{q}{V_1 - V_2} = \frac{4 \pi \epsilon_0 R_1 R_2}{R_2 - R_1}
+\end{equation}
+mostra che il rapporto tra carica e differenza di potenziale dei due conduttori sferici concentrici è indipendente dalla carica ed è determinato esclusivamente dalla geometria del sistema e dal mezzo contenuto nell'intercapedine tra i raggi \(R_1\) e \(R_2\), in questo caso il vuoto caratterizzato da \(\epsilon_0\).
+
+Un sistema come quello descritto, costituito da due conduttori tra i quali c'è induzione completa, si chiama condensatore; i due conduttori prendono il nome di armature del condensatore. 
+Si definisce capacità del condensatore:
+\begin{equation}
+    C = \frac{q}{\Delta V} \udm{F = \frac{C}{V}}
+\end{equation}
+dove \(\pm q\) è la carica presente sulle due armature e \(\Delta V\) la differenza di potenziale tra le stesse.
+
+\subsection{Capacità condensatore sferico}
+
+La capacità di un condensatre sferico è:
+\begin{equation}
+    C = 4 \pi \epsilon_0 \frac{R_1 R_2}{R_2 - R_1}
+\end{equation}
+Se si fa tendere \(R_2 \rightarrow \infty\) si ottiene
+\begin{equation}
+    C = 4 \pi \epsilon_0 R_1
+\end{equation}
+che può essere definita come \emph{capacità di un conduttore sferico isolato}.
+Si può in generale definire \emph{un conduttore isolato come un con-densatore con un 'armatura posta all'infinito}.
+Se il conduttore ha una carica \(+q\), la carica \(- q\) si forma per induzione all'infinito, distribuita su una superficie infinita e perciò con densità nulla.
+
+In tal senso la presenza della seconda armatura ha come risultato l'aumento della capacità del sistema, che va attribuito all'aumento dell'influenza tra le due armature.
+
+Possiamo vedere quantitativamente tale effetto così: se la distanza tra le due armature sferiche diventa piccola rispetto ai raggi, cioè se 
+\begin{equation*}
+    h = R_2 - R_1 << R_1 \simeq R_2 = R
+\end{equation*}
+la capacità del condensatore si scrive
+\begin{equation} \label{capacita_condensatore}
+    C = 4 \pi \epsilon_0 \frac{R^2}{h} = \frac{\epsilon_0 \Sigma}{h}
+\end{equation}
+con \(\Sigma = 4 \pi R^2\) area delle armature. 
+La capacità cresce all'aumentare di \(\Sigma\); e al diminuire di \(h\).
+
+\subsection{Capacità di un condensatore cilindro}
+
+Le armature di un condensatore cilindrico sono due porzioni di superficie cilindriche coassiali, una di raggio \(R_1\) e l'altra di raggio \(R_2 > R_1\) di eguale lunghezza \(d\) grande rispetto ai raggi. 
+Si realizza così un'ulteriore situazione di conduttore all'interno di un altro conduttore cavo, con induzione approssimativamente completa. 
+Se si escludono i tratti estremi, nell'intercapedine cilindrica tra \(R_1\) e \(R_2\) il campo elettrostatico è radiale:
+\begin{equation*}
+    \overrightarrow{E}(r) = \frac{\lambda}{2 \pi \epsilon_0 r}
+\end{equation*} 
+e la differenza di potenziale tra le armature è
+\begin{equation*}
+    V_1 - V_2 = \int_{R_1}^{R_2} \overrightarrow{E} \cdot d \overrightarrow{r} = \frac{\lambda}{2 \pi \epsilon_0} \int_{R_1}^{R_2} \frac{d r}{r} = \frac{\lambda}{2 \pi \epsilon_0} \ln \frac{R_2}{R_1}
+\end{equation*}
+
+La carica per unità di lunghezza \(\lambda\), è pari a \(q/d\) e quindi:
+\begin{equation} \label{capacita_condensatre_cilindrico}
+    C = \frac{q}{V_1 - V_2} = \frac{2 \pi \epsilon_0 d}{\ln \frac{R_2}{R_1}}
+\end{equation}
+
+Se \(h = R_2 -R_1\) è molto minore dei raggi, sviluppiamo in serie il denominatore arrestandoci al primo termine,
+\begin{equation*}
+    \ln \frac{R_2}{R_1} = \ln \left(1 + \frac{R_2 - R_1}{R_1}\right) = \frac{R_2 - R_1}{R_1} = \frac{h}{R}
+\end{equation*}
+per cui la capacità
+\begin{equation}
+    C= \frac{2 \pi \epsilon_0 d R}{h} = \frac{\epsilon_0 \Sigma}{h}
+\end{equation}
+con \(\Sigma = 2 \pi R d\) area delle armature distanti \(h\): ritrovo (\ref{capacita_condensatore})
+
+Da \ref{capacita_condensatre_cilindrico} definisco la \emph{capacità per unità di lunghezza}
+\begin{equation}
+    C_d = \frac{C}{d} = \frac{2 \pi \epsilon_0}{\ln \frac{R_2}{R_1}}
+\end{equation}
+
+\subsection{Capacità di un condensatore piano}
+
+Le armature di un condensatore piano sono costituite da due conduttori piani paralleli, di area \(\Sigma\) e distanti \(h\).
+La carica positiva \(q\) è distribuita con densità uniforme a sull'armatura positiva e quella negativa \(- q\) con densità uniforme \(-\sigma\) sull'armatura negativa. 
+
+La capacità di un condensatore piano è data da 
+\begin{equation}
+    C = \frac{q}{V_1 - V_2} = \frac{\epsilon_0 \Sigma}{h}
+\end{equation}
+Questa volta non ci sono approssimazioni geometriche, però quest'ultima è approssimata per un'altra ragione: il campo si può supporre uniforme solo nella regione centrale del condensatore, lontano dai bordi.
+
 
 \end{document}

@@ -202,4 +202,49 @@ Questo lavoro è necessario per vincere la resistenza opposta dal reticolo crist
 Di conseguenza aumenta la temperatura del conduttore: se esso è isolato termicamente dall'ambiente il processo porta alla fusione del metallo; se invece il conduttore è in contatto termico con l'ambiente la sua temperatura cresce fino a che si raggiunge uno stato di equilibrio in cui l'energia interna non varia più e il lavoro elettrico viene ceduto all'ambiente sotto forma di calore (purché naturalmente la temperatura di equilibrio sia inferiore alla temperatura di fusione del conduttore). 
 
 L'effetto di riscaldamento di un conduttore percorso da corrente si chiama \emph{effetto Joule}. 
+
+\section{Resistori in serie e in parallelo}
+
+Conduttori ohmici caratterizzati da un determinato valore della resistenza (alla temperatura ambiente) sono elementi molto usati nei circuiti elettrici. 
+Essi vengono chiamati resistori e oltre al valore della resistenza viene sempre precisato il valore massimo della potenza che può essere in essi dissipata senza causare alterazioni irreversibili.
+
+\subsection{Resistori in serie}
+
+Due resistori sono collegati in serie, quando hanno un estremo in comune: in regime stazionario l'\emph{intensità di corrente che li attraversa è la stessa}. 
+Applichiamo a ciascun resistore la legge di Ohm e sommiamo:
+\begin{equation*}
+    V_A - V_B = R_1 i \ , \ V_B - V_C = R_2 i 
+\end{equation*}
+\begin{equation*}
+    V_A - V_C = \left(R_1 + R_2 \right) i = R_{eq} i
+\end{equation*}
+
+I due resistori in serie presentano la \emph{resistenza equivalente}:
+\begin{equation*}
+    R_{eq} = R_1 + R_2
+\end{equation*}
+Tale relazione si generalizza subito a un qualsiasi numero di resistori in serie
+\begin{equation}
+    R_{eq} = R_1 + R_2 + ... R_n
+\end{equation}
+\emph{in un collegamento in serie ciascun resistore è attraversato dalla stessa corrente; la resistenza equivalente è somma della resistenza dei singoli componenti}.
+
+\subsection{Resistori in parallelo}
+
+Due resistori si dicono in parallelo quando sono collegati tra loro in entrambi gli estremi. 
+In questo caso l'elemento comune ai due resistori è la differenza di potenziale \(V = V_A -V_B\) e quindi, in base alla legge di Ohm, essi sono attraversati da due correnti \(i_1, i_2\), diverse se sono diversi i valori delle resistenze \(R_1\) e \(R_2\).
+
+I due resistori in parallelo presentano la resistenza equivalente: 
+\begin{equation*}
+    \frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2}
+\end{equation*}
+Anche questa relazione si estende ad un numero qualsiasi di resistori collegati in parallelo: 
+\begin{equation}
+    \frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_n}
+\end{equation}
+\emph{in un collegamento in parallelo la differenza di potenziale è la stessa ai capi di ciascun resistore; l'inverso della resistenza equivalente è uguale alla somma degli inversi di ciascun componente}.
+
+In un collegamento in parallelo la resistenza equivalente è minore del valore di ciascun componente.  
+Attraverso combinazioni di serie e parallelo si può in pratica realizzare qualsiasi valore di resistenza.
+
 \end{document}

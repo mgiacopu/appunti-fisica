@@ -112,4 +112,94 @@ Se si fa l'ipotesi che nell'interno del tronco di cono di basi \(\Sigma_1, \Sigm
 \end{equation}
 Questa condizione è detta di stazionarietà: \emph{in condizioni stazionarie l'intensità di corrente è costante attraverso ogni sezione del conduttore}. 
 
+\section{Legge di Ohm della conduzione elettrica}
+
+In un conduttore sottoposto ad una differenza di potenziale si stabilisce, in regime stazionario, che la densità di corrente \(\overrightarrow{j}\) legata al campo elettrico \(\overrightarrow{E}\) dalla relazione: 
+\begin{equation} \label{legge_di_ohm_1}
+    \overrightarrow{j} = \sigma \overrightarrow{E}
+\end{equation}
+con \(\overrightarrow{\sigma}\) una grandezza caratteristica del conduttore, detta \emph{conduttività elettrica}. 
+
+La legge (\ref{legge_di_ohm_1}), nota come legge di Ohm della conduttività elettrica, venne stabilita sperimentalmente e fu verificata anche nella conduzione nei gas e nei liquidi, in cui siano presenti portatori di carica liberi. 
+Essa definisce, all'interno di un conduttore percorso da corrente, il campo vettoriale \(\overrightarrow{j}\), le cui linee sono parallele e concordi alle linee del campo vettoriale \(\overrightarrow{E}\) che dà origine alla corrente. 
+
+La legge di Ohm molto spesso è scritta nella forma:
+\begin{equation}
+    \overrightarrow{E} = \rho \overrightarrow{j}
+\end{equation} 
+dove la grandezza
+\begin{equation}
+    \overrightarrow{\rho} = \frac{1}{\sigma}
+\end{equation}
+È chiamata resistività del conduttore. 
+Minore è la resistività del conduttore, maggiore è la densità di corrente che può circolare in un conduttore a parità di campo elettrico \(E\).
+
+Applichiamo la legge di Ohm ad un conduttore metallico cilindrico di lunghezza \(h\) e sezione \(\Sigma\). 
+Ai capi del conduttore è applicata, tramite un generatore di forza elettromotrice, una differenza di potenziale \(V = V_A - V_B\).
+Il regime è stazionario, l'intensità di corrente ha lo stesso valore attraverso qualsiasi sezione del conduttore ed è legata al campo elettrico, in base a (5.5), dalla
+\begin{equation*}
+    E = \rho j = \frac{\rho}{\Sigma} i
+\end{equation*}
+Tra campo elettrico e differenza di potenziale sussiste la relazione 
+\begin{equation*} 
+    V = V_A - V_B = \int_A^B \overrightarrow{E} \cdot d \overrightarrow{s} = E h
+\end{equation*}
+e in definitiva 
+\begin{equation}
+    V = \frac{\rho h}{\Sigma} i
+\end{equation} \label{differenza_di_potenziale_2}
+Chiamando \emph{resistenza del conduttore} in esame la grandezza
+\begin{equation}
+    R = \rho \frac{h}{\Sigma}
+\end{equation}
+la (\ref{differenza_di_potenziale_2}) diviene
+\begin{equation} \label{legge_di_ohm_2}
+    V = R i
+\end{equation}
+nota come \emph{legge di Ohm per i conduttori metallici}.
+
+Se la sezione del conduttore è variabile, per un tratto lungo \(dh\) e di sezione \(\Sigma\) scriviamo 
+\begin{equation*}
+    -d V = \overrightarrow{E} \cdot d \overrightarrow{s} = \rho \frac{dh}{\Sigma} i 
+\end{equation*}
+e integrando lungo tutto il conduttore otteniamo di nuovo:
+\begin{equation*}
+    V = V_A - V_B = \int_A^B \overrightarrow{E} \cdot d \overrightarrow{s} = R i
+\end{equation*}
+se indichiamo come \emph{resistenza del conduttore} la grandezza
+\begin{equation}
+    R = \int_A^B \rho \frac{dh }{\Sigma}
+\end{equation}
+e ricordiamo che l'intensità di corrente è la stessa in ogni sezione. 
+
+Pertanto in regime stazionario il rapporto tra la differenza di potenziale applicata ai capi di un conduttore metallico e l'intensità di corrente che a seguito di ciò l'attraversa è pari a una grandezza, detta resistenza del conduttore, che dipende solamente dalla natura del conduttore (resistività \(\rho\)) e dalle sue dimensioni.
+
+\subsection{Potenza, effetto Joule}
+
+Consideriamo una carica \(dq\) che si muova attraversando la differenza di poten-ziale \(V= V_A -V_B\), per questo spostamento viene compiuto dal campo elettrico agente il lavoro:
+\begin{equation*}
+    d W = V dq = V i dt
+\end{equation*}
+e spera pertanto la \emph{potenza elettrica}
+\begin{equation}
+    \mathcal{P} = \frac{dW}{dt} = V i
+\end{equation}
+
+Se vale la legge di Ohm (\ref{legge_di_ohm_2})
+\begin{equation}
+    \mathcal{P} = R i^2 = \frac{V^2}{R}
+\end{equation}
+
+Il passaggio di corrente attraverso un conduttore metallico per un tempo \(t\) comporta dunque il \emph{lavoro} 
+\begin{equation}
+    W = \int_0^t \mathcal{P} dt = \int_0^t R i^2 dt
+\end{equation}
+che, se la corrente è costante nel tempo, si riduce a
+\begin{equation}
+    W = R i^2 t
+\end{equation}
+Questo lavoro è necessario per vincere la resistenza opposta dal reticolo cristallino al moto ordinato degli elettroni e, da un punto di vista termodinamico, esso viene assorbito dal conduttore la cui energia interna aumenta. 
+Di conseguenza aumenta la temperatura del conduttore: se esso è isolato termicamente dall'ambiente il processo porta alla fusione del metallo; se invece il conduttore è in contatto termico con l'ambiente la sua temperatura cresce fino a che si raggiunge uno stato di equilibrio in cui l'energia interna non varia più e il lavoro elettrico viene ceduto all'ambiente sotto forma di calore (purché naturalmente la temperatura di equilibrio sia inferiore alla temperatura di fusione del conduttore). 
+
+L'effetto di riscaldamento di un conduttore percorso da corrente si chiama \emph{effetto Joule}. 
 \end{document}

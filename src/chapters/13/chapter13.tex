@@ -247,4 +247,56 @@ Anche questa relazione si estende ad un numero qualsiasi di resistori collegati 
 In un collegamento in parallelo la resistenza equivalente è minore del valore di ciascun componente.  
 Attraverso combinazioni di serie e parallelo si può in pratica realizzare qualsiasi valore di resistenza.
 
+\section{Forza elettromotrice}
+
+Tale relazione applicata a un circuito chiuso diventa
+\begin{equation} \label{fem}
+    \oint \overrightarrow{E} \cdot d \overrightarrow{s} = R_T i 
+\end{equation}
+essendo \(R_T\) resistenza totale del circuito stesso.
+
+Il primo membro di (\ref{fem}) coincide con la definizione di forza elettromotrice \((f.e.m.)\) e pertanto la (\ref{fem}) afferma che per ottenere nel circuito una corrente di intensità i è necessaria la presenza nel circuito di una sorgente di f.e.m. ovvero di un campo \(\overrightarrow{E}\) la cui circuitazione non sia nulla. 
+Ne segue che non può essere un campo elettrostatico \(E_{el}\) a fare circolare le cariche nel circuito in quanto esso è conservativo e la corrispondente forza elettromotrice è sempre nulla. 
+La sorgente di forza elettromotrice deve invece avere al suo interno forze di natura non elettrostatica, \emph{non conservative}, che possono determinare il moto continuo delle cariche. 
+
+Il campo elettrostatico \(\overrightarrow{E_{el}}\) pro-dotto da tali cariche è sempre diretto da \(\) verso \(B\), sia nel conduttore che all'interno del generatore e pertanto la sua forza elettromotrice è nulla. 
+Per fare circolare corrente ci deve essere all'interno del generatore un campo \( E*\) di natura non elettrostatica, che chiamiamo campo elettromotore, capace di far muovere le cariche all'interno del generatore contro il campo elettrostatico \(E_{el}\).
+L'integrale di \(E*\) lungo il circuito è: 
+\begin{equation}
+    \mathcal{E} = \oint \overrightarrow{E*} \cdot d \overrightarrow{l} = \int_A^B \overrightarrow{E*} \cdot d \overrightarrow{l}
+\end{equation}
+pari alla tensione dello stesso tra \(A\) e \(B\), calcolata lungo una linea interna al generatore.
+
+Il dispositivo che genera il campo elettromotore, e quindi la forza elettromotrice, può sfruttare azioni meccaniche, reazioni chimiche (pile e accumulatori), il fenomeno dell'induzione elettromagnetica.
+
+In ogni caso il generatore è caratterizzato oltre che dalla forza elettromotrice dalla sua resistenza interna \(r\), per la quale vale la legge di Ohm quando è percorsa dalla corrente \(i\).
+\begin{equation*}
+    V_B + \mathcal{E} - ri - Ri = V_B
+\end{equation*}
+e quindi
+\begin{equation} \label{circuitazione}
+    \mathcal{E} = \left(r + R\right) i  = R_T i \ , \ i = \frac{E}{R + r}
+\end{equation}
+La corrente \(i\) che circola è data dal rapporto tra la forza elettromotrice \(\mathcal{E}\) fornita dal generatore e la resistenza totale \(R_T = R + r\) del circuito. 
+La differenza di potenziale ai capi della resistenza esterna risulta
+\begin{equation} \label{ddp_res_esterna}
+    V_A - V_B = R i = \mathcal{E} - ri
+\end{equation}
+
+La (\ref{ddp_res_esterna}) fornisce anche una definizione operativa della f.e.m. di un generatore: essa è uguale alla differenza di potenziale misurata ai capi del generatore a  circuito aperto (\(i = 0\)). 
+
+Poiché l'energia potenziale di una carica positiva \(q\) che percorre il circuito è \(qV\): passando da \(B\) ad \(A\) all'interno del generatore la carica acquista ad opera del campo elettromotore l'energia potenziale \(q\mathcal{E}\) che perde parzialmente dentro il generatore stesso (effetto della resistenza interna) e poi nel resistore (effetto della resistenza esterna) così che in \(B\) la sua energia è nulla. 
+Possiamo quindi affermare che la \emph{forza elettromotrice} è numericamente \emph{pari al lavoro fornito dal generatore alla carica unitaria che lo attraversa}. 
+
+Questo bilancio energetico è evidente se moltiplichiamo la (\ref{circuitazione}) per \(dq = i dt\): 
+\begin{equation*}
+    \mathcal{E} i dt = Ri^2 dt + r i^2 dt
+\end{equation*}
+
+Il lavoro fornito dal generatore viene dissipato nelle resistenze del circuito; in termini di \emph{potenza elettrica}
+\begin{equation}
+    \mathcal{P} = \mathcal{E} i = R i^2 + r i^2 = R_T i^2
+\end{equation}
+
+
 \end{document}

@@ -40,5 +40,76 @@ Così facendo il flusso di elettroni può durare per molto tempo e quindi nel co
 
 Un qualsiasi dispositivo con le caratteristiche appena descritte è definito come \emph{generatore di forza elettromotrice (f.e.m.)}.
 
+\section{Corrente elettrica, corrente elettica}
+
+Supponiamo che in una certa regione di un conduttore ci siano \(n\) portatori di carica \(+e\) per unità di volume e che in essa agisca un campo elettrico \(\overrightarrow{E}\) prodotto da un generatore di forza elettromotrice; i portatori si muovono sotto l'azione della forza elettrica \(\overrightarrow{F} = e \overrightarrow{E}\), acquistando, la velocità \(v_d\) lungo la direzione del campo elettrico \(\overrightarrow{E}\), detta velocità di deriva. 
+Tale moto dà origine ad una corrente elettrica.
+
+Consideriamo una superficie \(\Sigma\) tracciata all'interno del conduttore: detta \(\Delta q\) la carica che passa nel tempo \(\Delta t\) attraverso la superficie si definisce intensità di corrente media la grandezza:
+\begin{equation*}
+    i_m = \frac{\Delta q}{\Delta t}
+\end{equation*}
+
+La intensità di corrente istantanea è definita come il limite per \(\Delta t \rightarrow 0\) della intensità media:
+\begin{equation*}
+    i = \lim_{\Delta t \rightarrow 0 } \frac{\Delta q}{\Delta t} = \frac{dq}{dt}
+\end{equation*} 
+
+Per mettere in relazione la corrente elettrica con il moto delle cariche ci riferiamo a una superficie infinitesima \(d\Sigma\): la cui normale \(\overrightarrow{u}_n\) formi un angolo e con il campo elettrico \(\overrightarrow{E}\) e quindi con la velocità \(\overrightarrow{v}_d\) delle cariche positive. 
+Nel tempo \(\Delta t\) le cariche percorrono la distanza \(v_d \Delta t\) per cui la carica complessiva che passa attraverso \(d\Sigma\): nel tempo \(\Delta t\) è quella contenuta nel volume infinitesimo \(d \tau\) definito da \(d \Sigma\): e \(v_d \Delta t\):
+\begin{equation*}
+    \Delta \tau = v_d \Delta t d \Sigma \cos \theta \ , \ \Delta q = n_{+} e d \tau = n_{+} e v_d d \Sigma \cos \theta \Delta t
+\end{equation*}
+
+La carica che passa nell'unità di tempo attraverso \(d \Sigma\):, cioè l'intensità di corrente attraverso \(d \Sigma\):
+\begin{equation*}
+    di = n_{+} e v_d d \Sigma \cos \theta
+\end{equation*}
+
+Definiamo la densità di corrente \(j\) come
+\begin{equation}
+    \overrightarrow{j} = n_{+} e \overrightarrow{v}_d
+\end{equation}
+e riscriviamo 
+\begin{equation} \label{intensita_infinitesima}
+    di = \overrightarrow{j} \cdot \overrightarrow{u}_n d \Sigma
+\end{equation}
+
+L'intensità di corrente attraverso la superficie finita \(\Sigma\): si ottiene integrando (\ref{intensita_infinitesima})
+\begin{equation} \label{intensita_di_corrente}
+    i = \int_{\Sigma} \overrightarrow{j} \cdot \overrightarrow{u}_n d \Sigma
+\end{equation}
+essa \emph{risulta eguale al flusso del vettore densità di corrente attraverso la superficie} \(\Sigma\).
+
+In particolare se la superficie \(\Sigma\): è ortogonale a \(\overrightarrow{j}\), cioè a \(\overrightarrow{v}_d\) e \(\overrightarrow{j}\) ha lo stesso valore in tutti i punti di \(\Sigma\),
+\begin{equation}
+    i = j \Sigma \ , \ j = \frac{i}{\Sigma}
+\end{equation}
+\emph{la densità di corrente è la corrente che attraversa l'unità di superficie perpendicolare alla direzione del moto delle cariche ( e resta così giustificato il nome densità di corrente). }
+
+Se, come nei conduttori metallici, i portatori di carica sono negativi, fissata la direzione e il verso di \(\overrightarrow{E}\) la velocità di deriva \(\overrightarrow{v}_{-}\) è diretta in verso opposto rispetto al campo elettrico. 
+Il vettore \(-e v_{-}\) ha invece lo stesso verso di \(\overrightarrow{E}\) e la densità di corrente, detto \(v_{-}\) il numero di portatori per unità di volume, è
+\begin{equation}
+    \overrightarrow{j} = -n_{-} e \overrightarrow{v}_{-}
+\end{equation}
+\emph{parallela e concorde } al campo elettrico.
+
+Che la densità di corrente sia sempre concorde a \(\overrightarrow{E}\), discende dalla definizione di \(\overrightarrow{j}\) come prodotto della carica per unità di volume ( con il suo segno) per la velocità di deriva e riflette la circostanza sperimentale che su scala macroscopica non è possibile correlare il verso della corrente al segno dei portatori di carica: fissata una data differenza di potenziale gli stessi effetti si hanno se la conduzione è dovuta a cariche positive con moto concorde a \(\overrightarrow{E}\) oppure a cariche negative con moto discorde a \(\overrightarrow{E}\). 
+
+In base a queste considerazioni si assume convenzionalmente come verso della corrente quello del moto delle cariche positive, ovvero quello che va dai punti a potenziale maggiore ai punti a potenziale minore.
+
+\subsection{Corrente elettrica stazionaria}
+%TODO add image
+Consideriamo un conduttore percorso da una corrente di densità \(\overrightarrow{j}\). 
+Se \(\Sigma_1\) e \(\Sigma_2\) sono due diverse sezioni del conduttore, le intensità di corrente attraverso le due sezioni sono, in base alla (\ref{intensita_di_corrente}),
+\begin{equation*}
+    i_1 = \int_{\Sigma_1} \overrightarrow{j}_1 \cdot \overrightarrow{u}_1 d \Sigma_1 \ , \ i_2 = \int_{\Sigma_2} \overrightarrow{j}_2 \cdot \overrightarrow{u}_2 d \Sigma_2
+\end{equation*}
+e rappresentano rispettivamente la carica che \emph{entra} e la carica che \emph{esce} nell'unità di tempo nel volume delimitato da \(\Sigma_1, \Sigma_2\) e dalla superficie laterale \(\Sigma_1\) attraverso la quale non c'è flusso di carica. 
+Se si fa l'ipotesi che nell'interno del tronco di cono di basi \(\Sigma_1, \Sigma_2\) non vari nel tempo la carica, allora: 
+\begin{equation}
+    i_1 = i_2
+\end{equation}
+Questa condizione è detta di stazionarietà: \emph{in condizioni stazionarie l'intensità di corrente è costante attraverso ogni sezione del conduttore}. 
 
 \end{document}

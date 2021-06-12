@@ -22,7 +22,7 @@ jobs:
       - name: Rename PDF file
         id: rename-pdf-file
         run: mv src/main.pdf src/dispensa-fisica.pdf
-      if: ${{ success() }}
+        if: ${{ success() }}
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1.0.0

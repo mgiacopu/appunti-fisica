@@ -44,7 +44,7 @@ Lo stesso \emph{punto materiale} può apparire diverso in sistemi di riferimento
 Il \emph{moto rettilineo} si svolge lungo una retta sulla quale vengono fissati arbitrariamente un'origine e un verso ed è pertanto descrivibile tramite una sola coordinata \(x(t)\).
 Le misure ottenute possono essere rappresentate in un sistema con due assi cartesiani detto \emph{diagramma orario}: sull'asse delle ordinate riportiamo i valori di \(x\) (metri) e su quello delle ascisse i corrispondenti valori del tempo (secondi).
 
-%TODO: Aggiungere esempi (?)
+%TODO: Aggiungere grafici
 
   \subsection{Velocità}
     \subsubsection{Velocit\`a media}
@@ -122,17 +122,14 @@ Le misure ottenute possono essere rappresentate in un sistema con due assi carte
 		$$a(t) = a[x(t)]$$
 		Derivando la prima rispetto al tempo e sfruttando la regola di derivazione delle funzioni di funzioni:
 		\begin{align*}
-			a[x(t)] &= \dfrac{d}{dt}v[x(t)]\\
-			        &= \dfrac{d}{dt}\dfrac{d}{dt}\dfrac{dv}{dx}\dfrac{dx}{dt}\\
-		      		&= \dfrac{dv}{dx}\dfrac{dx}{dt}\\
+			a[x(t)] &= \dfrac{d}{dt}v[x(t)] = \dfrac{d}{dt}\dfrac{d}{dt}\dfrac{dv}{dx}\dfrac{dx}{dt} = \dfrac{dv}{dx}\dfrac{dx}{dt}\\
 			a  	    &= \dfrac{dv}{dx}\\
 			adx     &= vdv
 		\end{align*}
 		Ovvero se dalla posizione $x$ dove un punto possiede una velocit\`a $v$ e un'accelerazione $a$ si ha uno spostamento $dx$, allora il punto subisce una variazione di velocit\`a $dv$.
 		Integrando:
 		\begin{align*}
-			\int_{t_0}^t a(x)dx &= \int_{v_0}^{v} vdv\\
-		      		       &= \dfrac{1}{2}v^2 -\dfrac{1}{2}v_0^2
+			\int_{t_0}^t a(x)dx &= \int_{v_0}^{v} vdv = \dfrac{1}{2}v^2 -\dfrac{1}{2}v_0^2
 		\end{align*}
 		Dove $v_0$ \`e la velocit\`a in $x_0$.
 		Questo permette il calcolo della variazione di velocit\`a nel passaggio dalla posizione $x_0$ a $x$.
@@ -144,9 +141,7 @@ Si intende per moto rettilineo uniforme un tipo di moto rettilineo in cui la vel
   \subsection{Legge oraria del moto rettilineo uniforme}
 	Considerando il moto rettilineo uniforme in cui $v$ \`e costante si ha:
 	\begin{align*}
-		x(t) &= x_0 + v\int_{t_0}^t dt\\
-		     &=x_0 + v(t-t_0)\\
-		     &=x_0 + vt\qquad\qquad se\ t_0 = 0
+		x(t) &= x_0 + v\int_{t_0}^t dt=x_0 + v(t-t_0)=x_0 + vt\qquad\qquad se\ t_0 = 0
 	\end{align*}
 	Si nota pertanto come nel moto rettilineo uniforme lo spazio \`e una funzione lineare del tempo e la velocit\`a istantanea coincide con la velocit\`a media.
 \section{Moto rettilineo uniformemente accelerato}
@@ -160,10 +155,8 @@ Si intende per moto rettilineo uniformemente accelerato un moto in cui l'acceler
 	\subsection{Dipendenza della posizione dal tempo}
 	Lo spazio \`e una funzione quadratica del tempo:
 	\begin{align*}
-		x(t) &= x_0 +\int_{t_0}^t [v_0 + a(t-t_0)]dt\\
-	       &= x_0 + \int_{t_0}^t v_0dt + \int_{t_0}^t a(t-t_0)dt\\
-	  x(t) &= x_0 + v(t-t_0) +\dfrac{1}{2}a(t-t_0)^2\\
-		     &= x_0 + v_0t +\dfrac{1}{2}at^2\qquad\qquad se\ t_0 = 0
+		x(t) &= x_0 +\int_{t_0}^t [v_0 + a(t-t_0)]dt= x_0 + \int_{t_0}^t v_0dt + \int_{t_0}^t a(t-t_0)dt\\
+	  x(t) &= x_0 + v(t-t_0) +\dfrac{1}{2}a(t-t_0)^2= x_0 + v_0t +\dfrac{1}{2}at^2\qquad\qquad se\ t_0 = 0
 	\end{align*}
 \section{Moto verticale di un corpo}
 Trascurando l'attrito con l'aria un corpo lasciato libero di cadere in vicinanza della superficie terrestre si muove verso il basso con una accelerazione costante $g=9.8\frac{m}{s^2}$.
@@ -236,7 +229,7 @@ Il moto \`e pertanto rettilineo uniformemente accelerato.
 		\subsubsection{Discesa}
 		Per $t\ge t_M$ si \`e nella situazione del primo esempio: punto che cade da un'altezza $x_M$ con velocit\`a iniziale nulla.
 		Pertanto:
-		$$t_s = \sqrt{2x_M}/{g}=t_M$$ % TODO: Frazione sotto radice?
+		$$t_s = \frac{\sqrt{2x_M}}{g}=t_M$$
 		E la durata complessiva del moto \`e pertanto:
 		$$2t_M = \dfrac{2v_2}{g}$$
 		Ricavando $t(x)$ dalla legge oraria e da $v(x)$ si ha:
@@ -294,9 +287,7 @@ Dove:
 	\subsection{Accelerazione}
 	L'accelerazione del punto che si muove con moto armonico si ottiene derivando $v(t)$.
 	\begin{align*}
-		\ddot{x} &= a(t) = \dfrac{dv}{dt} = \dfrac{d^2x}{dt^2}\\
-		       &= -\omega^2 A \sin(\omega t + \phi)\\
-		       &= -\omega^2 x
+		\ddot{x} = a(t) = \dfrac{dv}{dt} = \dfrac{d^2x}{dt^2}= -\omega^2 A \sin(\omega t + \phi)= -\omega^2 x
 	\end{align*}
 	L'accelerazione si annulla nel centro di oscillazione e assume il valore in modulo massimo $\omega^2 A$ agli estremi, dove si inverte la velocit\`a.
 	Si nota inoltre come sia proposizionale ed opposta allo spostamento dal centro di oscillazione.
@@ -312,10 +303,7 @@ Dove:
 	$$A^2 = x_0^2 + \dfrac{v_0^2}{\omega^2}$$
 	\subsection{Dipendenza della velocit\`a dalla posizione}
 	\begin{align*}
-		v(x) &= \int_{x_o}^x a(x)dx\\
-		     &=-\omega^2\int_{x_0}^x xdx\\
-		     &=\dfrac{1}{2}\omega^2(x_x^2-x^2)\\
-		     &=\dfrac{1}{2}v^2 - \dfrac{1}{2}v_0^2
+		v(x) &= \int_{x_o}^x a(x)dx=-\omega^2\int_{x_0}^x xdx=\dfrac{1}{2}\omega^2(x_x^2-x^2)=\dfrac{1}{2}v^2 - \dfrac{1}{2}v_0^2
 	\end{align*}
 	Pertanto
 	$$v^2 = v_0^2 + \omega^2(x_0^2(x_0^2-x^2))$$
@@ -368,15 +356,14 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
 	\subsection{Legge oraria}
 	La legge oraria si ricava per integrazione da $v(t)$:
 	\begin{align*}
-		x(t)&=x_0+\int_0^t v(t)dt=\\
-		    &=\int_0^tv_0e^{-kt}dt=\\
-				&=-\dfrac{v_0}{k}[e^{-kt}]_0^t=\\
-				&=\dfrac{v_0}{k}(1-e^kt)
+		x(t)=x_0+\int_0^t v(t)dt=\int_0^tv_0e^{-kt}dt=-\dfrac{v_0}{k}[e^{-kt}]_0^t=\dfrac{v_0}{k}(1-e^kt)
 	\end{align*}
 	\subsection{Costante di tempo}
-	Si definisce costante di tempo
+	La rapidità di variazione della funzione $e^{-kt}$ è determinata dal valore di $k$.
+	Posto
 	$$\tau = \dfrac{1}{k}$$
-	in un intervallo di tempo pari a $\tau$ la funzione si riduce di un fattore di $e$. %TODO: Correggere il senso di questa frase
+	detto anche \emph{costante di tempo}, so che in un intervallo di tempo pari a $\tau$ la funzione si riduce di un fattore di $e$
+	$$\frac{e^{-k\left(t + \tau\right)}}{e^{-k \tau}} = e^{-1}$$
 	Minore il valore di $\tau$ pi\`u rapida la decrescita.
 
 \section{Moto nel piano}
@@ -430,9 +417,9 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
 			\paragraph{Componenti cartesiane}
       Essendo $\overrightarrow{r}=x\overrightarrow{u_x}+y\overrightarrow{u_y}$,
 			\begin{align*}
-        v &=\dfrac{d\overrightarrow{r}}{dt}\\
-          &=\dfrac{dx}{dt}\overrightarrow{u_x}+\dfrac{dy}{dt}\overrightarrow{u_y}\\
-          &=v_x\overrightarrow{u_x} + v_y\overrightarrow{u_y}
+        v =\dfrac{d\overrightarrow{r}}{dt}
+          =\dfrac{dx}{dt}\overrightarrow{u_x}+\dfrac{dy}{dt}\overrightarrow{u_y}
+          =v_x\overrightarrow{u_x} + v_y\overrightarrow{u_y}
 			\end{align*}
 			La velocit\`a del punto $P$ ha componenti cartesiani $v_x$ e $v_y$ dei due moti rettilinei descritti dai punti proiezione di $P$ sugli assi cartesiani.
 			Pertanto
@@ -443,10 +430,8 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
       Introducendo $\overrightarrow{u_r}$ e $\overrightarrow{u_\theta}$, il versore della direzione di $\overrightarrow{r}$ e il versore ortogonale alla stessa, si nota come questi cambiano direzione durante il moto.
       Il raggio vettore $\overrightarrow{r}$ pu\`o essere espresso come $ru_r$, pertanto:
 			\begin{align*}
-        v&=\dfrac{d\overrightarrow{r}}{dt}\\
-         &=\dfrac{d\overrightarrow{r}}{dt}\overrightarrow{u_r}+r\dfrac{d\overrightarrow{u_r}}{dt}\Rightarrow\\
-        v&=\dfrac{d\overrightarrow{r}}{dt}\overrightarrow{u_r}+r\dfrac{d\theta}{dt}\overrightarrow{u_\theta}\\
-				 &=v_r+v_\theta\\
+        v&=\dfrac{d\overrightarrow{r}}{dt}=\dfrac{d\overrightarrow{r}}{dt}\overrightarrow{u_r}+r\dfrac{d\overrightarrow{u_r}}{dt}\Rightarrow\\
+        v&=\dfrac{d\overrightarrow{r}}{dt}\overrightarrow{u_r}+r\dfrac{d\theta}{dt}\overrightarrow{u_\theta}=v_r+v_\theta\\
 			\end{align*}
       La velocit\`a, sempre tangente alla traiettoria si scompone in due componenti: la velocit\`a radiale $v_r$ diretta lungo $\overrightarrow{r}$ e di modulo $\frac{dr}{dt}$ e la velocit\`a trasversa $v_\theta$ ortogonale a $\overrightarrow{r}$ e di modulo $r\frac{d\theta}{dt}$.
 			$v_r$ dipende dalle variazioni del modulo del raggio vettore $v_\theta$, collegata alle variazioni di direzione dello stesso.
@@ -502,10 +487,7 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
 		\subsubsection{Componenti cartesiane}
 		Le componenti cartesiane dell'accelerazione sono le accelerazioni dei due moti rettilinei proiezioni sugli assi del moto di $P$ lungo la traiettoria curva:
 		\begin{align*}
-      \overrightarrow{a}&=\dfrac{d\overrightarrow{v}}{dt}=\\
-                        &=\dfrac{d\overrightarrow{v_x}}{dt}\overrightarrow{u_x}+\dfrac{d\overrightarrow{v_y}}{dt+\overrightarrow{u_y}}=\\
-                        &=\dfrac{d^2x}{dt^2}\overrightarrow{u_x}+\dfrac{d^2y}{dt^2}\overrightarrow{u_y}=\\
-                        &=a_x\overrightarrow{u_x}+a_y\overrightarrow{u_y}
+      \overrightarrow{a}=\dfrac{d\overrightarrow{v}}{dt}=\dfrac{d\overrightarrow{v_x}}{dt}\overrightarrow{u_x}+\dfrac{d\overrightarrow{v_y}}{dt+\overrightarrow{u_y}}=\dfrac{d^2x}{dt^2}\overrightarrow{u_x}+\dfrac{d^2y}{dt^2}\overrightarrow{u_y}=a_x\overrightarrow{u_x}+a_y\overrightarrow{u_y}
 		\end{align*}
     Detto $\phi$ l'angolo che $\overrightarrow{u_T}$ forma con $\overrightarrow{u_x}$, si deduce che:
     $$\overrightarrow{a_x}=\dfrac{d\overrightarrow{v}}{dt}\cos\phi - \dfrac{\overrightarrow{v}^2}{R}\sin\phi$$
@@ -514,9 +496,7 @@ La velocit\`a decresce esponenzialmente nel tempo e il punto alla fine si ferma.
 		\subsubsection{Componenti polari}
     Considerando che $\overrightarrow{u_r}$ e $\overrightarrow{u_\theta}$ non sono fissi e $\overrightarrow{v}=\frac{d\overrightarrow{r}}{dt}\overrightarrow{u_r}+\frac{d\theta}{t}\overrightarrow{u_\theta}$
 		\begin{align*}
-      \overrightarrow{a}&=\dfrac{d\overrightarrow{v}}{dt}=\\
-                        &=\dfrac{d}{t}\biggl(\dfrac{d\overrightarrow{r}}{d\overrightarrow{r}}\overrightarrow{u_r}+r\dfrac{d\theta}{dt}\overrightarrow{u_\theta}\biggr)=\\
-                        &=\dfrac{d^2\overrightarrow{r}}{dt^2}\overrightarrow{u_r}+\dfrac{d\overrightarrow{r}}{dt}\dfrac{d\overrightarrow{u_r}}{dt}+\dfrac{d\overrightarrow{r}}{dt}\dfrac{d\theta}{dt}\overrightarrow{u_\theta}+r\dfrac{d^2\theta}{dt^2}\overrightarrow{u_\theta}+\overrightarrow{r}\dfrac{d\theta}{dt}\dfrac{d\overrightarrow{r_\theta}}{dt}
+      \overrightarrow{a}=\dfrac{d\overrightarrow{v}}{dt}=\dfrac{d}{t}\biggl(\dfrac{d\overrightarrow{r}}{d\overrightarrow{r}}\overrightarrow{u_r}+r\dfrac{d\theta}{dt}\overrightarrow{u_\theta}\biggr)=\dfrac{d^2\overrightarrow{r}}{dt^2}\overrightarrow{u_r}+\dfrac{d\overrightarrow{r}}{dt}\dfrac{d\overrightarrow{u_r}}{dt}+\dfrac{d\overrightarrow{r}}{dt}\dfrac{d\theta}{dt}\overrightarrow{u_\theta}+r\dfrac{d^2\theta}{dt^2}\overrightarrow{u_\theta}+\overrightarrow{r}\dfrac{d\theta}{dt}\dfrac{d\overrightarrow{r_\theta}}{dt}
 		\end{align*}
     Considerando che $\frac{d\overrightarrow{u_r}}{dt}=\frac{d\theta}{dt}\overrightarrow{u_\theta}$ e che $\frac{d\overrightarrow{u_\theta}}{dt}=-\frac{d\theta}{dt}\overrightarrow{u_r}$ si nota che per una variazione positiva di $\theta$ $d\overrightarrow{u_\theta}$ \`e opposto a $\overrightarrow{u_r}$  e si ha:
     $$\overrightarrow{a}=\biggl[\dfrac{d^2\overrightarrow{r}}{dt^2}-r\biggl(\dfrac{d\theta}{dt}\biggr)^2\biggr]\overrightarrow{u_r}+\biggl[2\dfrac{d\overrightarrow{r}}{dt}\dfrac{d\theta}{dt}+\overrightarrow{r}\dfrac{d^2\theta}{dt^2}\biggr]\overrightarrow{u_\theta}$$
@@ -574,10 +554,7 @@ La rappresentazione in coordinate cartesiane \`e legata a $\theta(t)$:
 		\subsubsection{Accelerazione angolare}
 		Essendo anche $\omega$ variabile si definisce l'accelerazione angolare:
 		\begin{align*}
-			a&=\dfrac{d\omega}{dt}=\\
-			 &=\dfrac{d^2\theta}{dt^2}=\\
-			 &=\dfrac{1}{R}\dfrac{dv}{dt}=\\
-			 &=\dfrac{a_T}{R}\\
+			a=\dfrac{d\omega}{dt}=\dfrac{d^2\theta}{dt^2}=\dfrac{1}{R}\dfrac{dv}{dt}=\dfrac{a_T}{R}
 		\end{align*}
 		\subsubsection{Determinare la velocit\`a angolare dall'accelerazione}
 		Nota $a(t)$ si pu\`o integrare ottenendo:
@@ -609,10 +586,7 @@ La rappresentazione in coordinate cartesiane \`e legata a $\theta(t)$:
 	\subsection{Accelerazione del moto circolare}
 		Tramite $A$ e $\omega$ si esprime l'accelerazione del moto circolare:
 		\begin{align*}
-			a&=\dfrac{dv}{dt}=\\
-			 &=\dfrac{d}{dt}(\omega\times r)=\\
-			 &=\dfrac{d\omega}{dt}\times r + \omega\times\dfrac{dr}{dt}\Rightarrow\\
-			\Rightarrow&a=a\times r+\omega\times v\\
+			a=\dfrac{dv}{dt}=\dfrac{d}{dt}(\omega\times r)=\dfrac{d\omega}{dt}\times r + \omega\times\dfrac{dr}{dt}\Rightarrow a=a\times r+\omega\times v
 		\end{align*}
 		Si nota come il primo termine $a\times r$ \`e l'accelerazione tangenziale $a_T$ di modulo $aR$, mentre il secondo $\omega\times v$ \`e l'accelerazione centripeta $a_N$ di modulo $\omega^2R$.
 		Nel moto circolare uniforme $\omega$ \`e un vettore costante anche in modulo, $a$ \`e nulla e $a=a_N=\omega\times v$.
@@ -636,14 +610,14 @@ Si vuole calcolare la traiettoria, la massima altezza raggiunta e la posizione $
 	$$v(t)=v_0+\int_{t_0}^ta(t)dt=v_0-gtu_x$$
 	\subsection{Velocit\`a}
 	La velocit\`a si trova nel piano individuato dai vettori costanti $v_\theta$ e $g$, il piano $x,y$.
-	Essendo $v_\theta=v_0\cos t au_x+v_\theta\sin au_y$: %TODO: t au_x ??
-	$$v(t)=v_\theta\cos au_y+(v_\theta\sin a-gt)u_x$$
+	Essendo $v_\theta=v_0\cos \alpha u_x+v_\theta\sin \alpha u_y$:
+	$$v(t)=v_\theta\cos \alpha u_y+(v_\theta\sin \alpha-gt)u_x$$
 	\subsection{Leggi orarie dei moti proiettati}
 	La velocit\`a dei moti proiettati sugli assi sono $v_y=v_o\cos\alpha$ e $v_x=v_0\sin\alpha-gt$.
 	Pertanto le leggi orarie dei moti proiettati sugli assi sono:
   \begin{multicols}{2}
     \noindent
-    $$x=v_0\cos t\alpha t$$
+    $$x=v_0\cos \alpha t$$
     $$y=v_0\sin\alpha t-\dfrac{1}{2}gt^2$$
   \end{multicols}
   \begin{tabular}{|p{13cm}}
@@ -657,22 +631,18 @@ Si vuole calcolare la traiettoria, la massima altezza raggiunta e la posizione $
 	\subsection{Direzione del moto}
 	La direzione del moto in funzione del tempo o della coordinata $x$ pu\`o essere caratterizzata dall'angolo $\phi$ che il vettore velocit\`a forma con l'asse orizzontale:
 	\begin{align*}
-		\tan\phi&=\dfrac{v_y}{v_x}=\\
-		        &=\tan\alpha-\dfrac{g}{v_0\cos\alpha}t=\\
-				    &=\tan\alpha-\dfrac{g}{v_0^2\cos^2\alpha}x
+		\tan\phi=\dfrac{v_y}{v_x}=\tan\alpha-\dfrac{g}{v_0\cos\alpha}t=\tan\alpha-\dfrac{g}{v_0^2\cos^2\alpha}x
 	\end{align*}
 	Per calcolare la gittata $OG$ si impone $y(x)=0$ e si ottengono due soluzioni $x=0$ e:
 	\begin{align*}
-		x_G&=\dfrac{2v_0^2\cos^2\alpha\tan\alpha}{g}=\\
-		   &=\dfrac{2v_0^2\cos\alpha\sin\alpha}{g}=\\
-			 &=2X_M
+		x_G=\dfrac{2v_0^2\cos^2\alpha\tan\alpha}{g}=\dfrac{2v_0^2\cos\alpha\sin\alpha}{g}=2X_M
 	\end{align*}
 	Dove $X_M=v_0^2\frac{\cos\alpha\sin\alpha}{g}$ \`e la coordinata dal punto di mezzo del segmento $OG$ e ascissa del punto di massima altezza.
 	\subsection{Altezza massima}
 	L'altezza massima raggiunta \`e pertanto:
 	$$y(X_M)=Y_M=\dfrac{v_0^2\sin^2\alpha}{2g}$$
 	L'altezza massima si pu\`o ottenere annullando $\frac{dy}{dx}$, ovvero imponendo
-	$$\tan\alpha-(\dfrac{g}{v_0^2}\cos^2\alpha)x=0$$
+	$$\tan\alpha-\left(\dfrac{g}{v_0^2}\cos^2\alpha\right)x=0$$
 	Si ricava da questo l'ascissa del massimo $X_M$ e si calcola $y(X_M)$.
 	Un altro modo \`e sfruttare il fatto che nel punto di massima altezza la velocit\`a \`e orizzontale, pertanto $u_y=0$ ovvero $t=t_M=v_0\sin\frac{\alpha}{g}$, sostituendo $x(t)$ e $y(t)$ si trovano $X_M$ e $Y_M$.
 	\subsection{Angolo di lancio per la gittata massima}
@@ -688,17 +658,18 @@ Si vuole calcolare la traiettoria, la massima altezza raggiunta e la posizione $
     $$u_y(t_G)=-v_o\sin\alpha$$
     $$\tan\phi=-\tan\alpha$$
   \end{multicols}
-\section{Riepilogo}
 
-\begin{itemize}
-  \item La descrizione del moto consiste nel determinare come varia la posizione del punto in funzione del tempo; se conosciamo la posizione ad un certo istante possiamo sapere come si sviluppa il moto se abbiamo la direzione istantanea del moto e la rapidità con cui avviene lo spostamento: ciò porta al concetto di velocità e possiamo concepire il moto come una successione di spostamenti infinitesimi \(d \overrightarrow{r}= \overrightarrow{v} dt\).
-  \item La velocità a sua volta può cambiare durante il moto e le sue variazioni sono espresse dall'accelerazione : \(d \overrightarrow{v} = \overrightarrow{\alpha} d t\).
-  \item La traiettoria è il luogo dei punti occupati in funzione del tempo dalla punta del vettore \(\overrightarrow{r}(t)\): questo dà la posizione del punto, ma non la direzione del moto espressa, come detto sopra, da \(d \overrightarrow{r}\) e quindi da \(\overrightarrow{v}\).
-  \item La velocità v è dunque sempre tangente alla traiettoria; l'accelerazione in generale non è parallela alla velocità. La componente di \(\overrightarrow{\alpha}\) ortogonale a \(\overrightarrow{v}\) descrive le variazioni della direzione del moto e non ha alcun legame con le variazioni del modulo di \(\overrightarrow{v}\). Nel moto curvilineo c'è sempre una componente dell'accelerazione ortogonale alla traiettoria, nel moto rettilineo questa componente è sempre nulla.
-  \item Da \(r(t)\) si passa a \(\boldsymbol{v}(t)\) e ad \(\boldsymbol{a}(t)\) derivando rispetto al tempo; se invece è data \(\boldsymbol{a}(t)\) il passaggio inverso si fa integrando ed è essenziale la conoscenza delle condizioni iniziali.
-  \item Le grandezze cinematiche fondamentali sono dunque posizione, velocità, accelerazione e sono legate tra loro da operazioni di derivazione e di integrazione, conseguenza del fatto che lo studio dell'evoluzione del moto comporta il concetto di variazione che è espresso matematicamente dall'operazione di derivazione.
-  \item \(\mathbf{r}, \boldsymbol{v}, \boldsymbol{a}\) sono grandezze vettoriali: nella loro definizione oltre ad un numero bisogna dare una direzione e un verso; pertanto le variazioni di posizione e di velocità sono espresse completamente solo se si tiene conto sia della variazione del modulo che della variazione della direzione.
-  \item È necessario specificare sempre in quale sistema di riferimento si descrive il moto: le coordinate del punto, le componenti di \(\boldsymbol{v}\) e \(\boldsymbol{a}\), l'espressione analitica della traiettoria dipendono dal sistema di riferimento. Però le relazioni più generali tra le grandezze cinematiche sono relazioni vettoriali e in quanto tali sono invarianti rispetto alla scelta del sistema di riferimento, cioè valgono in qualsiasi sistema di riferimento.
-  Quindi, se \(\mathbf{b}=\mathbf{c}\), questo comporta sempre \(b_{x}=c_{x}, b_{y}=c_{y}, b_{z}=c_{z}\) ma i valori \(\left(b_{x}, b_{y}, b_{z}\right)\) e \(\left(c_{x}, c_{y}, c_{z}\right)\) cambiano col sistema di riferimento.
-\end{itemize}
+% \section{Riepilogo}
+% \begin{itemize}
+%   \item La descrizione del moto consiste nel determinare come varia la posizione del punto in funzione del tempo; se conosciamo la posizione ad un certo istante possiamo sapere come si sviluppa il moto se abbiamo la direzione istantanea del moto e la rapidità con cui avviene lo spostamento: ciò porta al concetto di velocità e possiamo concepire il moto come una successione di spostamenti infinitesimi \(d \overrightarrow{r}= \overrightarrow{v} dt\).
+%   \item La velocità a sua volta può cambiare durante il moto e le sue variazioni sono espresse dall'accelerazione : \(d \overrightarrow{v} = \overrightarrow{\alpha} d t\).
+%   \item La traiettoria è il luogo dei punti occupati in funzione del tempo dalla punta del vettore \(\overrightarrow{r}(t)\): questo dà la posizione del punto, ma non la direzione del moto espressa, come detto sopra, da \(d \overrightarrow{r}\) e quindi da \(\overrightarrow{v}\).
+%   \item La velocità v è dunque sempre tangente alla traiettoria; l'accelerazione in generale non è parallela alla velocità. La componente di \(\overrightarrow{\alpha}\) ortogonale a \(\overrightarrow{v}\) descrive le variazioni della direzione del moto e non ha alcun legame con le variazioni del modulo di \(\overrightarrow{v}\). Nel moto curvilineo c'è sempre una componente dell'accelerazione ortogonale alla traiettoria, nel moto rettilineo questa componente è sempre nulla.
+%   \item Da \(r(t)\) si passa a \(\boldsymbol{v}(t)\) e ad \(\boldsymbol{a}(t)\) derivando rispetto al tempo; se invece è data \(\boldsymbol{a}(t)\) il passaggio inverso si fa integrando ed è essenziale la conoscenza delle condizioni iniziali.
+%   \item Le grandezze cinematiche fondamentali sono dunque posizione, velocità, accelerazione e sono legate tra loro da operazioni di derivazione e di integrazione, conseguenza del fatto che lo studio dell'evoluzione del moto comporta il concetto di variazione che è espresso matematicamente dall'operazione di derivazione.
+%   \item \(\mathbf{r}, \boldsymbol{v}, \boldsymbol{a}\) sono grandezze vettoriali: nella loro definizione oltre ad un numero bisogna dare una direzione e un verso; pertanto le variazioni di posizione e di velocità sono espresse completamente solo se si tiene conto sia della variazione del modulo che della variazione della direzione.
+%   \item È necessario specificare sempre in quale sistema di riferimento si descrive il moto: le coordinate del punto, le componenti di \(\boldsymbol{v}\) e \(\boldsymbol{a}\), l'espressione analitica della traiettoria dipendono dal sistema di riferimento. Però le relazioni più generali tra le grandezze cinematiche sono relazioni vettoriali e in quanto tali sono invarianti rispetto alla scelta del sistema di riferimento, cioè valgono in qualsiasi sistema di riferimento.
+%   Quindi, se \(\mathbf{b}=\mathbf{c}\), questo comporta sempre \(b_{x}=c_{x}, b_{y}=c_{y}, b_{z}=c_{z}\) ma i valori \(\left(b_{x}, b_{y}, b_{z}\right)\) e \(\left(c_{x}, c_{y}, c_{z}\right)\) cambiano col sistema di riferimento.
+% \end{itemize}
+
 \end{document}

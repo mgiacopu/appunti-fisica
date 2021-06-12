@@ -61,6 +61,10 @@
 
 \usepackage{ifthen}
 
+\usepackage{multicol}
+
+\usepackage{siunitx}
+
 \newtheorem{theorem}{Teorema}[section]
 \newtheorem{definition}{Definizione}[section]
 \newtheorem{corollary}{Corollary}[theorem]
@@ -78,7 +82,6 @@
 \renewcommand{\P}{\mathcal{P}}
 
 % where b is big, s is small, m is minimum, h is half
-%TODO: define this only for simulazione-nfa-ex1
 \newcolumntype{b}{>{\hsize=.7\hsize}X}
 \newcolumntype{h}{>{\hsize=.6\hsize}X}
 \newcolumntype{s}{>{\hsize=.5\hsize}X}
@@ -89,3 +92,13 @@
 	\arrayrulecolor{black!30}%
 	\midrule[\lightrulewidth]%
 	\arrayrulecolor{black}}
+
+% Spazio sotto ad un paragrafo con 1 riga vuota
+\setlength{\parskip}{0.3cm}
+
+% Grassetto dell'elemento sotto alla freccia vettoriale
+\let\oldoverrightarrow\overrightarrow
+\renewcommand{\overrightarrow}[1]{\oldoverrightarrow{\mathbf{#1}}}
+
+% comando per analisi dimensionale \udm{}
+\newcommand{\udm}[1]{\hspace{0.2cm} \left[#1\right]}

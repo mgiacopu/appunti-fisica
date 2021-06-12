@@ -22,11 +22,28 @@ jobs:
       - name: Rename PDF file
         id: rename-pdf-file
         run: mv src/main.pdf src/dispensa-fisica.pdf
-      - name: Upload pdf as artifact
-        uses: actions/upload-artifact@v2
+      if: ${{ success() }}
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: build-dispensa
-          path: src/dispensa-fisica.pdf
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+        if: ${{ success() }}
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: src/dispensa-fisica.pdf
+          asset_name: dispensa-fisica.pdf
+          asset_content_type: application/pdf
         if: ${{ success() }}
       - name: Send dispensa to Telegram Group
         uses: appleboy/telegram-action@master

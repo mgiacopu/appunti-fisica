@@ -2,7 +2,7 @@
 \usepackage{standalone}
 \usepackage{amsmath}
 \usepackage{../../style}
-% \graphicspath{{./assets/images/}}
+\graphicspath{{./assets/images/}}
 
 % arara: pdflatex: { synctex: yes, shell: yes }
 % arara: latexmk: { clean: partial }
@@ -25,7 +25,12 @@ La distinzione tra forze interne ed esterne dipende da come viene definito il si
 Alle forze interne si applica il principio di azione e reazione, indicato anche come terza legge di Newton. 
 Se il punto \(i\)-esimo esercita sul punto \(j\)-esimo la forza \(\overrightarrow{F}_{i,j}\), il punto \(j\)-esimo reagisce esercitando sul punto \(i\)-esimo la forza \(\overrightarrow{F}_{j,i}\).
 Si osserva che queste forze hanno la stessa direzione, verso opposto, stesso modulo e stessa retta di azione; esse possono essere attrattive o repulsive. 
-% TODO aggiungere disegno
+
+\begin{figure}[h]
+    \includegraphics[scale=0.9]{forze_interne_azione_reazione}
+    \centering
+    \caption{}
+\end{figure}
 
 In generale la risultante \(\overrightarrow{F}_i^{(I)}\) delle forze interne agenti sull'\(i\)-esimo punto è diversa da zero, però la risultante di tutte le forze interne del sistema è nulla perché, in base al principio di azione e reazione, esse sono a due a due eguali ed opposte:
 \begin{equation}
@@ -255,24 +260,47 @@ Ottengo:
 \end{equation}
 
 \subsection{Esempi}
-% TODO forse è meglio aggiungere assets come riferimento
 \begin{itemize}
     \item \(m_1 = m_2 = m : v_{1,fin} = v_{2,in} \ , \ v_{2,fin} = v_{1,in}\) \newline
     Si ottiene a seguito dell'urto uno scambio delle velocità. 
+
+    \begin{figure}[h]
+        \includegraphics[scale=1]{urto_due_punti_materiali}
+        \centering
+    \end{figure}
+
     \item \(m_1 >> m_2 = m : v_{1,fin} \cong v_{1,in} \ , \ v_{2,fin} = 2 v_{1,in} - v_{2,in}\) \newline
     Nell'urto la velocità di \(m_1\) rimane praticamente la stessa
+
+    \begin{figure}[h]
+        \includegraphics[scale=1]{urto_due_punti_materiali_diversi}
+        \centering
+    \end{figure}
+
     \item \(m_1 << m_2 = m \ e \ v_{2,in} = 0  \ : \ v_{1,fin} = - v_{1,in} \ , \ v_{2,fin} \cong 0 \) \newline
     In tale situazione \(m_1\) rimbalza all'indietro e \(m_2\) resta fermo. 
     Questo è un caso molto particolare, in cui possiamo verificare che si conserva l'energia cinetica, ma non la quantità di moto.
     Per esempio si tratta dell'urto di un punto contro un corpo massiccio, come una parete.
     Durante l'urto si sviluppano forze vincolari esterne di tipo impulsivo e quindi paragonabili a quelle interne. 
     Ciò non permette la conservazione della quantità di moto.
+
+    \begin{figure}[h]
+        \includegraphics[scale=1]{urto_parete}
+        \centering
+    \end{figure}
+
     \item Urto obliquo contro una parete piana immobile liscia.\newline
     Anche questo è un caso particolare; è un urto bidimensionale, ma siccome uno dei due corpi è immobile è possibile risolvere il problema conoscendo la velocità prima dell'urto.
     Supponiamo che \(\overrightarrow{v}_{in}\) formi l'angolo \(\theta\) con la normale alla parete e abbia quindi le componenti \(v_{in} \sin \theta\) e \(v_{in} \cos \theta\). 
     Nella direzione parallela alla parete non c'è urto, si conserva la relativa quantità di moto e la componente della velocità vale ancora \(v_{in} \sin \theta\) dopo l'urto; 
     in direzione ortogonale abbiamo la situazione vista nel precedente caso e \(v_{in} \cos \theta\) diventa \(-v_{in} \cos \theta\). 
     Quindi \(v_{fin}\) è eguale in modulo a \(v_{in}\) e forma ancora l'angolo \(\theta\) con la normale alla parete. 
+
+    \begin{figure}[h]
+        \includegraphics[scale=1]{urto_obliquo}
+        \centering
+    \end{figure}
+
 \end{itemize}
 
 \end{document}

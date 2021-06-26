@@ -2,6 +2,7 @@
 \usepackage{standalone}
 \usepackage{amsmath}
 \usepackage{../../style}
+\graphicspath{{./assets/images/}}
 
 \begin{document}
 
@@ -13,9 +14,15 @@ Sperimentalmente è provato con estrema accuratezza che le leggi fisiche non dip
 Fissato un sistema di riferimento e stabilita una certa proprietà, questa resta vera anche se cambiano l'origine e l'orientazione degli assi coordinati, ovvero se ci riferiamo ad un altro sistema ottenuto dal primo con una traslazione (spostamento dell'origine, conservando la stessa direzione degli assi) o con una rotazione (stessa origine, cambio della direzione degli assi) o con una operazione combinata.
 Non esiste pertanto un punto privilegiato dello spazio e nemmeno un'orientazione privilegiata: lo spazio appare omogeneo e isotropo. 
 
+\begin{figure}[h]
+    \includegraphics[scale=0.8]{punto_due_sistemi_riferimento}
+    \centering
+    \caption{}
+    \label{punto_due_sistemi_riferimento}
+\end{figure}
+
 Abbiamo già rilevato come il concetto stesso di moto sia relativo,  abbia cioè bisogno della precisazione del sistema di riferimento. 
-% TODO add figura (3.1)
-Consideriamo il problema riferendoci alla figura 3.1. 
+Consideriamo il problema riferendoci alla figura \ref{punto_due_sistemi_riferimento}. 
 Il punto \(P\) è in movimento lungo una generica traiettoria. 
 Il suo moto viene osservato da una terna cartesiana con centro in \(O\) che, per convenzione, chiamiamo sistema fisso e da una terna cartesiana con centro \(O'\) che, sempre per convenzione, chiamiamo sistema mobile.
 
@@ -266,12 +273,17 @@ Le formule di trasformazione tra i due sistemi di riferimento diventano:
     \overrightarrow{a'} = \overrightarrow{a} - \overrightarrow{a_{O'}} \ , \ a_x' & = a_x - a_t 
 \end{align*}
 
-% TODO: Salto il primo esempio, in caso si aggiunge più avanti. Passo al secondo che ha fatto Iuppa
-
 \subsection{Esempio carrello}
-% TODO aggiungi foto secondo esempio (carrello)
+
+\begin{figure}[h]
+    \includegraphics[scale=0.8]{carrello}
+    \centering
+    \caption{}
+    \label{carrello}
+\end{figure}
+
 Consideriamo di avere un punto materiale di massa \(m\), posto sul pavimento del carrello che continua a muoversi con accelerazione \(\overrightarrow{a}\). 
-Si assuma l'attrito nullo e che ad un estremo del carrello ci sia una molla di costante elastica \(k\) (figura ??). % TODO add reference
+Si assuma l'attrito nullo e che ad un estremo del carrello ci sia una molla di costante elastica \(k\) (figura \ref{carrello}).
 Nel sistema inerziale si osservano i seguenti eventi: il punto resta fermo (non c'è attrito tra punto e pavimento) mentre il carrello gli scorre sotto, fino a quando l'estremo della molla lo raggiunge. 
 La molla inizia allora a comprimersi e il punto a muoversi; a regime il punto è fermo rispetto al carrello mentre è in moto, con la stessa accelerazione \(a\), del carrello, rispetto ad \(O\). 
 In tale condizione la molla è compressa dalla quantità \(x_C = m a_t / k\): infatti è la forza elastica della molla, \(k x\), che applicata al punto gli comunica l'accelerazione \(a_t\).

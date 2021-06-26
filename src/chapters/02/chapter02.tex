@@ -8,9 +8,6 @@
 % arara: latexmk: { clean: partial }
 \begin{document}
 
-% TODO check generale documento
-% TODO sistemare notazione versori (u_x vs \hat{x})
-% TODO fare (eventualmente) riassunto finale come cap1
 \chapter{Dinamica del punto}
 
 \section{Legge d'inerzia}
@@ -43,7 +40,7 @@ La massa viene detta inerziale in quanto esprime l'inerzia del punto, ovvero la 
 Se nello studio del corpo approssimato a un punto materiale si possono trascurare le dimensioni, la massa diventa una sua grandezza fondamentale.
 La legge può essere espansa come:
 \begin{equation}
-    \overrightarrow{F} = m \frac{\overrightarrow{v}}{dt} = m \frac{d^2 \overrightarrow{r}}{dt^2} \ \udm{N} % TODO: Mazzoldi pag.35 -> cosa è r?
+    \overrightarrow{F} = m \frac{d\overrightarrow{v}}{dt} = m \frac{d^2 \overrightarrow{r}}{dt^2} \ \udm{N}
 \end{equation}
 Da questa possiamo ricavare tutte le proprietà al moto di un punto materiale.
 \`E inoltre possibile dall'accelerazione determinare la forza agente e la massa.
@@ -195,9 +192,9 @@ Si definisce \emph{forza elastica} (unidimensionale) una forza di direzione cost
 
 La legge di Hooke dice che:
 \begin{equation}
-    \overrightarrow{F_{el}} = -k x \hat{x} \udm{N}
+    \overrightarrow{F_{el}} = -k x \overrightarrow{u}_x \udm{N} 
 \end{equation}
-dove \(k\) è una costante positiva, detta \emph{costante elastica} e \(\hat{x}\) il versore della differenza di lunghezza rispetto \(O\).
+dove \(k\) è una costante positiva, detta \emph{costante elastica} e \(\overrightarrow{u}_x\) il versore della differenza di lunghezza rispetto \(O\).
 
 L'accelerazione vale:
 \begin{equation}
@@ -448,9 +445,9 @@ La trattazione fatta per la forza peso è applicabile a qualsiasi altra forza co
 
 \section{Lavoro di una forza elastica}
 
-Il lavoro della forza elastica \(\overrightarrow{F} =-k x \hat{x}\), per uno spostamento lungo l'asse \(x\) vale:
+Il lavoro della forza elastica \(\overrightarrow{F} =-k x \overrightarrow{u}_x\), per uno spostamento lungo l'asse \(x\) vale:
 \begin{equation}
-    W = \int_A^B -k x\hat{x} \cdot dx \hat{x} = -k \int_A^B x dx = \frac{1}{2} k x^2_A - \frac{1}{2} k x^2_B = - \Delta E_p
+    W = \int_A^B -k x\overrightarrow{u}_x \cdot dx \overrightarrow{u}_x = -k \int_A^B x dx = \frac{1}{2} k x^2_A - \frac{1}{2} k x^2_B = - \Delta E_p
 \end{equation}
 con \(E_p = \frac{1}{2} k x^2\) in funzione della posizione.\newline
 Come nel caso della forza peso si tratta di una forza conservativa, quindi non conta la traiettoria.
@@ -464,9 +461,9 @@ A seconda del punto di inizio e fine posso avere due casi:
 
 Il lavoro di una forza di attrito radente è dato dall'equazione:
 \begin{equation}
-    W = \int_A^B \overrightarrow{F}_a \cdot d \overrightarrow{s} = \int_A^B -\mu_d N \hat{x} \cdot d \overrightarrow{s} = - \mu_d N \int_A^B ds .
+    W = \int_A^B \overrightarrow{F}_a \cdot d \overrightarrow{s} = \int_A^B -\mu_d N \overrightarrow{u}_x \cdot d \overrightarrow{s} = - \mu_d N \int_A^B ds .
 \end{equation}
-dove \(\hat{x}\) è il versore in direzione dello spostamento e \(\int_A^B\) è la lunghezza del percorso tra \(A\) e \(B\), misurata lungo \emph{la traiettoria effettiva del punto materiale}.\newline
+dove \(\overrightarrow{u}_x\) è il versore in direzione dello spostamento e \(\int_A^B\) è la lunghezza del percorso tra \(A\) e \(B\), misurata lungo \emph{la traiettoria effettiva del punto materiale}.\newline
 Dato che il lavoro dipende dal percorso non si tratta di una forza conservativa.\newline
 Il lavoro è sempre negativo, cioè è lavoro resistente.
 

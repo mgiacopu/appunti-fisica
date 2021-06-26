@@ -108,7 +108,7 @@ L'accelerazione del sistema mobile \(O'\) rispetto a \(O\) è dato da \(\overrig
     \overrightarrow{a} = \frac{d \overrightarrow{v}}{dt} = \frac{d \overrightarrow{v_{O'}}}{dt} + \frac{d \overrightarrow{v'}}{dt} + \frac{d \overrightarrow{\omega}}{dt} \times \overrightarrow{r'} + \omega \times \frac{d \overrightarrow{r'}}{dt}
 \end{equation}
 Calcolando \(\frac{d \overrightarrow{v'}}{dt}\) ricaviamo:
-\begin{equation} \label{teorema_acc_rel}
+\begin{equation}
     \begin{aligned}
         \frac{d \overrightarrow{v'}}{d t} &=\frac{d}{d t} \left(\frac{d x'}{d t} \overrightarrow{u}_{x'}+\frac{d y'}{d t} \overrightarrow{u}_{y'}+\frac{d z'}{d t} \overrightarrow{u}_{z'}\right) = \left( \frac{d^{2} x'}{d t^{2}} \overrightarrow{u}_{x'}+\frac{d^{2} y'}{d t^{2}} \overrightarrow{u}_{y'} + \frac{d^{2} z'}{d t^{2}} \overrightarrow{u}_{z'} \right)\\
         & + \left( \frac{d x'}{d t} \frac{d \overrightarrow{u}_{x'}}{d t}+\frac{d y'}{d t} \frac{d \overrightarrow{u}_{y'}}{d t}+\frac{d z'}{d t} \frac{d \overrightarrow{u}_{z'}}{d t} \right) \\
@@ -124,19 +124,19 @@ Ho inoltre:
 
 Ottengo quindi infine:
 
-\begin{equation}
+\begin{equation} \label{teorema_acc_relative}
     \overrightarrow{a} = \overrightarrow{a'} + \overrightarrow{a_{O'}} + \omega \times ( \omega \times \overrightarrow{r'}) + \frac{d \omega}{dt} \times \overrightarrow{r'} + 2 \omega \times \overrightarrow{v'}
 \end{equation}
 
-Le accelerazioni del punto \(P\) misurate nei due sistemi non coincidono ma sono messe in relazione tramite la (\ref{teorema_acc_rel}), detta \emph{teorema delle accelerazioni relative}.
+Le accelerazioni del punto \(P\) misurate nei due sistemi non coincidono ma sono messe in relazione tramite la (\ref{teorema_acc_relative}), detta \emph{teorema delle accelerazioni relative}.
 Per valutare l'accelerazione di trascinamento \(\overrightarrow{a}\), riprendiamo la discussione fatta per la velocità di trascinamento. 
 L'accelerazione di trascinamento è quella del punto \(P^{\star}\), solidale col sistema mobile, che coincide nell'istante considerato col punto \(P\). 
-Per \(P^{\star}, \overrightarrow{a', v'}\) sono nulle e da (\ref{teorema_acc_rel})
+Per \(P^{\star}, \overrightarrow{a', v'}\) sono nulle e da (\ref{teorema_acc_relative})
 \begin{equation}
     \overrightarrow{a_t} = \overrightarrow{a_{O'}} + \omega \times (\omega \times \overrightarrow{r'}) + \frac{d \omega }{dt} \times \overrightarrow{r'}
 \end{equation}
 
-Possiamo riscrivere (\ref{teorema_acc_rel}) come:
+Possiamo riscrivere (\ref{teorema_acc_relative}) come:
 \begin{equation}  \label{teorema_acc_cor}
     \overrightarrow{a} = \overrightarrow{a'} + \overrightarrow{a_t} + \overrightarrow{a_c}
 \end{equation}
@@ -164,8 +164,7 @@ Pertanto si ha
 \begin{equation}
     \overrightarrow{v_{O'}} = costante \ , \ \overrightarrow{a_{O'}} = 0 \ e \ \omega = 0
 \end{equation}
-% Da cosa? 3.15?
-Da ricaviamo \(\overrightarrow{a} = \overrightarrow{a'}\): le accelerazioni di un punto misurate nei due sistemi di riferimento sono eguali. 
+Da (\ref{teorema_acc_relative}) ricaviamo \(\overrightarrow{a} = \overrightarrow{a'}\): le accelerazioni di un punto misurate nei due sistemi di riferimento sono eguali. 
 Se \(\overrightarrow{a} = 0\) anche \(\overrightarrow{a'}= 0\) e quindi il secondo sistema è pure inerziale. 
 
 Abbiamo così ottenuto questo risultato fondamentale: \emph{definito un sistema di riferimento inerziale, tutti gli altri sistemi in altri sistemi in moto rettilineo uniforme rispetto a questo sono anch'essi inerziali};

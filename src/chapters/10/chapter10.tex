@@ -16,7 +16,7 @@ La formula che esprime la forza subita da una carica \(q_0\) in un campo elettro
 
 \subsection{Campo elettromotore}
 
-Però possiamo dire più in generale che quando su una carica \(q_0\) agisce una forza F di qualsiasi natura, non necessariamente elettrostatica, ma ad esempio dovuta a processi chimici o ad azioni meccaniche, o altre cause, possiamo definire sempre un campo elettrico \(E\), che si indica anche col nome di campo elettromotore,
+Però possiamo dire più in generale che quando su una carica \(q_0\) agisce una forza F di qualsiasi natura, non necessariamente elettrostatica, ma ad esempio dovuta a processi chimici o ad azioni meccaniche, o altre cause, possiamo definire sempre un campo elettrico \(E\), che si indica anche col nome di campo elettromotore:
 \begin{equation} \label{campo_elettromotore}
     \overrightarrow{E} = \frac{\overrightarrow{F}}{q_0} \implies \overrightarrow{F} = q_0 \overrightarrow{E}
 \end{equation}
@@ -26,7 +26,7 @@ Formalmente: \emph{la forza che agisce su una carica elettrica, che come tale pr
 
 Il lavoro della forza \(\overrightarrow{F}\) per uno spostamento \(d \overrightarrow{s}\) della carica \(q_0\) è dato da:
 \begin{equation}
-    d W = \overrightarrow{F} \cdot d \overrightarrow{s} = q_0 \overrightarrow{E} \cdot d \overrightarrow{s} = q_0 E \cos \theta = q_0 E_s d s
+    d W = \overrightarrow{F} \cdot d \overrightarrow{s} = q_0 \overrightarrow{E} \cdot d \overrightarrow{s} = q_0 E \cos \theta ds = q_0 E_s d s
 \end{equation}
 dove \(\theta\) è l'angolo tra il campo elettrico \(\overrightarrow{E}\) e lo spostamento \(d \overrightarrow{s}\) e \(E_s\) la componente di \(\overrightarrow{E}\) lungo \(d \overrightarrow{s}\).
 
@@ -39,7 +39,7 @@ dove \(d \overrightarrow{s}\) è un vettore elementare tangente alla curva, e l'
 
 \subsection{Tensione elettrica}
 
-Il rapporto \(\frac{W_1}{q_0}\) tra il lavoro compiuto dalla forza \(\overrightarrow{F}\) nello spostamento della carica \(q_0\) da \(A\) a \(B\) lungo il percorso \(C_1\), e il valore della carica, definisce la \emph{tensione elettrica tra i due punti \(A\) e \(B\) relativa al percorso \(C_1\)}:
+Il rapporto \(W_1 / q_0\) tra il lavoro compiuto dalla forza \(\overrightarrow{F}\) nello spostamento della carica \(q_0\) da \(A\) a \(B\) lungo il percorso \(C_1\), e il valore della carica, definisce la \emph{tensione elettrica tra i due punti \(A\) e \(B\) relativa al percorso \(C_1\)}:
 \begin{equation}
     \mathcal{F} \left(A \rightarrow B \text{ lungo } C_1\right) = \int_{C_1} \overrightarrow{E} \cdot d \overrightarrow{s}
 \end{equation}
@@ -60,7 +60,7 @@ Ottengo quindi che \emph{in generale il lavoro per un percorso chiuso è diverso
 \end{equation}
 Il lavoro per spostare una carica lungo il percorso chiuso \(C\) è dato dal prodotto della carica per la circuitazione del campo elettrico lungo \(C\).
 
-\subsection{"Forza" elettromotrice}
+\subsection{Forza elettromotrice}
 
 L'integrale 
 \begin{equation}
@@ -71,9 +71,11 @@ che esprime il rapporto tra lavoro compiuto sulla carica e la carica stessa per 
 Essa è in generale diversa da zero e dipende dalle caratteristiche del campo e dal percorso \(C\) scelto; malgrado il nome, \emph{non è una forza}.
 
 \subsection{Forze conservative}
-% TODO: Non capisco come spieghi questo paragrafo :/
-Ne deriva che il lavoro lungo un qualsiasi percorso chiuso è nullo, ovvero che la circuitazione di una forza conservativa è nulla.
-Non si verifica in natura che qualsiasi forza elettrica sia conservativa; questo è però il caso delle forze elettrostatiche, ottengo quindi che \emph{il campo elettrostatico è conservativo}.
+Per le forze dette \emph{conservative} il lavoro compiuto nello spostamento di un punto da A a B è funzione soltanto della posizione di partenza e di quella di arrivo e non del cammino seguito.
+
+Ne deriva che il lavoro lungo un qualsiasi percorso chiuso è nullo, ovvero (nel nostro caso della forza elettrica) che la circuitazione di una forza conservativa è nulla.
+
+Non si verifica in natura che qualsiasi \emph{forza elettrica} sia conservativa; questo è però il caso delle forze \emph{elettrostatiche}, ottengo quindi che \emph{il campo elettrostatico è conservativo} (dimostrazione in seguito).
 
 \subsection*{Differenza di potenziale}
 
@@ -190,13 +192,13 @@ Il potenziale generato dal sistema di cariche nel punto \(P (x, y, z)\), distant
 
 \subsection{Cariche distribuite in modo continuo}
 
-Nel caso in cui le cariche siano distribuite in modo continuo, per il calcolo del potenziale elettrostatico basta sostituire la sommatoria con l'integrale
+Nel caso in cui le cariche siano distribuite in modo continuo, per il calcolo del potenziale elettrostatico basta sostituire la sommatoria con l'integrale:
 \begin{equation}
     V (P) = \int dV = \frac{1}{4 \pi \epsilon_0} \int \frac{d q}{r}
 \end{equation}
 dove \(dq\), è un elemento infinitesimo di carica, \(r\) la sua distanza dal punto \(P\) in cui si calcola il potenziale e \(dV\) il potenziale elettrostatico che essa produce in \(P\).
 
-In ogni caso, fissata la distribuzione di cariche, si può calcolare in qualsiasi punto P(x, y, z) il potenziale \(V(x, y, z)\) indipendentemente dalla presenza della carica di prova \(q_0\).  
+In ogni caso, fissata la distribuzione di cariche, si può calcolare in qualsiasi punto \(P(x, y, z)\) il potenziale \(V(x, y, z)\) indipendentemente dalla presenza della carica di prova \(q_0\).  
 L'energia potenziale elettrostatica di tale carica \(q_0\) posta nel punto \(P\) è data da:
 \begin{equation}
     U_e (x,y,z) = q_0 V(x,y,z)

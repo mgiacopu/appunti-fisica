@@ -2,7 +2,7 @@
 \usepackage{standalone}
 \usepackage{amsmath}
 \usepackage{../../style}
-% \graphicspath{{./assets/images/}}
+\graphicspath{{./assets/images/}}
 
 % arara: pdflatex: { synctex: yes, shell: yes }
 % arara: latexmk: { clean: partial }
@@ -37,6 +37,12 @@ La somma diventa:
 \end{equation}
 dove \(d \overrightarrow{s}\) è un vettore elementare tangente alla curva, e l'ultimo integrale è l'integrale di linea del campo \(\overrightarrow{E}\) lungo \(C_1\).
 
+\begin{figure}[h]
+    \includegraphics[scale=0.6]{lavoro_tensione_elettrostatica.png}
+    \centering
+    \caption{}
+\end{figure}
+
 \subsection{Tensione elettrica}
 
 Il rapporto \(W_1 / q_0\) tra il lavoro compiuto dalla forza \(\overrightarrow{F}\) nello spostamento della carica \(q_0\) da \(A\) a \(B\) lungo il percorso \(C_1\), e il valore della carica, definisce la \emph{tensione elettrica tra i due punti \(A\) e \(B\) relativa al percorso \(C_1\)}:
@@ -67,7 +73,11 @@ L'integrale
     \mathcal{E} = \oint_C \overrightarrow{E} \cdot d \overrightarrow{s}
 \end{equation}
 che esprime il rapporto tra lavoro compiuto sulla carica e la carica stessa per lo spostamento \(C\) si definisce \emph{forza elettromotrice (f.e.m. del campo elettrico)} relativa al percorso \(C\).
-
+\begin{figure}[h]
+    \includegraphics[scale=0.5]{circuitazione.png}
+    \centering
+    \caption{}
+\end{figure}
 Essa è in generale diversa da zero e dipende dalle caratteristiche del campo e dal percorso \(C\) scelto; malgrado il nome, \emph{non è una forza}.
 
 \subsection{Forze conservative}

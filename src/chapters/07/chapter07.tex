@@ -27,7 +27,7 @@ Il gas può dunque compiere trasformazioni in cui scambia soltanto lavoro o calo
 \subsection{Legge isoterma di Boyle}
 
 Si abbia un gas in equilibrio termodinamico ad una certa pressione entro un dato volume e a temperatura \(T\): se si fanno variare i valori della pressione e del volume, mantenendo costante la temperatura, si trova che in tutti i possibili stati di equilibrio isotermi vale la relazione:
-\begin{equation}
+\begin{equation} \label{legge_boyle}
     pV = costante
 \end{equation}
 \emph{a temperatura costante la pressione è inversamente proporzionale al volume}.
@@ -183,8 +183,13 @@ Nel caso di una trasformazione che passa attraverso stati di equilibrio ed è qu
 
 \section{Energia interna del gas ideale}
 
-%TODO da revisionare
 La dipendenza dell'energia interna di un gas ideale dalle coordinate termodinamiche è stata ricavata analizzando il risultato dell'\emph{esperienza sull'espansione libera, eseguita da Joule}. 
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{espansione_libera.png}
+    \centering
+    \caption{}
+\end{figure}
 
 In un contenitore con pareti rigide e diatermiche, diviso in due parti eguali separate da un rubinetto, si trova un gas nella parte sinistra, mentre nella parte destra è stata realizzata una condizione di vuoto. 
 Il contenitore è immerso in un calorimetro e la temperatura di equilibrio è \(T\). 
@@ -195,11 +200,16 @@ Sperimentalmente si osserva che, comunque si operi, aprendo lentamente o rapidam
 Il gas quindi non scambia calore con il calorimetro, \(Q = 0\). 
 Esso inoltre non scambia lavoro con l'esterno (le pareti del contenitore sono rigide) e pertanto \(W = 0\). 
 Dal primo principio segue \(\Delta V = Q - W = 0\): \emph{nell'espansione libera l'energia interna di un gas ideale non varia}. 
-Possiamo allora giungere alla seguente conclusione: poiché nel processo la temperatura del gas non cambia, mentre variano pressione e volume (in accordo con (9.1) perché la trasformazione è isoterma, cioè \(p_{in} V_{in} = p_{fin} V_{fin}\)), l'energia interna deve essere funzione soltanto della temperatura. 
-% TODO: Riferimento a 9.1 corretto? ^^
+Possiamo allora giungere alla seguente conclusione: poiché nel processo la temperatura del gas non cambia, mentre variano pressione e volume (in accordo con \ref{legge_boyle} perché la trasformazione è isoterma, cioè \(p_{in} V_{in} = p_{fin} V_{fin}\)), l'energia interna deve essere funzione soltanto della temperatura. 
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{ACB.png}
+    \centering
+    \caption{}
+\end{figure}
 
 Per determinare l'espressione esplicita della funzione \(U(T)\) consideriamo due generici stati di equilibrio \(A\) e \(B\): \(\Delta U = U_B - U_A\) deve essere la stessa, qualsiasi trasformazione si scelga, essendo \(U\) una funzione di stato.
-Se scegliamo, in particolare, una trasformazione \(A C\) isocora e una isoterma, si ha:
+Se scegliamo, in particolare, una trasformazione \(A C\) isocora e una \(C B\) isoterma, si ha:
 \begin{equation*}
     \Delta U = U_B - U_A = U_B - U_C + U_C - U_A = U_C - U_A
 \end{equation*}
@@ -229,7 +239,7 @@ Si può quindi scrivere in maniera esplicita il primo principio, per quel che ri
     d Q = n c_v d T + d W \implies Q = n \int_{T_A}^{T_B} c_v d T + W
 \end{equation}
 \begin{equation}
-    Q = n c_v \Delta T + d W \ c_v = cost
+    Q = n c_v \Delta T + d W \ \text{ se } \ c_v = cost
 \end{equation}
 
 Se la trasformazione è reversibile, le equazioni precedenti diventano:
@@ -237,7 +247,7 @@ Se la trasformazione è reversibile, le equazioni precedenti diventano:
     d Q = n c_v d T + d p V \implies Q = n \int_{T_A}^{T_B} c_v d T + \int_{V_A}^{V_B} p d V
 \end{equation}
 \begin{equation}
-    Q = n c_v \Delta T + \int_{V_A}^{V_B} p d V \ c_v = cost
+    Q = n c_v \Delta T + \int_{V_A}^{V_B} p d V \ \text{ se } \ c_v = cost
 \end{equation}
 
 \subsection{Relazione di Mayer}
@@ -318,7 +328,7 @@ Tramite l'equazione di stato si può trasformare la relazione tra \(T\) e \(V\) 
     T V^{\gamma - 1 } = costante \ , \ pV^{\gamma} = costante \ , \ T p^{\frac{1 - \gamma}{\gamma}}
 \end{equation}
 
-Le (\ref{primo_principio_trasf_ideali}) sono un esempio di quando si possono esprimere i termini di (10.5) in funzione delle coordinate termodinamiche, ottenendo una relazione tra queste che rappresenta l'equazione della trasformazione. % TODO: 10.5 riferimento corretto?
+Le (\ref{primo_principio_trasf_ideali}) sono un esempio di quando si possono esprimere i termini del primo principio della dinamica in funzione delle coordinate termodinamiche, ottenendo una relazione tra queste che rappresenta l'equazione della trasformazione.
 Esse si chiamano infatti le \emph{equazioni di una trasformazione adiabatica reversibile di un gas ideale}.
 
 In particolare utilizziamo l'equazione \(p V^{\gamma} = costante\) per rappresentare a trasformazione nel piano di Clapeyron. 
@@ -367,7 +377,7 @@ Se si cede calore al gas, la sua pressione e la sua temperatura aumentano, mentr
 \subsection{Trasformazioni isobare}
 
 Il gas è contenuto ora in un recipiente diatermico con una parete mobile su cui agisce una pressione esterna costante \(p\).
-Dall'equazione di stato o da (11.4) abbiamo che in una trasformazione isobara % TODO: Riferimento 11.4 corretto?
+Dall'equazione di stato o dalle leggi di Gay-Lussac abbiamo che in una trasformazione isobara:
 \begin{equation*}
     \frac{v_A}{T_A} = \frac{v_B}{T_B} \implies \frac{v_A}{v_B} = \frac{T_A}{T_B}
 \end{equation*}
@@ -677,7 +687,6 @@ dato che \(n N_A = N\).
 Abbiamo trovato il significato microscopico della grandezza temperatura: \emph{essa è proporzionale all'energia cinetica media delle molecole}. 
 
 \subsection{Equipartizione dell'energia}
-% TODO verificare se c'è tutto (11.10 Mazzoldi 1)
 Lo sviluppo successivo della teoria cinetica dei gas porta alla previsione che la relazione precedente è di carattere generale, in questo senso: 
 ad ogni termine quadratico dell'energia classica di una molecola di un corpo corrisponde, all'equilibrio termodinamico, un'energia media pari a \(\frac{1}{2} k_B T\), essendo \(T\) la temperatura del sistema. 
 Questo risultato può essere anche espresso affermando che ad ogni componente indipendente del moto compete la stessa energia media \emph{ossia per ogni grado di libertà c'è il contributo} \(\frac{1}{2} k_B T\); 
@@ -685,7 +694,7 @@ esso è noto come \emph{principio dell'equipartizione dell'energia}.
 
 Pertanto per un sistema con \(l\) gradi di libertà
 \begin{equation}
-    \bar{E} = \frac{1}{2} k_B T
+    \bar{E} = \frac{l}{2} k_B T
 \end{equation}
 
 Le molecole di un gas ideale monoatomico presentano \emph{tre gradi di libertà} e la loro energia, esclusivamente cinetica, ha tre termini quadratici:
@@ -697,10 +706,21 @@ Per esse il principio dell'equipartizione dell'energia prevede
     \bar{E_k} = \bar{E}_x + \bar{E}_y + \bar{E}_z = \frac{3}{2} k_B T
 \end{equation*}
 
-Le energie cinetiche medie calcolate per le molecole monoatomiche e biatomiche sono l'unica forma di energia interna di un gas e allora, per una mole di gas, deve sussistere l'eguaglianza
+Le energie cinetiche medie calcolate per le molecole monoatomiche e biatomiche sono l'unica forma di energia interna di un gas e allora, per una mole di gas, deve sussistere l'eguaglianza:
 \begin{equation*}
-    \Delta U = c_V \Delta T = \Delta E_k = \frac{1}{2} N_A k_B \Delta T = \frac{1}{2} R \Delta T
+    \Delta U = c_V \Delta T = \Delta E_k = \frac{l}{2} N_A k_B \Delta T = \frac{l}{2} R \Delta T
+\end{equation*}
+da cui ricavo il calore specifico molare a volume costante
+\begin{equation*}
+    c_V = \frac{l}{2} R
 \end{equation*}
 
-
+Pertanto per le molecole monoatomiche che hanno \(l = 3\)
+\begin{equation*}
+    c_V = \frac{3}{2} R
+\end{equation*}
+per le molecole biatomiche con \(l = 5\)
+\begin{equation*}
+    c_V = \frac{5}{2} R
+\end{equation*}
 \end{document}

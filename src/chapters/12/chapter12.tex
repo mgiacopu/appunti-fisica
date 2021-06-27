@@ -2,7 +2,7 @@
 \usepackage{standalone}
 \usepackage{amsmath}
 \usepackage{../../style}
-% \graphicspath{{./assets/images/}}
+\graphicspath{{./assets/images/}}
 
 % arara: pdflatex: { synctex: yes, shell: yes }
 % arara: latexmk: { clean: partial }
@@ -55,6 +55,11 @@ e quindi
 \begin{equation} \label{teorema_coulomb}
     \overrightarrow{E} = \frac{\sigma}{\epsilon_0}\overrightarrow{u}_n
 \end{equation}
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{conduttore_campo.png}
+    \centering
+    \caption{}
+\end{figure}
 detto anche \emph{Teorema di Coulomb}. 
 Il verso è \emph{uscente} se la densità è \emph{positiva}, \emph{entrante} se è \emph{negativa}. 
 Si vede che il modulo del campo elettrostatico è maggiore dove \(\sigma\) è maggiore (questo avviene dove il raggio di curvatura è minore).
@@ -63,19 +68,30 @@ Un conduttore carico \emph{lontano da altri conduttori} ha dunque una distribuzi
 In particolare se il conduttore è sferico la carica è distribuita uniformemente.
 Notiamo inoltre che la carica deve avere lo stesso segno, positivo o negativo, ovunque sulla superficie: un accumulo di elettroni soltanto in una certa zona sarebbe dovuto esclusivamente a un campo elettrico esterno.
 
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{conduttore_linee.png}
+    \centering
+    \caption{}
+\end{figure}
+
 \subsection{Induzione elettrostatica}
 
 Avvicinando un conduttore, carico o scarico, ad un altro corpo carico, ovvero introducendolo in un campo elettrico esterno \(\overrightarrow{E}\), il campo elettrostatico all'interno non sarebbe più nullo, ma sarebbe dato da \(\overrightarrow{E}\); senonché questo fatto provoca un movimento di elettroni che si spostano per l'azione del campo elettrico esterno e si accumulano in una zona della superficie, lasciando sul resto della superficie un eccesso di carica positiva: 
 tra queste zone si crea un campo dettrostatico indotto \(\overrightarrow{E}_i\) che contrasta il movimento degli elettroni e si raggiunge l'equilibrio quando \(E + E_i = 0\) in tutto l'interno del conduttore.
 Abbiamo così una distribuzione di carica elettrica indotta dei due segni sulla superficie del conduttore che si sovrappone all'eventuale carica elettrica preesistente; in totale però la carica elettrica del conduttore rimane la stessa poiché la carica elettrica indotta è la somma algebrica dei due contributi eguali ed opposti.
 È il caso dell'induzione elettrostatica.
-%TODO decidere se aggiungere esempi di questo caso
 
 Se poniamo a contatto due o più conduttori, ad esempio collegandoli con un filo conduttore, si costituisce un unico corpo conduttore e in equilibrio vale ovunque la condizione \(E = 0\), \(V =\text{ costante}\): i conduttori a contatto hanno lo stesso potenziale. 
 
 \section{Conduttore cavo, schermo elettrostatico}
 
 \subsection{Conduttore cavo}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{conduttore_cavo.png}
+    \centering
+    \caption{}
+\end{figure}
 
 Consideriamo un conduttore carico che abbia nel suo interno una cavità all'interno della quale non ci siano cariche elettriche. 
 Nella massa del conduttore il campo elettrostatico è nullo e pertanto è nullo il flusso attraverso qualsiasi superficie chiusa, in particolare attraverso qualsiasi superficie chiusa \(\Sigma\) che racchiuda la cavità: segue, per la legge di Gauss, che all'interno di \(\Sigma\) non ci sono cariche e quindi sulle pareti della cavità la carica è nulla.
@@ -108,6 +124,12 @@ uguale a quella di una carica puntiforme \(q\) posta nel centro \(O\) della supe
 Consideriamo adesso un conduttore \(C_2\) cavo, isolato e privo di carica, e introduciamo un altro conduttore \(C_1\) carico nella cavità, mantenendolo isolato da \(C_2\). 
 In condizioni di equilibrio, se \(C_1\) ha sulla sua superficie esterna una carica \(q\), una carica \(- q\) risulta distribuita sulla superficie interna e una carica \(q\) sulla superficie esterna di \(C_2\).
 
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{induzione_elettrostatica_completa.png}
+    \centering
+    \caption{}
+\end{figure}
+
 \subsubsection{Dimostrazione}
 
 Tale fatto si spiega subito con la legge di Gauss: attraverso una superficie chiusa \(\Sigma\) interna a \(C_2\) e contenente la cavità il flusso di \(\overrightarrow{E}\) è nullo in quanto è nullo il campo stesso; di conseguenza all'interno di \(\Sigma\) non c'è carica e se \(C_1\) porta la carica \(q\), sulla superficie interna di \(C_2\) deve necessariamente comparire una carica \(-q\). 
@@ -130,6 +152,12 @@ Analogamente, se variamo la carica sulla superficie esterna oppure variamo la su
 Pertanto finché lo spazio interno e lo spazio esterno non sono comunicanti: il conduttore cavo costituisce uno schermo elettrostatico perfetto tra spazio interno e spazio esterno
 
 \section{Condensatori}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{condensatore_sferico.png}
+    \centering
+    \caption{}
+\end{figure}
 
 Consideriamo il sistema costituito da un conduttore sferico di raggio \(R_1\) al centro di un conduttore sferico cavo di raggio interno \(R_2\) e raggio esterno \(R_3\).
 Se \(+q\) è la carica depositata sul conduttore interno, \(-q\) è quella che deve esistere, in equilibrio, sulla superficie interna della cavità, affinché all'interno del conduttore cavo il campo elettrostatico risulti nullo; una carica \(+q\) è naturalmente presente sulla superficie esterna del conduttore cavo. 
@@ -201,8 +229,16 @@ Se \(h = R_2 -R_1\) è molto minore dei raggi, sviluppiamo in serie il denominat
 \end{equation*}
 per cui la capacità
 \begin{equation}
-    C= \frac{2 \pi \epsilon_0 d R}{h} = \frac{\epsilon_0 \Sigma}{h}
+    C = \frac{2 \pi \epsilon_0 d R}{h} = \frac{\epsilon_0 \Sigma}{h}
 \end{equation}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{condensatore_cilindrico.png}
+    \includegraphics[scale=0.6]{condensatore_cilindrico_sezione.png}
+    \centering
+    \caption{}
+\end{figure}
+
 con \(\Sigma = 2 \pi R d\) area delle armature distanti \(h\): ritrovo (\ref{capacita_condensatore})
 
 Da \ref{capacita_condensatre_cilindrico} definisco la \emph{capacità per unità di lunghezza}
@@ -219,6 +255,13 @@ La capacità di un condensatore piano è data da
 \begin{equation}
     C = \frac{q}{V_1 - V_2} = \frac{\epsilon_0 \Sigma}{h}
 \end{equation}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{condensatore_piano.png}
+    \centering
+    \caption{}
+\end{figure}
+
 Questa volta non ci sono approssimazioni geometriche, però quest'ultima è approssimata per un'altra ragione: il campo si può supporre uniforme solo nella regione centrale del condensatore, lontano dai bordi.
 
 \section{Collegamento di condensatori}
@@ -253,7 +296,7 @@ Il ragionamento si estende a \(n\) condensatori:
 \emph{in un sistema di condensatori in parallelo ai capi di ciascuno c'è la stessa differenza di potenziale e la capacità equivalente è somma delle singole capacità}.
 
 \subsection{Condensatori in serie}
-% TODO aggiungi foto
+
 Nella connessione in serie c'è un solo collegamento tra i due condensatori e viene costituito un sistema composto da \(n\) conduttori: ai due estremi si applica la differenza di potenziale \(V = V_C-V_A\) e il conduttore intermedio assume un potenziale \(V_B\).
 Se \(+q\) è la carica sull'armatura di \(C_1\) a potenziale \(V_C\), per induzione compare la carica \(-q\) sull'armatura affacciata e \(+q\) sull'armatura di \(C_2\) a questa collegata, dovendo essere il conduttore centrale neutro; sempre per induzione compare la carica \(-q\) sull'armatura di \(C_2\) a potenziale \(V_A\). 
 Vediamo che il valore della carica è lo stesso nei due condensatori. 

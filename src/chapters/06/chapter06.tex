@@ -2,7 +2,7 @@
 \usepackage{standalone}
 \usepackage{amsmath}
 \usepackage{../../style}
-% \graphicspath{{./assets/images/}}
+\graphicspath{{./assets/images/}}
 
 % arara: pdflatex: { synctex: yes, shell: yes }
 % arara: latexmk: { clean: partial }
@@ -271,14 +271,33 @@ Le implicazioni del primo principio della termodinamica possono essere sviluppat
 
 \subsection{Convenzione segni lavoro e calore}
 
-%TODO ADD PHOTO
-
 Naturalmente quello che importa in una trasformazione è capire qual è il flusso energetico, cioè se il calore è assorbito o ceduto dal sistema, se il lavoro è prodotto o subito, in modo da poter correttamente pervenire al bilancio energetico. 
 I segni sono solo convenzionali, però scelta una certa convenzione questa va mantenuta in tutti i ragionamenti.
 
 Attenzione che qui si considerano \emph{flussi di energia dal sistema}. 
 Se il sistema assorbe calore, e diciamo che \(Q\) è positivo, questo calore è ceduto al sistema dall'ambiente e pertanto per l'ambiente è negativo e come tale dobbiamo trattarlo se ragioniamo sull'ambiente: se \(Q\) è il calore scambiato dal sistema, \(-Q\) è  quello scambiato dall'ambiente. 
 Un discorso analogo va fatto per il lavoro.
+
+\begin{figure}[h]
+    \includegraphics[scale=0.8]{termodinamica1}
+    \centering
+\end{figure}
+
+Ricapitolando:
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Flusso di energia}                       & \textbf{Segno} \\ \hline
+    Calore che entra in un sistema dall'esterno      & Positivo       \\ \hline
+    Lavoro che è compiuto da un sistema sull'esterno & Positivo       \\ \hline
+    Calore che esce da un sistema verso l'esterno    & Negativo       \\ \hline
+    Lavoro che è compiuto dall'esterno sul sistema   & Negativo       \\ \hline
+    \end{tabular}
+    \caption{Convenzione sui segni di Q e W}
+    \label{tab:convenzione_segni}
+\end{table}
 
 \section{Trasformazioni termodinamiche, lavoro e calore}
 

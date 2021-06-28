@@ -378,7 +378,7 @@ L'energia elettrostatica di un condensatore piano con armature di area \(\Sigma\
 \end{equation*}
 
 Tra le armature, cariche di segno opposto, si esercita una forza \(F\) attrattiva che per ragioni di simmetria è parallela a \(\overrightarrow{E}\).  
-Per uno spostamento \(dh\) dell'armatura positiva ( \(dh < 0\)) l'energia elettrostatica diminuisce dielettrici
+Per uno spostamento \(dh\) dell'armatura positiva ( \(dh < 0\)) l'energia elettrostatica diminuisce di
 \begin{equation*}
     d U_e = \frac{q^2}{2 \epsilon_0 \Sigma} dh = \frac{\sigma^2}{2 \epsilon_0}  \Sigma dh
 \end{equation*}
@@ -396,13 +396,74 @@ Esprimendo \(\sigma\) in funzione del campo elettrostatico \(E\) abbiamo in modu
     F =  - \frac{\sigma}{2 \epsilon_0} \Sigma = \frac{1}{2} \epsilon_0 E^2 \Sigma
 \end{equation*}
 e la forza per unità di superficie risulta 
-\begin{equation}
-    p = \frac{F}{\Sigma} = \frac{1}{2} \epsilon_0 E^2
-\end{equation} \label{pressione_elettrostatica}
+\begin{equation} \label{pressione_elettrostatica}
+    p_{el} = \frac{F}{\Sigma} = \frac{1}{2} \epsilon_0 E^2
+\end{equation} 
 detto \emph{pressione elettrostatica}.
 
-La (\ref{pressione_elettrostatica}), che non contiene elementi caratteristici del sistema, ha validità generale, qualsiasi sia la distribuzione di carica superficiale e mostra che la pressione elettrostatica ha la stessa espressione della densità di energia. 
-%Manca divisione casi condensatore isolato/condensatore attaccato ad un generatore
+La (\ref{pressione_elettrostatica}), che non contiene elementi caratteristici del sistema (anche forma del condensatore), ha validità generale, qualsiasi sia la distribuzione di carica superficiale e mostra che la pressione elettrostatica ha la stessa espressione della densità di energia. 
 
+\subsubsection*{Pressione elettrostatica in condensatore isolato}
 
+In un condesatore isolato vale:
+\begin{equation*}
+    Q = \text{costante} \implies \sigma = \frac{Q}{\Sigma} = \text{costante} \implies E = \frac{\sigma}{\epsilon_0} = \text{costante}
+\end{equation*}
+Ottengo quindi
+\begin{equation*}
+    F = - \frac{d}{dh} \left[\frac{1}{2} \epsilon_0 E^2 S h\right] = - \frac{1}{2} \epsilon_0 E^2 S
+\end{equation*}
+pertanto la pressione elettrostatica sarà:
+\begin{equation*}
+    p_{el} = - \frac{1}{2} \epsilon_0 E^2
+\end{equation*}
+
+\subsubsection*{Pressione elettrostatica in condensatore attaccato ad un generatore}
+
+In un condesatore isolato vale:
+\begin{equation*}
+    \Delta V = \text{costante}
+\end{equation*}
+dato che \(C = \frac{Q}{\Delta V}\) ottengo che:
+\begin{equation*}
+    \Delta V = \frac{Q}{C} = \text{costante}
+\end{equation*} 
+Per trovare la forza devo misurare la variazione dell'energia del generatore e del condesatore stesso:
+\begin{equation*}
+    \Delta U_{TOT} = \Delta U_{GEN} + \Delta U_{el}
+\end{equation*}
+dove \(\Delta U_{GEN}\) carica energia nel condensatore.\newline 
+Varia la capacità e quindi varia anche la carica, quindi vale:
+\begin{equation*}
+    q^{\prime} - q  = \left(C^{\prime }- C\right) \Delta V = \epsilon_0 S \left(\frac{1}{h-dh} + \frac{1}{h}\right) \Delta V
+\end{equation*}
+\begin{equation*}
+    q^{\prime} - q  = \frac {\epsilon_0 S}{h} \Delta V dh 
+\end{equation*}
+Il lavoro del generatore è quindi
+\begin{equation*}
+    W_{GEN} = \left(q^{\prime} - q\right) \Delta V = \epsilon_0 S dh \left(\frac{\Delta V }{h}\right)^2 
+\end{equation*}
+La differenza di energia elettrostatica del condensatore sarà quindi:
+\begin{equation*}
+    d \left(\Delta U_{el}\right) = - \frac{1}{2} \epsilon_0 \left(\frac{\Delta V}{h}\right)^2 S dh 
+\end{equation*}
+La differenza di energia elettrostatica del generatore sarà quindi:
+\begin{equation*}
+    d \left(\Delta U_{gen}\right) = - \frac{1}{2} \epsilon_0 \left(\frac{\Delta V}{h}\right)^2 S dh 
+\end{equation*}
+La variazione totale è:
+\begin{equation*}
+    d \left(\Delta U\right) = \frac{1}{2} \epsilon_0 \left(\frac{\Delta V}{h}\right)^2 S dh 
+\end{equation*}
+La forza diventa:
+\begin{equation*}
+    F = - \frac{d \Delta U }{dh} =  - \frac{1}{2} \epsilon_0 \left(\frac{\Delta V}{h}\right)^2 S
+\end{equation*}
+dato \(\left(\frac{\Delta V}{h}\right)^2 = E^2\) la pressione elettrostatica è:
+\begin{equation*}
+    p_{el} = - \frac{1}{2} \epsilon_0 E^2
+\end{equation*}
+
+Ottengo quindi 
 \end{document}

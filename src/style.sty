@@ -44,7 +44,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
-\usepackage{geometry}
+\usepackage[margin=2.5cm]{geometry}
 
 \usepackage[hidelinks]{hyperref}
 
@@ -64,6 +64,15 @@
 \usepackage{multicol}
 
 \usepackage{siunitx}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\footnotesize \leftmark}
+\rhead{\footnotesize \thepage}
+
+\setlength{\parindent}{0cm}
 
 \newtheorem{theorem}{Teorema}[section]
 \newtheorem{definition}{Definizione}[section]

@@ -2,7 +2,7 @@
 \usepackage{standalone}
 \usepackage{amsmath}
 \usepackage{../../style}
-% \graphicspath{{./assets/images/}}
+\graphicspath{{./assets/images/}}
 
 % arara: pdflatex: { synctex: yes, shell: yes }
 % arara: latexmk: { clean: partial }
@@ -25,7 +25,12 @@ La distinzione tra forze interne ed esterne dipende da come viene definito il si
 Alle forze interne si applica il principio di azione e reazione, indicato anche come terza legge di Newton. 
 Se il punto \(i\)-esimo esercita sul punto \(j\)-esimo la forza \(\overrightarrow{F}_{i,j}\), il punto \(j\)-esimo reagisce esercitando sul punto \(i\)-esimo la forza \(\overrightarrow{F}_{j,i}\).
 Si osserva che queste forze hanno la stessa direzione, verso opposto, stesso modulo e stessa retta di azione; esse possono essere attrattive o repulsive. 
-% TODO aggiungere disegno
+
+\begin{figure}[h]
+    \includegraphics[scale=0.9]{forze_interne_azione_reazione}
+    \centering
+    \caption{}
+\end{figure}
 
 In generale la risultante \(\overrightarrow{F}_i^{(I)}\) delle forze interne agenti sull'\(i\)-esimo punto è diversa da zero, però la risultante di tutte le forze interne del sistema è nulla perché, in base al principio di azione e reazione, esse sono a due a due eguali ed opposte:
 \begin{equation}
@@ -116,6 +121,29 @@ Il principio di conservazione della quantità di moto per un sistema isolato di 
 
 Il risultato, però, non è completamente equivalente al principio di azione e reazione in quanto non implica che le due forze abbiano la stessa retta di azione.
 
+
+\section{Teorema di König per l'energia cinetica}
+L'energia cinetica calcolata nel sistema di riferimento inerziale è:
+\begin{equation*}
+    E_k = \sum_i \frac{1}{2} m_i v_i^2
+\end{equation*}
+Utilizzando \(\overrightarrow{v}_i = v_i^{\prime} + v_{CM}\) otteniamo
+\begin{equation*}
+    E_k = \sum_i \frac{1}{2} m_i \left(\overrightarrow{v}_i^{\prime} + \overrightarrow{v}_{CM}\right)^2 = \sum_i \frac{1}{2} m_i v_i^{\prime 2} + \sum_i \frac{1}{2} m_i v_{CM}^{2} + \sum_i \frac{1}{2} m_i \overrightarrow{v}_i^{\prime} \cdot \overrightarrow{v}_{CM}
+\end{equation*}
+
+Il primo termine rappresenta l'energia cinetica calcolata nel sistema di riferimento del centro di massa, ossia l'energia cinetica rispetto al centro di massa, \(E_k^{\prime}\). Il secondo termine è pari a \(\frac{1}{2} M v_{CM}^2\), energia cinetica di un punto materiale che possiede tutta la massa del sistema e si muove con la velocità del centro di massa, detta brevemente energia del centro di massa. 
+L'ultimo termine è nullo da \(\sum_i \frac{1}{2} m_i v_i^{\prime} = 0\) (la quantità di moto totale del sistema, \(\sum_i \frac{1}{2} m_i v_i^{\prime}\), risulta nulla se misurata nel sistema di riferimento del centra di massa) e perché uguale a \(\left(\sum_i m_i \overrightarrow{v}_i^{\prime}\right) \cdot \overrightarrow{v}_{CM} = \overrightarrow{P}^{\prime} \cdot \overrightarrow{v}_{CM} = 0\). Pertanto 
+\begin{equation} \label{thm_konig}
+    E_k = E_k^{\prime} + \frac{1}{2} M v_{CM}^2 + E_k^{\prime} + E_{k,CM} 
+\end{equation}
+relazione nota come secondo teorema di König. 
+\emph{L'energia cinetica del sistema di punti si può scrivere, nel sistema di riferimento inerziale, come la somma dell'energia cinetica dovuta al moto del centro di massa e di quella del sistema rispetto al centro di massa}.
+
+Anche se il centro di massa è fermo, \(\overrightarrow{v}_{CM} = 0\), l'energia cinetica non è necessa-riamente nulla: il movimento dei singoli punti rispetto al centro di massa rende \(E_k^{\prime} \neq 0\) e quindi \(E_k \neq 0\).
+
+Se però \(E_k = 0\), necessariamente devono essere nulle \(E_k^{\prime}\) e \(E_{k, CM}\), dato che l'energia cinetica non può essere negativa. 
+
 \section{Osservazioni sulle proprietà del centro di massa}
 
 La definizione introdotta di centro di massa è matematica, nel senso che non esiste il punto materiale centro di massa, ma la massa è distribuita nei singoli punti che si muovono sotto l'azione delle forze interne ed esterne. 
@@ -188,7 +216,7 @@ L'energia cinetica prima dell'urto è:
 \begin{equation*}
     E_{k,in} = \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 = E_k' + \frac{1}{2} \left( m_1 + m_2 \right) v_{CM}^2
 \end{equation*}
-quella finale per il Teorema di König diventa: % TODO Teorema di Konig è in 5.7 (lo spieghiamo?)
+quella finale per il Teorema di König (\ref{thm_konig}) diventa:
 \begin{equation*}
     E_{k,fin} = \left( m_1 + m_2 \right) v_{CM}^2 < E_{k,in}
 \end{equation*}
@@ -255,24 +283,47 @@ Ottengo:
 \end{equation}
 
 \subsection{Esempi}
-% TODO forse è meglio aggiungere assets come riferimento
 \begin{itemize}
     \item \(m_1 = m_2 = m : v_{1,fin} = v_{2,in} \ , \ v_{2,fin} = v_{1,in}\) \newline
     Si ottiene a seguito dell'urto uno scambio delle velocità. 
+
+    \begin{figure}[h]
+        \includegraphics[scale=1]{urto_due_punti_materiali}
+        \centering
+    \end{figure}
+
     \item \(m_1 >> m_2 = m : v_{1,fin} \cong v_{1,in} \ , \ v_{2,fin} = 2 v_{1,in} - v_{2,in}\) \newline
     Nell'urto la velocità di \(m_1\) rimane praticamente la stessa
+
+    \begin{figure}[h]
+        \includegraphics[scale=1]{urto_due_punti_materiali_diversi}
+        \centering
+    \end{figure}
+
     \item \(m_1 << m_2 = m \ e \ v_{2,in} = 0  \ : \ v_{1,fin} = - v_{1,in} \ , \ v_{2,fin} \cong 0 \) \newline
     In tale situazione \(m_1\) rimbalza all'indietro e \(m_2\) resta fermo. 
     Questo è un caso molto particolare, in cui possiamo verificare che si conserva l'energia cinetica, ma non la quantità di moto.
     Per esempio si tratta dell'urto di un punto contro un corpo massiccio, come una parete.
     Durante l'urto si sviluppano forze vincolari esterne di tipo impulsivo e quindi paragonabili a quelle interne. 
     Ciò non permette la conservazione della quantità di moto.
+
+    \begin{figure}[h]
+        \includegraphics[scale=1]{urto_parete}
+        \centering
+    \end{figure}
+
     \item Urto obliquo contro una parete piana immobile liscia.\newline
     Anche questo è un caso particolare; è un urto bidimensionale, ma siccome uno dei due corpi è immobile è possibile risolvere il problema conoscendo la velocità prima dell'urto.
     Supponiamo che \(\overrightarrow{v}_{in}\) formi l'angolo \(\theta\) con la normale alla parete e abbia quindi le componenti \(v_{in} \sin \theta\) e \(v_{in} \cos \theta\). 
     Nella direzione parallela alla parete non c'è urto, si conserva la relativa quantità di moto e la componente della velocità vale ancora \(v_{in} \sin \theta\) dopo l'urto; 
     in direzione ortogonale abbiamo la situazione vista nel precedente caso e \(v_{in} \cos \theta\) diventa \(-v_{in} \cos \theta\). 
     Quindi \(v_{fin}\) è eguale in modulo a \(v_{in}\) e forma ancora l'angolo \(\theta\) con la normale alla parete. 
+
+    \begin{figure}[h]
+        \includegraphics[scale=1]{urto_obliquo}
+        \centering
+    \end{figure}
+
 \end{itemize}
 
 \end{document}

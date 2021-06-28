@@ -11,10 +11,9 @@
 \chapter{Legge di Gauss}
 
 \section{Angolo solido}
-%TODO In questa sezione e nelle prossime sarebbe meglio aggiungere un bel po di foto dal libro
 
 \begin{figure}[h]
-    \includegraphics[scale=0.4]{angolo-solido}
+    \includegraphics[scale=0.5]{angolo_solido}
     \centering
     \caption{}
 \end{figure}
@@ -27,8 +26,13 @@ Si definisce angolo solido infinitesimo, la quantità
 
 L'angolo solido è l'estensione a tre dimensioni del concetto di angolo piano infinitesimo:
 \begin{equation}
-    d \theta = \frac{ds' \cos \alpha}{r} = \frac{ds}{r}
+    d \theta = \frac{ds^{\prime} \cos \alpha}{r} = \frac{ds}{r}
 \end{equation}
+\begin{figure}[h]
+    \includegraphics[scale=0.5]{angolo_piano.png}
+    \centering
+    \caption{}
+\end{figure}
 La superficie \(d \Sigma_0\) è un elemento di calotta sferica e la sua area vale (nel sistema a coordinate polari)
 \begin{equation} \label{misura_infinitesimo_angolo_solido}
     d \Omega = \frac{d \Sigma_0}{r^2} = \sin \theta d \theta d \phi
@@ -40,11 +44,11 @@ Geometricamente, possiamo dire che l'angolo solido dà una misura della parte di
 
 Per una superficie finita l'angolo solido è dato dall'integrale
 \begin{equation}
-    \Omega \sin \theta d \theta d \phi
+    \Omega = \int \sin \theta d \theta d \phi
 \end{equation}
 che è un integrale doppio sulle variabili \(\theta\) e \(\phi\).
 
-Se, a \(0\) costante, si fa variare \(\phi\) da zero a \(2 \pi\), abbiamo l'angolo solido sotto cui da \(0\) è vista la corona sferica infinitesima
+Se, a \(\theta\) costante, si fa variare \(\phi\) da zero a \(2 \pi\), abbiamo l'angolo solido sotto cui da \(0\) è vista la corona sferica infinitesima
 \begin{equation}
     d \Omega = \sin \theta d \theta \int_0^{2 \pi} d \phi = 2 \pi \sin \theta d \theta
 \end{equation}
@@ -66,13 +70,14 @@ e infine, se \(\theta_2 = \pi\), abbiamo l'angolo solido sotto cui dal centro è
 \subsection{Definizione di flusso attraverso una superficie}
 
 Consideriamo, una superficie \( d \Sigma\) in una regione in cui è definito un campo \(\overrightarrow{E}\) e orientiamola fissando il verso del versore della normale \(\overrightarrow{u}_n\). 
-Si definisce flusso del campo \(\overrightarrow{E}\) attraverso la superficie \(d \Sigma\) la quantità scalare 
+
+Si definisce \emph{flusso del campo \(\overrightarrow{E}\) attraverso la superficie} \(d \Sigma\) la quantità scalare 
 \begin{equation} \label{definizione_flusso}
     d \Phi (\overrightarrow{E}) = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = E \cos \theta d \Sigma = E_n d \Sigma
 \end{equation}
 
 Il flusso attraverso una superficie finita \(\Sigma\), si ottiene suddividendo la superficie \(\Sigma\) in elementi infinitesimi di superficie \(d \Sigma_i\), calcolando per ciascuno di essi il flusso infinitesimo \(d \Phi (\overrightarrow{E}_i) = \overrightarrow{E}_i \cdot u_{i,n} d \Sigma_i\), 
-e sommando gli infiniti contributi, procedura che porta ad un integrale di superficie:
+e sommando gli infiniti contributi, procedura che porta ad un \emph{integrale di superficie}:
 \begin{equation}
     \Phi (\overrightarrow{E}) = \int_{\Sigma} = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
 \end{equation}
@@ -81,24 +86,33 @@ Se la superficie è chiusa, il flusso si scrive, con l'integrale di ciclo chiuso
     \Phi (\overrightarrow{E}) = \oint_{\Sigma} = \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
 \end{equation}
 
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{flusso_superficie.png}
+    \includegraphics[scale=0.4]{flusso_superficie_chiusa.png}
+    \includegraphics[scale=0.4]{flusso_superficie_orientata.png}
+    \centering
+    \caption{}
+\end{figure}
+
 In questo caso è convenzione orientare la normale verso l'esterno. 
-I contributi positivi all'integrale (\ref{flusso_superficie_chiusa}) sono quelli per cui \(E \cdot \overrightarrow{u}_n> 0\), dovuti a quelle zone dove anche \(\overrightarrow{E}\) punta verso l'esterno: essi rappresentano un flusso di \(\overrightarrow{E}\) \emph{uscente dalla superficie}. 
-I contributi negativi provengono dalle zone in cui \(E \cdot \overrightarrow{u}_n < 0\), in cui cioè \(\overrightarrow{E}\) punta verso l'interno, e rappresentano un flusso di \(\overrightarrow{E}\) \emph{entrante}. 
+I contributi positivi all'integrale (\ref{flusso_superficie_chiusa}) sono quelli per cui \(\overrightarrow{E} \cdot \overrightarrow{u}_n> 0\), dovuti a quelle zone dove anche \(\overrightarrow{E}\) punta verso l'esterno: essi rappresentano un flusso di \(\overrightarrow{E}\) \emph{uscente dalla superficie}. 
+I contributi negativi provengono dalle zone in cui \(\overrightarrow{E} \cdot \overrightarrow{u}_n < 0\), in cui cioè \(\overrightarrow{E}\) punta verso l'interno, e rappresentano un flusso di \(\overrightarrow{E}\) \emph{entrante}. 
+
 Pertanto (\ref{flusso_superficie_chiusa}) dà \emph{il flusso netto attraverso la superficie chiusa}; se esso è nullo vuol dire che il flusso entrante eguaglia in modulo il flusso uscente.
 
 \subsection{Legge di Gauss}
 
 La legge di Gauss stabilisce che: 
-il flusso del campo elettrostatico \(\overrightarrow{E}\) prodotto da un sistema di cariche attraverso una superficie chiusa è uguale alla somma algebrica delle cariche elettriche contenute all'interno della superficie, divisa per \(\epsilon_0\).
+\emph{il flusso del campo elettrostatico \(\overrightarrow{E}\) prodotto da un sistema di cariche attraverso una superficie chiusa (detta anche gaussiana) è uguale alla somma algebrica delle cariche elettriche contenute all'interno della superficie, divisa per \(\epsilon_0\)}.
 \begin{equation}
     \Phi (\overrightarrow{E}) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{1}{\epsilon_0} (\Sigma_i q_i)_{int}
 \end{equation}
 La legge vale indipendentemente da come sono distribuite le cariche all'interno della superficie.
-Si noti che il campo \(\overrightarrow{E}\) che compare nell'integrale del flusso è il campo risultante delle tre cariche.
+Si noti che il campo \(\overrightarrow{E}\) che compare nell'integrale del flusso è il \emph{campo risultante} delle tre cariche
 \begin{equation}
-    \Phi (\overrightarrow{E}) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{1}{\epsilon_0} \int dq
+    \Phi (\overrightarrow{E}) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma = \frac{1}{\epsilon_0} \int_{\tau} dq
 \end{equation}
-essendo l'integrale al terzo membro esteso a tutto il volume \(\tau\) racchiuso da \(\Sigma\).. 
+essendo l'integrale al terzo membro esteso a tutto il volume \(\tau\) racchiuso da \(\Sigma\). 
 In pratica, poi, l'integrale è esteso ai soli punti in cui c'è carica \(dp \neq 0\). 
 
 Unificando la struttura dell'ultimo membro la legge di Gauss si presenta in maniera generale come:
@@ -109,6 +123,13 @@ Unificando la struttura dell'ultimo membro la legge di Gauss si presenta in mani
 \section{Dimostrazione della legge di Gauss}
 
 Prendiamo in esame il campo elettrostatico prodotto da una carica puntiforme \(q\), e calcoliamo il flusso attraverso l'elemento di superficie orientata utilizzando (\ref{definizione_flusso}):
+
+\begin{figure}[h]
+    \includegraphics[scale=0.5]{flusso_superficie_1.png}
+    \centering
+    \caption{}
+\end{figure}
+
 \begin{equation*}
     d \Phi (\overrightarrow{E}) = \frac{q}{4 \pi \epsilon_0} \frac{\overrightarrow{u}_r \cdot \overrightarrow{u}_n d \Sigma}{r^2} = \frac{q}{4 \pi \epsilon_0} + \frac{d \Sigma \cos \theta}{r^2} = \frac{q}{4 \pi \epsilon_0} + \frac{d \Sigma_0 }{r^2}
 \end{equation*}
@@ -118,10 +139,16 @@ Per definizione \(d \Sigma_0 / r^2\) è l'angolo solido \(d \Omega\) sotto cui �
     d \Phi (\overrightarrow{E}) = \frac{q}{4 \pi \epsilon_0} d \Omega
 \end{equation}
 
-Il flusso del campo elettrostatico \(\overrightarrow{E}\) di una carica puntiforme \(q\) dipende solo dall'angolo solido e non dalla superficie né dalla sua distanza dalla carica; ottengo quindi
+Il \emph{flusso del campo elettrostatico \(\overrightarrow{E}\) di una carica puntiforme \(q\) dipende solo dall'angolo solido e non dalla superficie né dalla sua distanza dalla carica}; ottengo quindi
 \begin{equation*}
     d \Omega = \frac{d \Sigma_1 \cos \theta_1}{r_1^2} = \frac{d \Sigma_{1,0}}{r_1^2} = \frac{d \Sigma_2 \cos \theta_2}{r_2^2} = \frac{d \Sigma_{2,0}}{r_2^2}
 \end{equation*}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.5]{indipendenza_distanza.png}
+    \centering
+    \caption{}
+\end{figure}
 
 Il flusso attraverso una superficie finita è dato da
 \begin{equation} \label{flusso_superficie_finita}
@@ -157,6 +184,12 @@ Integrando su tutta la superficie ottengo:
 \begin{equation} \label{flusso_carica_esterna}
     d \Phi_1 (\overrightarrow{E}) = \oint \overrightarrow{E} \cdot \overrightarrow{u}_n d \Sigma
 \end{equation}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{flusso_carica_int_est.png}
+    \centering
+    \caption{}
+\end{figure}
 
 Posso riassumere (\ref{flusso_carica_interna}) e (\ref{flusso_carica_esterna}): \emph{il flusso totale attraverso una superficie chiusa del campo elettrostatico di una carica puntiforme \(q\) vale \(q /\epsilon_0\) se la carica è interna alla superficie, vale zero se la carica è esterna}.
 
@@ -194,7 +227,13 @@ da cui si trova subito il modulo del campo elettrostatico:
 dove \(q\) è la carica posta all'interno della superficie chiusa \(\Sigma\). 
 
 \subsection{Campo elettrostatico di una distribuzione sferica superificale di carica}
-% TODO aggiungere foto del caso
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{sfera_superficiale.png}
+    \centering
+    \caption{}
+\end{figure}
+
 Una carica \(q\) è distribuita con densità superficiale costante \(\sigma\) su una superficie sferica di raggio \(R\).  
 Nel punto \(P\) distante \(r > R\) dal centro \(\overrightarrow{E}\) è certamente radiale, in quanto è dovuto alla somma di contributi a due a due simmetrici, eguali in modulo, la cui risultante è radiale; se così non fosse vorrebbe dire che \(\sigma\) non è uniforme.  
 In qualsiasi altro punto che ha la stessa distanza di \(P\) dal centro la situazione è la stessa. 
@@ -217,9 +256,15 @@ Il campo all'esterno di una distribuzione superficiale sferica uniforme di caric
 
 All'interno della superficie sferica valgono le stesse ragioni di simmetria per cui il campo dovrebbe essere radiale e il flusso attraverso una qualsiasi superficie sferica \(\Sigma^{\prime}\) di raggio \(r < R\) dovrebbe valere \(E \Sigma^{\prime}\).
 D'altra parte all'interno non c'è carica, il flusso attraverso \(\Sigma^{\prime}\) è nullo e quindi deve essere \(E = 0\) per \(r < R\): all'interno di una distribuzione superficiale sferica uniforme il campo elettrostatico è nullo.
-% TODO aggiungere grafici
+
 \subsection{Campo elettrostatico prodotto da una sfera uniformemente carica}
-% TODO aggiungere foto del caso
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{sfera_carica_piena.png}
+    \centering
+    \caption{}
+\end{figure}
+
 Una carica \(q\) è distribuita con densità spaziale \(\rho\) uniforme nel volume di una sfera di raggio \(R\).  
 Il ragionamento basato sulla simmetria sferica utilizzato precedentemente, è valido anche adesso per \(r > R\) e possiamo subito dire che il campo all'esterno di una sfera uniformemente carica vale
 \begin{equation*}
@@ -248,9 +293,15 @@ sulla superficie della sfera. All'interno
 \begin{equation*}
     \implies V(r) = \frac{\rho}{6 \epsilon_0} (3 R^2 - r^2) = \frac{q}{8 \pi \epsilon_0 R} \left(3 - \frac{r^2}{R}\right)
 \end{equation*}
-% TODO add grafici
+
 \subsection{Campo elettrostatico di un cilindro uniformemente carico}
 
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{campo_cilindro.png}
+    \includegraphics[scale=0.4]{campo_cilindro_sezione.png}
+    \centering
+    \caption{}
+\end{figure}
 Una distribuzione spaziale continua e uniforme di carica ha forma cilindrica di raggio \(R\); la lunghezza del cilindro è molto grande (al limite infinito) rispetto a \(R\) 
 
 La simmetria cilindrica del problema suggerisce che il campo elettrostatico sia diretto in ogni punto ortogonalmente all'asse del cilindro formato dalla carica e sia costante su ogni superficie cilindrica coassiale di raggio \(r\).
@@ -292,11 +343,17 @@ I risultati trovati valgono anche per un sottile filo rettilineo molto lungo, su
 
 \subsection{Campo elettrostatico di un piano indefinito uniformemente carico}
 
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{campo_piano_indefinito.png}
+    \centering
+    \caption{}
+\end{figure}
+
 Una carica è distribuita con densità superficiale \(\sigma\) su un piano indefinito.  
 Sempre in base a ragionamenti di simmetria si deduce che il campo elettrostatico è ortogonale al piano su cui è distribuita la carica e ha versi opposti dalle due parti (cioè è sempre uscente o sempre entrante).
 Come superficie a cui applicare la legge di Gauss scegliamo una scatola cilindrica con le basi, di area \(\Sigma\), parallele al piano, così che il flusso attraverso le basi è \(2 E \Sigma\); mentre quello attraverso la superficie laterale è nullo.
 
-All'interno della scatola c'è la carica \(q = \sigma \Sigma\): e Quindi
+All'interno della scatola c'è la carica \(q = \sigma \Sigma\): e quindi
 \begin{equation*}
     \Phi(\overrightarrow{E}) = 2 E \Sigma = \frac{\sigma \Sigma}{\epsilon_0} \implies E = \frac{\sigma}{2 \epsilon_0}
 \end{equation*}

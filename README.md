@@ -1,7 +1,14 @@
 # Appunti di Fisica
 
 ## Indice
+  - [Segnalazione errori](#segnalazione-errori)
   - [How to build](#how-to-build)
+
+## Segnalazione errori
+Per segnalare degli errori presenti nella dispensa si può agire in diversi modi (elencati in ordine di apprezzamento):
+  - Aprendo una Pull Request (diretta alla branch `errata-corrige` con versione più alta)
+  - Aprendo una Issue
+  - Contattandoci se ci conoscete personalmente
 
 ## How to build
 Per poter compilare i vari file LaTeX o l'intero progetto é necessario dotarsi di:

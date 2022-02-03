@@ -12,9 +12,6 @@
 }
 
 \usepackage[table,xcdraw]{xcolor}
-\usepackage{tikz}
-\usetikzlibrary{automata, positioning, arrows}
-
 \usepackage{enumitem}
 
 \usepackage{
@@ -54,9 +51,6 @@
 
 \usepackage{csquotes}
 
-\usepackage{forest}
-\newcommand{\equal}{=} % the = is a protected symbol in forest
-
 \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
 
 \usepackage{ifthen}
@@ -74,13 +68,6 @@
 
 \setlength{\parindent}{0cm}
 
-\newtheorem{theorem}{Teorema}[section]
-\newtheorem{definition}{Definizione}[section]
-\newtheorem{corollary}{Corollary}[theorem]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{osservazione}[corollary]{Osservazione}
-\renewcommand\qedsymbol{QED}
-
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
 % calligraphic quick commands
@@ -89,12 +76,6 @@
 \newcommand{\A}{\mathcal{A}}
 \renewcommand{\L}{\mathcal{L}}
 \renewcommand{\P}{\mathcal{P}}
-
-% where b is big, s is small, m is minimum, h is half
-\newcolumntype{b}{>{\hsize=.7\hsize}X}
-\newcolumntype{h}{>{\hsize=.6\hsize}X}
-\newcolumntype{s}{>{\hsize=.5\hsize}X}
-\newcolumntype{m}{>{\hsize=.25\hsize}X}
 
 \setlength\lightrulewidth{0.1pt}
 \providecommand\lightrule{%

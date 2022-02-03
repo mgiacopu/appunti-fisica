@@ -207,7 +207,7 @@ Per dimostrare il teorema di Clausius, immaginiamo di aggiungere \(n\) macchine 
     \centering
     \caption{}
 \end{figure}
-Applichiamo (\ref{rel_q_temp}) a ciacuna macchina reversibile:\\
+Applichiamo (\ref{rel_q_temp}) a ciascuna macchina reversibile:\\
 \begin{align*}
     \text{per } &R_1 & -\frac{Q_1}{T_1} + \frac{Q_{01}}{T_0} &= 0 \implies \frac{Q_{01}}{T_0} = \frac{Q_1}{T_1} \\
     \text{per } &R_i & -\frac{Q_i}{T_i} + \frac{Q_{0i}}{T_0} &= 0 \implies \frac{Q_{0i}}{T_0} = \frac{Q_i}{T_i} \\
@@ -225,7 +225,7 @@ Dato che il calore totale scambiato durante un ciclo monotermo non può essere p
 \begin{equation*}
     \sum_i Q_{0i} \leq 0 \implies \sum_i \frac{Q_i}{T_i} \leq 0
 \end{equation*}
-poichè \(T_0 > 0 \).
+poiché \(T_0 > 0 \).
 
 Se lo scambio di calore di \(M\) avviene con una serie infinita di sorgenti, detto \(d Q\) il calore scambiato con la sorgente a temperatura \(T\), la (\ref{enunciato_teorema_clausius}) diventa
 \begin{equation} \label{conclusione_dim_teorema_clausius}
@@ -237,7 +237,7 @@ dove \(\oint\) indica che l'integrale è esteso a tutto il ciclo descritto dalla
 
 Le equazioni (\ref{enunciato_teorema_clausius}) e (\ref{conclusione_dim_teorema_clausius}) esprimono il teorema di Clausius per una macchina generica.
 Se la macchina \(M\) è reversibile invertiamo tutti i cicli: tutti gli scambi di calore cambiano di segno e deve essere \(\sum \left(-Q_{0i}\right) \leq 0\). 
-Ne segue che le disugualianze del teorema vanno invertite e si ha compatibilità tra i due casi solo se 
+Ne segue che le disuguaglianze del teorema vanno invertite e si ha compatibilità tra i due casi solo se 
 \begin{equation} \label{comp_clausius_rev}
     \sum_{i = 1}^{n} \frac{Q_i}{T_i} = 0 \text{ oppure } \oint \frac{d Q}{T} = 0
 \end{equation}
@@ -306,7 +306,7 @@ Pertanto per il calcolo della variazione di entropia nella trasformazione irreve
 
 \subsection{Diagrammi TS}
 
-L'entropia, essendo funzione di stato, può essere scelta come variabile indipendente (coordinata tennodinamica) per descrivere, insieme ad una seconda variabile indipendente opportunamente scelta (spesso \(T\)), lo stato termodinamico di un sistema.
+L'entropia, essendo funzione di stato, può essere scelta come variabile indipendente (coordinata termodinamica) per descrivere, insieme ad una seconda variabile indipendente opportunamente scelta (spesso \(T\)), lo stato termodinamico di un sistema.
 Nel piano \(\left(T, S\right)\) una trasformazione reversibile è rappresentata da un tratto di curva continua che fornisce il grafico della funzione \(T (S)\).
 Il calore scambiato dal sistema che descrive la trasformazione è, secondo (\ref{entropia_infinitesima}),
 \begin{equation}
@@ -367,7 +367,7 @@ Il ciclo delle trasformazioni \(1\) e \(-2\) (\(-2\) è l'inversa della 2 come p
 \begin{equation*}
     \oint \frac{d Q}{T} = \int_A^B \left(\frac{d Q}{T}\right)_1 + \int_B^A \left(\frac{d Q}{T}\right)_{-2} = \int_A^B \left(\frac{d Q}{T}\right)_{irr} - \int_A^B \left(\frac{d Q}{T}\right)_{rev} < 0
 \end{equation*}
-L'utimo integrale rappresenta la differenza di entropia quindi:
+L'ultimo integrale rappresenta la differenza di entropia quindi:
 \begin{equation}
     S_B - S_A = \int_A^B \left(\frac{d Q}{T}\right)_{rev} > \int_A^B \left(\frac{d Q}{T}\right)_{irr}
 \end{equation}
@@ -424,7 +424,7 @@ Un sistema che compie una trasformazione adiabatica costituisce un caso particol
     \Delta S_{sist} = \Delta S_u \geq 0 
 \end{equation*}
 
-Se la trasformazione è reversibile \(\Delta S_{sist} = 0\), la trasformazione cioè è iso-entropica.
+Se la trasformazione è reversibile \(\Delta S_{sist} = 0\), la trasformazione cioè è isoentropica.
 
 Per una trasformazione adiabatica irreversibile invece \(\Delta S_{sist}> 0 \), l'entropia aumenta. 
 In effetti questa volta \(d Q =0\) non implica \(d S =0\): il calore scambiato lungo la trasformazione è nullo, però \(\Delta S_{sist}\) non è calcolabile lungo questa trasformazione, bensì lungo un'altra con gli stessi estremi, ma reversibile, che non può essere adiabatica a sua volta. 
@@ -452,7 +452,7 @@ Pertanto
 \begin{equation}
     S_B - S_A = \int_A^B \left(\frac{d Q}{T}\right)_{rev} = \int_A^B n c_V \frac{d T}{T} + \int_A^B n R \frac{d V}{V}
 \end{equation}
-Integrando e utlizzando la relazione di Mayer ottengo:
+Integrando e utilizzando la relazione di Mayer ottengo:
 \begin{align*}
     S_B - S_A &= n c_V \ln \frac{T_B}{T_A} + n R \ln \frac{V_B}{V_A}\\
     S_B - S_A &= n c_V \ln \frac{p_B}{p_A} + n c_P \ln \frac{V_B}{V_A}\\

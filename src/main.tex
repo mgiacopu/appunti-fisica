@@ -2,7 +2,6 @@
 	,a4paper
 	,12pt
 	,oneside
-	% ,draft
 ]{book}
 
 \usepackage{style}
@@ -24,7 +23,6 @@
 	{./chapters/12/assets/images/}%
 	{./chapters/13/assets/images/}%
 	{./chapters/14/assets/images/}%
-	% {./chapters/appendix_A/assets/images/}%
 }
 
 \newboolean{isCompiledFromMain}
@@ -41,7 +39,7 @@
 
 \mainmatter
 
-	% \import{./chapters/preface}{preface}
+	\import{./chapters/preface}{preface}
 	\import{./chapters/01/}{chapter01}
 	\import{./chapters/02/}{chapter02}
 	\import{./chapters/03/}{chapter03}
@@ -56,8 +54,6 @@
 	\import{./chapters/12/}{chapter12}
 	\import{./chapters/13/}{chapter13}
 	\import{./chapters/14/}{chapter14}
-	% \appendix
-	% \import{./chapters/appendix_A/}{appendix_A}
 
 \backmatter
 

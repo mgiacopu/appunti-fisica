@@ -11,6 +11,11 @@ Per segnalare degli errori presenti nella dispensa si può agire in diversi modi
   - Contattandoci se ci conoscete personalmente
 
 ## How to build
+
+### Dispensa file PDF
+Se non voleste imbattervi nella compilazione del progetto per ottenere il file PDF della dispensa, potete trovare il documento nella [sezione `Releases` di Github](https://github.com/mgiacopu/appunti-fisica/releases).  
+
+### Docker
 Per poter compilare i vari file LaTeX o l'intero progetto é necessario dotarsi di:
   - [VSCode](https://code.visualstudio.com/) (con le seguenti dipendenze)
     - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
